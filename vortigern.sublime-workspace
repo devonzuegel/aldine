@@ -1,0 +1,2608 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"remeel",
+				"remainingElves"
+			],
+			[
+				"Radco",
+				"Radio.Container.WithSubtext"
+			],
+			[
+				"creatE",
+				"createElement()\tReact"
+			],
+			[
+				"con",
+				"containers"
+			],
+			[
+				"clans",
+				"classnames"
+			],
+			[
+				"clasnes",
+				"classnames"
+			],
+			[
+				"clasn",
+				"className"
+			],
+			[
+				"expor",
+				"export\tkeyword"
+			],
+			[
+				"PropTypes",
+				"PropTypes.func"
+			],
+			[
+				"packs",
+				"packets"
+			],
+			[
+				"perfo",
+				"perform_async\t(sync.rb)"
+			],
+			[
+				"foodpors",
+				"food_portions"
+			],
+			[
+				"resspack",
+				"response_packet"
+			],
+			[
+				"requir",
+				"require_relative\t(Rakefile)"
+			],
+			[
+				"desc",
+				"described_class.create"
+			],
+			[
+				"W",
+				"WATER_ENTRY\t(type.rb)"
+			],
+			[
+				"HttpRequestParams",
+				"http_request_params"
+			],
+			[
+				"http",
+				"http_request_params\t(sync.rb)"
+			],
+			[
+				"packek",
+				"pack_key"
+			],
+			[
+				"Binary",
+				"Binary::Packet\t(sync_request.rb)"
+			],
+			[
+				"EXERC",
+				"EXERCISE_ENTRY\t(type.rb)"
+			],
+			[
+				"FODENR",
+				"food_entry"
+			],
+			[
+				"meali",
+				"meal_ingredients\t(codec.rb)"
+			],
+			[
+				"Mealing",
+				"MealIngredients\t(type_spec.rb)"
+			],
+			[
+				"MeaIng",
+				"MealIngredients\t(meal_ingredients.rb)"
+			],
+			[
+				"METyp",
+				"MeasurementTypes\t(type.rb)"
+			],
+			[
+				"Measure",
+				"MEASUREMENT_TYPES\t(type.rb)"
+			],
+			[
+				"MASUR",
+				"MEASUREMENT_TYPES\t(type.rb)"
+			],
+			[
+				"PACK",
+				"PACKET_HEADER_SIZE"
+			],
+			[
+				"SY",
+				"SYNC_REQUEST_DEFAULT\t(json.rb)"
+			],
+			[
+				"Binar",
+				"Binary::Packet\t(sync_request.rb)"
+			],
+			[
+				"exped",
+				"expected_packet_end"
+			],
+			[
+				"bod",
+				"BODY"
+			],
+			[
+				"dsecrib",
+				"describe"
+			],
+			[
+				"routet",
+				"route_to"
+			],
+			[
+				"tagf",
+				"tagfinder_executions"
+			],
+			[
+				"exec",
+				"executions"
+			],
+			[
+				"tagfinderexc",
+				"tagfinder_execution"
+			],
+			[
+				"execu",
+				"execution_history"
+			],
+			[
+				"finame",
+				"filename"
+			],
+			[
+				"resultsfi",
+				"results_file"
+			],
+			[
+				"restsfil",
+				"results_file"
+			],
+			[
+				"resuf",
+				"results_file"
+			],
+			[
+				"Resuf",
+				"ResultsFile\t(results_file_spec.rb)"
+			],
+			[
+				"resulf",
+				"results_file\t(results_file_spec.rb)"
+			],
+			[
+				"uplof",
+				"upload_file_name"
+			],
+			[
+				"resusfi",
+				"results_file"
+			],
+			[
+				"resutsfil",
+				"results_file"
+			],
+			[
+				"s3u",
+				"s3_uploader"
+			],
+			[
+				"AWSBUEC",
+				"AWS_S3_BUCKET\t(s3_direct_upload.rb)"
+			],
+			[
+				"AWEB",
+				"AWS_S3_BUCKET\t(s3_direct_upload.rb)"
+			],
+			[
+				"Tag",
+				"tagfinder_execution"
+			],
+			[
+				"isosta",
+				"isostamp-staging"
+			],
+			[
+				"dco",
+				"documents\t(routes.rb)"
+			],
+			[
+				"atrbus",
+				"attributes"
+			],
+			[
+				"EverN",
+				"EvernoteNote"
+			],
+			[
+				"it",
+				"it\tit 'does something' do … end"
+			],
+			[
+				"evernotnot",
+				"evernote_account\t(user.rb)"
+			],
+			[
+				"sortorder",
+				"sort_order"
+			],
+			[
+				"expec",
+				"expect"
+			],
+			[
+				"evernoteac",
+				"evernote_account"
+			],
+			[
+				"ar",
+				"articles\t(visitors_controller.rb)"
+			],
+			[
+				"function",
+				"function"
+			],
+			[
+				"sucesdiv",
+				"includeSuccessDiv"
+			],
+			[
+				"bool",
+				"boolean\tReact.PropTypes.bool"
+			],
+			[
+				"pr",
+				"props\tReact: this.props."
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"Precom",
+				"Precompiles"
+			],
+			[
+				"Props",
+				"propTypes"
+			],
+			[
+				"func",
+				"function\tReact.PropTypes.func"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"geti",
+				"getInitialState\t(findings.js.coffee)"
+			],
+			[
+				"pro",
+				"props\tReact: @props."
+			],
+			[
+				"pros",
+				"props"
+			],
+			[
+				"attac",
+				"attachToForm"
+			],
+			[
+				"dep",
+				"deep_symbolize_keys"
+			],
+			[
+				"storeto",
+				"stored_to_evernote\t(bookmark.rb)"
+			],
+			[
+				"InstAC",
+				"InstapaperAccount\t(instapaper_account.rb)"
+			],
+			[
+				"expe",
+				"expraise\texpect { action }.to raise"
+			],
+			[
+				"boos",
+				"bookmarks\t(instapaper_client.rb)"
+			],
+			[
+				"santiz",
+				"sanitize\t(Gemfile)"
+			],
+			[
+				"bacgr",
+				"background"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"insta",
+				"instapaper"
+			],
+			[
+				"instapaperacc",
+				"instapaper_account"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"primar",
+				"primary\t(_variables.scss)"
+			],
+			[
+				"d",
+				"det\tdetect { |e| .. }"
+			],
+			[
+				"cords",
+				"coords"
+			],
+			[
+				"MAXP",
+				"MAX_PATCH_POP"
+			],
+			[
+				"over",
+				"overpop_cost"
+			],
+			[
+				"initize",
+				"initialize_turtle"
+			],
+			[
+				"sizre",
+				"sizerank"
+			],
+			[
+				"lati",
+				"lat_i"
+			],
+			[
+				"initizi",
+				"Initialize"
+			],
+			[
+				"netcard",
+				"next_card"
+			],
+			[
+				"max",
+				"MaxWCC"
+			],
+			[
+				"taslk",
+				"task_list"
+			],
+			[
+				"tasklis",
+				"task_list"
+			],
+			[
+				"GoOat",
+				"GoogleOauth\t(google_oauth.rb)"
+			],
+			[
+				"apiclie",
+				"api_client"
+			],
+			[
+				"ompr",
+				"omniauth_provider_key\t(application.yml)"
+			],
+			[
+				"if",
+				"ife\tif … else … end"
+			],
+			[
+				"GOge",
+				"GoogleCalendar\t(google_calendar.rb)"
+			],
+			[
+				"strig",
+				"stringify"
+			],
+			[
+				"tra",
+				"trait\t(users.rb)"
+			],
+			[
+				"ApiC",
+				"Api::V1::TasksController\t(tasks_controller.rb)"
+			],
+			[
+				"exp",
+				"expto\texpect { expression }.to something"
+			],
+			[
+				"fitr",
+				"filter"
+			],
+			[
+				"ots",
+				"opts"
+			],
+			[
+				"opts",
+				"options"
+			],
+			[
+				"filtereds",
+				"filtered_ids"
+			],
+			[
+				"Elast",
+				"ElasticSearchSupport\t(elastic_search_support.rb)"
+			],
+			[
+				"curlie",
+				"current_line_contents"
+			],
+			[
+				"current",
+				"current_line"
+			],
+			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"de",
+				"description\t(method-definition.sublime-snippet)"
+			],
+			[
+				"tom",
+				"tom\ttomdoc"
+			],
+			[
+				"acuo",
+				"account"
+			],
+			[
+				"cla",
+				"cla\tclass .. < ParentClass .. initialize .. end"
+			],
+			[
+				"respsoe",
+				"response"
+			],
+			[
+				"Sess",
+				"SessionsController\t(sessions_controller.rb)"
+			],
+			[
+				"tileabv",
+				"tile_above"
+			],
+			[
+				"colc",
+				"col_count"
+			],
+			[
+				"notest",
+				"note_store\t(advanced_controller.rb)"
+			],
+			[
+				"users",
+				"user_store"
+			],
+			[
+				"notestroe",
+				"note_store"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app/containers/Home/index.tsx",
+			"settings":
+			{
+				"buffer_size": 289,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/redux/modules/counter/index.test.ts",
+			"settings":
+			{
+				"buffer_size": 1345,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/server.js",
+			"settings":
+			{
+				"buffer_size": 727863,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Ruby/Ruby.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Ruby/Ruby.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": "listpackages",
+		"selected_items":
+		[
+			[
+				"listpackages",
+				"Package Control: List Packages"
+			],
+			[
+				"typefom",
+				"TypeScript: Format Document"
+			],
+			[
+				"paneright",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"wrat",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"PackageDev: New Raw Snippet"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"format",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"upercase",
+				"Convert Case: Upper Case"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"sortli",
+				"Sort Lines"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"typescriptreac",
+				"Set Syntax: TypeScriptReact"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"uper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"syntmd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"uperca",
+				"Convert Case: Upper Case"
+			],
+			[
+				"uperc",
+				"Convert Case: Upper Case"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"sruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ruby2",
+				"Set Syntax: Ruby2"
+			],
+			[
+				"yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"sytmarkdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"wraptog",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rubyocop",
+				"RuboCop: Check current file (only with lint cops)"
+			],
+			[
+				"lowerc",
+				"Convert Case: Lower Case"
+			],
+			[
+				"removepac",
+				"Package Control: Remove Package"
+			],
+			[
+				"unf",
+				"Code Folding: Unfold All"
+			],
+			[
+				"u",
+				"Unfold Comments"
+			],
+			[
+				"rubo",
+				"RuboCop: Check current file (only with lint cops)"
+			],
+			[
+				"ruboc",
+				"RuboCop: Check current file (only with lint cops)"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"formatjson",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"upercae",
+				"Convert Case: Upper Case"
+			],
+			[
+				"unfold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"synthtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"folcom",
+				"Fold Comments"
+			],
+			[
+				"upera",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ardui",
+				"Set Syntax: Arduino"
+			],
+			[
+				"upercaes",
+				"Convert Case: Upper Case"
+			],
+			[
+				"shtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"lowercase",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lwerca",
+				"Convert Case: Lower Case"
+			],
+			[
+				"synt",
+				"Set Syntax: Ruby"
+			],
+			[
+				"srub",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"syntru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"LOWERC",
+				"Convert Case: Lower Case"
+			],
+			[
+				"syntcoffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"fodlcom",
+				"Fold Comments"
+			],
+			[
+				"syntruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"focom",
+				"Fold Comments"
+			],
+			[
+				"marker",
+				"Snippet: Add ‘# =>’ Marker"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"syntaruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"buy",
+				"Build: New Build System"
+			],
+			[
+				"syntslim",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"foldcom",
+				"Fold Comments"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"war",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"syntmarkdow",
+				"Set Syntax: Markdown"
+			],
+			[
+				"synmarkdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mult",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"comentf",
+				"z:AAAPackageDev: New Completions File"
+			],
+			[
+				"syntaxtxt",
+				"Set Syntax: TeX Math"
+			],
+			[
+				"syntax",
+				"Set Syntax: Lua"
+			],
+			[
+				"syntaxc",
+				"Set Syntax: CSS"
+			],
+			[
+				"add pack",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"syntaxmd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"bracket",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"foocmes",
+				"Fold Comments"
+			],
+			[
+				"sknitr",
+				"Set Syntax: knitr (Markdown)"
+			],
+			[
+				"fcom",
+				"Fold Comments"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"aling",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"UP",
+				"Convert Case: Upper Case"
+			],
+			[
+				"lowerca",
+				"Convert Case: Lower Case"
+			],
+			[
+				"synpy",
+				"Set Syntax: Python"
+			],
+			[
+				"synpyt",
+				"Set Syntax: Python"
+			],
+			[
+				"pyt",
+				"SublimeREPL: Python"
+			],
+			[
+				"pac",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"foc",
+				"Fold Comments"
+			],
+			[
+				"focm",
+				"Fold Comments"
+			],
+			[
+				"formjso",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"rslim",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"slim",
+				"HTML2Slim: Convert file"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"syntcofe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"cofee",
+				"SublimeREPL: CoffeeScript"
+			],
+			[
+				"sli",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"packaview",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"packagviewr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"fold",
+				"Fold Comments"
+			],
+			[
+				"ufn",
+				"Unfold Comments"
+			],
+			[
+				"multima",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"FOCOME",
+				"Fold Comments"
+			],
+			[
+				"UPER",
+				"Convert Case: Upper Case"
+			],
+			[
+				"unfoal",
+				"Code Folding: Unfold All"
+			],
+			[
+				"destpanbel",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"pacress",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packaresviewr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packaresoruvie",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"viewpac",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"upgrad",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"openrec",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"panebelw",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"rubocop",
+				"RuboCop: Auto correct current file"
+			],
+			[
+				"focome",
+				"Fold Comments"
+			],
+			[
+				"rub2",
+				"Set Syntax: Ruby2"
+			],
+			[
+				"destpa",
+				"Origami: Destroy Pane on the Left"
+			],
+			[
+				"html",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"depabe",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"form",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"destaplef",
+				"Origami: Destroy Pane on the Left"
+			],
+			[
+				"destcur",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"scheme",
+				"Schemr: List all schemes"
+			]
+		],
+		"width": 591.0
+	},
+	"console":
+	{
+		"height": 515.0,
+		"history":
+		[
+			"view.run_command('tom_doc')",
+			"view.run_command('example')",
+			"view.run_command('tom_doc')",
+			"view.run_command('example')",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/devonzuegel/dev/vortigern",
+		"/Users/devonzuegel/dev/vortigern/build/public",
+		"/Users/devonzuegel/dev/vortigern/src",
+		"/Users/devonzuegel/dev/vortigern/src/app",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home",
+		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules"
+	],
+	"file_history":
+	[
+		"/Users/devonzuegel/dev/vortigern/node_modules/.bin/webpack",
+		"/Users/devonzuegel/dev/vortigern/src/app/routes/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/components/Header/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/redux/reducers.ts",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Stars/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Stars/index.test.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/components/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/About/index.test.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/About/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/App/index.test.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/App/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Counter/index.test.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Counter/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home/barbar.png",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home/index.test.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/containers/Html/index.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/helpers/TestHelper.tsx",
+		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/counter/index.test.ts",
+		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/counter/index.ts",
+		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/stars/index.test.ts",
+		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/stars/index.ts",
+		"/Users/devonzuegel/dev/vortigern/src/favicon.ico",
+		"/Users/devonzuegel/dev/cosmocat/src/app/routes/index.tsx",
+		"/Users/devonzuegel/dev/cosmocat/README.md",
+		"/Users/devonzuegel/dev/cosmocat/src/app/components/Header/index.tsx",
+		"/Users/devonzuegel/dev/cosmocat/config/main.js",
+		"/Users/devonzuegel/dev/cosmocat/config/secrets/fitbit.js",
+		"/Users/devonzuegel/dev/cosmocat/src/app/containers/App/index.tsx",
+		"/Users/devonzuegel/dev/cosmocat/.gitignore",
+		"/Users/devonzuegel/dev/cosmocat/src/app/containers/Stars/index.tsx",
+		"/Users/devonzuegel/dev/cosmocat/config/fitbit.js",
+		"/Users/devonzuegel/dev/cosmocat/config/main.ts",
+		"/Users/devonzuegel/dev/cosmocat/build/manifest.json",
+		"/Users/devonzuegel/dev/cosmocat/package.json",
+		"/Users/devonzuegel/dev/cosmocat/node_modules/dotenv/lib/main.js",
+		"/Users/devonzuegel/dev/cosmocat/config/webpack/server.js",
+		"/Users/devonzuegel/dev/cosmocat/build/server.js",
+		"/Users/devonzuegel/dev/cosmocat/node_modules/@types/mocha/index.d.ts",
+		"/Users/devonzuegel/dev/cosmocat/.env",
+		"/Users/devonzuegel/dev/cosmocat/node_modules/npm/test/fixtures/gitignore.tgz",
+		"/Users/devonzuegel/.oh-my-zsh/custom/aliases.zsh",
+		"/Users/devonzuegel/dev/advent-of-code/5__game_of_chess.ts",
+		"/Users/devonzuegel/dev/advent-of-code/utils.js",
+		"/Users/devonzuegel/dev/advent-of-code/4-2__security_thru_obscurity.ts",
+		"/Users/devonzuegel/dev/web-ux/storybook/modules/layout/component.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/node_modules/ramda/src/reduceRight.js",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/weak-payment.js",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/weak-payment.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/server/services/affirm_server.coffee",
+		"/Users/devonzuegel/dev/web-ux/email-verification/src/landing-directive.coffee",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/providers/user_auth.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/main.coffee",
+		"/Users/devonzuegel/dev/web-ux/storybook/src/pages/weak-payment.js",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/help-button.coffee",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/main.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock.js",
+		"/Users/devonzuegel/dev/web-ux/login/src/views/login.html",
+		"/Users/devonzuegel/dev/web-ux/user-portal/user-portal/serverMock.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/views/login.html",
+		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/scripts/services/user.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/affirm-ng/src/scripts/server/services/affirm_server.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/email-verification/src/landing-directive.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/scripts/config/routes.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/scripts/controllers/login.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm/form/index.js",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/new-email-entry.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/components/mutable_personal_info.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/views/stores/main.html",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/config/routes.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/module.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/controllers/stores.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm/mutable-text/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/text-input/index.js",
+		"/Users/devonzuegel/dev/web-ux/aws.json",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/strip_quotes.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/ampersand_to_and.coffee",
+		"/Users/devonzuegel/Downloads/Storybook Routing Spec.md",
+		"/Users/devonzuegel/dev/all-t",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/controllers/verify.coffee",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/config/constants.coffee",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/services/user.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/package.json",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/styles/components/mutable_email.css",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/index.html",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/config/user.coffee",
+		"/Users/devonzuegel/dev/web-ux/checkout/src/scripts/controllers/error.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/styles/pages/stores.scss",
+		"/Users/devonzuegel/dev/web-ux/storybook/src/setup.js",
+		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/directives/unified_help.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/src/router.js",
+		"/Users/devonzuegel/dev/web-ux/bootstrap.sh",
+		"/Users/devonzuegel/dev/web-ux/.git/rebase-merge/git-rebase-todo",
+		"/Users/devonzuegel/dev/web-ux/checkout/src/scripts/config/constants.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/directives/mutable_personal_info.js",
+		"/Users/devonzuegel/dev/web-ux/functional_tests/affirm/functional_tests/behave/pages/pages.py",
+		"/Users/devonzuegel/dev/web-ux/checkout/src/styles/main.scss",
+		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/analytics/defs.js",
+		"/Users/devonzuegel/dev/web-ux/styleguide/src/typography/index.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/component.js",
+		"/Users/devonzuegel/dev/web-ux/styleguide/src/buttons/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/section/index.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/src/ducks/router.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/accordion/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm/radio/index.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/src/pages/payment-options.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/modules/payment-options/component.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/formItems.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/radio/style.css",
+		"/Users/devonzuegel/dev/web-ux/web-ux.sublime-project",
+		"/Users/devonzuegel/dev/web-ux/affirm/typography/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/typography/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm/control/index.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/node_modules/colors/ReadMe.md",
+		"/Users/devonzuegel/dev/web-ux/storybook/README.md",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/components/NavSection.js",
+		"/Users/devonzuegel/Downloads/web-ux-routing.md",
+		"/Users/devonzuegel/dev/web-ux/styleguide/src/guide/style.css",
+		"/Users/devonzuegel/dev/web-ux/styleguide/src/guide/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/button/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm/button/index.js",
+		"/Users/devonzuegel/dev/web-ux/styleguide/src/container/index.js",
+		"/Users/devonzuegel/dev/web-ux/styleguide/src/forms/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm/form/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm/container/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm/container/index.js",
+		"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/container.js"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 135.0,
+		"where_history":
+		[
+			"/Users/devonzuegel/dev/vortigern/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/prose-highlighter,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/cosmocat,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/cosmocat/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/cosmocat/,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/cosmocat/src,-**node_modules/**,-**dist/**",
+			"-**node_modules/**,-**dist/**",
+			"",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/**/src/*,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/*/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/**/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/login,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal/,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**,*.coffee,*.js",
+			"/Users/devonzuegel/dev/web-ux,-**node_modules/**,-**dist/**,*.coffee,*.js",
+			"/Users/devonzuegel/dev/web-ux/,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**",
+			"",
+			"/Users/devonzuegel/dev/web-ux,-**node_modules/**",
+			"/Users/devonzuegel/dev/web-ux/storybook,-**node_modules/**",
+			"/Users/devonzuegel/dev/web-ux/skeleton,-**node_modules/**",
+			"/Users/devonzuegel/dev/web-ux/storybook,-**node_modules/**",
+			"/Users/devonzuegel/dev/web-ux/storybook",
+			"/Users/devonzuegel/dev/web-ux/user-portal",
+			"",
+			"/Users/devonzuegel/dev/web-ux",
+			"/Users/devonzuegel/dev/web-ux/affirm",
+			"/Users/devonzuegel/dev/web-ux/styleguide",
+			"/Users/devonzuegel/dev/web-ux/stylegiude",
+			"/Users/devonzuegel/dev/web-ux/checkout",
+			"",
+			"/Users/devonzuegel/dev/web-ux/affirm",
+			"/Users/devonzuegel/dev/web-ux/storybook/modules/",
+			"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/formItems.js",
+			"modules/",
+			"",
+			"*.tsx",
+			"*.ts",
+			"",
+			"./src",
+			"src",
+			"",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *spec*.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *_spec.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api,*spec*.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api,*test*.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api,*.rb",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api/spec",
+			"*.rb",
+			".rb",
+			"api/*.rb",
+			"*.rb",
+			"",
+			"*_spec.rb",
+			"*.rb",
+			"",
+			"/Users/devonzuegel/Github/myfitnesspal/mfp-api/spec/lib",
+			"<open folders>,*_spec.rb",
+			"<open folders>",
+			"<open folders>,*.rb",
+			"<open folders>",
+			"<open folders>,*.rb",
+			"<open folders>",
+			"<open folders>,*.rb",
+			"/Users/devonzuegel/Downloads/cognito-bulk-client",
+			"<open folders>,*.rb",
+			"<open folders>",
+			"<open files>",
+			"<open folders>",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.scss,*.sass",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.slim",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.scss,*.sass",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.slim",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.rb",
+			"rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.scss, *.sass",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.scss, *.sass",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.so",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, .so",
+			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
+			"/Users/devonzuegel/Github/nosko/, *.rb",
+			"/Users/devonzuegel/Github/nosko/",
+			"/Users/devonzuegel/Github/nosko/app/",
+			"/Users/devonzuegel/Github/nosko/app/assets",
+			"/Users/devonzuegel/Github/nosko/app/assets/javascripts",
+			"/Users/devonzuegel/Github/nosko/app/assets",
+			"/Users/devonzuegel/Github/nosko",
+			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/",
+			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/*\\.scss",
+			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/*.scss",
+			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/",
+			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/app/views",
+			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive",
+			"/Users/devonzuegel/Github/",
+			"/Users/devonzuegel/Github/affitto/",
+			"/Users/devonzuegel/Github/affitto/models/_examples",
+			"/Users/devonzuegel/Github/personal-site/devonzuegel.com/src/documents/posts",
+			"/Users/devonzuegel/Github/affitto",
+			"/Users/devonzuegel/Github/feito/",
+			"/Users/devonzuegel/Github/feito",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"stars",
+			"about",
+			"stars",
+			"Stars",
+			"stars",
+			"starsReducer",
+			"stars",
+			"Stars",
+			"stars",
+			" ",
+			"stars",
+			"github",
+			"deploy",
+			"heroku",
+			"herkou",
+			"lint",
+			"title",
+			"',\n",
+			"url",
+			"links",
+			"}, {",
+			"string",
+			"component: ",
+			"component",
+			"}, \n      {",
+			"\n      component=",
+			"nent=",
+			"barbar-vortigern",
+			"next state",
+			"devel",
+			"history",
+			"HISTORY",
+			"History",
+			"redirect",
+			"/>",
+			"component",
+			"home",
+			"component",
+			"highly",
+			"router",
+			"app.use",
+			"initi",
+			"user_id",
+			"'",
+			"host",
+			"por",
+			"location",
+			"redirectLocation",
+			"error",
+			"log",
+			"r.omi",
+			"r.",
+			"express",
+			"log(",
+			"passport",
+			"FitbitStrategy",
+			"fitbitStrategy",
+			"FitbitStrategy",
+			"FitbitOAuth2Strategy",
+			"configureStore",
+			"tore } from './app/redux/store'\nimport routes from ",
+			"manifest",
+			"renderHTML",
+			"provider",
+			"Provider",
+			"appConfig",
+			"clientID",
+			"getConfig",
+			"fitbit.",
+			"appConfig",
+			"figtbit",
+			"appConfig",
+			"config",
+			"getConfig",
+			"manifest",
+			"config",
+			".port",
+			"fitbit",
+			"retrieveConfig",
+			"buildConfig",
+			"chalk",
+			"Chalk",
+			"chalk",
+			"config.fi",
+			"conf",
+			"config.fitbit",
+			"`",
+			": ",
+			"Cosmocat",
+			"barbar-vortigern",
+			"|| ",
+			": ",
+			"fs",
+			"'fs'",
+			"p(",
+			"R.range",
+			"filterEvens",
+			"n",
+			"isEven",
+			"presents",
+			"reduce",
+			"test",
+			"], [",
+			";",
+			" \\n",
+			"\\n",
+			"}${",
+			"pwd_pos",
+			"colorize",
+			"p(",
+			"pwd_position",
+			"passwordSoFar[pwd_position]",
+			"replaceAt",
+			"pwd_position + POSITION_INDEX",
+			"str",
+			"passwordSoFar",
+			"!==",
+			"=",
+			"pwd_position",
+			"passwordSoFar",
+			"this",
+			"password_position",
+			"_position",
+			"5",
+			"md5",
+			"Md5",
+			"hashed",
+			"R.pipe(R.isEmpty"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"affirm__radio--hide-errors",
+			"affirm__radio__subtext",
+			"affirm__radio--with-info--hide-errors",
+			"affirm__radio--with-subtext",
+			"affirm__radio--single",
+			"affirm__radio__info--right",
+			"radio-option--with-subtext__summary",
+			"radio-option--with-subtext",
+			"",
+			"'",
+			"transformResponse",
+			"fitbitWeight",
+			"dateStr",
+			"require_relative 'packet'\nrequire_relative 'type'\n",
+			"DATABASE_URL",
+			"describe",
+			"support/mocks/fake_codec",
+			"support/mocks/packet_mocks/raw",
+			"support/mocks/packet_mocks/deserialized",
+			"read_hash",
+			"super(PACKET_TYPE)",
+			"initialize",
+			"each_packet",
+			"HEADER_SIZE",
+			"Binary::Packet::PACKET_HEADER_SIZE",
+			"to_h",
+			"/deserialized",
+			"/json",
+			"::Hash",
+			"_hash",
+			"to_hash",
+			"../lib/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/containers/Home/index.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								289
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 18,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/TypeScript/TypeScriptReact.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/app/redux/modules/counter/index.test.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 6,
+								"count": 56,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										645,
+										646
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										471,
+										472
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "build/server.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 727863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								539,
+								539
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 0,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										566,
+										567
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										476,
+										477
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/pisco-sour (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 158.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 394.0
+	},
+	"output.find_results":
+	{
+		"height": 110.0
+	},
+	"output.markdown":
+	{
+		"height": 110.0
+	},
+	"output.mde":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "",
+	"project": "vortigern.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"webpack",
+				"node_modules/.bin/webpack"
+			],
+			[
+				"routesindext",
+				"src/app/routes/index.tsx"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"tslint",
+				"tslint.json"
+			],
+			[
+				"compoheader",
+				"src/app/components/Header/index.tsx"
+			],
+			[
+				"componentheader",
+				"src/app/components/Header/index.tsx"
+			],
+			[
+				"approutes",
+				"src/app/routes/index.tsx"
+			],
+			[
+				"src/app/containers/stars/index.tsx",
+				"src/app/containers/Stars/index.tsx"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"dotenvlib",
+				"node_modules/dotenv/lib/main.js"
+			],
+			[
+				"main",
+				"config/main.js"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				".gi",
+				".gitignore"
+			],
+			[
+				"gitig",
+				"node_modules/npm/test/fixtures/gitignore.tgz"
+			],
+			[
+				"utilsts",
+				"utils.ts"
+			],
+			[
+				"utils",
+				"utils.js"
+			],
+			[
+				"layoutcont",
+				"modules/layout/component.js"
+			],
+			[
+				"weakpaymet",
+				"src/pages/weak-payment.js"
+			],
+			[
+				"modules/weak-payment/container",
+				"modules/weak-payment/container.js"
+			],
+			[
+				"weakpaycomp",
+				"modules/weak-payment/component.js"
+			],
+			[
+				"weakpayment",
+				"src/pages/weak-payment.js"
+			],
+			[
+				"src/reducer",
+				"node_modules/ramda/src/reduceRight.js"
+			],
+			[
+				"modulesweapaymentcompon",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"storybook/modules/weak-payment",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"ogin/src/scripts/services/user.coffee",
+				"login/src/scripts/services/user.coffee"
+			],
+			[
+				"servemock",
+				"user-portal/serverMock.js"
+			],
+			[
+				"storybookweak",
+				"storybook/src/pages/weak-payment.js"
+			],
+			[
+				"loginmain",
+				"login/src/scripts/main.coffee"
+			],
+			[
+				"usermaincof",
+				"user-portal/src/scripts/main.coffee"
+			],
+			[
+				"loginmaincofe",
+				"login/src/scripts/main.coffee"
+			],
+			[
+				"userportalroutes",
+				"user-portal/src/scripts/config/routes.coffee"
+			],
+			[
+				"mutapersonal",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"affirm/form",
+				"affirm/form/index.js"
+			],
+			[
+				"newemail",
+				"login/src/scripts/directives/new-email-entry.js"
+			],
+			[
+				"userportmock",
+				"user-portal/serverMock.js"
+			],
+			[
+				"textinput",
+				"affirm/text-input/index.js"
+			],
+			[
+				"mutatext",
+				"affirm/mutable-text/index.js"
+			],
+			[
+				"mutalpersonal",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"user-portal/src/scripts/main.coffee",
+				"user-portal/src/scripts/main.coffee"
+			],
+			[
+				"contrstores",
+				"user-portal/src/scripts/controllers/stores.coffee"
+			],
+			[
+				"storesmain",
+				"user-portal/src/views/stores/main.html"
+			],
+			[
+				"affirm-ng/src/scripts/utils/filters/strip_quotes",
+				"affirm-ng/src/scripts/utils/filters/strip_quotes.coffee"
+			],
+			[
+				"ser-portal/src/scripts/components/mutable_personal_info",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"mutale",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"mutable",
+				"user-portal/src/styles/components/mutable_email.css"
+			],
+			[
+				"userportalpackage",
+				"user-portal/package.json"
+			],
+			[
+				"userportaluser",
+				"user-portal/src/scripts/config/user.coffee"
+			],
+			[
+				"directnewemail",
+				"login/src/scripts/directives/new-email-entry.js"
+			],
+			[
+				"servermock",
+				"user-portal/serverMock.js"
+			],
+			[
+				"controlerror",
+				"checkout/src/scripts/controllers/error.coffee"
+			],
+			[
+				"controlerstores",
+				"user-portal/src/scripts/controllers/stores.coffee"
+			],
+			[
+				"storybokrouter",
+				"storybook/src/router.js"
+			],
+			[
+				"storybooksrcsetup",
+				"storybook/src/setup.js"
+			],
+			[
+				"directunif",
+				"shared/src/scripts/directives/unified_help.js"
+			],
+			[
+				"storybook/src/setup",
+				"storybook/src/setup.js"
+			],
+			[
+				"userportalroute",
+				"user-portal/src/scripts/config/routes.coffee"
+			],
+			[
+				"scripts/services/server",
+				"checkout/src/scripts/services/server.coffee"
+			],
+			[
+				"loginconstants",
+				"login/src/scripts/config/constants.coffee"
+			],
+			[
+				"scripts/config/constants",
+				"checkout/src/scripts/config/constants.coffee"
+			],
+			[
+				"/scripts/components/mutable_personal_info",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"userportalserve",
+				"user-portal/serverMock.js"
+			],
+			[
+				"functional_tests/affirm/functional_tests/behave/pages/pages.py",
+				"functional_tests/affirm/functional_tests/behave/pages/pages.py"
+			],
+			[
+				"checkout/src/styles/main.scss",
+				"checkout/src/styles/main.scss"
+			],
+			[
+				"shared/src/scripts/analytics/defs.js",
+				"shared/src/scripts/analytics/defs.js"
+			],
+			[
+				"weakpacomp",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"affirm/section",
+				"affirm/section/index.js"
+			],
+			[
+				"styleguidetypograph",
+				"styleguide/src/typography/index.js"
+			],
+			[
+				"buttonsindexj",
+				"styleguide/src/buttons/index.js"
+			],
+			[
+				"payment/component.js",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"weakpaycomponet",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"weakpay",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"foritem",
+				"storybook/modules/weak-payment/formItems.js"
+			],
+			[
+				"formite",
+				"storybook/modules/weak-payment/formItems.js"
+			],
+			[
+				"radio",
+				"affirm/radio/style.css"
+			],
+			[
+				"typogrcss",
+				"affirm/typography/style.css"
+			],
+			[
+				"typograindex",
+				"affirm/typography/index.js"
+			],
+			[
+				"affirmcontrolindex",
+				"affirm/control/index.js"
+			],
+			[
+				"affirm/radio/index.js",
+				"affirm/radio/index.js"
+			],
+			[
+				"storybookreadme",
+				"storybook/README.md"
+			],
+			[
+				"storybokreadme",
+				"storybook/README.md"
+			],
+			[
+				"controllers/stores",
+				"user-portal/src/scripts/controllers/stores.coffee"
+			],
+			[
+				"guidecss",
+				"styleguide/src/guide/style.css"
+			],
+			[
+				"styleguide/src/typography/index.js",
+				"styleguide/src/typography/index.js"
+			],
+			[
+				"irm/radio/index.js",
+				"affirm/radio/index.js"
+			],
+			[
+				"affirmbutton",
+				"affirm/button/index.js"
+			],
+			[
+				"styleguideformindex",
+				"styleguide/src/forms/index.js"
+			],
+			[
+				"weapaycompo",
+				"storybook/modules/weak-payment/component.js"
+			],
+			[
+				"weakpaycont",
+				"storybook/modules/weak-payment/container.js"
+			],
+			[
+				"stylesrcgrid",
+				"styleguide/src/grids/index.js"
+			],
+			[
+				"affimtypo",
+				"affirm/typography/index.js"
+			],
+			[
+				"variabl",
+				"affirm/styles/partials/variables.css"
+			],
+			[
+				"src/guide/style",
+				"styleguide/src/guide/style.css"
+			],
+			[
+				"styleguide/src/guide",
+				"styleguide/src/guide/index.js"
+			],
+			[
+				"weakpaycss",
+				"storybook/modules/weak-payment/style.css"
+			],
+			[
+				"weap",
+				"storybook/src/pages/weak-payment.js"
+			],
+			[
+				"affirmmodalsc",
+				"affirm/modal/style.css"
+			],
+			[
+				"affirmmodal",
+				"affirm/modal/index.js"
+			],
+			[
+				"variab",
+				"affirm/styles/partials/variables.css"
+			],
+			[
+				"typography",
+				"affirm/typography/style.css"
+			],
+			[
+				"buttonindex",
+				"styleguide/src/buttons/index.js"
+			],
+			[
+				"styguidesrccolor",
+				"styleguide/src/color/index.js"
+			],
+			[
+				"styleguidebadge",
+				"styleguide/src/badges/index.js"
+			],
+			[
+				"styleguidetypography",
+				"styleguide/src/typography/index.js"
+			],
+			[
+				"typogra",
+				"affirm/typography/index.js"
+			],
+			[
+				"styleguidebuttonindex",
+				"styleguide/src/buttons/index.js"
+			],
+			[
+				"affirm/typography/style.css",
+				"affirm/typography/style.css"
+			],
+			[
+				"storybook/modules/weak-payment/style.css",
+				"storybook/modules/weak-payment/style.css"
+			],
+			[
+				"affirm/radio/style.css",
+				"affirm/radio/style.css"
+			],
+			[
+				"styleguidformindex",
+				"styleguide/src/forms/index.js"
+			],
+			[
+				"radiocs",
+				"affirm/radio/style.css"
+			],
+			[
+				"radioindex",
+				"affirm/radio/index.js"
+			],
+			[
+				"radiocss",
+				"affirm/radio/style.css"
+			],
+			[
+				"affirm/control/index.js",
+				"affirm/control/index.js"
+			],
+			[
+				"affirmcontrol",
+				"affirm/control/index.js"
+			],
+			[
+				"affircontrol",
+				"affirm/control/index.js"
+			],
+			[
+				"afirmradiocss",
+				"affirm/radio/style.css"
+			],
+			[
+				"typogracss",
+				"affirm/typography/style.css"
+			],
+			[
+				"affirmtypo",
+				"affirm/typography/index.js"
+			],
+			[
+				"typograph",
+				"affirm/styles/partials/typography.css"
+			],
+			[
+				"weapaycss",
+				"storybook/modules/weak-payment/style.css"
+			],
+			[
+				"affirmradio",
+				"affirm/radio/index.js"
+			],
+			[
+				"payments",
+				"storybook/src/pages/payment-options.js"
+			],
+			[
+				"guidestylecss",
+				"styleguide/src/guide/style.css"
+			],
+			[
+				"styleguidgridindex",
+				"styleguide/src/grids/index.js"
+			],
+			[
+				"typgrap",
+				"affirm/styles/partials/typography.css"
+			],
+			[
+				"affirtypog",
+				"affirm/typography/style.css"
+			],
+			[
+				"affirmtypography",
+				"affirm/typography/index.js"
+			],
+			[
+				"guidestyle",
+				"styleguide/src/guide/style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
