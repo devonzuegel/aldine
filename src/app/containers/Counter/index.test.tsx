@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { expect } from 'chai';
 import { renderComponent } from '../../helpers/TestHelper';
 import { Counter } from './index';
 
