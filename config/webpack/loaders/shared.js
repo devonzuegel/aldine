@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = [
   {
     test: /\.jsx$/,
-    loader: 'babel?presets[]=es2015'
+    loader: 'babel?presets[]=es2015presets[]=react'
   }, {
     test: /\.json$/,
     loader: 'json-loader'

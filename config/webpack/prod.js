@@ -5,6 +5,7 @@ var postcssNext = require('postcss-cssnext');
 var stylelint = require('stylelint');
 var ManifestPlugin = require('webpack-manifest-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const merge = require('webpack-merge');
 
 var config = {
   bail: true,
@@ -84,4 +85,8 @@ var config = {
   ]
 };
 
-module.exports = config;
+module.exports = merge(
+  config,
+  require('./partials/tagged-prose')(config)
+);
+

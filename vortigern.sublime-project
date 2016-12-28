@@ -4,6 +4,7 @@
       "path": ".",
       "folder_exclude_patterns": [
         "coverage",
+        "node_modules",
         "build"
       ],
       "file_exclude_patterns": [

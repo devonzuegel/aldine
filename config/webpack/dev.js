@@ -4,6 +4,7 @@ var postcssAssets = require('postcss-assets');
 var postcssNext = require('postcss-cssnext');
 var stylelint = require('stylelint');
 var ManifestPlugin = require('webpack-manifest-plugin');
+const merge = require('webpack-merge');
 
 var config = {
   devtool: 'eval',
@@ -66,4 +67,7 @@ var config = {
   ]
 };
 
-module.exports = config;
+module.exports = merge(
+  config,
+  require('./partials/tagged-prose')(config)
+);
