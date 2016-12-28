@@ -1,5 +1,6 @@
 var path = require('path');
 var fs = require('fs');
+const merge = require('webpack-merge');
 
 var nodeModules = {};
 fs.readdirSync('node_modules')
@@ -32,21 +33,17 @@ var config = {
       {
         test: /\.(jpe?g|png|gif)$/i,
         loader: 'url?limit=1000&name=images/[hash].[ext]'
-      },
-      {
+      }, {
         test: /\.json$/,
         loader: 'json-loader'
-      },
-      {
+      }, {
         test: /\.jsx$/,
         loader: 'babel?presets[]=es2015'
-      },
-      {
+      }, {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/
-      },
-      {
+      }, {
         test: /\.css$/,
         loaders: [
           'isomorphic-style-loader',
@@ -68,4 +65,7 @@ var config = {
   }
 };
 
-module.exports = config;
+module.exports = merge(
+  config,
+  require('./partials/tagged-prose')(config)
+);

@@ -5,6 +5,7 @@ var postcssNext = require('postcss-cssnext');
 var stylelint = require('stylelint');
 var ManifestPlugin = require('webpack-manifest-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const merge = require('webpack-merge');
 
 var config = {
   bail: true,
@@ -43,57 +44,7 @@ var config = {
         loader: 'tslint'
       }
     ],
-    loaders: [
-      {
-        test: /\.tsx?$/,
-        loader: 'ts-loader'
-      },
-      {
-        test: /\.jsx$/,
-        loader: 'babel?presets[]=es2015'
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
-      {
-        test: /\.css$/,
-        include: path.resolve('./src/app'),
-        loader: ExtractTextPlugin.extract(
-          'style-loader',
-          'css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]',
-          'postcss-loader'
-        )
-      },
-      {
-        test: /\.css$/,
-        exclude: path.resolve('./src/app'),
-        loader: ExtractTextPlugin.extract(
-          'style-loader',
-          'css-loader'
-        )
-      },
-      {
-        test: /\.eot(\?.*)?$/,
-        loader: 'file?name=fonts/[hash].[ext]'
-      },
-      {
-        test: /\.(woff|woff2)(\?.*)?$/,
-        loader: 'file-loader?name=fonts/[hash].[ext]'
-      },
-      {
-        test: /\.ttf(\?.*)?$/,
-        loader: 'url?limit=10000&mimetype=application/octet-stream&name=fonts/[hash].[ext]'
-      },
-      {
-        test: /\.svg(\?.*)?$/,
-        loader: 'url?limit=10000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
-      },
-      {
-        test: /\.(jpe?g|png|gif)$/i,
-        loader: 'url?limit=1000&name=images/[hash].[ext]'
-      }
-    ]
+    loaders: require('./loaders/prod'),
   },
 
   postcss: function () {
@@ -134,4 +85,8 @@ var config = {
   ]
 };
 
-module.exports = config;
+module.exports = merge(
+  config,
+  require('./partials/tagged-prose')(config)
+);
+
