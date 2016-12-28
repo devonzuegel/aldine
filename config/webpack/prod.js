@@ -37,16 +37,6 @@ var config = {
     filename: 'js/[name].[chunkhash].js'
   },
 
-  module: {
-    preLoaders: [
-      {
-        test: /\.tsx?$/,
-        loader: 'tslint'
-      }
-    ],
-    loaders: require('./loaders/prod'),
-  },
-
   postcss: function () {
     return [
       stylelint({ files: '../../src/app/*.css' }),
@@ -87,6 +77,6 @@ var config = {
 
 module.exports = merge(
   config,
-  require('./partials/tagged-prose')(config)
+  require('./partials/loaders-prod')
 );
 

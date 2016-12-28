@@ -31,15 +31,6 @@ var config = {
     pathinfo: true
   },
 
-  module: {
-    preLoaders: [
-      {
-        test: /\.tsx?$/,
-        loader: 'tslint'
-      }
-    ],
-    loaders: require('./loaders/dev'),
-  },
   postcss: function () {
     return [
       stylelint({ files: '../../src/app/*.css' }),
@@ -69,5 +60,5 @@ var config = {
 
 module.exports = merge(
   config,
-  require('./partials/tagged-prose')(config)
+  require('./partials/loaders-dev')
 );

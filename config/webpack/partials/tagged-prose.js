@@ -1,3 +1,4 @@
+const merge = require('webpack-merge');
 var path = require('path')
 
 module.exports = function (config) {
