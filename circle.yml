@@ -1,0 +1,5 @@
+dependencies:
+  override:
+    - npm install
+    - npm install typings --global
+    - typings install

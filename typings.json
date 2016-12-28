@@ -27,6 +27,7 @@
     "webpack": "registry:dt/webpack#1.12.9+20160321060707"
   },
   "dependencies": {
-    "enzyme": "registry:npm/enzyme#2.2.0+20160322031343"
+    "enzyme": "registry:npm/enzyme#2.2.0+20160322031343",
+    "ramda": "registry:npm/ramda#0.21.0+20160531162943"
   }
 }
