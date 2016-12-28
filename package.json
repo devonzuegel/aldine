@@ -1,7 +1,7 @@
 {
-  "name": "vortigern",
+  "name": "clarity",
   "version": "0.1.0",
-  "description": "A universal boilerplate for building web applications w/ TypeScript, React, Redux and more.",
+  "description": "Syntax highlighting playground for natural language.",
   "main": "build/server.js",
   "scripts": {
     "postinstall": "typings install",
@@ -16,49 +16,6 @@
     "test": "node_modules/.bin/karma start config/test/karma.conf.js",
     "lint": "node_modules/.bin/tslint \"src/**/**.ts*\""
   },
-  "author": "Barbar Startup Factory <hey@barbar.com.tr>",
-  "contributors": [
-    {
-      "name": "Altay Aydemir",
-      "email": "altay@peergust.com",
-      "url": "http://altayaydemir.com/"
-    },
-    {
-      "name": "Batuhan Icoz",
-      "email": "hey@batuhanicoz.com",
-      "url": "http://batuhanicoz.com/"
-    },
-    {
-      "name": "Omer Ufuk Efendioglu",
-      "email": "ufukomer@gmail.com",
-      "url": "http://ufukomer.com/"
-    }
-  ],
-  "homepage": "https://github.com/barbar/vortigern.git",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/barbar/vortigern.git"
-  },
-  "bugs": {
-    "url": "https://github.com/barbar/vortigern/issues"
-  },
-  "keywords": [
-    "react",
-    "redux",
-    "typescript",
-    "webpack",
-    "universal",
-    "isomorphic",
-    "starter",
-    "kit",
-    "boilerplate",
-    "hot reload",
-    "react-hot-loader",
-    "enzyme",
-    "mocha",
-    "chai"
-  ],
-  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
