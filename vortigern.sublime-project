@@ -4,11 +4,10 @@
       "path": ".",
       "folder_exclude_patterns": [
         "coverage",
-        "build",
-        "node_modules"
+        "build"
       ],
       "file_exclude_patterns": [
-        "*.sublime-*",
+        "*.sublime-workspace",
         "LICENSE"
       ]
     }
