@@ -1,8 +1,8 @@
 import * as React from 'react'
-import * as R from 'ramda'
+// import * as R from 'ramda'
 import { expect } from 'chai'
 
-const md  = require('./example.md?tagged-prose').default
+const md  = require('./fixture.md?tagged-prose').default
 const txt = 'This is some content to parse.'
 
 describe('Tagged Prose Loader', () => {

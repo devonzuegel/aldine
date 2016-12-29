@@ -7,7 +7,7 @@ module.exports = function (config) {
       // Directory names to be resolved to the current directory
       modulesDirectories: [
         path.resolve('./node_modules'),
-        path.resolve('./config/webpack/loaders'),
+        path.resolve('./src/loaders'),
       ]
     },
 

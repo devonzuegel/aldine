@@ -1,6 +1,6 @@
-const R = require('ramda')
+var R = require('ramda')
 
-module.exports = (content) => {
+module.exports = (content: string): string => {
   this.cacheable && this.cacheable()
   this.value = content
 
