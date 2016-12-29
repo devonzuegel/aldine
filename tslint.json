@@ -2,7 +2,8 @@
   "extends": ["tslint:latest", "tslint-react"],
   "rules": {
     "indent": [ true, "spaces" ],
-    "quotemark": [ true, "single", "jsx-double" ],
+    "quotemark": [ true, "single", "jsx-double", "avoid-escape" ],
+    "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
     "no-var-requires": false,
     "ordered-imports": false,
     "no-unused-variable": [true, "react"],
@@ -10,6 +11,6 @@
     "object-literal-sort-keys": false,
     "no-shadowed-variable": false,
     "no-console": [false],
-    "semicolon": [true, "always"]
+    "semicolon": [true, "never"]
   }
 }
