@@ -9,6 +9,7 @@
     "member-ordering": [false],
     "object-literal-sort-keys": false,
     "no-shadowed-variable": false,
-    "no-console": [false]
+    "no-console": [false],
+    "semicolon": [true, "always"]
   }
 }
