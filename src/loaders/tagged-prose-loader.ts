@@ -6,10 +6,28 @@ module.exports = (content: string): string => {
 
   return R.pipe(
     R.trim,
-    str => `<div>${str}</div>`,
     str => `
       import React from 'react'
-      export default ${str}
+      import R from 'ramda'
+
+      export default (className) => <div>
+        {R.pipe(
+          R.split('**'),
+          R.reduce(
+            ({ highlighting, result, i }, fragment) => ({
+              highlighting: !highlighting,
+              i: i + 1,
+              result: [
+                ...result,
+                highlighting ? <span className={className} key={i}>{fragment}</span> : fragment
+              ]
+            }),
+            { highlighting: false, result: [], i: 0 }
+          ),
+          R.prop('result'),
+          R.flatten,
+        )('${str}')}
+      </div>
     `
   )(content)
 }

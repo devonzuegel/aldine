@@ -9,7 +9,7 @@ class Home extends React.Component<any, any> {
         <img src={require('./barbar.png')} />
         <p>Hello!</p>
 
-        <h3>{md}</h3>
+        <div>{md(s.noun)}</div>
       </div>
     );
   }

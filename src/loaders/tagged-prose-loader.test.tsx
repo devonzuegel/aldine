@@ -1,5 +1,4 @@
 import * as React from 'react'
-// import * as R from 'ramda'
 import { expect } from 'chai'
 
 const md  = require('./fixture.md?tagged-prose').default
@@ -7,6 +6,13 @@ const txt = 'This is some content to parse.'
 
 describe('Tagged Prose Loader', () => {
   it('Wraps the content in a div', () => {
-    expect(md).eql(<div>{txt}</div>)
+    const className = 'red'
+    expect(md(className)).eql(
+      <div>
+        {"This is some "}
+        <span className={className} key={1}>content to</span>
+        {" parse."}
+      </div>
+    )
   })
 })
