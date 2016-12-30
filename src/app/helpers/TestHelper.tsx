@@ -1,28 +1,32 @@
 /** React Specific */
-import * as React from 'react';
-import { mount } from 'enzyme';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import rootReducer from '../redux/reducers';
+import * as React from 'react'
+import { mount } from 'enzyme'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from '../redux/reducers'
 
-const fetchMock = require('fetch-mock');
+const fetchMock = require('fetch-mock')
 
 /** Redux Mock Store Configuration */
-import thunk from 'redux-thunk';
+import thunk from 'redux-thunk'
 
-const configureStore = require('redux-mock-store');
-const middlewares = [thunk];
-const mockStore = configureStore(middlewares);
+const configureStore = require('redux-mock-store')
+const middlewares = [thunk]
+const mockStore = configureStore(middlewares)
 
 /** Render Component */
 function renderComponent(ComponentClass, state?, props?) {
-  const store: Redux.Store = createStore(rootReducer, state);
+  const store: Redux.Store = createStore(rootReducer, state)
 
   return mount (
     <Provider store={store}>
       <ComponentClass {...props} />
     </Provider>
-  );
+  )
 }
 
-export { mockStore, fetchMock, renderComponent };
+const p = (x: any, stringify: boolean = false) =>
+  console.log( stringify ? JSON.stringify(x) : x)
+  // console.log( stringify ? JSON.stringify(x, null, 2) : x)
+
+export { mockStore, fetchMock, renderComponent, p }

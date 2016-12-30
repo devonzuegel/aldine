@@ -1,11 +1,11 @@
-const appConfig = require('../../../../config/main');
-import * as React from 'react';
-import * as Helmet from 'react-helmet';
-import { Header } from '../../components';
+const appConfig = require('../../../../config/main')
+import * as React from 'react'
+import * as Helmet from 'react-helmet'
+import { Header } from '../../components'
 
 class App extends React.Component<any, any> {
   public render() {
-    const s = require('./style.css');
+    const s = require('./style.css')
 
     return (
       <section className={s.appContainer}>
@@ -13,7 +13,7 @@ class App extends React.Component<any, any> {
         <Header />
         {this.props.children}
       </section>
-    );
+    )
   }
 }
 
