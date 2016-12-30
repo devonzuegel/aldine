@@ -1,5 +1,6 @@
 dependencies:
   override:
+    - npm install typescript -g
     - npm install
-    - npm install typings --global
+    - npm install typings -g
     - typings install

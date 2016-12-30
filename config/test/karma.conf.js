@@ -69,7 +69,7 @@ var webpackConfig = {
   },
 
   tslint: {
-    failOnHint: true
+    failOnHint: false
   },
 
   externals: {

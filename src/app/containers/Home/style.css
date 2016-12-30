@@ -1,3 +1,7 @@
 .home {
 	text-align: center;
 }
+
+.home .noun {
+  font-weight: bolder;
+}
