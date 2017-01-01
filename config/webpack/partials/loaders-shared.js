@@ -39,6 +39,9 @@ const config = {
       }, {
         test: /\.(jpe?g|png|gif)$/i,
         loader: 'url?limit=1000&name=images/[hash].[ext]'
+      }, {
+        test: /\?raw$/,
+        loader: 'raw-loader'
       }
     ],
   },
