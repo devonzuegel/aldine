@@ -9,9 +9,9 @@ describe('Tagged Prose Loader', () => {
     const className = 'red'
     expect(md(className)).eql(
       <div>
-        {"This is some "}
+        {'This is some '}
         <span className={className} key={1}>content to</span>
-        {" parse."}
+        {' parse.'}
       </div>
     )
   })

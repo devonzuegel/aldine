@@ -1,7 +1,7 @@
 export interface ICounter {
-  count: number;
+  count: number
 }
 
 export interface ICounterAction {
-  type: string;
+  type: string
 }
