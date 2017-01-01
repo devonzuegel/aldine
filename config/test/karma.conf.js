@@ -28,16 +28,13 @@ var webpackConfig = {
       {
         test: /\.tsx?$/,
         loader: 'ts'
-      },
-      {
+      }, {
         test: /\.(jpe?g|png|gif)$/i,
         loader: 'url?limit=1000&name=images/[hash].[ext]'
-      },
-      {
+      }, {
         test: /\.json$/,
         loader: 'json-loader'
-      },
-      {
+      }, {
         test: /\.css$/,
         include: path.resolve('./src/app'),
         loaders: [
@@ -45,11 +42,13 @@ var webpackConfig = {
           'css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]',
           'postcss'
         ]
-      },
-      {
+      }, {
         test: /\.css$/,
         exclude: path.resolve('./src/app'),
         loader: 'style!css'
+      }, {
+        test: /\?raw$/,
+        loader: 'raw-loader'
       }
     ],
     postLoaders: [
