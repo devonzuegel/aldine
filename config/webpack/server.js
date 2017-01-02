@@ -42,6 +42,5 @@ var config = {
 
 module.exports = merge(
   config,
-  require('./partials/tagged-prose')(config),
   require('./partials/loaders-server')
 );

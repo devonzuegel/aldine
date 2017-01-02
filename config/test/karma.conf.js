@@ -126,10 +126,7 @@ module.exports = function (config) {
 
     concurrency: Infinity,
 
-    webpack: merge(
-      webpackConfig,
-      require('../webpack/partials/tagged-prose')(webpackConfig)
-    ),
+    webpack: merge(webpackConfig),
 
     webpackServer: {
       noInfo: true
