@@ -1,8 +1,6 @@
-import * as R from 'ramda'
 import * as React from 'react'
 import { expect } from 'chai'
 
-import { p } from '../helpers/TestHelper'
 import parse, { mapper, tokenizer } from './tagged-prose'
 
 const plainTxt = 'This is some plain text'
@@ -13,21 +11,21 @@ const TAGS = {
 
 describe('Tagged Prose', () => {
   describe('Parser', () => {
-    it('Wraps plain text in a div', () => {
+    it('Wraps plain text in a span', () => {
       expect(parse(TAGS)(plainTxt)).eql(
-        <div>
+        <span>
           {[ <span className="" key={0}>{plainTxt}</span> ]}
-        </div>
+        </span>
       )
     })
 
     it('Parses annotated text', () => {
       expect(parse(TAGS)('This is some **annotated** text')).eql(
-        <div>
+        <span>
           <span key={0} className="">This is some </span>
           <span key={1} className="noun">annotated</span>
           <span key={2} className=""> text</span>
-        </div>
+        </span>
       )
     })
   })

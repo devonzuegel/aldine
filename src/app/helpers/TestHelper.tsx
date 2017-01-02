@@ -27,6 +27,5 @@ function renderComponent(ComponentClass, state?, props?) {
 
 const p = (x: any, stringify: boolean = false) =>
   console.log( stringify ? JSON.stringify(x) : x)
-  // console.log( stringify ? JSON.stringify(x, null, 2) : x)
 
 export { mockStore, fetchMock, renderComponent, p }

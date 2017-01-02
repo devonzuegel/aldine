@@ -1,6 +1,10 @@
 import * as React from 'react'
 const s = require('./style.css')
 import parse from '../../parsers/tagged-prose'
+import { ThemeChanger } from '../../containers'
+import { IThemeChanger } from '../../models/theme-changer'
+const { connect } = require('react-redux')
+import { update } from '../../redux/modules/theme-changer/'
 
 const TAGS = {
   '**': s.noun,
@@ -33,42 +37,43 @@ const legend = (
   </div>
 )
 
-const examples = (
-  <div>
-    {legend}
-    {samples.map((s, i) =>
-      <p key={i}>
-        {parse(TAGS)(s)}
-      </p>
-    )}
-  </div>
-)
-
 const themes = [
-  { title: 'Black background, faded plaintext', className: 'dark-faded-plaintext'  },
-  { title: 'Plain text',                        className: ''                      },
-  { title: 'Faded plaintext',                   className: 'faded-plaintext-all'   },
-  { title: 'Faded plaintext, nouns only',       className: 'faded-plaintext-nouns' },
-  { title: 'Faded plaintext, verbs only',       className: 'faded-plaintext-verbs' },
+  { title: 'Plain text',                        className: s['']                      },
+  { title: 'Black background, faded plaintext', className: s['dark-faded-plaintext']  },
+  { title: 'Faded plaintext',                   className: s['faded-plaintext-all']   },
+  { title: 'Faded plaintext, nouns only',       className: s['faded-plaintext-nouns'] },
+  { title: 'Faded plaintext, verbs only',       className: s['faded-plaintext-verbs'] },
 ]
 
-class Home extends React.Component<any, any> {
+interface IProps {
+  themeChanger: IThemeChanger,
+  update: Redux.ActionCreator,
+}
+
+@connect(
+  state => ({ themeChanger: state.themeChanger }),
+  dispatch => ({
+    update: (className: string) => dispatch(update(className)),
+  })
+)
+class Home extends React.Component<IProps, any> {
   public render() {
+    const { themeChanger } = this.props
+
     return (
       <div className={s.home}>
 
-        {
-          themes.map(({ title, className }, i) => (
+        <ThemeChanger {...this.props} themes={themes} />
 
-            <div key={i}>
-              <h1>{title}</h1>
-              <div className={s[className]}>
-                {examples}
-              </div>
-            </div>
+        <div className={themeChanger.className}>
+          {legend}
 
-          ))
-        }
+          {samples.map((s, i) =>
+            <p key={i}>
+              {parse(TAGS)(s)}
+            </p>
+          )}
+        </div>
 
       </div>
     )
