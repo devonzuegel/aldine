@@ -47,7 +47,4 @@ const config = {
   },
 }
 
-module.exports = merge(
-  config,
-  require('./tagged-prose')({})
-)
+module.exports = merge(config)
