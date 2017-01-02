@@ -519,32 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/app/containers/Home/index.tsx",
-			"settings":
-			{
-				"buffer_size": 289,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/app/redux/modules/counter/index.test.ts",
-			"settings":
-			{
-				"buffer_size": 1345,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build/server.js",
-			"settings":
-			{
-				"buffer_size": 727863,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -589,10 +563,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 137.0,
-		"last_filter": "listpackages",
+		"height": 341.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"uper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"format",
+				"Pretty JSON: Format and Sort JSON"
+			],
 			[
 				"listpackages",
 				"Package Control: List Packages"
@@ -618,16 +604,8 @@
 				"Set Syntax: SQL"
 			],
 			[
-				"wrap",
-				"Word Wrap: Toggle"
-			],
-			[
 				"json",
 				"Set Syntax: JSON"
-			],
-			[
-				"format",
-				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
 				"upercase",
@@ -660,10 +638,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"uper",
-				"Convert Case: Upper Case"
 			],
 			[
 				"syntmd",
@@ -1106,7 +1080,7 @@
 				"Schemr: List all schemes"
 			]
 		],
-		"width": 591.0
+		"width": 601.0
 	},
 	"console":
 	{
@@ -1142,41 +1116,83 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/devonzuegel/dev/vortigern",
-		"/Users/devonzuegel/dev/vortigern/build/public",
-		"/Users/devonzuegel/dev/vortigern/src",
-		"/Users/devonzuegel/dev/vortigern/src/app",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home",
-		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules"
-	],
 	"file_history":
 	[
-		"/Users/devonzuegel/dev/vortigern/node_modules/.bin/webpack",
-		"/Users/devonzuegel/dev/vortigern/src/app/routes/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/components/Header/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/redux/reducers.ts",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Stars/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Stars/index.test.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/components/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/About/index.test.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/About/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/App/index.test.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/App/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Counter/index.test.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Counter/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home/barbar.png",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home/index.test.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Home/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/containers/Html/index.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/helpers/TestHelper.tsx",
-		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/counter/index.test.ts",
-		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/counter/index.ts",
-		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/stars/index.test.ts",
-		"/Users/devonzuegel/dev/vortigern/src/app/redux/modules/stars/index.ts",
-		"/Users/devonzuegel/dev/vortigern/src/favicon.ico",
+		"/Users/devonzuegel/dev/advent-of-code/20__new_day.ts",
+		"/Users/devonzuegel/dev/advent-of-code/Guardfile",
+		"/Users/devonzuegel/dev/advent-of-code/lib/guard/typescript.rb",
+		"/Users/devonzuegel/dev/clarity/tslint.json",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/index.test.tsx",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/tagged-prose-loader.js",
+		"/Users/devonzuegel/.oh-my-zsh/custom/aliases.zsh",
+		"/Users/devonzuegel/bin/git-push-each",
+		"/Users/devonzuegel/dev/clarity/src/app/loaders/example.md",
+		"/Users/devonzuegel/dev/clarity/src/app/loaders/tagged-prose-loader.test.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/redux/store.ts",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/test.md",
+		"/Users/devonzuegel/dev/clarity/config/test/karma.conf.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/test.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/partials/tagged-prose.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/tagged-prose-loader.test.ts",
+		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-shared.js",
+		"/Users/devonzuegel/dev/clarity/package.json",
+		"/Users/devonzuegel/dev/clarity/src/app/helpers/TestHelper.tsx",
+		"/Users/devonzuegel/dev/clarity/config/webpack/server.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-server.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/prod.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-dev.js",
+		"/Users/devonzuegel/.zshrc",
+		"/Users/devonzuegel/dev/clarity/config/webpack/dev.js",
+		"/Users/devonzuegel/dev/clarity/circle.yml",
+		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-prod.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/shared.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/prod.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/dev.js",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/App/index.test.tsx",
+		"/Users/devonzuegel/dev/clarity/typings.json",
+		"/Users/devonzuegel/dev/clarity/.gitignore",
+		"/Users/devonzuegel/dev/clarity/LICENSE",
+		"/Users/devonzuegel/dev/clarity/Dockerfile",
+		"/Users/devonzuegel/dev/clarity/build/server.js",
+		"/Users/devonzuegel/dev/clarity/README.md",
+		"/Users/devonzuegel/dev/clarity/config/main.js",
+		"/Users/devonzuegel/dev/clarity/node_modules/tagged-prose-loader/index.js",
+		"/Users/devonzuegel/dev/clarity/clarity.sublime-project",
+		"/Users/devonzuegel/dev/clarity/tsconfig.json",
+		"/Users/devonzuegel/dev/clarity/node_modules/json-loader/index.js",
+		"/Users/devonzuegel/dev/clarity/node_modules/postcss-discard-overridden/.babelrc",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/test.json",
+		"/Users/devonzuegel/dev/clarity/node_modules/react-faqs-loader/index.js",
+		"/Users/devonzuegel/dev/clarity/build/public/js/app.js",
+		"/Users/devonzuegel/dev/clarity/node_modules/isomorphic-style-loader/src/withStyles.js",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/react-faqs-loader.js",
+		"/Users/devonzuegel/dev/clarity/src/server.tsx",
+		"/Users/devonzuegel/dev/clarity/node_modules_custom/react-faqs-loader/index.js",
+		"/Users/devonzuegel/dev/clarity/node_modules/json-loader/package.json",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/test.md",
+		"/Users/devonzuegel/dev/clarity/src/app/copy/test.md",
+		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/counter/index.test.ts",
+		"/Users/devonzuegel/dev/clarity/config/webpack/loaders.js",
+		"/Users/devonzuegel/dev/clarity/node_modules/.bin/webpack",
+		"/Users/devonzuegel/dev/clarity/src/app/routes/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/components/Header/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/redux/reducers.ts",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Stars/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Stars/index.test.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/components/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/About/index.test.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/About/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/App/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Counter/index.test.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Counter/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/barbar.png",
+		"/Users/devonzuegel/dev/clarity/src/app/containers/Html/index.tsx",
+		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/counter/index.ts",
+		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/stars/index.test.ts",
+		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/stars/index.ts",
+		"/Users/devonzuegel/dev/clarity/src/favicon.ico",
 		"/Users/devonzuegel/dev/cosmocat/src/app/routes/index.tsx",
 		"/Users/devonzuegel/dev/cosmocat/README.md",
 		"/Users/devonzuegel/dev/cosmocat/src/app/components/Header/index.tsx",
@@ -1195,7 +1211,6 @@
 		"/Users/devonzuegel/dev/cosmocat/node_modules/@types/mocha/index.d.ts",
 		"/Users/devonzuegel/dev/cosmocat/.env",
 		"/Users/devonzuegel/dev/cosmocat/node_modules/npm/test/fixtures/gitignore.tgz",
-		"/Users/devonzuegel/.oh-my-zsh/custom/aliases.zsh",
 		"/Users/devonzuegel/dev/advent-of-code/5__game_of_chess.ts",
 		"/Users/devonzuegel/dev/advent-of-code/utils.js",
 		"/Users/devonzuegel/dev/advent-of-code/4-2__security_thru_obscurity.ts",
@@ -1230,68 +1245,32 @@
 		"/Users/devonzuegel/dev/web-ux/affirm/text-input/index.js",
 		"/Users/devonzuegel/dev/web-ux/aws.json",
 		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/strip_quotes.coffee",
-		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/ampersand_to_and.coffee",
-		"/Users/devonzuegel/Downloads/Storybook Routing Spec.md",
-		"/Users/devonzuegel/dev/all-t",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/controllers/verify.coffee",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/config/constants.coffee",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/services/user.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/package.json",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/styles/components/mutable_email.css",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/index.html",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/config/user.coffee",
-		"/Users/devonzuegel/dev/web-ux/checkout/src/scripts/controllers/error.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/styles/pages/stores.scss",
-		"/Users/devonzuegel/dev/web-ux/storybook/src/setup.js",
-		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/directives/unified_help.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/src/router.js",
-		"/Users/devonzuegel/dev/web-ux/bootstrap.sh",
-		"/Users/devonzuegel/dev/web-ux/.git/rebase-merge/git-rebase-todo",
-		"/Users/devonzuegel/dev/web-ux/checkout/src/scripts/config/constants.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/directives/mutable_personal_info.js",
-		"/Users/devonzuegel/dev/web-ux/functional_tests/affirm/functional_tests/behave/pages/pages.py",
-		"/Users/devonzuegel/dev/web-ux/checkout/src/styles/main.scss",
-		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/analytics/defs.js",
-		"/Users/devonzuegel/dev/web-ux/styleguide/src/typography/index.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/component.js",
-		"/Users/devonzuegel/dev/web-ux/styleguide/src/buttons/index.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/section/index.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/src/ducks/router.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/accordion/style.css",
-		"/Users/devonzuegel/dev/web-ux/affirm/radio/index.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/src/pages/payment-options.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/modules/payment-options/component.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/formItems.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/radio/style.css",
-		"/Users/devonzuegel/dev/web-ux/web-ux.sublime-project",
-		"/Users/devonzuegel/dev/web-ux/affirm/typography/index.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/typography/style.css",
-		"/Users/devonzuegel/dev/web-ux/affirm/control/index.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/node_modules/colors/ReadMe.md",
-		"/Users/devonzuegel/dev/web-ux/storybook/README.md",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/components/NavSection.js",
-		"/Users/devonzuegel/Downloads/web-ux-routing.md",
-		"/Users/devonzuegel/dev/web-ux/styleguide/src/guide/style.css",
-		"/Users/devonzuegel/dev/web-ux/styleguide/src/guide/index.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/button/style.css",
-		"/Users/devonzuegel/dev/web-ux/affirm/button/index.js",
-		"/Users/devonzuegel/dev/web-ux/styleguide/src/container/index.js",
-		"/Users/devonzuegel/dev/web-ux/styleguide/src/forms/index.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/form/style.css",
-		"/Users/devonzuegel/dev/web-ux/affirm/container/style.css",
-		"/Users/devonzuegel/dev/web-ux/affirm/container/index.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/container.js"
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/ampersand_to_and.coffee"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
 		"height": 135.0,
 		"where_history":
 		[
-			"/Users/devonzuegel/dev/vortigern/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/advent-of-code,-**node_modules/**,-**dist/**,-**build/**,-**coverage/**",
+			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**,-**build/**,-**coverage/**",
+			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**,-**build/**",
+			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/config,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/node_modules/,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/node_modules/,-**node_modules/**,-**dist/**",
+			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
 			"/Users/devonzuegel/dev/prose-highlighter,-**node_modules/**,-**dist/**",
 			"/Users/devonzuegel/dev/cosmocat,-**node_modules/**,-**dist/**",
 			"/Users/devonzuegel/dev/cosmocat/src,-**node_modules/**,-**dist/**",
@@ -1404,21 +1383,7 @@
 			"/Users/devonzuegel/Github/nosko/app/assets",
 			"/Users/devonzuegel/Github/nosko/app/assets/javascripts",
 			"/Users/devonzuegel/Github/nosko/app/assets",
-			"/Users/devonzuegel/Github/nosko",
-			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/",
-			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/*\\.scss",
-			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/*.scss",
-			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/",
-			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive/app/views",
-			"/Users/devonzuegel/Github/instapaper-evernote/instanote-archive",
-			"/Users/devonzuegel/Github/",
-			"/Users/devonzuegel/Github/affitto/",
-			"/Users/devonzuegel/Github/affitto/models/_examples",
-			"/Users/devonzuegel/Github/personal-site/devonzuegel.com/src/documents/posts",
-			"/Users/devonzuegel/Github/affitto",
-			"/Users/devonzuegel/Github/feito/",
-			"/Users/devonzuegel/Github/feito",
-			""
+			"/Users/devonzuegel/Github/nosko"
 		]
 	},
 	"find_state":
@@ -1426,134 +1391,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"stars",
-			"about",
-			"stars",
-			"Stars",
-			"stars",
-			"starsReducer",
-			"stars",
-			"Stars",
-			"stars",
-			" ",
-			"stars",
-			"github",
-			"deploy",
-			"heroku",
-			"herkou",
-			"lint",
-			"title",
-			"',\n",
-			"url",
-			"links",
-			"}, {",
-			"string",
-			"component: ",
-			"component",
-			"}, \n      {",
-			"\n      component=",
-			"nent=",
-			"barbar-vortigern",
-			"next state",
-			"devel",
-			"history",
-			"HISTORY",
-			"History",
-			"redirect",
-			"/>",
-			"component",
-			"home",
-			"component",
-			"highly",
-			"router",
-			"app.use",
-			"initi",
-			"user_id",
-			"'",
-			"host",
-			"por",
-			"location",
-			"redirectLocation",
-			"error",
-			"log",
-			"r.omi",
-			"r.",
-			"express",
-			"log(",
-			"passport",
-			"FitbitStrategy",
-			"fitbitStrategy",
-			"FitbitStrategy",
-			"FitbitOAuth2Strategy",
-			"configureStore",
-			"tore } from './app/redux/store'\nimport routes from ",
-			"manifest",
-			"renderHTML",
-			"provider",
-			"Provider",
-			"appConfig",
-			"clientID",
-			"getConfig",
-			"fitbit.",
-			"appConfig",
-			"figtbit",
-			"appConfig",
-			"config",
-			"getConfig",
-			"manifest",
-			"config",
-			".port",
-			"fitbit",
-			"retrieveConfig",
-			"buildConfig",
+			"}:",
+			" :",
+			"tsc",
 			"chalk",
 			"Chalk",
-			"chalk",
-			"config.fi",
-			"conf",
-			"config.fitbit",
-			"`",
-			": ",
-			"Cosmocat",
-			"barbar-vortigern",
-			"|| ",
-			": ",
-			"fs",
-			"'fs'",
-			"p(",
-			"R.range",
-			"filterEvens",
-			"n",
-			"isEven",
-			"presents",
-			"reduce",
-			"test",
-			"], [",
+			"ts",
+			"src",
+			"ramda",
+			"module",
+			"tsc config/webpack/loaders/**/*.ts",
+			"tsc config/webpack/loaders/**/*.ts ",
+			"tsc config/webpack/loaders/**/*.ts",
+			"prestart",
+			"tagged-prose-loader",
+			"\"",
+			"gp",
+			"-f",
+			"gp",
+			"'",
+			"\"",
+			" \"",
+			"’",
+			"```",
+			"’",
+			",",
+			".d",
+			"’",
+			"\"",
+			"answerText",
+			"questionText",
+			"it('",
+			"lint",
+			"type",
+			"types",
+			"loader",
 			";",
-			" \\n",
-			"\\n",
-			"}${",
-			"pwd_pos",
-			"colorize",
-			"p(",
-			"pwd_position",
-			"passwordSoFar[pwd_position]",
-			"replaceAt",
-			"pwd_position + POSITION_INDEX",
-			"str",
-			"passwordSoFar",
-			"!==",
-			"=",
-			"pwd_position",
-			"passwordSoFar",
-			"this",
-			"password_position",
-			"_position",
-			"5",
-			"md5",
-			"Md5",
-			"hashed",
-			"R.pipe(R.isEmpty"
+			"merge",
+			"prod",
+			"tsx",
+			"iso",
+			"require('./partials/tagged-prose')(config)",
+			"config",
+			"require('./shared')",
+			"var ",
+			"var",
+			"dev",
+			"merge",
+			"config",
+			"path",
+			"'use strict'\n\n",
+			"'use strict'",
+			"use strict",
+			"'use strict'",
+			"test",
+			"types",
+			"npm",
+			"ramda",
+			"Has a p element that says Hello",
+			"barbar",
+			"clarity",
+			"clarity",
+			"vortig",
+			"clarity",
+			"barbar-clarity",
+			"clarity",
+			"redux-mo",
+			"configureStore",
+			"webpackConfig",
+			"gp",
+			"<<<",
+			"md.default",
+			"root",
+			"config",
+			"require('./partials/tagged-prose')",
+			"root",
+			"271",
+			"merge",
+			"rge(\n  config,",
+			"client",
+			"prose",
+			"      },\n      {",
+			"css",
+			"babel",
+			"tagged",
+			"json",
+			"ts",
+			"h3",
+			"replace",
+			"ts",
+			"!",
+			"h3",
+			"h2",
+			"h3",
+			"es2016",
+			"toReact",
+			"ark",
+			"babel",
+			"preset",
+			"babel-pre",
+			"babel-",
+			"marked",
+			"tagged",
+			"react-faqs",
+			"tagged-prose",
+			"react-faqs",
+			"\"",
+			" ",
+			"md",
+			"sdfa",
+			"withStyles",
+			"export",
+			"loader",
+			"export default",
+			"path",
+			"path.join",
+			"react-faqs",
+			"marked",
+			"module:",
+			"tagged-prose",
+			"p",
+			"tagged-prose",
+			"json",
+			"p",
+			"b",
+			"a",
+			"resolve",
+			"txt",
+			"root"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1561,6 +1526,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"require('./partials/tagged-prose')",
+			"require('./loaders-shared')",
+			"",
+			"clarity",
+			"es2015",
+			"tagged-prose",
 			" ",
 			"affirm__radio--hide-errors",
 			"affirm__radio__subtext",
@@ -1604,390 +1575,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/app/containers/Home/index.tsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 289,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								289,
-								289
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 18,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/TypeScript/TypeScriptReact.tmLanguage",
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": true,
-								"indentSize": 2,
-								"tabSize": 2
-							},
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/app/redux/modules/counter/index.test.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1345,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								640,
-								640
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 6,
-								"count": 56,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										645,
-										646
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										471,
-										472
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": true,
-								"indentSize": 2,
-								"tabSize": 2
-							},
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "build/server.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 727863,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								539,
-								539
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 0,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										566,
-										567
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										476,
-										477
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/pisco-sour (SL).tmTheme",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2047,7 +1636,7 @@
 		"height": 116.0
 	},
 	"pinned_build_system": "",
-	"project": "vortigern.sublime-project",
+	"project": "clarity.sublime-project",
 	"replace":
 	{
 		"height": 52.0
@@ -2060,16 +1649,200 @@
 		"selected_items":
 		[
 			[
+				"typescr",
+				"lib/guard/typescript.rb"
+			],
+			[
+				"guard",
+				"Guardfile"
+			],
+			[
+				"server",
+				"config/webpack/server.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"testmd",
+				"src/app/containers/Home/test.md"
+			],
+			[
+				"homeind",
+				"src/app/containers/Home/index.tsx"
+			],
+			[
+				"examp",
+				"src/app/loaders/example.md"
+			],
+			[
+				"testconf",
+				"config/test/karma.conf.js"
+			],
+			[
+				"test",
+				"config/webpack/test.js"
+			],
+			[
+				"tlint",
+				"tslint.json"
+			],
+			[
+				"loaderde",
+				"config/webpack/partials/loaders-dev.js"
+			],
+			[
+				"share",
+				"config/webpack/partials/loaders-shared.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"helpers/testhelper",
+				"src/app/helpers/TestHelper.tsx"
+			],
+			[
+				"helpt",
+				"src/app/helpers/TestHelper.tsx"
+			],
+			[
+				"homtest",
+				"src/app/containers/Home/index.test.tsx"
+			],
+			[
+				"tagprose",
+				"config/webpack/loaders/tagged-prose-loader.js"
+			],
+			[
+				"loaddev",
+				"config/webpack/partials/loaders-dev.js"
+			],
+			[
+				"webpord",
+				"config/webpack/prod.js"
+			],
+			[
+				"loaderprod",
+				"config/webpack/loaders/prod.js"
+			],
+			[
+				"dev",
+				"config/webpack/dev.js"
+			],
+			[
+				"shared",
+				"config/webpack/loaders/shared.js"
+			],
+			[
+				"karma",
+				"config/test/karma.conf.js"
+			],
+			[
+				"packag",
+				"package.json"
+			],
+			[
+				"circl",
+				"circle.yml"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				".test.",
+				"src/app/containers/App/index.test.tsx"
+			],
+			[
+				"packaj",
+				"package.json"
+			],
+			[
+				"tsc",
+				"tsconfig.json"
+			],
+			[
+				"loadtagpro",
+				"config/webpack/loaders/tagged-prose-loader.js"
+			],
+			[
+				"prod",
+				"config/webpack/prod.js"
+			],
+			[
+				"jsonloader",
+				"node_modules/json-loader/index.js"
+			],
+			[
+				"webpacprod",
+				"config/webpack/prod.js"
+			],
+			[
+				"webpcdev",
+				"config/webpack/loaders/dev.js"
+			],
+			[
+				"hared",
+				"config/webpack/loaders/shared.js"
+			],
+			[
+				"babelrc",
+				"node_modules/postcss-discard-overridden/.babelrc"
+			],
+			[
+				"tagged-prose",
+				"node_modules/tagged-prose-loader/index.js"
+			],
+			[
+				"",
+				"config/webpack/partials/faqs.js"
+			],
+			[
+				"jsonloaderin",
+				"node_modules/json-loader/index.js"
+			],
+			[
+				"faqsloa",
+				"config/webpack/loaders/react-faqs-loader.js"
+			],
+			[
+				"faqload",
+				"node_modules/react-faqs-loader/index.js"
+			],
+			[
+				"loadreact",
+				"config/webpack/loaders/react-faqs-loader.js"
+			],
+			[
+				"loadshared",
+				"config/webpack/loaders/shared.js"
+			],
+			[
+				"tagged",
+				"config/webpack/loaders/tagged-prose-loader.js"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"sublimpoj",
+				"clarity.sublime-project"
+			],
+			[
 				"webpack",
 				"node_modules/.bin/webpack"
 			],
 			[
 				"routesindext",
 				"src/app/routes/index.tsx"
-			],
-			[
-				"readme",
-				"README.md"
 			],
 			[
 				"tslint",
@@ -2102,10 +1875,6 @@
 			[
 				"main",
 				"config/main.js"
-			],
-			[
-				"package",
-				"package.json"
 			],
 			[
 				".gi",
@@ -2390,186 +2159,6 @@
 			[
 				"styleguide/src/typography/index.js",
 				"styleguide/src/typography/index.js"
-			],
-			[
-				"irm/radio/index.js",
-				"affirm/radio/index.js"
-			],
-			[
-				"affirmbutton",
-				"affirm/button/index.js"
-			],
-			[
-				"styleguideformindex",
-				"styleguide/src/forms/index.js"
-			],
-			[
-				"weapaycompo",
-				"storybook/modules/weak-payment/component.js"
-			],
-			[
-				"weakpaycont",
-				"storybook/modules/weak-payment/container.js"
-			],
-			[
-				"stylesrcgrid",
-				"styleguide/src/grids/index.js"
-			],
-			[
-				"affimtypo",
-				"affirm/typography/index.js"
-			],
-			[
-				"variabl",
-				"affirm/styles/partials/variables.css"
-			],
-			[
-				"src/guide/style",
-				"styleguide/src/guide/style.css"
-			],
-			[
-				"styleguide/src/guide",
-				"styleguide/src/guide/index.js"
-			],
-			[
-				"weakpaycss",
-				"storybook/modules/weak-payment/style.css"
-			],
-			[
-				"weap",
-				"storybook/src/pages/weak-payment.js"
-			],
-			[
-				"affirmmodalsc",
-				"affirm/modal/style.css"
-			],
-			[
-				"affirmmodal",
-				"affirm/modal/index.js"
-			],
-			[
-				"variab",
-				"affirm/styles/partials/variables.css"
-			],
-			[
-				"typography",
-				"affirm/typography/style.css"
-			],
-			[
-				"buttonindex",
-				"styleguide/src/buttons/index.js"
-			],
-			[
-				"styguidesrccolor",
-				"styleguide/src/color/index.js"
-			],
-			[
-				"styleguidebadge",
-				"styleguide/src/badges/index.js"
-			],
-			[
-				"styleguidetypography",
-				"styleguide/src/typography/index.js"
-			],
-			[
-				"typogra",
-				"affirm/typography/index.js"
-			],
-			[
-				"styleguidebuttonindex",
-				"styleguide/src/buttons/index.js"
-			],
-			[
-				"affirm/typography/style.css",
-				"affirm/typography/style.css"
-			],
-			[
-				"storybook/modules/weak-payment/style.css",
-				"storybook/modules/weak-payment/style.css"
-			],
-			[
-				"affirm/radio/style.css",
-				"affirm/radio/style.css"
-			],
-			[
-				"styleguidformindex",
-				"styleguide/src/forms/index.js"
-			],
-			[
-				"radiocs",
-				"affirm/radio/style.css"
-			],
-			[
-				"radioindex",
-				"affirm/radio/index.js"
-			],
-			[
-				"radiocss",
-				"affirm/radio/style.css"
-			],
-			[
-				"affirm/control/index.js",
-				"affirm/control/index.js"
-			],
-			[
-				"affirmcontrol",
-				"affirm/control/index.js"
-			],
-			[
-				"affircontrol",
-				"affirm/control/index.js"
-			],
-			[
-				"afirmradiocss",
-				"affirm/radio/style.css"
-			],
-			[
-				"typogracss",
-				"affirm/typography/style.css"
-			],
-			[
-				"affirmtypo",
-				"affirm/typography/index.js"
-			],
-			[
-				"typograph",
-				"affirm/styles/partials/typography.css"
-			],
-			[
-				"weapaycss",
-				"storybook/modules/weak-payment/style.css"
-			],
-			[
-				"affirmradio",
-				"affirm/radio/index.js"
-			],
-			[
-				"payments",
-				"storybook/src/pages/payment-options.js"
-			],
-			[
-				"guidestylecss",
-				"styleguide/src/guide/style.css"
-			],
-			[
-				"styleguidgridindex",
-				"styleguide/src/grids/index.js"
-			],
-			[
-				"typgrap",
-				"affirm/styles/partials/typography.css"
-			],
-			[
-				"affirtypog",
-				"affirm/typography/style.css"
-			],
-			[
-				"affirmtypography",
-				"affirm/typography/index.js"
-			],
-			[
-				"guidestyle",
-				"styleguide/src/guide/style.css"
 			]
 		],
 		"width": 0.0
