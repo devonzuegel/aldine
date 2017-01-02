@@ -44,38 +44,32 @@ const examples = (
   </div>
 )
 
+const themes = [
+  { title: 'Black background, faded plaintext', className: 'dark-faded-plaintext'  },
+  { title: 'Plain text',                        className: ''                      },
+  { title: 'Faded plaintext',                   className: 'faded-plaintext-all'   },
+  { title: 'Faded plaintext, nouns only',       className: 'faded-plaintext-nouns' },
+  { title: 'Faded plaintext, verbs only',       className: 'faded-plaintext-verbs' },
+]
+
 class Home extends React.Component<any, any> {
   public render() {
     return (
       <div className={s.home}>
-        <h1>Black background, faded plaintext</h1>
-        <div className={s['dark-faded-plaintext']}>
-          {examples}
-        </div>
 
-        <h1>Plain text</h1>
-        <div>
-          {examples}
-        </div>
+        {
+          themes.map(({ title, className }, i) => (
 
-        <hr />
+            <div key={i}>
+              <h1>{title}</h1>
+              <div className={s[className]}>
+                {examples}
+              </div>
+            </div>
 
-        <h1>Faded plaintext</h1>
-        <div className={s['faded-plaintext-all']}>
-          {examples}
-        </div>
+          ))
+        }
 
-        <hr />
-
-        <h1>Faded plaintext, nouns only</h1>
-        <div className={s['faded-plaintext-nouns']}>
-          {examples}
-        </div>
-
-        <h1>Faded plaintext, verbs only</h1>
-        <div className={s['faded-plaintext-verbs']}>
-          {examples}
-        </div>
       </div>
     )
   }
