@@ -37,17 +37,17 @@ const addClassNames = (tags: Object) => (tokens: string[]) => {
   )(tokens)
 }
 
-interface Token {
-  content:    string,
+interface IToken {
+  content: string,
   classNames: Object
 }
 
-export const mapper = (tags: Object) => (content: string): Token[] =>
+export const mapper = (tags: Object) => (content: string): IToken[] =>
   R.pipe(
     tokenizer(tags),
     addClassNames(tags),
     R.prop('output'),
-    R.map((x: any) => x as Token)
+    R.map((x: any) => x as IToken)
   )(content)
 
 const getClasses = (classNames: Object): string => {
@@ -58,7 +58,7 @@ const getClasses = (classNames: Object): string => {
   return R.join(' ', klasses)
 }
 
-const tokenToSpan = ({ content, classNames }: Token, key) => (
+const tokenToSpan = ({ content, classNames }: IToken, key) => (
   <span
     className={getClasses(classNames)}
     key={key}
@@ -70,26 +70,12 @@ const tokenToSpan = ({ content, classNames }: Token, key) => (
 const parseList = (tags: Object) => (content: string[]) =>
   R.map(R.pipe(
     mapper(tags),
-    (tokens: Token[]) => tokens.map(tokenToSpan)
+    (tokens: IToken[]) => tokens.map(tokenToSpan)
   ))(content)
 
 const parseStr = (tags: Object) => (s: string) =>
-  <div>
+  <span>
     {R.head(parseList(tags)([s]))}
-  </div>
+  </span>
 
 export default parseStr
-
-// R.pipe(
-//   R.reduce(
-//     ({ highlighting, result, i }, fragment) => ({
-//       highlighting: !highlighting,
-//       i: i + 1,
-//       result: [
-//       ...result,
-//       highlighting ? <span className={className} key={i}>{fragment}</span> : fragment
-//       ]
-//     }),
-//     { highlighting: false, result: [], i: 0 }
-//   ),
-// )

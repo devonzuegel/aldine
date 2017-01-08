@@ -2,4 +2,18 @@
   padding: 0;
   margin: 0;
   text-align: center;
+
+  text-align: left;
+  margin: auto;
+  max-width: 800px;
+  font-size: 20px;
+  line-height: 1.53em;
+  font-family: "PT Serif", serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  text-align: justify;
+
+  & p {
+    margin-top: 3em;
+  }
 }
