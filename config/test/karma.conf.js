@@ -120,10 +120,6 @@ module.exports = function (config) {
 
     logLevel: config.LOG_INFO,
 
-    autoWatch: true,
-
-    singleRun: false,
-
     concurrency: Infinity,
 
     webpack: merge(webpackConfig),
@@ -134,8 +130,6 @@ module.exports = function (config) {
   };
 
   if (process.env.NODE_ENV === 'ci') {
-    conf.autoWatch = false;
-    conf.singleRun = true;
     conf.browsers.push('Firefox');
     conf.coverageReporter.reporters.push({ type: 'lcov', subdir: '.' });
   } else {
