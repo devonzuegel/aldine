@@ -13,9 +13,7 @@
     "prestart": "npm run build",
     "start": "node build/server.js",
     "start:prod": "cross-env NODE_ENV=production npm start",
-    "test": "node_modules/.bin/karma start config/test/karma.conf.js",
-    "test:single": "NODE_ENV=ci node_modules/.bin/karma start config/test/karma.conf.js",
-    "lint": "node_modules/.bin/tslint \"src/**/**.ts*\" -c tsconfig.json"
+    "test": "grunt test"
   },
   "devDependencies": {
     "@types/chai-spies": "0.0.0",
@@ -36,6 +34,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "fetch-mock": "^4.5.4",
     "file-loader": "^0.8.5",
+    "grunt-karma": "^2.0.0",
     "isomorphic-style-loader": "^1.0.0",
     "istanbul-instrumenter-loader": "^0.2.0",
     "json-loader": "^0.5.4",
@@ -50,6 +49,7 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
+    "load-grunt-tasks": "^3.5.2",
     "mocha": "^2.4.5",
     "phantomjs-prebuilt": "^2.1.7",
     "postcss-assets": "^4.1.0",
