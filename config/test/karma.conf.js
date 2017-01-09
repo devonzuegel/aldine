@@ -105,8 +105,6 @@ module.exports = function (config) {
 
     plugins: ['karma-*'],
 
-    reporters: ['mocha', 'coverage'],
-
     coverageReporter: {
       dir: '../../coverage',
       reporters: []
