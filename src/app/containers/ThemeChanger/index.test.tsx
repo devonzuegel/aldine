@@ -19,23 +19,21 @@ const props = {
 }
 
 describe('<ThemeChanger />', () => {
-  describe('stateful', () => {
-    beforeEach(() => {
-      this.component = renderComponent(ThemeChanger, state, props)
-    })
+  beforeEach(() => {
+    this.component = renderComponent(ThemeChanger, state, props)
+  })
 
-    it('updates the active selector when that selector is clicked', () => {
-      const themeElems = this.component.find(selectorClass)
-      const [ first, last ] = [ themeElems.first(), themeElems.last() ]
-      const active = `${styles.themeSelector} ${styles.active}`
+  it('updates the active selector when that selector is clicked', () => {
+    const themeElems = this.component.find(selectorClass)
+    const [ first, last ] = [ themeElems.first(), themeElems.last() ]
+    const active = `${styles.themeSelector} ${styles.active}`
 
-      expect(first.props().className).to.eql(active)
-      expect(last.props().className).to.eql(styles.themeSelector)
+    expect(first.props().className).to.eql(active)
+    expect(last.props().className).to.eql(styles.themeSelector)
 
-      last.simulate('click')
+    last.simulate('click')
 
-      expect(first.props().className).to.eql(styles.themeSelector)
-      expect(last.props().className).to.eql(active)
-    })
+    expect(first.props().className).to.eql(styles.themeSelector)
+    expect(last.props().className).to.eql(active)
   })
 })

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --bright-blue: #00A8C6;
+  --brighter-blue: #40C0CB;
+  --sans-serif: 'Roboto';
+  --monospace: 'Roboto Mono';
+}
+
 .appContainer {
   padding: 0;
   margin: 0;
@@ -8,12 +17,28 @@
   max-width: 800px;
   font-size: 20px;
   line-height: 1.53em;
-  font-family: "PT Serif", serif;
-  font-weight: 100;
+
+  font-family: var(--sans-serif);
+  font-weight: 400;
+  color: #444455;
+
   -webkit-font-smoothing: antialiased;
   text-align: justify;
 
   & p {
     margin-top: 3em;
+  }
+
+  & a {
+    color: var(--bright-blue);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: var(--brighter-blue);
+      padding-bottom: 2px;
+      margin-bottom: -2px;
+      border-bottom: 1px solid color(var(--brighter-blue) alpha(-75%));
+    }
   }
 }

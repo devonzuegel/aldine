@@ -1,3 +1,18 @@
+:root {
+  --dark-blue: #666677;
+  --darker-blue: #000011;
+}
+
 .category1 {
   background: red;
+}
+
+.token {
+  color: var(--dark-blue);
+  font-weight: 400;
+
+  &:hover {
+    color: var(--darker-blue);
+    cursor: pointer;
+  }
 }

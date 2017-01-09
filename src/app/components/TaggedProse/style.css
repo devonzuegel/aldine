@@ -1,0 +1,16 @@
+:root {
+  --bright-blue: #00A8C6;
+  --brighter-blue: #40C0CB;
+}
+
+.category1 {
+  color: var(--bright-blue);
+
+  &:hover {
+    color: var(--brighter-blue);
+  }
+}
+
+.uncategorized {
+  color: red;
+}
