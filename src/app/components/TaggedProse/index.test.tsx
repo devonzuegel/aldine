@@ -2,10 +2,10 @@ import * as React from 'react'
 import { mount } from 'enzyme'
 import * as chai from 'chai'
 import * as spies from 'chai-spies'
-import Token from '../Token'
 
+import Token from '~/components/Token'
+import { ITokenCategories } from '~/models/token-categories'
 import { TaggedProse } from './index'
-import { ITokenCategories } from '../../models/token-categories'
 
 const expect = chai.expect
 chai.use(spies)

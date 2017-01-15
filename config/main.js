@@ -1,4 +1,4 @@
-/** General Configurations Like PORT, HOST names and etc... */
+/** General Configurations Like PORT, HOST names, etc... */
 
 var config = {
   env: process.env.NODE_ENV || 'development',

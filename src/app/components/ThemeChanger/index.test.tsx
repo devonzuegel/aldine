@@ -1,6 +1,6 @@
 import * as R from 'ramda'
 import * as React from 'react'
-import * as actions from '../../redux/modules/theme-changer'
+import * as actions from '~/redux/modules/theme-changer'
 import * as chai from 'chai'
 import * as spies from 'chai-spies'
 import { mount } from 'enzyme'

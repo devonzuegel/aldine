@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as classnames from 'classnames'
-import { IThemeChanger } from '../../models/theme-changer'
+import { IThemeChanger } from '~/models/theme-changer'
 
 const s = require('./style.css')
 

@@ -1,17 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const projectRoot = path.resolve(__dirname)
+const merge = require('webpack-merge');
+const rootDir = path.resolve('./src');
 
 const config = {
   devtool: 'eval',
 
   debug: true,
-
-  resolve: {
-    root: projectRoot,
-    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
-  },
 
   entry: {
     app: [
@@ -21,26 +17,26 @@ const config = {
     ]
   },
 
-  output: {
-    path: path.resolve('./build/public'),
-    publicPath: '/public/',
-    filename: 'js/[name].js',
-    pathinfo: true
-  },
-
   postcss: function () {
     return [
       require('postcss-import')({
         addDependencyTo: webpack,
         path: [
-          projectRoot,
-          path.join(projectRoot, 'node_modules'),
+          rootDir,
+          path.join(rootDir, 'node_modules'),
         ],
       }),
       require('stylelint')({ files: '../../src/app/*.css' }),
       require('postcss-cssnext')(),
       require('postcss-assets')({ relative: '../../src/app' })
     ];
+  },
+
+  output: {
+    path: path.resolve('./build/public'),
+    publicPath: '/public/',
+    filename: 'js/[name].js',
+    pathinfo: true
   },
 
   tslint: {
@@ -62,5 +58,6 @@ const config = {
 
 module.exports = require('webpack-merge')(
   config,
+  require('./partials/aliases'),
   require('./partials/loaders-dev')
 );

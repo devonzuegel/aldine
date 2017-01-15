@@ -120,7 +120,7 @@ module.exports = function (config) {
 
     concurrency: Infinity,
 
-    webpack: merge(webpackConfig),
+    webpack: merge(webpackConfig, require('../webpack/partials/aliases')),
 
     webpackServer: {
       noInfo: true
