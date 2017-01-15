@@ -1,16 +1,13 @@
-:root {
-  --bright-blue: #00A8C6;
-  --brighter-blue: #40C0CB;
-}
+@import './../../styles/colors.css';
 
 .category1 {
-  color: var(--bright-blue);
+  color: var(--darker-blue);
+  background-color: var(--lighter-grey);
+  padding: 1px 3px;
+  margin: -1px -3px;
+  border-radius: 5px;
 
   &:hover {
-    color: var(--brighter-blue);
+    background-color: var(--light-grey);
   }
-}
-
-.uncategorized {
-  color: red;
 }

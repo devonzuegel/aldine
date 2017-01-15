@@ -1,18 +1,15 @@
-var path = require('path');
-var webpack = require('webpack');
-var postcssAssets = require('postcss-assets');
-var postcssNext = require('postcss-cssnext');
-var stylelint = require('stylelint');
-var ManifestPlugin = require('webpack-manifest-plugin');
-const merge = require('webpack-merge');
+const path = require('path');
+const webpack = require('webpack');
+const ManifestPlugin = require('webpack-manifest-plugin');
+const projectRoot = path.resolve(__dirname)
 
-var config = {
+const config = {
   devtool: 'eval',
 
   debug: true,
 
   resolve: {
-    root: path.resolve(__dirname),
+    root: projectRoot,
     extensions: ['', '.ts', '.tsx', '.js', '.jsx']
   },
 
@@ -33,9 +30,16 @@ var config = {
 
   postcss: function () {
     return [
-      stylelint({ files: '../../src/app/*.css' }),
-      postcssNext(),
-      postcssAssets({ relative: true })
+      require('postcss-import')({
+        addDependencyTo: webpack,
+        path: [
+          projectRoot,
+          path.join(projectRoot, 'node_modules'),
+        ],
+      }),
+      require('stylelint')({ files: '../../src/app/*.css' }),
+      require('postcss-cssnext')(),
+      require('postcss-assets')({ relative: '../../src/app' })
     ];
   },
 
@@ -44,9 +48,7 @@ var config = {
   },
 
   plugins: [
-    new ManifestPlugin({
-      fileName: '../manifest.json'
-    }),
+    new ManifestPlugin({ fileName: '../manifest.json' }),
     new webpack.DefinePlugin({
       'process.env': {
         BROWSER: JSON.stringify(true),
@@ -58,7 +60,7 @@ var config = {
   ]
 };
 
-module.exports = merge(
+module.exports = require('webpack-merge')(
   config,
   require('./partials/loaders-dev')
 );
