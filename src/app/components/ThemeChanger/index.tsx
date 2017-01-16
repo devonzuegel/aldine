@@ -28,7 +28,7 @@ const ThemeOption = ({ update, title, className, themeChanger }) => {
     </div>
   )
 }
-export const ThemeChangerComponent = (props: IProps) => {
+export const ThemeChanger = (props: IProps) => {
   const { update, themes, themeChanger } = props
 
   return (

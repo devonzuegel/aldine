@@ -1,5 +1,4 @@
 import { expect } from 'chai'
-import * as R from 'ramda'
 import * as taggedProse from './'
 import { ITaggedProse, ITaggedProseAction } from '~/models/tagged-prose'
 
@@ -42,7 +41,5 @@ describe('TaggedProse Module', () => {
       const unknownAction = { type: '', index: 0, category }
       expect(taggedProse.taggedProseReducer(initialState, unknownAction)).to.be.eql(initialState)
     })
-
   })
-
 })

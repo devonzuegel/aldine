@@ -1,7 +1,7 @@
 import { combineReducers     } from 'redux'
 import { routerReducer       } from 'react-router-redux'
 import { counterReducer      } from './modules/counter'
-import { themeChangerReducer } from './modules/theme-changer'
+import { themeChangerReducer } from '~/modules/ThemeChanger/redux'
 import { taggedProseReducer  } from '~/modules/TaggedProse/redux'
 
 const { reducer } = require('redux-connect')
