@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import * as R from 'ramda'
 import * as taggedProse from './'
-import { ITaggedProse, ITaggedProseAction } from '../../../models/tagged-prose'
+import { ITaggedProse, ITaggedProseAction } from '~/models/tagged-prose'
 
 const nocategory = 'nocategory'
 const category = 'category'

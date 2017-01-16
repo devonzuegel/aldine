@@ -10,11 +10,6 @@ const merge = require('webpack-merge');
 var config = {
   bail: true,
 
-  resolve: {
-    root: path.resolve(__dirname),
-    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
-  },
-
   entry: {
     app: './src/client.tsx',
     vendor: [
@@ -77,6 +72,7 @@ var config = {
 
 module.exports = merge(
   config,
+  require('./partials/aliases'),
   require('./partials/loaders-prod')
 );
 

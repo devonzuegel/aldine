@@ -15,10 +15,6 @@ var config = {
   externals: nodeModules,
   target: 'node',
 
-  resolve: {
-    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
-  },
-
   entry: './src/server.tsx',
 
   output: {
@@ -42,5 +38,6 @@ var config = {
 
 module.exports = merge(
   config,
+  require('./partials/aliases'),
   require('./partials/loaders-server')
 );

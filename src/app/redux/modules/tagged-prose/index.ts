@@ -1,5 +1,5 @@
 import * as R from 'ramda'
-import { ITaggedProse, ITaggedProseAction } from '../../../models/tagged-prose'
+import { ITaggedProse, ITaggedProseAction } from '~/models/tagged-prose'
 
 /** Action Types */
 export const CATEGORIZE: string = 'tagged-prose/CATEGORIZE'
