@@ -1,7 +1,7 @@
 import * as React from 'react'
-import * as actions from '~/redux/modules/theme-changer/'
-import { ThemeChangerComponent, IProps } from '~/components/ThemeChanger'
 const { connect } = require('react-redux')
+import * as C from '~/components/ThemeChanger'
+import * as actions from './redux'
 
 @connect(
   state => ({ themeChanger: state.themeChanger }),
@@ -9,8 +9,8 @@ const { connect } = require('react-redux')
     update: (className: string) => dispatch(actions.update(className)),
   })
 )
-export class ThemeChanger extends React.Component<IProps, void> {
+export class ThemeChanger extends React.Component<C.IProps, void> {
   public render() {
-    return <ThemeChangerComponent {...this.props} />
+    return <C.ThemeChanger {...this.props} />
   }
 }
