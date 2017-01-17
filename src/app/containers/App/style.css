@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-:root {
-  --bright-blue: #00A8C6;
-  --brighter-blue: #40C0CB;
-  --sans-serif: 'Roboto';
-  --monospace: 'Roboto Mono';
-}
+@import './../../styles/colors.css';
+@import './../../styles/typefaces.css';
 
 .appContainer {
   padding: 0;
@@ -20,7 +14,7 @@
 
   font-family: var(--sans-serif);
   font-weight: 400;
-  color: #444455;
+  color: var(--prose-color-base);
 
   -webkit-font-smoothing: antialiased;
   text-align: justify;
@@ -38,7 +32,6 @@
       color: var(--brighter-blue);
       padding-bottom: 2px;
       margin-bottom: -2px;
-      border-bottom: 1px solid color(var(--brighter-blue) alpha(-75%));
     }
   }
 }

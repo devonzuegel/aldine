@@ -1,7 +1,6 @@
 @import './../../styles/colors.css';
 
 .category1 {
-  color: var(--darker-blue);
   background-color: var(--lighter-grey);
   padding: 1px 3px;
   margin: -1px -3px;
@@ -10,4 +9,17 @@
   &:hover {
     background-color: var(--light-grey);
   }
+}
+
+.category2 {
+  border-bottom: 1px solid var(--lightish-grey);
+  padding: 1px 3px;
+  margin: -1px -3px;
+
+  &:hover {
+    border-bottom: 1px solid var(--medium-grey);
+  }
+}
+
+.uncategorized {
 }

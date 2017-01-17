@@ -1,5 +1,13 @@
 @import './../../styles/colors.css';
 
 .category {
-
+  list-style-type: circle;
+  &:hover {
+    cursor: pointer;
+  }
 }
+
+.category--selected {
+  list-style-type: disc;
+}
+

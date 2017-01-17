@@ -1,31 +1,34 @@
 import * as React from 'react'
+import * as R from 'ramda'
 import * as classnames from 'classnames'
+import { ITokenCategories } from '~/models/token-categories'
 const s = require('./style.css')
 
 interface IProps {
   select: Function,
-  categories: string[],
-  selected: number,
+  categories: ITokenCategories,
+  selected: string,
 }
 
-const Category = (select, selected) => (c, i) => {
+const Category = (select, selected, categories) => (c, i) => {
   const classes = classnames({
     [s.category]: true,
-    [s['category--selected']]: selected === i,
+    [categories[c]]: true,
+    [s['category--selected']]: selected === c,
   })
   return (
-    <div key={i} className={classes} onClick={select(i)}>
+    <li key={i} className={classes} onClick={select(c)}>
       {c}
-    </div>
+    </li>
   )
 }
 
 const CategorySelector = (props: IProps) => {
   const { select, categories, selected } = props
   return (
-    <div>
-      {categories.map(Category(select, selected))}
-    </div>
+    <ul>
+      {R.keys(categories).map(Category(select, selected, categories))}
+    </ul>
   )
 }
 
