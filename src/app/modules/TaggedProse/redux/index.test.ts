@@ -1,9 +1,14 @@
 import { expect } from 'chai'
 import * as taggedProse from './'
 import { ITaggedProse, ITaggedProseAction } from '~/models/tagged-prose'
+import { ITokenCategories } from '~/models/token-categories'
 
 const nocategory = 'nocategory'
 const category = 'category'
+const categories: ITokenCategories = {
+  [category]: category,
+  [nocategory]: nocategory,
+}
 
 /** Module */
 describe('TaggedProse Module', () => {
@@ -24,6 +29,7 @@ describe('TaggedProse Module', () => {
     const initialState: ITaggedProse = {
       categorized: [nocategory, nocategory],
       selectedCategory: category,
+      categories,
     }
 
     it('handles action of type CATEGORIZE', () => {
@@ -34,6 +40,7 @@ describe('TaggedProse Module', () => {
       expect(taggedProse.taggedProseReducer(initialState, action)).to.be.eql({
         categorized: [category, nocategory],
         selectedCategory: category,
+        categories,
       })
     })
 

@@ -8,9 +8,25 @@
   --bright-blue: #00A8C6;
   --brighter-blue: #40C0CB;
 
+  --pale-bright-blue: rgba(64, 192, 203, 0.3);
+  --paler-bright-blue: rgba(64, 192, 203, 0.2);
+
   /** Grey */
 
-  --lighter-grey: #efeff1;
+  --dark-grey: #444455;
+  --medium-grey: #9999bb;
+  --lightish-grey: #ccccdd;
   --light-grey: #e5e5e5;
+  --lighter-grey: #efeff1;
 
+
+  /** Pink */
+
+  --lighter-pink: #efeff1;
+  --light-pink: #e5e5e5;
+
+  /** Prose */
+
+  --prose-color-base: var(--dark-grey);
+  --prose-color-dark: var(--darker-blue);
 }
