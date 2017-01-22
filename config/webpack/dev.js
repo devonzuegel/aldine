@@ -17,21 +17,6 @@ const config = {
     ]
   },
 
-  postcss: function () {
-    return [
-      require('postcss-import')({
-        addDependencyTo: webpack,
-        path: [
-          rootDir,
-          path.join(rootDir, 'node_modules'),
-        ],
-      }),
-      require('stylelint')({ files: '../../src/app/*.css' }),
-      require('postcss-cssnext')(),
-      require('postcss-assets')({ relative: '../../src/app' })
-    ];
-  },
-
   output: {
     path: path.resolve('./build/public'),
     publicPath: '/public/',
