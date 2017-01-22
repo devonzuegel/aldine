@@ -1,5 +1,5 @@
-@import './../../styles/colors.css';
-@import './../../styles/typefaces.css';
+@import 'app/styles//colors.css';
+@import 'app/styles//typefaces.css';
 
 .appContainer {
   padding: 0;

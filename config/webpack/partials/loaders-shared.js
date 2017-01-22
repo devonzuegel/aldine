@@ -1,5 +1,7 @@
-const path = require('path');
-const merge = require('webpack-merge');
+const path = require('path')
+const webpack = require('webpack')
+const rootDir = path.resolve('./src')
+const merge = require('webpack-merge')
 
 const config = {
   resolveLoader: {
@@ -44,6 +46,21 @@ const config = {
         loader: 'raw-loader'
       }
     ],
+  },
+
+  postcss: function () {
+    return [
+      require('postcss-import')({
+        addDependencyTo: webpack,
+        path: [
+          rootDir,
+          path.join(rootDir, 'node_modules'),
+        ],
+      }),
+      require('stylelint')({ files: path.join(rootDir, 'app/*.css') }),
+      require('postcss-cssnext')(),
+      require('postcss-assets')({ relative: path.join(rootDir, 'app') })
+    ]
   },
 }
 
