@@ -18,13 +18,14 @@ export interface IProps {
 const ThemeOption = ({ update, title, className, themeChanger }) => {
   const classNames =
     classnames({
+      // [s.codeblock]:     true,
       [s.themeSelector]: true,
-      [s.active]: themeChanger.className === className,
+      [s.active]:        themeChanger.className === className,
     })
 
   return (
     <div onClick={() => update(className)} className={classNames}>
-      <code>{title}</code>
+      {title}
     </div>
   )
 }

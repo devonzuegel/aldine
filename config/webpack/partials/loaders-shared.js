@@ -30,8 +30,25 @@ const config = {
         test: /\.eot(\?.*)?$/,
         loader: 'file?name=fonts/[hash].[ext]'
       }, {
-        test: /\.(woff|woff2)(\?.*)?$/,
-        loader: 'file-loader?name=fonts/[hash].[ext]'
+        // Match woff2 in addition to patterns like .woff?v=1.1.1.
+        test: /\.woff2?(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 50000,
+          mimetype: 'application/font-woff',
+          // Output below the fonts directory
+          name: './fonts/[hash].[ext]',
+          // Tweak publicPath to fix CSS lookups to take
+          // the directory into account.
+          publicPath: path.join(rootDir, 'fonts'),
+        },
+
+        // test: /\.(woff|woff2)(\?.*)?$/,
+        // loader: 'file-loader?name=fonts/[hash].[ext]',
+
+        // test: /\.(woff|woff2)(\?.*)?$/,
+        // loader: 'url?limit=8182&name=[name]-[hash].[ext]',
+        // loader: 'url-loader?limit=100000',
       }, {
         test: /\.ttf(\?.*)?$/,
         loader: 'url?limit=10000&mimetype=application/octet-stream&name=fonts/[hash].[ext]'
@@ -50,6 +67,7 @@ const config = {
 
   postcss: function () {
     return [
+      require('postcss-fontpath')(true),
       require('postcss-import')({
         addDependencyTo: webpack,
         path: [
@@ -59,7 +77,10 @@ const config = {
       }),
       require('stylelint')({ files: path.join(rootDir, 'app/*.css') }),
       require('postcss-cssnext')(),
-      require('postcss-assets')({ relative: path.join(rootDir, 'app') })
+      require('postcss-assets')({
+        loadPaths: ['app/assets/fonts/'],
+        relative: path.join(rootDir, 'app'),
+      })
     ]
   },
 }
