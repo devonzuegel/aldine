@@ -11,10 +11,7 @@ const webpackConfig = {
   resolve: {
     root:               path.resolve(__dirname),
     extensions:         ['', '.json', '.js', '.ts', '.tsx', '.jsx'],
-    modulesDirectories: [
-      '../../src',
-      'node_modules'
-    ],
+    modulesDirectories: ['../../src', 'node_modules'],
   },
 
   module: require('../webpack/partials/loaders-test'),
