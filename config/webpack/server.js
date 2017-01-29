@@ -1,15 +1,15 @@
-var path = require('path');
-var fs = require('fs');
-const merge = require('webpack-merge');
+var path = require('path')
+var fs = require('fs')
+const merge = require('webpack-merge')
 
-var nodeModules = {};
+var nodeModules = {}
 fs.readdirSync('node_modules')
   .filter(function (x) {
-    return ['.bin'].indexOf(x) === -1;
+    return ['.bin'].indexOf(x) === -1
   })
   .forEach(function (mod) {
-    nodeModules[mod] = 'commonjs ' + mod;
-  });
+    nodeModules[mod] = 'commonjs ' + mod
+  })
 
 var config = {
   externals: nodeModules,
@@ -34,10 +34,10 @@ var config = {
     __filename: false,
     __dirname: false
   }
-};
+}
 
 module.exports = merge(
   config,
   require('./partials/aliases'),
   require('./partials/loaders-server')
-);
+)

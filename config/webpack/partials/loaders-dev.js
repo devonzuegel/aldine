@@ -1,5 +1,5 @@
 const path = require('path')
-const merge = require('webpack-merge');
+const merge = require('webpack-merge')
 
 const config = {
   module: {
@@ -7,14 +7,6 @@ const config = {
       {
         test: /\.tsx?$/,
         loader: 'react-hot!ts',
-      }, {
-        test: /\.css$/,
-        include: path.resolve('./src/app'),
-        loaders: [
-          'style-loader',
-          'css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]',
-          'postcss-loader',
-        ],
       },
     ],
   },
@@ -22,6 +14,6 @@ const config = {
 
 module.exports = merge(
   config,
-  require('./loaders-shared')
-);
+  require('./base')
+)
 

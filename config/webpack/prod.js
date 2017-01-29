@@ -1,13 +1,13 @@
-var path = require('path');
-var webpack = require('webpack');
-var postcssAssets = require('postcss-assets');
-var postcssNext = require('postcss-cssnext');
-var stylelint = require('stylelint');
-var ManifestPlugin = require('webpack-manifest-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-const merge = require('webpack-merge');
+const path              = require('path')
+const webpack           = require('webpack')
+const postcssAssets     = require('postcss-assets')
+const postcssNext       = require('postcss-cssnext')
+const stylelint         = require('stylelint')
+const ManifestPlugin    = require('webpack-manifest-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const merge             = require('webpack-merge')
 
-var config = {
+const config = {
   bail: true,
 
   entry: {
@@ -32,17 +32,7 @@ var config = {
     filename: 'js/[name].[chunkhash].js'
   },
 
-  postcss: function () {
-    return [
-      stylelint({ files: '../../src/app/*.css' }),
-      postcssNext(),
-      postcssAssets({ relative: true })
-    ];
-  },
-
-  tslint: {
-    failOnHint: true
-  },
+  tslint: { failOnHint: true },
 
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -68,11 +58,11 @@ var config = {
       }
     })
   ]
-};
+}
 
 module.exports = merge(
   config,
   require('./partials/aliases'),
   require('./partials/loaders-prod')
-);
+)
 
