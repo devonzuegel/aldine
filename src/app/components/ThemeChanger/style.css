@@ -1,20 +1,22 @@
 .themeChanger {
   padding: 0 3em 1em 0;
 
-  & .themeSelector {
-    background-color: #f5f5f5;
-    margin: 1em -1em;
-    padding: 0.75em 1em;
-    cursor: pointer;
-    border: 2px solid #f5f5f5;
-
-    &:hover {
-      background-color: #eee;
-    }
-
-    &.active {
-      border: 2px solid #ddd;
-    }
-  }
 }
 
+.themeSelector {
+  background-color: #f5f5f5;
+  margin: 1em -1em;
+  padding: 0.75em 1em;
+  cursor: pointer;
+  border: 2px solid #f5f5f5;
+  font-family: 'Maison Mono';
+  font-size: 0.9em;
+
+  &:hover {
+    background-color: #eee;
+  }
+
+  &.active {
+    border: 2px solid #ddd;
+  }
+}

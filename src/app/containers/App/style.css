@@ -1,23 +1,19 @@
-@import 'app/styles//colors.css';
-@import 'app/styles//typefaces.css';
+@import 'app/styles/colors.css';
+@import 'app/styles/typefaces.css';
 
 .appContainer {
   padding: 0;
   margin: 0;
-  text-align: center;
-
-  text-align: left;
   margin: auto;
   max-width: 800px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.53em;
 
-  font-family: var(--sans-serif);
-  font-weight: 400;
+  font-family: 'Maison', 'Roboto', sans-serif;
+  font-weight: 300;
   color: var(--prose-color-base);
 
   -webkit-font-smoothing: antialiased;
-  text-align: justify;
 
   & p {
     margin-top: 3em;

@@ -45,6 +45,10 @@ describe('<ThemeChanger />', () => {
   })
 
   it('renders theme selectors', () => {
+    console.log(this.component.props())
+    console.log(selectorClass)
+    console.log(selectorClass)
+    console.log(selectorClass)
     const themeElems = this.component.find(selectorClass)
     const themeNames = props.themes.map(R.prop('title'))
 

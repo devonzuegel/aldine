@@ -46,7 +46,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(require('webpack-hot-middleware')(webpackCompiler))
 }
 
-app.use(favicon(path.join(__dirname, '../src/assets/favicon.ico')))
+app.use(favicon(path.join(__dirname, '../src/app/assets/favicon.ico')))
 
 app.use('/public', express.static(path.join(__dirname, '../build/public')))
 
