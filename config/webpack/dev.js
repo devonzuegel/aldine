@@ -1,14 +1,10 @@
-const path = require('path');
-const webpack = require('webpack');
-const ManifestPlugin = require('webpack-manifest-plugin');
-const merge = require('webpack-merge');
-const rootDir = path.resolve('./src');
+const path           = require('path')
+const webpack        = require('webpack')
+const ManifestPlugin = require('webpack-manifest-plugin')
+const merge          = require('webpack-merge')
+const rootDir        = path.resolve('./src')
 
 const config = {
-  devtool: 'eval',
-
-  debug: true,
-
   entry: {
     app: [
       'webpack-hot-middleware/client?reload=true',
@@ -18,15 +14,15 @@ const config = {
   },
 
   output: {
-    path: path.resolve('./build/public'),
+    path:       path.resolve('./build/public'),
     publicPath: '/public/',
-    filename: 'js/[name].js',
-    pathinfo: true
+    filename:   'js/[name].js',
+    pathinfo:   true
   },
 
-  tslint: {
-    failOnHint: true
-  },
+  tslint:  { failOnHint: true },
+  devtool: 'eval',
+  debug:   true,
 
   plugins: [
     new ManifestPlugin({ fileName: '../manifest.json' }),
@@ -39,10 +35,10 @@ const config = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
-};
+}
 
 module.exports = require('webpack-merge')(
   config,
   require('./partials/aliases'),
   require('./partials/loaders-dev')
-);
+)

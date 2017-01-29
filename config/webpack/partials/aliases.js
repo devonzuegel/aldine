@@ -1,15 +1,15 @@
-const path = require('path');
+const path    = require('path')
 const rootDir = path.resolve('./src')
 
 module.exports = {
 
   resolve: {
-    root: rootDir,
+    root:       rootDir,
     extensions: ['', '.ts', '.tsx', '.js', '.jsx'],
     alias: {
-      '~': path.join(rootDir, 'app'),
-      'components': path.join(rootDir, 'app/components'),
-      'models': path.join(rootDir, 'app/models'),
+      '~':        path.join(rootDir, 'app'),
+      components: path.join(rootDir, 'app/components'),
+      models:     path.join(rootDir, 'app/models'),
     },
   },
 
