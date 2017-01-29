@@ -49,8 +49,7 @@ describe('<ThemeChanger />', () => {
     const themeNames = props.themes.map(R.prop('title'))
 
     expect(themeElems).to.have.length(5)
-    expect(this.component.find('code')).to.have.length(5)
-    expect(themeElems.map(n => n.text())).to.eql(themeNames)
+    expect(themeElems.map((n) => n.text())).to.eql(themeNames)
   })
 
   it('updates the active selector when that selector is clicked', () => {

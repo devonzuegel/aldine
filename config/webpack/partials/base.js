@@ -24,7 +24,6 @@ const config = {
         test: /\.css$/,
         include: path.resolve('./src/app'),
         loaders: [
-          'isomorphic-style',
           'style',
           'css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]',
           'postcss',

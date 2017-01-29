@@ -5,26 +5,26 @@ import { IThemeChanger } from '~/models/theme-changer'
 const s = require('./style.css')
 
 interface ITheme {
-  title: string,
+  title:     string,
   className: string,
 }
 
 export interface IProps {
   themeChanger: IThemeChanger,
-  update: Redux.ActionCreator,
-  themes: ITheme[],
+  update:       Redux.ActionCreator,
+  themes:       ITheme[],
 }
 
 const ThemeOption = ({ update, title, className, themeChanger }) => {
   const classNames =
     classnames({
       [s.themeSelector]: true,
-      [s.active]: themeChanger.className === className,
+      [s.active]:        themeChanger.className === className,
     })
 
   return (
     <div onClick={() => update(className)} className={classNames}>
-      <code>{title}</code>
+      {title}
     </div>
   )
 }
