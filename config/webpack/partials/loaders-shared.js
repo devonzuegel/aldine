@@ -1,27 +1,36 @@
+const path    = require('path')
+const rootDir = path.resolve('./src')
+
 module.exports = [
   {
-    test: /\.jsx$/,
+    test:   /\.jsx$/,
     loader: 'babel?presets[]=es2015presets[]=react'
   }, {
-    test: /\.(jpe?g|png|gif)$/i,
+    test:   /\.(jpe?g|png|gif)$/i,
     loader: 'url?limit=1000&name=images/[hash].[ext]'
   }, {
-    test: /\.eot(\?.*)?$/,
+    test:   /\.eot(\?.*)?$/,
     loader: 'file?name=fonts/[hash].[ext]'
   }, {
-    test: /\.svg(\?.*)?$/,
+    test:   /\.svg(\?.*)?$/,
     loader: 'url?limit=10000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
   }, {
-    test: /\.(woff|woff2)(\?.*)?$/,
-    loader: 'file?name=fonts/[hash].[ext]'
+    test:   /\.(woff|woff2)(\?.*)?$/,
+    loader: 'url-loader',
+      options: {
+        limit:      50000,
+        mimetype:   'application/font-woff',
+        name:       './fonts/[hash].[ext]',
+        publicPath: path.join(rootDir, 'fonts'),
+     },
   }, {
-    test: /\.ttf(\?.*)?$/,
+    test:   /\.ttf(\?.*)?$/,
     loader: 'url?limit=10000&mimetype=application/octet-stream&name=fonts/[hash].[ext]'
   }, {
-    test: /\.json$/,
+    test:   /\.json$/,
     loader: 'json',
   }, {
-    test: /\?raw$/,
+    test:   /\?raw$/,
     loader: 'raw',
   }
 ]

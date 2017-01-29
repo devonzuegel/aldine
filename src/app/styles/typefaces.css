@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+  font-family: 'Maison';
+  src: url('fonts/MaisonNeueWEB-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Maison Mono';
+  src: url('fonts/MaisonNeueWEB-Mono.woff2') format('woff2');
+}
 
 :root {
-  --sans-serif: 'Roboto';
-  --monospace: 'Roboto Mono';
+  --sans-serif: 'Maison';
+  --monospace: 'Maison Mono';
 }
