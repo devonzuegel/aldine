@@ -4,7 +4,7 @@ import { IRouteConfig } from '~/models/route-config'
 const s = require('./style.css')
 
 const HeaderItem = (route: IRouteConfig, i: number) => (
-  <li>
+  <li className={s.headerItem}>
     <Link to={route.path} key={i}>
       {route.title}
     </Link>

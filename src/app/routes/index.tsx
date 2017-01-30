@@ -5,10 +5,12 @@ import { App } from '~/components/App'
 import { Home } from '~/modules/Home'
 import { Counter } from '~/modules/Counter'
 import { TaggedProse } from '~/modules/TaggedProse'
+import { GardenPaths } from '~/components/GardenPaths'
 
 const config: IRouteConfig[] = [
-  { path: '/',   title: 'ThemeChanger', component: Home        },
-  { path: 'tag', title: 'TaggedProse',  component: TaggedProse },
+  { path: '/',      title: 'Theme Changer', component: Home        },
+  { path: 'tag',    title: 'Tagged Prose',  component: TaggedProse },
+  { path: 'garden', title: 'Garden Paths',  component: GardenPaths },
 ]
 
 const buildRoute = (route: IRouteConfig) => (

@@ -1,0 +1,20 @@
+@import 'app/styles/colors.css';
+@import 'app/styles/typefaces.css';
+
+.gardenPaths {
+}
+
+.gardenPath {
+  line-height: 2em;
+}
+
+.verb {
+  padding-bottom: 1px;
+  margin-bottom: -1px;
+  border-bottom: 1px solid var(--lightish-grey);
+}
+
+.spaced {
+  margin-right: 8px;
+  // border: 1px solid var(--light-grey);
+}

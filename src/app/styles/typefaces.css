@@ -1,6 +1,19 @@
 @font-face {
+  font-weight: 300;
   font-family: 'Maison';
   src: url('fonts/MaisonNeueWEB-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Maison';
+  src: url('fonts/MaisonNeueWEB-Demi.woff2') format('woff2');
+}
+
+@font-face {
+  font-style: italic;
+  font-family: 'Maison';
+  src: url('fonts/MaisonNeueWEB-BookItalic.woff2') format('woff2');
 }
 
 @font-face {

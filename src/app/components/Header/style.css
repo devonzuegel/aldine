@@ -5,5 +5,8 @@
 
 .nav ul li {
   display: inline;
-  padding: 5px;
+}
+
+.headerItem {
+  margin-right: 1.8em;
 }

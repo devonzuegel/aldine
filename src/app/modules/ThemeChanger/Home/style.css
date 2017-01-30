@@ -1,0 +1,83 @@
+.home {
+}
+
+.legend {
+  width: 175px;
+  float: right;
+  padding: 0.5em 1em;
+  margin: 0.5em 0 0 2em;
+  border: 1px solid #eee;
+}
+
+.faded-plaintext-all {
+  color: #999;
+
+  & .highlight {
+    background-color: #eee;
+    padding: 2px 6px;
+    color: black;
+  }
+
+  & .noun {
+    color: black;
+  }
+
+  & .verb {
+    border-bottom: 1px solid #ccc;
+    color: black;
+  }
+}
+
+.faded-plaintext-nouns {
+  color: #777;
+
+  & .noun {
+    color: black;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.faded-plaintext-verbs {
+  color: #777;
+
+  & .verb {
+    color: black;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.dark-faded-plaintext {
+  background-color: #222225;
+  color: #777775;
+  padding: 1em 8em;
+  margin: 0 -8em;
+
+  & .legend {
+    border-color: #777775;
+  }
+
+  & .highlight {
+    background-color: #333335;
+    padding: 2px 6px;
+    color: #eeeee5;
+    &:hover {
+      color: white;
+    }
+  }
+
+  & .noun {
+    color: #eeeee5;
+    &:hover {
+      color: white;
+    }
+  }
+
+  & .verb {
+    border-bottom: 2px solid #777775;
+    color: #eeeee5;
+    &:hover {
+      border-bottom: 2px solid #666665;
+      color: white;
+    }
+  }
+}
