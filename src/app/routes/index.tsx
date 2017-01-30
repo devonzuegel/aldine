@@ -1,13 +1,24 @@
 import * as React from 'react'
 import { IndexRoute, Route } from 'react-router'
-import { App, Home } from '~/containers'
+import { IRouteConfig } from '~/models/route-config'
+import { App } from '~/components/App'
+import { Home } from '~/modules/Home'
 import { Counter } from '~/modules/Counter'
 import { TaggedProse } from '~/modules/TaggedProse'
 
+const config: IRouteConfig[] = [
+  { path: '/',   title: 'ThemeChanger', component: Home        },
+  { path: 'tag', title: 'TaggedProse',  component: TaggedProse },
+]
+
+const buildRoute = (route: IRouteConfig) => (
+  (route.path === '/') ?
+  <IndexRoute component={route.component} /> :
+  <Route path={route.path} component={route.component} />
+)
+
 export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={Home} />
-    <Route path="counter" component={Counter} />
-    <Route path="tag" component={TaggedProse} />
+  <Route path='/' component={App(config)}>
+    {config.map(buildRoute)}
   </Route>
 )

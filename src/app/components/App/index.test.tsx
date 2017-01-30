@@ -4,7 +4,8 @@ import { App } from './index'
 
 describe('<App />', () => {
 
-  const component = renderComponent(App)
+  const routes = []
+  const component = renderComponent(App(routes))
 
   it('Renders with correct style', () => {
     const s = require('./style.css')
