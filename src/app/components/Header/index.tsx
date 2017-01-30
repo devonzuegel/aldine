@@ -1,20 +1,22 @@
 import * as React from 'react'
 import { Link } from 'react-router'
+import { IRouteConfig } from '~/models/route-config'
+const s = require('./style.css')
 
-class Header extends React.Component<any, any> {
-  public render() {
-    const s = require('./style.css')
+const HeaderItem = (route: IRouteConfig, i: number) => (
+  <li>
+    <Link to={route.path} key={i}>
+      {route.title}
+    </Link>
+  </li>
+)
 
-    return (
-      <nav className={s.nav}>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="counter">Counter</Link></li>
-          <li><Link to="tag">Tagged Prose</Link></li>
-        </ul>
-      </nav>
-    )
-  }
-}
+const Header = ({ routes }) => (
+  <nav className={s.nav}>
+    <ul>
+      {routes.map(HeaderItem)}
+    </ul>
+  </nav>
+)
 
 export { Header }

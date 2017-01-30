@@ -9,11 +9,10 @@ import { TaggedProse } from './index'
 // const styles = require('~/components/TaggedProse/style.css')
 
 describe('<TaggedProse />', () => {
-  beforeEach(() => {
-    // this.component = renderComponent(TaggedProse, state, props)
-  })
+  // beforeEach(() => {
+  //   this.component = renderComponent(TaggedProse, state, props)
+  // })
 
-  it('..', () => {
-
-  })
+  // it('..', () => {
+  // })
 })
