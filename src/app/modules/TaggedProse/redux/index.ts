@@ -44,7 +44,6 @@ export const categorize = (index: number): ITaggedProseAction => ({
   index,
 })
 
-
 /** Action Creator: Updates the selected TaggedProse category */
 export const select = (category: string): ITaggedProseAction => ({
   type: SELECT,
