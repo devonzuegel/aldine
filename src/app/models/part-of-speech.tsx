@@ -1,8 +1,3 @@
-export interface IWord {
-  word: string,
-  pos: EPartOfSpeech,
-}
-
 export const enum EPartOfSpeech {
   CC,    // Coord Conjuncn         and,but,or
   CD,    // Cardinal number        one,two
@@ -48,4 +43,9 @@ export const enum EPartOfSpeech {
   '"',   // quote                  "
   '(',   // Left paren             (
   ')',   // Right paren            )
+}
+
+export interface IWord {
+  word: string,
+  pos: number | EPartOfSpeech,
 }

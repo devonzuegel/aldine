@@ -1,8 +1,7 @@
-@import 'app/styles//colors.css';
+@import 'app/styles/colors.css';
 
 .token {
   color: var(--dark-blue);
-  font-weight: 400;
 
   padding: 1px 3px;
   margin: -1px -3px;

@@ -1,22 +1,25 @@
-import * as React from 'react'
+import * as React            from 'react'
 import { IndexRoute, Route } from 'react-router'
+
 import { IRouteConfig } from '~/models/route-config'
-import { App } from '~/components/App'
-import { Home } from '~/modules/Home'
-import { Counter } from '~/modules/Counter'
-import { TaggedProse } from '~/modules/TaggedProse'
-import { GardenPaths } from '~/components/GardenPaths'
+import { App          } from '~/components/App'
+import { Home         } from '~/modules/Home'
+import { Counter      } from '~/modules/Counter'
+import { TaggedProse  } from '~/modules/TaggedProse'
+import { AutomatedPOS } from '~/modules/AutomatedPOS'
+import { GardenPaths  } from '~/components/GardenPaths'
 
 const config: IRouteConfig[] = [
-  { path: '/',      title: 'Theme Changer', component: Home        },
-  { path: 'tag',    title: 'Tagged Prose',  component: TaggedProse },
-  { path: 'garden', title: 'Garden Paths',  component: GardenPaths },
+  { path: '/',      title: 'Theme Changer', component: Home         },
+  { path: 'tag',    title: 'Tagged Prose',  component: TaggedProse  },
+  { path: 'pos',    title: 'Automated POS', component: AutomatedPOS },
+  { path: 'garden', title: 'Garden Paths',  component: GardenPaths  },
 ]
 
-const buildRoute = (route: IRouteConfig) => (
+const buildRoute = (route: IRouteConfig, i: number) => (
   (route.path === '/') ?
-  <IndexRoute component={route.component} /> :
-  <Route path={route.path} component={route.component} />
+  <IndexRoute component={route.component} key={i} /> :
+  <Route path={route.path} component={route.component} key={i} />
 )
 
 export default (
