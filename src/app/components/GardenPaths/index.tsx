@@ -9,14 +9,13 @@ const TAGS = {
   '~~': s.highlight,
 }
 
-const parse = (str: string) => {
-  return tag(TAGS)(str)
-}
+const parse = (str: string) =>
+  tag(TAGS)(str)
 
-const space = (str: string) => R.pipe(
-  R.split('|'),
-  R.map(substr => <span className={s.spaced}>{substr}</span>)
-)(str)
+const space = (str: string) =>
+  R.split('|', str).map((substr: string, i: number) => (
+    <span key={i} className={s.spaced}>{substr}</span>
+  ))
 
 const samples = {
   tagged: [
