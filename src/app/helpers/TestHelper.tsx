@@ -15,17 +15,32 @@ const middlewares = [thunk]
 const mockStore = configureStore(middlewares)
 
 /** Render Component */
-function renderComponent(ComponentClass, state?, props?) {
+function renderComponent(Component, state?, props?) {
   const store: Redux.Store = createStore(rootReducer, state)
 
-  return mount (
+  return mount(
     <Provider store={store}>
-      <ComponentClass {...props} />
+      <Component {...props} />
     </Provider>
   )
 }
 
-const p = (x: any, stringify: boolean = false) =>
-  console.log( stringify ? JSON.stringify(x) : x)
+const stringify = (x: any, condensed: boolean = true) => {
+  if (condensed) {
+    JSON.stringify(x, null, 2).replace(/ \}\,\n  \{/g, '}, {')
+  } else {
+    JSON.stringify(x)
+  }
+}
 
-export { mockStore, fetchMock, renderComponent, p }
+const p = (x: any, str: boolean = true, condensed: boolean = true) => {
+  if (str) {
+    console.log(stringify(x, condensed))
+  } else {
+    console.log(x)
+  }
+}
+
+const klass = (className: string) => `.${className}`
+
+export { mockStore, fetchMock, renderComponent, p, stringify, klass }
