@@ -82,6 +82,7 @@
     "express": "^4.13.4",
     "history": "^2.1.0",
     "isomorphic-fetch": "^2.2.1",
+    "pos": "^0.4.2",
     "postcss-import": "^9.1.0",
     "ramda": "^0.22.1",
     "raw-loader": "^0.5.1",
