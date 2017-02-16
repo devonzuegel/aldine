@@ -2,11 +2,11 @@
 
 .codeblock {
   background-color: #f5f5f5;
-  margin:           1em -1em;
-  padding:          0.75em 1em;
-  border:           2px solid #f5f5f5;
-  font-family:      var(--monospace);
-  font-size:        0.7em;
+  margin: 1em -1em;
+  padding: 0.75em 1em;
+  border: 2px solid #f5f5f5;
+  font-family: var(--monospace);
+  font-size: 0.7em;
 }
 
 .pos {
@@ -14,7 +14,8 @@
   font-size: 0.8em;
 }
 
-.separator {}
+.separator {
+}
 
 .word {
   color: #999;
@@ -42,6 +43,6 @@
 .DT,
 .RB,
 .RBR,
-.5{
+.5 {
   opacity: 0.5;
 }

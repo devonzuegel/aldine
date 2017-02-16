@@ -2,6 +2,7 @@
 
 .category {
   list-style-type: circle;
+
   &:hover {
     cursor: pointer;
   }

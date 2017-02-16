@@ -2,16 +2,16 @@
 @import 'app/styles/typefaces.css';
 
 .appContainer {
-  padding:     0;
-  margin:      0;
-  text-align:  left;
-  margin:      auto;
-  max-width:   800px;
-  font-size:   18px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin: auto;
+  max-width: 800px;
+  font-size: 18px;
   line-height: 1.53em;
   font-family: var(--sans-serif);
   font-weight: 300;
-  color:       var(--prose-color-base);
+  color: var(--prose-color-base);
   -webkit-font-smoothing: antialiased;
 
   & p {
@@ -19,14 +19,14 @@
   }
 
   & a {
-    color:           var(--bright-blue);
+    color: var(--bright-blue);
     text-decoration: none;
-    border-bottom:   1px solid transparent;
+    border-bottom: 1px solid transparent;
 
     &:hover {
-      color:          var(--brighter-blue);
+      color: var(--brighter-blue);
       padding-bottom: 2px;
-      margin-bottom:  -2px;
+      margin-bottom: -2px;
     }
   }
 }
