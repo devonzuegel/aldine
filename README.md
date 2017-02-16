@@ -33,7 +33,10 @@ $ npm run build:prod
 $ npm test
 ```
 
-For Windows users, we recommend using the shortcuts instead of setting environment variables because they work a little different on Windows.
+## Linters & Autoformatters ##
+
+- `stylefmt -r **/*.css -c .stylelintrc` for fixing CSS errors
+- `tslint --fix src/**/*.ts` for fixing Typescript errors
 
 ## Notes ##
 
