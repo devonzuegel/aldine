@@ -8,12 +8,14 @@ import { Counter      } from '~/modules/Counter'
 import { TaggedProse  } from '~/modules/TaggedProse'
 import { AutomatedPOS } from '~/modules/AutomatedPOS'
 import { GardenPaths  } from '~/components/GardenPaths'
+import { Styleguide    } from '~/routes/Styleguide'
 
 const config: IRouteConfig[] = [
-  { path: '/',      title: 'Theme Changer', component: Home         },
-  { path: 'tag',    title: 'Tagged Prose',  component: TaggedProse  },
-  { path: 'pos',    title: 'Automated POS', component: AutomatedPOS },
-  { path: 'garden', title: 'Garden Paths',  component: GardenPaths  },
+  { path: '/',          title: 'Theme Changer', component: Home         },
+  { path: 'tag',        title: 'Tagged Prose',  component: TaggedProse  },
+  { path: 'pos',        title: 'Automated POS', component: AutomatedPOS },
+  { path: 'garden',     title: 'Garden Paths',  component: GardenPaths  },
+  { path: 'styleguide', title: 'Styleguide',    component: Styleguide   },
 ]
 
 const buildRoute = (route: IRouteConfig, i: number) => (
