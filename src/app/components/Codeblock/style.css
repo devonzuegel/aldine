@@ -1,0 +1,12 @@
+@import 'app/styles/colors.css';
+@import 'app/styles/typefaces.css';
+
+
+.codeblock {
+  background-color: #f5f5f5;
+  margin: 1em -1em;
+  padding: 0.75em 1em;
+  border: 2px solid #f5f5f5;
+  font-family: var(--monospace);
+  font-size: 0.8em;
+}
