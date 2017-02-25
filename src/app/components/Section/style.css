@@ -1,0 +1,37 @@
+@import 'app/styles/base.css';
+
+.section {
+  margin: var(--small) 0;
+  padding: var(--base);
+}
+
+.section--primary--neutral {
+  background-color: var(--neutral-xlight);
+}
+
+.section--secondary--neutral {
+  border: 1px solid var(--neutral-light);
+}
+
+.section--primary--positive {
+  background-color: var(--positive-base);
+  color: white;
+}
+
+.section--secondary--positive {
+  border: 1px solid var(--positive-base);
+  color: var(--positive-base);
+}
+
+.section--primary--negative {
+  background-color: var(--negative-base);
+  color: white;
+}
+
+.section--secondary--negative {
+  border: 1px solid var(--negative-base);
+}
+
+.debug {
+  border: 1px solid blue;
+}

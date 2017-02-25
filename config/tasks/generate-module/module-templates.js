@@ -31,7 +31,6 @@ module.exports = {
   ])),
 
   'style.css': c => fileStr([
-    `@import 'app/styles/colors.css';`,
-    `@import 'app/styles/typefaces.css';`,
+    `@import 'app/styles/base.css';`,
   ]),
 }
