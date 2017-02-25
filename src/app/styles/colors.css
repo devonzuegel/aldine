@@ -1,5 +1,7 @@
 :root {
 
+  /** NAMED COLORS **************************************/
+
   /** Blue */
 
   --dark-blue: #666677;
@@ -17,14 +19,37 @@
   --light-grey: #e5e5e5;
   --lighter-grey: #efeff1;
 
-
   /** Pink */
 
-  --lighter-pink: #efeff1;
-  --light-pink: #e5e5e5;
+  --dark-pink: #ff5a5f;
+  --lighter-pink: var(--dark-pink);
+  --light-pink: var(--dark-pink);
+
+  /** ATTITUDES *****************************************/
+
+  --neutral-base: var(--lightish-grey);
+  --neutral-light: var(--light-grey);
+  --neutral-xlight: var(--lighter-grey);
+  --neutral-dark: var(--medium-grey);
+  --neutral-xdark: var(--dark-grey);
+
+  --positive-base: var(--bright-blue);
+  --positive-light: var(--pale-bright-blue);
+  --positive-xlight: var(--paler-bright-blue);
+  --positive-dark: var(--dark-blue);
+  --positive-xdark: var(--darker-blue);
+
+  --negative-base: var(--lighter-pink);
+  --negative-light: var(--lighter-pink);
+  --negative-xlight: var(--light-pink);
+  --negative-dark: var(--dark-pink);
+  --negative-xdark: var(--light-pink);
+
+  /** SEMANTIC ******************************************/
 
   /** Prose */
 
   --prose-color-base: var(--dark-grey);
   --prose-color-dark: var(--darker-blue);
+
 }
