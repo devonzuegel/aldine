@@ -18,14 +18,10 @@
   border: 1px solid blue;
 }
 
-.leftSide {
-  width: calc(5 * var(--xlarge));
-}
-
 .horizontal-box {
   display: flex;
 }
 
 .flex-1 {
-  flex: 1;
+  flex: 2;
 }

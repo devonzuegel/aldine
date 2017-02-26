@@ -31,9 +31,7 @@ export const Layout: Type = (props: IProps) => {
 
   return (
     <div className={s['horizontal-box']}>
-      <div className={s.leftSide}>
-        {props.leftSide}
-      </div>
+      {props.leftSide}
       {Main}
     </div>
   )
