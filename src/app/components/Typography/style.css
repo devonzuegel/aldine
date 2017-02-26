@@ -23,16 +23,16 @@
 
 .hr {
   border: 1px solid var(--neutral-xlight);
-  margin: var(--medium) 0;
-}
-
-.h1 {
-  font-size: var(--medium);
   margin: var(--large) 0;
 }
 
+.h1 {
+  font-size: var(--large);
+  margin: var(--xlarge) 0;
+}
+
 .h2 {
-  margin-top: var(--large);
+  margin-top: var(--xlarge);
 }
 
 .label {

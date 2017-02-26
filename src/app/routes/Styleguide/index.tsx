@@ -1,11 +1,13 @@
-import * as React    from 'react'
-import { Codeblock } from '~/components/Codeblock'
-import { Section   } from '~/components/Section'
-import { examples  } from '~/components/utils'
-import * as T        from '~/components/Typography'
+import * as React     from 'react'
+import { Codeblock  } from '~/components/Codeblock'
+import { Section    } from '~/components/Section'
+import { Colorblock } from '~/components/Colorblock'
+import { examples   } from '~/components/utils'
+import * as T         from '~/components/Typography'
 
 const Guide = (props) => (
   <div>
+    <T.HR />
     <T.H2>{props.title}</T.H2>
     {props.children}
   </div>
