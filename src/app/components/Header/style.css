@@ -17,3 +17,7 @@
 .headerItem {
   margin-right: var(--base);
 }
+
+.headerItemSelected a {
+  border-bottom: 1px solid var(--brand-light);
+}
