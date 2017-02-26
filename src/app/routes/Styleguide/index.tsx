@@ -25,6 +25,13 @@ export const Styleguide = () => (
       Styleguide
     </T.H1>
 
+    <Guide title='Misc'>
+      <Label>
+        Colorblock
+      </Label>
+      <Colorblock />
+    </Guide>
+
     <Guide title='Section'>
       {examples(({ attitude, emphasis }) => (
         <div>

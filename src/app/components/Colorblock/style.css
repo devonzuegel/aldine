@@ -1,0 +1,25 @@
+@import 'app/styles/base.css';
+
+.colorblockWrapper {
+  float: left;
+  margin-top: calc(var(--xxsmall) - var(--small));
+  margin-right: var(--small);
+}
+
+.colorblock {
+  width: calc(var(--xlarge) / 5);
+  height: calc(var(--xlarge) / 3);
+}
+
+.dark {
+  background: var(--positive-base);
+}
+
+.medium {
+  background: color(var(--positive-base) a(70%));
+}
+
+.light {
+  background: color(var(--positive-base) a(40%));
+}
+
