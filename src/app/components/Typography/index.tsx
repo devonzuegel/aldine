@@ -26,10 +26,10 @@ const classes = (name, { emphasis, debug, attitude, faded, uppercase }: IProps) 
   })
 )
 
-const Typography = (StrName): Type => (props: IProps) => (
-  <StrName className={classes(StrName, props)}>
+const Typography = (Name): Type => (props: IProps) => (
+  <Name className={classes(Name, props)}>
     {props.children}
-  </StrName>
+  </Name>
 )
 
 export const H1    = Typography('h1')

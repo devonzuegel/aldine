@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { renderComponent } from '~/helpers/TestHelper'
+import { renderComponent } from '~/components/TestHelper'
 import { ThemeChanger } from './index'
 
 /** Mock App. State */
