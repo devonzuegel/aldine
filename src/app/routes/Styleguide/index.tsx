@@ -1,57 +1,65 @@
-import * as React             from 'react'
-import { Codeblock }          from '~/components/Codeblock'
-import { Section }            from '~/components/Section'
-import { H1, H2, H3, H4, H5 } from '~/components/Typography'
-import { examples }           from '~/components/utils'
+import * as React    from 'react'
+import { Codeblock } from '~/components/Codeblock'
+import { Section   } from '~/components/Section'
+import { examples  } from '~/components/utils'
+import * as T        from '~/components/Typography'
+
+const Guide = (props) => (
+  <div>
+    <T.H2>{props.title}</T.H2>
+    {props.children}
+  </div>
+)
+
+const Label = (props) => (
+  <T.Label faded>
+    {props.children} ↘
+  </T.Label>
+)
 
 export const Styleguide = () => (
   <div>
-    <H3 faded>
-      Section
-    </H3>
+    <T.H1>
+      Styleguide
+    </T.H1>
 
-    {examples(({ attitude, emphasis }) => (
-      <div>
-        <label>
-          ({attitude}, {emphasis})
-        </label>
+    <Guide title='Section'>
+      {examples(({ attitude, emphasis }) => (
+        <div>
+          <Label>
+            {attitude}, {emphasis}
+          </Label>
 
-        <Section {...{ attitude, emphasis }}>
-          This is some text inside of a section.
-        </Section>
-      </div>
-    ))}
+          <Section {...{ attitude, emphasis }}>
+            This is some text inside of a section.
+          </Section>
+        </div>
+      ))}
+    </Guide>
 
-    <H3 faded>
-      Codeblock
-    </H3>
+    <Guide title='Typography'>
+      <Section emphasis='secondary'>
+        {[ 'H1', 'H2', 'H3', 'H4', 'H5' ].map((name: string, i: number) =>{
+          const C = T[name]
+          return (
+            <div key={i}>
+              <Label>{name} header</Label>
+              <C>This is a main header (T.{name})</C>
+            </div>
+          )
+        })}
 
-    <Codeblock>
-      This is some pre-formatted text.
-    </Codeblock>
+        <Label>Paragraph</Label>
+        <T.P>
+          This is a paragraph with a <T.A href='#'>link</T.A>.
+        </T.P>
 
-    <H3 faded>
-      Typography
-    </H3>
+        <Label>Codeblock</Label>
+        <Codeblock>
+          This is some pre-formatted text.
+        </Codeblock>
+      </Section>
+    </Guide>
 
-    <H1>
-      This is a main header (H1)
-    </H1>
-
-    <H2>
-      This is a main header (H2)
-    </H2>
-
-    <H3 faded>
-      This is a main header (H3)
-    </H3>
-
-    <H4>
-      This is a main header (H4)
-    </H4>
-
-    <H5>
-      This is a main header (H5)
-    </H5>
   </div>
 )

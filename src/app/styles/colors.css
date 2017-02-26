@@ -17,7 +17,8 @@
   --medium-grey: #9999bb;
   --lightish-grey: #ccccdd;
   --light-grey: #e5e5e5;
-  --lighter-grey: #efeff1;
+  /** --lighter-grey: #efeff1; */
+  --lighter-grey: #f5f5f5;
 
   /** Pink */
 
@@ -51,7 +52,7 @@
 
   --brand-base: var(--bright-blue);
   --brand-light: var(--pale-bright-blue);
-  --brand-dark: var(--dark-blue);
+  --brand-dark: darken(var(--bright-blue), 50%);
 
   /** Prose */
 

@@ -1,9 +1,10 @@
 :root {
-  --font-base-size: 16px;
+  --font-base-size: 18px;
 
   --tiny: 0.5rem;
   --small: 1rem;
   --base: 1.5rem;
+  --medium: 2.25rem;
   --large: 3rem;
   --xlarge: 4rem;
 

@@ -4,7 +4,6 @@ import { expect } from 'chai'
 
 import { Codeblock } from '~/components/Codeblock'
 
-
 describe('<Codeblock />', () => {
 
   it('has the expected text', () => {

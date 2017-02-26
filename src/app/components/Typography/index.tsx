@@ -1,35 +1,52 @@
 import * as React from 'react'
-import * as R     from 'ramda'
 import * as classnames from 'classnames'
 
 const s = require('./style.css')
 
-export const H1 = (props) => (
-  <h1 className={s.h1}>
-    {props.children}
-  </h1>
+interface IProps {
+  children?: any,
+  debug?: boolean,
+  emphasis?: string,
+  attitude?: string,
+  faded?: boolean,
+  uppercase?: boolean,
+}
+
+type Type = React.StatelessComponent<IProps>
+
+const classes = (name, { emphasis, debug, attitude, faded, uppercase }: IProps) => (
+  classnames({
+    [s[name]]: true,
+    [s.debug]: debug,
+    [s.faded]: faded,
+    [s.uppercase]: uppercase,
+    [s[`${name}--${emphasis}`]]: true,
+    [s[`${name}--${attitude}`]]: true,
+  })
 )
 
-export const H2 = (props) => (
-  <h2 className={s.h2}>
+const Typography = (StrName): Type => (props: IProps) => (
+  <StrName className={classes(StrName, props)}>
     {props.children}
-  </h2>
+  </StrName>
 )
 
-export const H3 = (props) => (
-  <h3 className={s.h3}>
+export const H1    = Typography('h1')
+export const H2    = Typography('h2')
+export const H3    = Typography('h3')
+export const H4    = Typography('h4')
+export const H5    = Typography('h5')
+export const Label = Typography('label')
+export const P     = Typography('p')
+
+interface IAProps extends IProps {
+  href: string,
+}
+
+export const A = (props: IAProps) => (
+  <a className={classes('a', props)}>
     {props.children}
-  </h3>
+  </a>
 )
 
-export const H4 = (props) => (
-  <h4 className={s.h4}>
-    {props.children}
-  </h4>
-)
-
-export const H5 = (props) => (
-  <h5 className={s.h5}>
-    {props.children}
-  </h5>
-)
+export const HR = () => <hr className={s.hr} />

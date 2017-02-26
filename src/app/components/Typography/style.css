@@ -1,3 +1,41 @@
 @import 'app/styles/base.css';
 
+.debug {
+  border: 1px solid blue;
+}
 
+.faded {
+  opacity: 0.5;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.a {
+  color: var(--brand-base);
+
+  &:hover {
+    border-bottom: 1px solid var(--brand-light);
+    cursor: pointer;
+  }
+}
+
+.hr {
+  border: 1px solid var(--neutral-xlight);
+  margin: var(--medium) 0;
+}
+
+.h1 {
+  font-size: var(--medium);
+  margin: var(--large) 0;
+}
+
+.h2 {
+  margin-top: var(--large);
+}
+
+.label {
+  font-size: var(--small);
+  text-transform: uppercase;
+}

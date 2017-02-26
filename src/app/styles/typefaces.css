@@ -24,4 +24,7 @@
 :root {
   --sans-serif: 'Maison';
   --monospace: 'Maison Mono';
+  --font-weight-light: 100;
+  --font-weight-base: var(--font-weight-light);
+  --font-weight-bold: 500;
 }

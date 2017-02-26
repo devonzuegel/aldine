@@ -5,28 +5,11 @@
   padding: 0;
   margin: 0;
   font-size: var(--font-base-size);
-  text-align: left;
   margin: auto;
   max-width: 800px;
-  line-height: 1.53em;
+  line-height: var(--line-height);
   font-family: var(--sans-serif);
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
   color: var(--prose-color-base);
   -webkit-font-smoothing: antialiased;
-
-  & p {
-    margin-top: 3em;
-  }
-
-  & a {
-    color: var(--brand-base);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      color: var(--brand-light);
-      padding-bottom: 2px;
-      margin-bottom: -2px;
-    }
-  }
 }

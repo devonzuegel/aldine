@@ -4,8 +4,8 @@ import * as React from 'react'
 export const attitudes = [ 'neutral', 'positive', 'negative' ]
 export const emphases  = [ 'primary', 'secondary' ]
 export const examples  = (Component) => (
-  attitudes.map((attitude: string, i: number) =>
-    emphases.map((emphasis: string, j: number) =>
+  emphases.map((emphasis: string, j: number) =>
+    attitudes.map((attitude: string, i: number) =>
       <Component key={`${i}-${j}`} {...{ attitude, emphasis }} />
     )
   )
