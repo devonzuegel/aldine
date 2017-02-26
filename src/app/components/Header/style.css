@@ -1,8 +1,9 @@
 @import 'app/styles/base.css';
 
 .nav {
-  margin-top: var(--small);
+  margin: var(--base);
 }
+
 .nav ul {
   list-style-type: none;
   padding: 0;

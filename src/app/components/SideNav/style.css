@@ -1,0 +1,34 @@
+@import 'app/styles/base.css';
+
+.sideNav {
+  min-width: calc(4 * var(--xlarge));
+  width: 18%;
+  margin-right: var(--base);
+}
+
+.fixed {
+  position: fixed;
+}
+
+.toc {
+  padding: 0;
+}
+
+.toc-li {
+  padding: var(--xsmall);
+  padding-left: calc(var(--base));
+  list-style-type: none;
+  cursor: pointer;
+  &:hover {
+    color: var(--prose-color-dark);
+  }
+}
+
+.toc-0 {
+  font-weight: var(--font-weight-bold);
+}
+
+.toc-1 {
+  padding-left: calc(var(--base) + var(--xsmall));
+  font-size: var(--small);
+}

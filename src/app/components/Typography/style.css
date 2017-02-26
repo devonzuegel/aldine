@@ -27,11 +27,12 @@
 }
 
 .h1 {
-  font-size: var(--large);
+  font-size: var(--xlarge);
   margin: var(--xlarge) 0;
 }
 
 .h2 {
+  font-size: var(--large);
   margin-top: var(--xlarge);
 }
 

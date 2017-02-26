@@ -1,24 +1,31 @@
 import * as React    from 'react'
+import * as R        from 'ramda'
 import { Layout    } from '~/components/Layout'
 import { Codeblock } from '~/components/Codeblock'
 import { Section   } from '~/components/Section'
+import { SideNav   } from '~/components/SideNav'
 import { examples  } from '~/components/utils'
 import * as T        from '~/components/Typography'
 
 const Guide = (props) => (
-  <div>
+  <div id={props.title}>
     <T.HR />
     <T.H2>{props.title}</T.H2>
     {props.children}
   </div>
 )
 
-const StyleguideNav = (
-  <Section emphasis='secondary'>
-    Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the row axis (as opposed to justify-content which aligns the grid along the column axis).
-    Start aligns the grid to the top of the grid container.
-  </Section>
-)
+const ClickToView = (name: string) => ({
+  name,
+  onClick: () => document.getElementById(name).scrollIntoView(),
+})
+
+const toc = [
+  ClickToView('Section'),
+  R.merge(ClickToView('Typography'), {
+    children: [ 'H1', 'H2', 'H3', 'H4', 'H5', 'Paragraph', 'Codeblock' ].map(ClickToView)
+  }),
+]
 
 const Label = (props) => (
   <T.Label faded>
@@ -26,14 +33,11 @@ const Label = (props) => (
   </T.Label>
 )
 
-export const Styleguide = () => (
-  <Layout leftSide={StyleguideNav}>
-    <T.H1>
-      Styleguide
-    </T.H1>
-
-    <Guide title='Section'>
-      {examples(({ attitude, emphasis }) => (
+const Guides = [
+  {
+    title: 'Section',
+    body: (
+      examples(({ attitude, emphasis }) => (
         <div>
           <Label>
             {attitude}, {emphasis}
@@ -43,32 +47,52 @@ export const Styleguide = () => (
             This is some text inside of a section.
           </Section>
         </div>
-      ))}
-    </Guide>
-
-    <Guide title='Typography'>
+      ))
+    )
+  }, {
+    title: 'Typography',
+    body: (
       <Section emphasis='secondary'>
         {[ 'H1', 'H2', 'H3', 'H4', 'H5' ].map((name: string, i: number) =>{
           const C = T[name]
           return (
-            <div key={i}>
+            <div key={i} id={name}>
               <Label>{name} header</Label>
               <C>This is a main header (T.{name})</C>
             </div>
           )
         })}
 
-        <Label>Paragraph</Label>
-        <T.P>
-          This is a paragraph with a <T.A href='#'>link</T.A>.
-        </T.P>
+        <div id='Paragraph'>
+          <Label>Paragraph</Label>
+          <T.P>
+            This is a paragraph with a <T.A href='#'>link</T.A>.
+          </T.P>
+        </div>
 
-        <Label>Codeblock</Label>
-        <Codeblock>
-          This is some pre-formatted text.
-        </Codeblock>
+        <div id='Codeblock'>
+          <Label>Codeblock</Label>
+          <Codeblock>
+            This is some pre-formatted text.
+          </Codeblock>
+        </div>
       </Section>
-    </Guide>
+    )
+  },
+]
+
+export const Styleguide = () => (
+  <Layout leftSide={<SideNav {...{ toc }} />}>
+
+    <T.H1>
+      Styleguide
+    </T.H1>
+
+    {Guides.map(({ title, body }) =>
+      <Guide {...{ title }}>
+        {body}
+      </Guide>
+    )}
 
   </Layout>
 )
