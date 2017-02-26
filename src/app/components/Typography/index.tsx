@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as classnames from 'classnames'
+import { Link as RouterLink } from 'react-router'
 
 const s = require('./style.css')
 
@@ -40,10 +41,19 @@ export const Label = Typography('label')
 export const P     = Typography('p')
 
 interface IAProps extends IProps {
-  href: string,
+  href?: string,
+  to?: string,
 }
 
 export const A = (props: IAProps) => (
+  !!props.to
+  ?
+  <div className={classes('link', props)}>
+    <RouterLink to={props.to} className={classes('a', props)}>
+      {props.children}
+    </RouterLink>
+  </div>
+  :
   <a className={classes('a', props)}>
     {props.children}
   </a>

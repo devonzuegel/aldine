@@ -1,13 +1,14 @@
-import * as React from 'react'
-import { Link } from 'react-router'
+import * as React       from 'react'
 import { IRouteConfig } from '~/models/route-config'
+import { A }            from '~/components/Typography'
+
 const s = require('./style.css')
 
 const HeaderItem = (route: IRouteConfig, i: number) => (
   <li className={s.headerItem} key={i}>
-    <Link to={route.path}>
+    <A to={route.path}>
       {route.title}
-    </Link>
+    </A>
   </li>
 )
 

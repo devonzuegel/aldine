@@ -39,3 +39,11 @@
   font-size: var(--small);
   text-transform: uppercase;
 }
+
+.link {
+  display: inline;
+
+  & a {
+    text-decoration: none;
+  }
+}
