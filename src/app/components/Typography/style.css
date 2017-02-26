@@ -14,10 +14,18 @@
 
 .a {
   color: var(--brand-base);
+  cursor: pointer;
 
   &:hover {
     border-bottom: 1px solid var(--brand-light);
-    cursor: pointer;
+  }
+}
+
+.link {
+  display: inline;
+
+  & a {
+    text-decoration: none;
   }
 }
 
@@ -39,12 +47,4 @@
 .label {
   font-size: var(--small);
   text-transform: uppercase;
-}
-
-.link {
-  display: inline;
-
-  & a {
-    text-decoration: none;
-  }
 }
