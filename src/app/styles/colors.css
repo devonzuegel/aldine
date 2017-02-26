@@ -5,7 +5,7 @@
   /** Blue */
 
   --dark-blue: #666677;
-  --darker-blue: #000;
+  --black: #000;
   --bright-blue: #00a8c6;
   --brighter-blue: #40c0cb;
   --pale-bright-blue: rgba(64, 192, 203, 0.3);
@@ -38,7 +38,7 @@
   --positive-light: var(--pale-bright-blue);
   --positive-xlight: var(--paler-bright-blue);
   --positive-dark: var(--dark-blue);
-  --positive-xdark: var(--darker-blue);
+  --positive-xdark: var(--black);
 
   --negative-base: var(--lighter-pink);
   --negative-light: var(--lighter-pink);
@@ -57,6 +57,6 @@
   /** Prose */
 
   --prose-color-base: var(--dark-grey);
-  --prose-color-dark: var(--darker-blue);
+  --prose-color-dark: var(--black);
 
 }

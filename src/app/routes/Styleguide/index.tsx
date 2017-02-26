@@ -6,6 +6,7 @@ import * as T        from '~/components/Typography'
 
 const Guide = (props) => (
   <div>
+    <T.HR />
     <T.H2>{props.title}</T.H2>
     {props.children}
   </div>
