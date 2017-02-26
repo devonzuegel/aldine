@@ -4,12 +4,11 @@ import { Section }            from '~/components/Section'
 import { H1, H2, H3, H4, H5 } from '~/components/Typography'
 import { examples }           from '~/components/utils'
 
-          // {attitude, emphasis}
 export const Styleguide = () => (
   <div>
-    <h3>
+    <H3>
       Section
-    </h3>
+    </H3>
 
     {examples(({ attitude, emphasis }) => (
       <div>
@@ -23,17 +22,17 @@ export const Styleguide = () => (
       </div>
     ))}
 
-    <h3>
+    <H3>
       Codeblock
-    </h3>
+    </H3>
 
     <Codeblock>
       This is some pre-formatted text.
     </Codeblock>
 
-    <h3>
+    <H3>
       Typography
-    </h3>
+    </H3>
 
     <H1>
       This is a main header (H1)

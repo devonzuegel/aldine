@@ -19,7 +19,7 @@ class Html extends React.Component<IHtmlProps, {}> {
     const head = Helmet.rewind()
     const { markup, store } = this.props
 
-    const styles = this.resolve(['vendor.css', 'app.css'])
+    const styles = this.resolve([ 'vendor.css', 'app.css' ])
     const renderStyles = styles.map((src, i) =>
       <link key={i} rel="stylesheet" type="text/css" href={src} />
     )
@@ -29,8 +29,8 @@ class Html extends React.Component<IHtmlProps, {}> {
       <script src={src} key={i}></script>
     )
 
-    // tslint:disable-next-line:max-line-length
-    const initialState = (<script dangerouslySetInnerHTML={{__html: `window.__INITIAL_STATE__=${JSON.stringify(store.getState())}`}} charSet="UTF-8" />)
+    const __html = `window.__INITIAL_STATE__=${JSON.stringify(store.getState())}`
+    const initialState = <script charSet='UTF-8' dangerouslySetInnerHTML={{ __html }} />
 
     return (
       <html>

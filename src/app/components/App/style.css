@@ -4,10 +4,10 @@
 .appContainer {
   padding: 0;
   margin: 0;
+  font-size: var(--font-base-size);
   text-align: left;
   margin: auto;
   max-width: 800px;
-  font-size: 18px;
   line-height: 1.53em;
   font-family: var(--sans-serif);
   font-weight: 300;
@@ -19,12 +19,12 @@
   }
 
   & a {
-    color: var(--bright-blue);
+    color: var(--brand-base);
     text-decoration: none;
     border-bottom: 1px solid transparent;
 
     &:hover {
-      color: var(--brighter-blue);
+      color: var(--brand-light);
       padding-bottom: 2px;
       margin-bottom: -2px;
     }

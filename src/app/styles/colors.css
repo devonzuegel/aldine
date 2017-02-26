@@ -47,6 +47,12 @@
 
   /** SEMANTIC ******************************************/
 
+  /** Brand */
+
+  --brand-base: var(--bright-blue);
+  --brand-light: var(--pale-bright-blue);
+  --brand-dark: var(--dark-blue);
+
   /** Prose */
 
   --prose-color-base: var(--dark-grey);
