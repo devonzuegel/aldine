@@ -6,7 +6,7 @@ import { examples }           from '~/components/utils'
 
 export const Styleguide = () => (
   <div>
-    <H3>
+    <H3 faded>
       Section
     </H3>
 
@@ -22,7 +22,7 @@ export const Styleguide = () => (
       </div>
     ))}
 
-    <H3>
+    <H3 faded>
       Codeblock
     </H3>
 
@@ -30,7 +30,7 @@ export const Styleguide = () => (
       This is some pre-formatted text.
     </Codeblock>
 
-    <H3>
+    <H3 faded>
       Typography
     </H3>
 
@@ -42,7 +42,7 @@ export const Styleguide = () => (
       This is a main header (H2)
     </H2>
 
-    <H3>
+    <H3 faded>
       This is a main header (H3)
     </H3>
 

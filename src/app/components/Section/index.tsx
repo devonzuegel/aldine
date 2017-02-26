@@ -1,7 +1,7 @@
-import * as React                  from 'react'
-import * as R                      from 'ramda'
-import * as classnames             from 'classnames'
-import { propTypes, defaultProps } from '~/components/utils'
+import * as React      from 'react'
+import * as R          from 'ramda'
+import * as classnames from 'classnames'
+import * as U          from '~/components/utils'
 
 const s = require('./style.css')
 
@@ -10,22 +10,26 @@ interface IProps {
   debug?: boolean,
   emphasis?: string,
   attitude?: string,
- }
+}
 
-const classes = ({ emphasis, debug, attitude }: IProps) => classnames({
-  [s['debug']]: debug,
-  [s['section']]: true,
-  [s[`section--${emphasis}--${attitude}`]]: true,
-})
+type Type = React.StatelessComponent<IProps>
 
-export const Section: React.StatelessComponent<IProps> = (props: IProps) => (
+const classes = ({ emphasis, debug, attitude }: IProps): Object => (
+  classnames({
+    [s['debug']]: debug,
+    [s['section']]: true,
+    [s[`section--${emphasis}--${attitude}`]]: true,
+  })
+)
+
+export const Section: Type = (props: IProps) => (
   <div className={classes(props)}>
     {props.children}
   </div>
 )
 
-Section.propTypes = propTypes({
+Section.propTypes = U.propTypes({
   children: React.PropTypes.any.isRequired,
 })
 
-Section.defaultProps = defaultProps()
+Section.defaultProps = U.defaultProps()

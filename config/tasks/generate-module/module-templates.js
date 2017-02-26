@@ -4,14 +4,23 @@ const fileStr = lines => R.filter(R.identity, lines).join("\n")
 const reactImports = [
   `import * as React from 'react'`,
   `import * as R     from 'ramda'`,
+  `import * as U     from '~/components/utils'`,
 ]
 
 module.exports = {
 
   'index.tsx': c => fileStr(R.concat(reactImports, [
     c.hasStyles && `import * as classnames from 'classnames'\n`,
-    c.hasStyles && `const s = require('./style.css')\n`,
-    `export const ${c.moduleName.camel} = (props) => (`,
+    c.hasStyles && `const s = require('./style.css')`,
+    c.hasStyles && ``,
+    `interface IProps {`,
+    `  children?: any,`,
+    `  debug?: boolean,`,
+    `  emphasis?: string,`,
+    `  attitude?: string,`,
+    `}\n`,
+    `type Type = React.StatelessComponent<IProps>\n`,
+    `export const ${c.moduleName.camel}: Type = (props: IProps) => (`,
     `  <div></div>`,
     `)`,
   ])),
