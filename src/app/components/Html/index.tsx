@@ -44,7 +44,7 @@ class Html extends React.Component<IHtmlProps, {}> {
           {renderStyles}
           <link rel="shortcut icon" href="/favicon.ico" />
         </head>
-        <body>
+        <body style={{ margin: '0' }}>
           <main id="app" dangerouslySetInnerHTML={{ __html: markup }}></main>
           {initialState}
           {renderScripts}

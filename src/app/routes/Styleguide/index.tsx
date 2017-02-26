@@ -1,4 +1,5 @@
 import * as React    from 'react'
+import { Layout    } from '~/components/Layout'
 import { Codeblock } from '~/components/Codeblock'
 import { Section   } from '~/components/Section'
 import { examples  } from '~/components/utils'
@@ -12,6 +13,13 @@ const Guide = (props) => (
   </div>
 )
 
+const StyleguideNav = (
+  <Section emphasis='secondary'>
+    Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the row axis (as opposed to justify-content which aligns the grid along the column axis).
+    Start aligns the grid to the top of the grid container.
+  </Section>
+)
+
 const Label = (props) => (
   <T.Label faded>
     {props.children} ↘
@@ -19,7 +27,7 @@ const Label = (props) => (
 )
 
 export const Styleguide = () => (
-  <div>
+  <Layout leftSide={StyleguideNav}>
     <T.H1>
       Styleguide
     </T.H1>
@@ -62,5 +70,5 @@ export const Styleguide = () => (
       </Section>
     </Guide>
 
-  </div>
+  </Layout>
 )
