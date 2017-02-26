@@ -7,7 +7,7 @@ module.exports = [
     config:  'generate.category',
     type:    'list',
     message: 'Category?',
-    choices: ['component', 'container', 'helper', 'module'],
+    choices: ['component', 'route', 'module'],
   }, {
     config:  'generate.moduleName',
     type:    'input',
