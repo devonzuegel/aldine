@@ -7,7 +7,7 @@ import { Home         } from '~/modules/Home'
 import { Counter      } from '~/modules/Counter'
 import { TaggedProse  } from './TaggedProse'
 import { AutomatedPOS } from '~/modules/AutomatedPOS'
-import { GardenPaths  } from '~/components/GardenPaths'
+import { GardenPaths  } from './GardenPaths'
 import { ThemeChanger } from './ThemeChanger'
 import { Styleguide   } from './Styleguide'
 
