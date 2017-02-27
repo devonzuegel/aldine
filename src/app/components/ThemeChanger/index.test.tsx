@@ -40,10 +40,6 @@ describe('<ThemeChanger />', () => {
     expect(this.component.find(styles.themeChanger)).to.exist
   })
 
-  it('renders header', () => {
-    expect(this.component.find('h1').text()).to.eql('ThemeChanger Example')
-  })
-
   it('renders theme selectors', () => {
     const themeElems = this.component.find(selectorClass)
     const themeNames = props.themes.map(R.prop('title'))

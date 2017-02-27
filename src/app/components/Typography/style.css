@@ -40,7 +40,7 @@
 
 .h1 {
   font-size: var(--xlarge);
-  margin: var(--xlarge) 0;
+  margin: var(--base) 0 var(--large) 0;
 }
 
 .h2 {

@@ -33,8 +33,6 @@ export const ThemeChanger = (props: IProps) => {
 
   return (
     <div className={s.themeChanger}>
-      <h1>ThemeChanger Example</h1>
-
       {themes.map(({ title, className }, i) =>
         <ThemeOption {...{ update, title, className, themeChanger }} key={i} />
       )}

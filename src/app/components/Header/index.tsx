@@ -6,14 +6,14 @@ import { IRouteConfig } from '~/models/route-config'
 
 const s = require('./style.css')
 
-const classes = (currentPath: string) => ({ path }: IRouteConfig) => (
+const classes = (currPath: string) => ({ path }: IRouteConfig) => (
   classnames({
     [s.headerItem]: true,
-    [s.headerItemSelected]: currentPath.replace('/', '') === path,
+    [s.headerItemSelected]: currPath.replace('/', '') === path || currPath === path,
   })
 )
-const HeaderItem = (currentPath: string) => (route: IRouteConfig, i: number) => (
-  <li className={classes(currentPath)(route)} key={i}>
+const HeaderItem = (currPath: string) => (route: IRouteConfig, i: number) => (
+  <li className={classes(currPath)(route)} key={i}>
     <A to={route.path}>
       {route.title}
     </A>
