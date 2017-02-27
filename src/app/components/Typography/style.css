@@ -1,5 +1,9 @@
 @import 'app/styles/base.css';
 
+.typography {
+  line-height: 1em;
+}
+
 .debug {
   border: 1px solid blue;
 }
@@ -47,4 +51,8 @@
 .label {
   font-size: var(--small);
   text-transform: uppercase;
+}
+
+.p {
+  line-height: var(--line-height);
 }

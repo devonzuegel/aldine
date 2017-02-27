@@ -16,7 +16,7 @@
 
 .toc-li {
   padding: var(--xsmall);
-  padding-left: calc(var(--base));
+  padding-left: var(--xlarge);
   list-style-type: none;
   cursor: pointer;
   &:hover {
@@ -29,6 +29,6 @@
 }
 
 .toc-1 {
-  padding-left: calc(var(--base) + var(--xsmall));
+  padding-left: calc(var(--xlarge) + var(--xsmall));
   font-size: var(--small);
 }

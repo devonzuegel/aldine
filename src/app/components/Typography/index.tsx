@@ -17,6 +17,7 @@ type Type = React.StatelessComponent<IProps>
 
 const classes = (name, { emphasis, debug, attitude, faded, uppercase }: IProps) => (
   classnames({
+    [s.typography]: true,
     [s[name]]: true,
     [s.debug]: debug,
     [s.faded]: faded,

@@ -66,7 +66,14 @@ const Guides = [
         <div id='Paragraph'>
           <Label>Paragraph</Label>
           <T.P>
-            This is a paragraph with a <T.A href='#'>link</T.A>.
+            This is a short paragraph with a <T.A href='#'>link</T.A>.
+          </T.P>
+          <T.P>
+            This is a longer paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Quis est tam dissimile homini. Murenam te accusante defenderem. Quid
+            autem habent admirationis, cum prope accesseris? Servari enim iustitia nisi a
+            forti viro, nisi a sapiente non potest. Duo Reges: constructio interrete. Nescio
+            quo modo praetervolavit oratio.
           </T.P>
         </div>
 

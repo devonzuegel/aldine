@@ -2,6 +2,7 @@
 
 .nav {
   margin: var(--base);
+  margin-left: var(--xlarge);
 }
 
 .nav ul {
