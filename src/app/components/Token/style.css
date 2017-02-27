@@ -1,12 +1,12 @@
 @import 'app/styles/colors.css';
 
 .token {
-  color: var(--dark-blue);
+  color: var(--prose-color-base);
   padding: 1px 3px;
   margin: -1px -3px;
 
   &:hover {
-    color: var(--darker-blue);
+    color: var(--prose-color-dark);
     cursor: pointer;
   }
 }

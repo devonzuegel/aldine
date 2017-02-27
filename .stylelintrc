@@ -7,6 +7,6 @@
       "except": ["value"]
     }],
     "max-empty-lines": 2,
-    "unit-whitelist": ["px", "rem", "%"]
+    "unit-whitelist": ["px", "rem", "em", "%"]
   }
 }
