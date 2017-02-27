@@ -70,6 +70,11 @@ const Guides = [
           </T.P>
         </div>
 
+        <div id='HR'>
+          <Label>HR</Label>
+          <T.HR />
+        </div>
+
         <div id='Codeblock'>
           <Label>Codeblock</Label>
           <Codeblock>

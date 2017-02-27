@@ -1,8 +1,8 @@
 @import 'app/styles/base.css';
 
 .wide {
-  max-width: 800px;
-  margin: auto;
+  max-width: 900px;
+  margin-left: var(--xlarge);
 }
 
 .narrow {
