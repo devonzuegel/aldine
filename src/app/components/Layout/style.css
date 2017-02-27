@@ -2,7 +2,7 @@
 
 .wide {
   max-width: 900px;
-  margin-left: var(--xlarge);
+  margin: 0 var(--xlarge);
 }
 
 .narrow {
