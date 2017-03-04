@@ -1,6 +1,11 @@
+machine:
+  node:
+    version: 7.2.1
 dependencies:
   override:
-    - npm install typescript -g
-    - npm install
-    - npm install typings -g
-    - typings install
+    - npm install -g yarn
+    # - which yarn
+    # - which node
+    # - yarn --version
+    # - node --version
+    - yarn

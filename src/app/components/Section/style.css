@@ -1,4 +1,4 @@
-@import 'app/styles/base.css';
+@import 'base.css';
 
 .section {
   margin: var(--small) 0;

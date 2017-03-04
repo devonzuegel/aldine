@@ -4,7 +4,7 @@ import * as R from 'ramda'
 import { mount } from 'enzyme'
 import * as chai from 'chai'
 import * as spies from 'chai-spies'
-import { ITokenCategories } from '~/models/token-categories'
+import { ITokenCategories } from 'models/token-categories'
 const expect = chai.expect
 chai.use(spies)
 

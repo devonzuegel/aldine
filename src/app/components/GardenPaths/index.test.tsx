@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { renderComponent } from '~/components/TestHelper'
+import { renderComponent } from 'components/TestHelper'
 import { GardenPaths } from './index'
 const s = require('./style.css')
 

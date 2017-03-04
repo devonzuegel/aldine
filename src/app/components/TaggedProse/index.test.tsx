@@ -3,8 +3,8 @@ import { mount } from 'enzyme'
 import * as chai from 'chai'
 import * as spies from 'chai-spies'
 
-import Token from '~/components/Token'
-import { ITokenCategories } from '~/models/token-categories'
+import Token from 'components/Token'
+import { ITokenCategories } from 'models/token-categories'
 import { TaggedProse } from './index'
 
 const expect = chai.expect
@@ -16,7 +16,7 @@ const categories: ITokenCategories = {}
 
 describe('<TaggedProse />', () => {
   beforeEach(() => {
-    this.categorize = chai.spy((i: number) => null)
+    this.categorize = chai.spy(() => null)
     const categorize = (i: number) => () => this.categorize(i)
     this.component = mount(<TaggedProse {...{ categories, tokens, categorized, categorize }} />)
     this.tokens = this.component.find(Token)

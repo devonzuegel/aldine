@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { ITokenCategories } from '~/models/token-categories'
-import Token from '~/components/Token'
+import { ITokenCategories } from 'models/token-categories'
+import Token from 'components/Token'
 
 export interface IProps {
   categories: ITokenCategories,

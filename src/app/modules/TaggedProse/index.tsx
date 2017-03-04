@@ -1,10 +1,9 @@
 import * as React from 'react'
-import * as R from 'ramda'
 const { connect } = require('react-redux')
 
-import { ITokenCategories } from '~/models/token-categories'
-import CategorySelector from '~/components/CategorySelector'
-import * as C from '~/components/TaggedProse'
+import { ITokenCategories } from 'models/token-categories'
+import CategorySelector from 'components/CategorySelector'
+import * as C from 'components/TaggedProse'
 
 import * as actions from './redux'
 

@@ -12,7 +12,7 @@ import { configureStore } from './app/redux/store'
 import 'isomorphic-fetch'
 import routes from './app/routes'
 
-const store: Redux.Store = configureStore(
+const store: Redux.Store<any> = configureStore(
   browserHistory,
   window.__INITIAL_STATE__
 )

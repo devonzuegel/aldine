@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import * as taggedProse from './'
-import { ITaggedProse, ITaggedProseAction } from '~/models/tagged-prose'
-import { ITokenCategories } from '~/models/token-categories'
+import { ITaggedProse, ITaggedProseAction } from 'models/tagged-prose'
+import { ITokenCategories } from 'models/token-categories'
 
 const nocategory = 'nocategory'
 const category = 'category'

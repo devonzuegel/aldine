@@ -4,7 +4,7 @@ import * as Helmet from 'react-helmet'
 interface IHtmlProps {
   manifest?: Object
   markup?: string
-  store?: Redux.Store
+  store?: Redux.Store<any>
 }
 
 class Html extends React.Component<IHtmlProps, {}> {

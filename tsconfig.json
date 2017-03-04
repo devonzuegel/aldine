@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/app/*",
+        "src/app/redux/*"
+      ]
+    },
+    "types": ["node", "redux", "mocha"],
     "outDir": "build",
     "module": "commonjs",
     "target": "es5",
@@ -7,16 +15,17 @@
     "inlineSourceMap": false,
     "inlineSources": false,
     "experimentalDecorators": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "jsx": "react",
     "moduleResolution": "node"
   },
-  "paths": {
-    "~/*": ["./src/app/*"]
-  },
   "exclude": [
     "node_modules",
-    "build",
-    "typings/main",
-    "typings/main.d.ts"
-  ]
+    "build"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "useBabel": true
+  }
 }

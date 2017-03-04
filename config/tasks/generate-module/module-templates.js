@@ -4,7 +4,7 @@ const fileStr = lines => R.filter(R.identity, lines).join("\n")
 const reactImports = [
   `import * as React from 'react'`,
   `import * as R     from 'ramda'`,
-  `import * as U     from '~/components/utils'`,
+  `import * as U     from 'components/utils'`,
 ]
 
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
   'index.test.tsx': c => fileStr(R.concat(reactImports, [
     `import { mount  } from 'enzyme'`,
     `import { expect } from 'chai'`,
-    c.hasStyles && `import { klass  } from '~/helpers/TestHelper'`,
+    c.hasStyles && `import { klass  } from 'helpers/TestHelper'`,
     `\nimport { ${c.moduleName.camel} } from './index'\n`,
     c.hasStyles && `const s = require('./style.css')\n`,
     `describe('<${c.moduleName.camel} />', () => {\n`,
@@ -40,6 +40,6 @@ module.exports = {
   ])),
 
   'style.css': c => fileStr([
-    `@import 'app/styles/base.css';`,
+    `@import 'base.css';`,
   ]),
 }

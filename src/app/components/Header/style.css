@@ -1,4 +1,4 @@
-@import 'app/styles/base.css';
+@import 'base.css';
 
 .nav {
   margin: var(--base);

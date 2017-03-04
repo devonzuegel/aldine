@@ -1,4 +1,4 @@
-import { IThemeChanger, IThemeChangerAction } from '~/models/theme-changer'
+import { IThemeChanger, IThemeChangerAction } from 'models/theme-changer'
 
 /** Action Types */
 export const UPDATE: string = 'theme-changer/UPDATE'
