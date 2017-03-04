@@ -1,7 +1,6 @@
 import * as React      from 'react'
-import * as R          from 'ramda'
 import * as classnames from 'classnames'
-import * as U          from '~/components/utils'
+import * as U          from 'components/utils'
 
 const s = require('./style.css')
 
@@ -14,7 +13,7 @@ interface IProps {
 
 type Type = React.StatelessComponent<IProps>
 
-const classes = ({ emphasis, debug, attitude }: IProps): Object => (
+const classes = ({ emphasis, debug, attitude }: IProps): string => (
   classnames({
     [s['debug']]: debug,
     [s['section']]: true,

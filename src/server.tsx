@@ -71,21 +71,21 @@ app.get('*', (req, res) => {
               <ReduxAsyncConnect {...renderProps} />
             </Provider>
           )
-          res.status(200).send(renderHTML(markup))
+          res.status(200).send(renderHTML(markup, store))
         })
-
-        function renderHTML(markup) {
-          const html = ReactDOMServer.renderToString(
-            <Html markup={markup} manifest={manifest} store={store} />
-          )
-
-          return `<!doctype html> ${html}`
-        }
       } else {
         res.status(404).send('Not Found?')
       }
     })
 })
+
+function renderHTML(markup, store) {
+  const html = ReactDOMServer.renderToString(
+    <Html markup={markup} manifest={manifest} store={store} />
+  )
+
+  return `<!doctype html> ${html}`
+}
 
 app.listen(appConfig.port, appConfig.host, err => {
   if (err) {

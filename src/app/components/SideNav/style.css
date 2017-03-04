@@ -1,4 +1,4 @@
-@import 'app/styles/base.css';
+@import 'base.css';
 
 .sideNav {
   min-width: calc(4 * var(--xlarge));

@@ -1,7 +1,7 @@
 import * as R from 'ramda'
-import { ITaggedProse, ITaggedProseAction } from '~/models/tagged-prose'
-import { ITokenCategories } from '~/models/token-categories'
-const s = require('~/components/TaggedProse/style.css')
+import { ITaggedProse, ITaggedProseAction } from 'models/tagged-prose'
+import { ITokenCategories } from 'models/token-categories'
+const s = require('components/TaggedProse/style.css')
 
 /** Action Types */
 export const CATEGORIZE: string = 'tagged-prose/CATEGORIZE'

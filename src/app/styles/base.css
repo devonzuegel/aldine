@@ -1,6 +1,6 @@
-@import 'app/styles/colors.css';
-@import 'app/styles/sizes.css';
-@import 'app/styles/typefaces.css';
+@import 'colors.css';
+@import 'sizes.css';
+@import 'typefaces.css';
 
 .debug {
   border: 1px solid blue;

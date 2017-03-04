@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { AutomatedPOS as Component } from '~/components/AutomatedPOS'
+import { AutomatedPOS as Component } from 'components/AutomatedPOS'
 
 const txt1 = (
   'The book theorized that sufficiently intense competition for suburban houses in ' +

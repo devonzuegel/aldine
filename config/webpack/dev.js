@@ -20,9 +20,9 @@ const config = {
     pathinfo:   true
   },
 
-  tslint:  { failOnHint: true },
+  // tslint:  { failOnHint: true },
   devtool: 'eval',
-  debug:   true,
+  // debug:   true,
 
   plugins: [
     new ManifestPlugin({ fileName: '../manifest.json' }),
@@ -33,7 +33,7 @@ const config = {
       }
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 }
 

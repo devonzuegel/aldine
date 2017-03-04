@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as classnames from 'classnames'
-import { IThemeChanger } from '~/models/theme-changer'
+import { IThemeChanger } from 'models/theme-changer'
 
 const s = require('./style.css')
 
@@ -11,7 +11,7 @@ interface ITheme {
 
 export interface IProps {
   themeChanger: IThemeChanger,
-  update: Redux.ActionCreator,
+  update: Redux.ActionCreator<any>,
   themes: ITheme[],
 }
 

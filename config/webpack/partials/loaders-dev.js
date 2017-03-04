@@ -6,7 +6,7 @@ const config = {
     loaders: [
       {
         test: /\.tsx?$/,
-        loader: 'react-hot!ts',
+        loader: 'react-hot-loader!ts-loader',
       },
     ],
   },

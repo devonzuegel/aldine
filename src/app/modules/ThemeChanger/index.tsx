@@ -1,6 +1,6 @@
 import * as React from 'react'
 const { connect } = require('react-redux')
-import * as C from '~/components/ThemeChanger'
+import * as C from 'components/ThemeChanger'
 import * as actions from './redux'
 
 @connect(

@@ -1,4 +1,4 @@
-@import 'app/styles/colors.css';
+@import 'colors.css';
 
 .token {
   color: var(--prose-color-base);

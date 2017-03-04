@@ -1,8 +1,8 @@
 import * as React       from 'react'
 import * as classnames  from 'classnames'
-import { A }            from '~/components/Typography'
-import { ILocation }    from '~/models/location'
-import { IRouteConfig } from '~/models/route-config'
+import { A }            from 'components/Typography'
+import { ILocation }    from 'models/location'
+import { IRouteConfig } from 'models/route-config'
 
 const s = require('./style.css')
 

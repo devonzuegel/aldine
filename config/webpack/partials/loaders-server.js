@@ -1,17 +1,33 @@
 const R    = require('ramda')
 const path = require('path')
+const merge = require('webpack-merge')
+
+const rootDir = path.resolve('./src')
 
 const testLoaders = [
   {
     test: /\.tsx?$/,
-    loader: 'ts',
+    loader: 'ts-loader',
     exclude: /node_modules/
   }, {
     test: /\.css$/,
     loaders: [
-      'isomorphic-style',
-      'css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]'
+      'isomorphic-style-loader',
+      'css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]'
     ]
+  }, {
+    test: /\.css$/,
+    include: path.resolve('./src/app'),
+    loaders: [
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: () => [
+            require('postcss-import')({ path: [ path.join(rootDir, 'app', 'styles') ] }),
+          ],
+        },
+      },
+    ],
   }
 ]
 
@@ -20,3 +36,4 @@ module.exports = {
     loaders: R.concat(require('./loaders-shared'), testLoaders),
   },
 }
+

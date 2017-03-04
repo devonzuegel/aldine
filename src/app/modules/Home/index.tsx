@@ -1,9 +1,9 @@
 import * as React from 'react'
 const s = require('./style.css')
-import parse from '~/parsers/tagged-prose'
-import { ThemeChanger } from '~/modules/ThemeChanger'
-import { update } from '~/modules/ThemeChanger/redux'
-import { IThemeChanger } from '~/models/theme-changer'
+import parse from 'parsers/tagged-prose'
+import { ThemeChanger } from 'modules/ThemeChanger'
+import { update } from 'modules/ThemeChanger/redux'
+import { IThemeChanger } from 'models/theme-changer'
 const { connect } = require('react-redux')
 
 const TAGS = {
@@ -14,10 +14,10 @@ const TAGS = {
 
 const samples = [
   '**This** __is__ some ~~annotated~~ **text**',
-  require('./samples/all-nouns-all-verbs.md?raw'),
-  require('./samples/proper-nouns-all-verbs.md?raw'),
-  require('./samples/all-nouns-all-verbs-proper-nouns-emphasized.md?raw'),
-  require('./samples/proper-nouns-conceptual-chunks-all-verbs.md?raw'),
+  require('raw-loader!./samples/all-nouns-all-verbs.md'),
+  require('raw-loader!./samples/proper-nouns-all-verbs.md'),
+  require('raw-loader!./samples/all-nouns-all-verbs-proper-nouns-emphasized.md'),
+  require('raw-loader!./samples/proper-nouns-conceptual-chunks-all-verbs.md'),
 ]
 
 const legendKeys = [
@@ -47,7 +47,7 @@ const themes = [
 
 interface IProps {
   themeChanger: IThemeChanger,
-  update: Redux.ActionCreator,
+  update: Redux.ActionCreator<any>,
 }
 
 @connect(
