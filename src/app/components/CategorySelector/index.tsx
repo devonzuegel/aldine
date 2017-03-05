@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as R from 'ramda'
 import * as classnames from 'classnames'
-import { ITokenCategories } from 'models/token-categories'
+import { ITokenCategories } from '~/models/token-categories'
 const s = require('./style.css')
 
 interface IProps {

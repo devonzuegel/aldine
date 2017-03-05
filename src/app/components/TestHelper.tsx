@@ -1,9 +1,9 @@
 /** React Specific */
-import * as React from 'react'
-import { mount } from 'enzyme'
-import { Provider } from 'react-redux'
+import * as React      from 'react'
+import { mount       } from 'enzyme'
+import { Provider    } from 'react-redux'
 import { createStore } from 'redux'
-import rootReducer from 'redux/reducers'
+import rootReducer     from '~/redux/reducers'
 
 const fetchMock = require('fetch-mock')
 

@@ -1,7 +1,7 @@
 import * as React  from 'react'
 import * as R      from 'ramda'
-import tag         from 'parsers/tagged-prose'
-import { Section } from 'components/Section'
+import tag         from '~/parsers/tagged-prose'
+import { Section } from '~/components/Section'
 
 const s = require('./style.css')
 

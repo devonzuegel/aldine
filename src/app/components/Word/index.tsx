@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as classnames from 'classnames'
 
-import { IWord } from 'models/part-of-speech'
+import { IWord } from '~/models/part-of-speech'
 
 const s = require('./style.css')
 

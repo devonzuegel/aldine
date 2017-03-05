@@ -1,6 +1,6 @@
 import * as React      from 'react'
 import * as classnames from 'classnames'
-import * as U          from 'components/utils'
+import * as U          from '~/components/utils'
 
 const s = require('./style.css')
 

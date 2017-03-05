@@ -1,9 +1,9 @@
 import * as React from 'react'
 const s = require('./style.css')
-import parse from 'parsers/tagged-prose'
-import { ThemeChanger } from 'modules/ThemeChanger'
-import { update } from 'modules/ThemeChanger/redux'
-import { IThemeChanger } from 'models/theme-changer'
+import parse from '~/parsers/tagged-prose'
+import { ThemeChanger } from '~/modules/ThemeChanger'
+import { update } from '~/modules/ThemeChanger/redux'
+import { IThemeChanger } from '~/models/theme-changer'
 const { connect } = require('react-redux')
 
 const TAGS = {

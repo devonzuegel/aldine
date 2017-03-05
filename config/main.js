@@ -1,7 +1,8 @@
 /** General Configurations Like PORT, HOST names, etc... */
+const path = require('path')
 
-var config = {
-  env: process.env.NODE_ENV || 'development',
+const config = {
+  env:  process.env.NODE_ENV || 'development',
   host: process.env.HOST || 'localhost',
   port: process.env.PORT || 8889,
   karmaPort: 9876,
@@ -9,7 +10,7 @@ var config = {
   // This part goes to React-Helmet for Head of our HTML
   app: {
     head: {
-      title: 'clarity',
+      title:         'clarity',
       titleTemplate: 'clarity: %s',
       meta: [
         { charset: 'utf-8' },

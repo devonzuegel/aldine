@@ -1,4 +1,4 @@
-import { ITokenCategories } from 'models/token-categories'
+import { ITokenCategories } from '~/models/token-categories'
 
 export interface ITaggedProse {
   categorized: string[],

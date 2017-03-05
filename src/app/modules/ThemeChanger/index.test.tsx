@@ -1,12 +1,12 @@
-import { expect } from 'chai'
-import { renderComponent } from 'components/TestHelper'
-import { ThemeChanger } from './index'
+import { expect          } from 'chai'
+import { renderComponent } from '~/components/TestHelper'
+import { ThemeChanger    } from './index'
 
 /** Mock App. State */
 const state = {
   themeChanger: { className: 'dark-faded-plaintext' },
 }
-const styles = require('components/ThemeChanger/style.css')
+const styles = require('~/components/ThemeChanger/style.css')
 
 const selectorClass = `.${styles.themeSelector}`
 const props = {

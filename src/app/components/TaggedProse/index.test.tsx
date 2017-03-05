@@ -3,8 +3,8 @@ import { mount } from 'enzyme'
 import * as chai from 'chai'
 import * as spies from 'chai-spies'
 
-import Token from 'components/Token'
-import { ITokenCategories } from 'models/token-categories'
+import Token from '~/components/Token'
+import { ITokenCategories } from '~/models/token-categories'
 import { TaggedProse } from './index'
 
 const expect = chai.expect

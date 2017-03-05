@@ -2,7 +2,7 @@ import * as React from 'react'
 import { mount  } from 'enzyme'
 import { expect } from 'chai'
 
-import { Codeblock } from 'components/Codeblock'
+import { Codeblock } from '~/components/Codeblock'
 
 describe('<Codeblock />', () => {
 

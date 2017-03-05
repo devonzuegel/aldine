@@ -1,4 +1,4 @@
-import { IWord } from 'models/part-of-speech'
+import { IWord } from '~/models/part-of-speech'
 
 const POS = require('pos')
 
