@@ -7,7 +7,7 @@ const rootDir = path.resolve('./src')
 const testLoaders = [
   {
     test: /\.tsx?$/,
-    loader: 'ts-loader',
+    loader: 'awesome-typescript-loader',
     exclude: /node_modules/
   }, {
     test: /\.css$/,

@@ -6,7 +6,7 @@ const config = {
     loaders: [
       {
         test: /\.tsx?$/,
-        loader: 'react-hot-loader!ts-loader',
+        loader: 'react-hot-loader!awesome-typescript-loader',
       },
     ],
   },
