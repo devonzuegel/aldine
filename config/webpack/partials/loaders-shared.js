@@ -1,3 +1,5 @@
+/** Loaders shared by all webpack configs (server-side, client-side, prod, and dev) */
+
 const path    = require('path')
 const rootDir = path.resolve('./src')
 
@@ -8,9 +10,6 @@ module.exports = [
   }, {
     test:   /\.(jpe?g|png|gif)$/i,
     loader: 'url-loader?limit=1000&name=images/[hash].[ext]'
-  }, {
-    test:   /\.eot(\?.*)?$/,
-    loader: 'file-loader?name=fonts/[hash].[ext]'
   }, {
     test:   /\.svg(\?.*)?$/,
     loader: 'url-loader?limit=10000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
@@ -23,12 +22,6 @@ module.exports = [
         name:       './fonts/[hash].[ext]',
         publicPath: path.join(rootDir, 'fonts'),
      },
-  }, {
-    test:   /\.ttf(\?.*)?$/,
-    loader: 'url-loader?limit=10000&mimetype=application/octet-stream&name=fonts/[hash].[ext]'
-  }, {
-    test:   /\.json$/,
-    loader: 'json-loader',
   }, {
     test:   /\?raw$/,
     loader: 'raw-loader',

@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import * as themeChanger from './'
-import { IThemeChanger, IThemeChangerAction } from 'models/theme-changer'
+import { IThemeChanger, IThemeChangerAction } from '~/models/theme-changer'
 
 const className = 'blah-blah'
 

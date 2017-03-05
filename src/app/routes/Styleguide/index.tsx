@@ -1,11 +1,11 @@
 import * as React    from 'react'
 import * as R        from 'ramda'
-import { Layout    } from 'components/Layout'
-import { Codeblock } from 'components/Codeblock'
-import { Section   } from 'components/Section'
-import { SideNav   } from 'components/SideNav'
-import { examples  } from 'components/utils'
-import * as T        from 'components/Typography'
+import { Layout    } from '~/components/Layout'
+import { Codeblock } from '~/components/Codeblock'
+import { Section   } from '~/components/Section'
+import { SideNav   } from '~/components/SideNav'
+import { examples  } from '~/components/utils'
+import * as T        from '~/components/Typography'
 
 const Guide = (props) => (
   <div id={props.title}>

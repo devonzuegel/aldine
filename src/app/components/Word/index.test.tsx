@@ -4,7 +4,7 @@ import * as chai from 'chai'
 import * as spies from 'chai-spies'
 
 import Word from './index'
-import { EPartOfSpeech } from 'models/part-of-speech'
+import { EPartOfSpeech } from '~/models/part-of-speech'
 
 const s = require('./style.css')
 

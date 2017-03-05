@@ -1,19 +1,20 @@
 const path    = require('path')
 const rootDir = path.resolve('./src')
 
-module.exports = {
+const projectRoot = (...absolutePath) =>
+  path.join(path.resolve('./src'), ...absolutePath)
 
+module.exports = {
   resolve: {
-    // root:       rootDir,
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    modules: [
+      projectRoot(),
+      projectRoot('app'),
+      'node_modules',
+    ],
+    extensions: ['.json', '.js', '.ts', '.tsx', '.jsx'],
     alias: {
-      'config': path.resolve('./config'),
-      '~':      path.join(rootDir, 'app'),
-      'components': path.join(rootDir, 'app', 'components'),
-      'modules': path.join(rootDir, 'app', 'modules'),
-      'parsers': path.join(rootDir, 'app', 'parsers'),
-      'fonts': path.join(rootDir, 'fonts'),
+      '~':     projectRoot('app'),
+      'fonts': projectRoot('fonts'),
     },
   },
-
 }

@@ -1,7 +1,7 @@
 import * as React            from 'react'
 import { IndexRoute, Route } from 'react-router'
-import { IRouteConfig      } from 'models/route-config'
-import { App               } from 'components/App'
+import { IRouteConfig      } from '~/models/route-config'
+import { App               } from '~/components/App'
 import { Experiments       } from './Experiments'
 import { Styleguide        } from './Styleguide'
 

@@ -4,7 +4,7 @@ const fileStr = lines => R.filter(R.identity, lines).join("\n")
 const reactImports = [
   `import * as React from 'react'`,
   `import * as R     from 'ramda'`,
-  `import * as U     from 'components/utils'`,
+  `import * as U     from '~/components/utils'`,
 ]
 
 module.exports = {

@@ -20,9 +20,7 @@ const config = {
     pathinfo:   true
   },
 
-  // tslint:  { failOnHint: true },
   devtool: 'eval',
-  // debug:   true,
 
   plugins: [
     new ManifestPlugin({ fileName: '../manifest.json' }),
@@ -40,5 +38,5 @@ const config = {
 module.exports = require('webpack-merge')(
   config,
   require('./partials/aliases'),
-  require('./partials/loaders-dev')
+  require('./partials/client-base')
 )

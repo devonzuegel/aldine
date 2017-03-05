@@ -4,10 +4,7 @@ import * as classnames from 'classnames'
 
 const s = require('./style.css')
 
-// import * as tagPOS from 'parsers/part-of-speech'
-// import * as Word   from 'components/Word'
-
-import { IWord } from 'models/part-of-speech'
+import { IWord } from '~/models/part-of-speech'
 
 const Word = (props: IWord) => {
   const { word, pos } = props

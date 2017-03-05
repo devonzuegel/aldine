@@ -1,7 +1,7 @@
 const appConfig = require('../../../../config/main')
-import { ILocation }    from 'models/location'
-import { IRouteConfig } from 'models/route-config'
-import { Header       } from 'components'
+import { ILocation }    from '~/models/location'
+import { IRouteConfig } from '~/models/route-config'
+import { Header       } from '~/components'
 import * as React       from 'react'
 import * as Helmet      from 'react-helmet'
 
