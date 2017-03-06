@@ -1,98 +1,98 @@
-const appConfig = require('../config/main')
-
 import * as e6p from 'es6-promise'
 (e6p as any).polyfill()
 import 'isomorphic-fetch'
 
-import * as React from 'react'
-import * as ReactDOMServer from 'react-dom/server'
-
-import { Provider } from 'react-redux'
+import * as React                     from 'react'
+import * as ReactDOMServer            from 'react-dom/server'
+import { Provider                   } from 'react-redux'
 import { createMemoryHistory, match } from 'react-router'
-import { syncHistoryWithStore } from 'react-router-redux'
-const { ReduxAsyncConnect, loadOnServer } = require('redux-connect')
-import { configureStore } from './app/redux/store'
-import routes from './app/routes'
+import { syncHistoryWithStore       } from 'react-router-redux'
 
-import { Html } from './app/components/Html'
-const manifest = require('../build/manifest.json')
+const ReduxConnect = require('redux-connect')
+const path         = require('path')
+const Chalk        = require('chalk')
+const express      = require('express')
+const app          = express()
 
-const express = require('express')
-const path = require('path')
-const compression = require('compression')
-const Chalk = require('chalk')
-const favicon = require('serve-favicon')
+import routes             from '~/routes'
+import { Html           } from '~/components/Html'
+import { configureStore } from '~/redux/store'
 
-const app = express()
+const appConfig = require('../config/main')
+const manifest  = require('../build/manifest.json')
 
-app.use(compression())
 
-if (process.env.NODE_ENV !== 'production') {
-  const webpack = require('webpack')
-  const webpackConfig = require('../config/webpack/dev')
-  const webpackCompiler = webpack(webpackConfig)
+const renderPage = (renderProps, store, res) => {
+  const asyncRenderData = Object.assign({}, renderProps, { store })
+
+  ReduxConnect.loadOnServer(asyncRenderData).then(() => {
+    const markup = ReactDOMServer.renderToString(
+      <Provider store={store} key='provider'>
+        <ReduxConnect.ReduxAsyncConnect {...renderProps} />
+      </Provider>
+    )
+    const html = ReactDOMServer.renderToString(
+      <Html markup={markup} manifest={manifest} store={store} />
+    )
+    res.status(200).send(`<!doctype html> ${html}`)
+  })
+}
+
+const devSetup = () => {
+  const webpackConfig   = require('../config/webpack/partials/client-dev')
+  const webpackCompiler = require('webpack')(webpackConfig)
 
   app.use(require('webpack-dev-middleware')(webpackCompiler, {
-    publicPath: webpackConfig.output.publicPath,
-    stats: { colors: true },
-    noInfo: true,
-    hot: true,
-    inline: true,
-    lazy: false,
+    publicPath:         webpackConfig.output.publicPath,
+    stats:              { colors: true },
+    noInfo:             true,
+    hot:                true,
+    inline:             true,
+    lazy:               false,
     historyApiFallback: true,
-    quiet: true,
+    quiet:              true,
   }))
 
   app.use(require('webpack-hot-middleware')(webpackCompiler))
 }
 
-app.use(favicon(path.join(__dirname, '../src/assets/favicon.ico')))
-
-app.use('/public', express.static(path.join(__dirname, '../build/public')))
-
-app.get('*', (req, res) => {
-  const location = req.url
+const router = (req, res) => {
+  const location      = req.url
   const memoryHistory = createMemoryHistory(req.originalUrl)
-  const store = configureStore(memoryHistory)
-  const history = syncHistoryWithStore(memoryHistory, store)
+  const store         = configureStore(memoryHistory)
+  const history       = syncHistoryWithStore(memoryHistory, store)
 
-  match({ history, routes, location },
-    (error, redirectLocation, renderProps) => {
-      if (error) {
-        res.status(500).send(error.message)
-      } else if (redirectLocation) {
-        res.redirect(302, redirectLocation.pathname + redirectLocation.search)
-      } else if (renderProps) {
-        const asyncRenderData = Object.assign({}, renderProps, { store })
+  match({ history, routes, location }, (error, redirectLocation, renderProps) => {
+    if (error) {
+      res.status(500).send(error.message)
+      return
+    }
 
-        loadOnServer(asyncRenderData).then(() => {
-          const markup = ReactDOMServer.renderToString(
-            <Provider store={store} key="provider">
-              <ReduxAsyncConnect {...renderProps} />
-            </Provider>
-          )
-          res.status(200).send(renderHTML(markup, store))
-        })
-      } else {
-        res.status(404).send('Not Found?')
-      }
-    })
-})
+    if (redirectLocation) {
+      res.redirect(302, redirectLocation.pathname + redirectLocation.search)
+      return
+    }
 
-function renderHTML(markup, store) {
-  const html = ReactDOMServer.renderToString(
-    <Html markup={markup} manifest={manifest} store={store} />
-  )
+    if (renderProps) {
+      renderPage(renderProps, store, res)
+      return
+    }
 
-  return `<!doctype html> ${html}`
+    res.status(404).send('Not Found?')
+  })
 }
 
-app.listen(appConfig.port, appConfig.host, err => {
-  if (err) {
-    console.error(Chalk.bgRed(err))
-  } else {
-    console.info(Chalk.black.bgGreen(
-      `\n\n💂  Listening at http://${appConfig.host}:${appConfig.port}\n`
-    ))
+if (process.env.NODE_ENV !== 'production') {
+  devSetup()
+}
+app.use(require('compression')())
+app.use(require('serve-favicon')(path.join(__dirname, '../src/assets/favicon.ico')))
+app.use('/public', express.static(path.join(__dirname, '../build/public')))
+app.get('*', router)
+app.listen(appConfig.port, appConfig.host, error => {
+  if (error) {
+    console.error(Chalk.bgRed(error))
+    return
   }
+  console.info(Chalk.black.bgGreen(`\n\nListening at http://${appConfig.host}:${appConfig.port}\n`))
 })

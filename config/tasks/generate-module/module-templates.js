@@ -40,6 +40,6 @@ module.exports = {
   ])),
 
   'style.css': c => fileStr([
-    `@import 'base.css';`,
+    `@import 'styles/base.css';`,
   ]),
 }

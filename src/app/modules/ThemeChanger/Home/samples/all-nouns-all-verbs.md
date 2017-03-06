@@ -1,1 +1,0 @@
-The **book** __theorized__ that sufficiently intense **competition** for suburban **houses** in good **school districts** __meant__ that **people** __had to throw away__ lots of other **values** – **time at home** with their **children**, financial **security** – __to optimize__ for **house-buying-ability** or else __be consigned__ to the ghetto.

@@ -26,7 +26,7 @@ const loaders = [
           loader: 'postcss-loader',
           options: {
             plugins: () => [
-              require('postcss-import')({ path: [ projectRoot('app', 'styles') ] }),
+              require('postcss-import')({ path: [ projectRoot('app') ] }),
             ],
           },
         },

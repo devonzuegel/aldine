@@ -1,43 +1,36 @@
-var path = require('path')
-var fs = require('fs')
-const merge = require('webpack-merge')
+const path = require('path')
+const fs   = require('fs')
 
-var nodeModules = {}
+let nodeModules = {}
 fs.readdirSync('node_modules')
-  .filter(function (x) {
-    return ['.bin'].indexOf(x) === -1
-  })
-  .forEach(function (mod) {
-    nodeModules[mod] = 'commonjs ' + mod
-  })
+  .filter(x => ['.bin'].indexOf(x) === -1)
+  .forEach(mod => { nodeModules[mod] = 'commonjs ' + mod })
 
-var config = {
+const config = {
   externals: nodeModules,
-  target: 'node',
+  target:    'node',
 
   entry: './src/server.tsx',
 
   output: {
-    path: path.resolve('./build/public'),
-    filename: '../server.js',
-    publicPath: '/public/',
+    path:          path.resolve('./build/public'),
+    filename:      '../server.js',
+    publicPath:    '/public/',
     libraryTarget: 'commonjs2'
   },
 
-  plugins: [],
-
   node: {
-    console: false,
-    global: false,
-    process: false,
-    Buffer: false,
+    console:    false,
+    global:     false,
+    process:    false,
+    Buffer:     false,
     __filename: false,
-    __dirname: false
+    __dirname:  false
   }
 }
 
-module.exports = merge(
+module.exports = require('webpack-merge')(
   config,
   require('./partials/aliases'),
-  require('./partials/loaders-server')
+  require('./partials/server-loaders')
 )

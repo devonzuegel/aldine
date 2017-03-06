@@ -1,4 +1,3 @@
-const R    = require('ramda')
 const path = require('path')
 
 const projectRoot = (...absolutePath) =>
@@ -20,7 +19,7 @@ const cssLoaders = [
     loader: 'postcss-loader',
     options: {
       plugins: () => [
-        require('postcss-import')({ path: [ projectRoot('app', 'styles') ] }),
+        require('postcss-import')({ path: [ projectRoot('app') ] }),
         require('stylelint')({ files: projectRoot('app/*.css') }),
         require('postcss-cssnext')(),
         require('postcss-assets')({ relative: projectRoot('app') })

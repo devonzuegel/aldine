@@ -1,4 +1,4 @@
-@import 'colors.css';
+@import 'styles/colors.css';
 
 .token {
   color: var(--prose-color-base);
