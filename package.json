@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf build",
     "prebuild": "npm run clean",
-    "build": "webpack --config config/webpack/index.js",
+    "build": "webpack --config config/webpack/client.js",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "postbuild": "webpack --config config/webpack/server.js",
     "prestart": "npm run build",

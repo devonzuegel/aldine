@@ -1,6 +1,6 @@
-@import 'colors.css';
-@import 'sizes.css';
-@import 'typefaces.css';
+@import 'styles/colors.css';
+@import 'styles/sizes.css';
+@import 'styles/typefaces.css';
 
 .debug {
   border: 1px solid blue;

@@ -8,9 +8,9 @@ const projectRoot = (...absolutePath) =>
 module.exports = (config) => {
   const conf = {
     preprocessors: {
-      '../src/**/*.ts':     ['coverage'],
-      '../src/**/*.tsx':    ['coverage'],
-      '../webpack/test.js': ['webpack'],
+      '../src/**/*.ts':              ['coverage'],
+      '../src/**/*.tsx':             ['coverage'],
+      '../webpack/partials/test.js': ['webpack'],
     },
 
     coverageReporter: { dir: '../../coverage', reporters: [] },
@@ -18,7 +18,7 @@ module.exports = (config) => {
     browsers:         ['PhantomJS'],
     colors:           true,
     concurrency:      Infinity,
-    files:            ['../webpack/test.js'],
+    files:            ['./partials/test.js'],
     frameworks:       ['mocha', 'chai', 'es6-shim'],
     hostname:         appConfig.host,
     logLevel:         config.LOG_INFO,
@@ -43,7 +43,7 @@ module.exports = (config) => {
             options: {
               tslint:  { failOnHint: true },
               postcss: () => [
-                require('postcss-import')({ path: [ projectRoot('app', 'styles') ] }),
+                require('postcss-import')({ path: [ projectRoot('app') ] }),
                 require('stylelint')({ files: projectRoot('app/*.css') }),
                 require('postcss-cssnext')(),
                 require('postcss-assets')({ relative: projectRoot('app') }),

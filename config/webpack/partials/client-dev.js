@@ -2,7 +2,6 @@ const path           = require('path')
 const webpack        = require('webpack')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const merge          = require('webpack-merge')
-const rootDir        = path.resolve('./src')
 
 const config = {
   entry: {
@@ -37,6 +36,6 @@ const config = {
 
 module.exports = require('webpack-merge')(
   config,
-  require('./partials/aliases'),
-  require('./partials/client-base')
+  require('./aliases'),
+  require('./client-loaders')
 )

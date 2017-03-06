@@ -7,13 +7,13 @@ module.exports = (grunt) => {
   grunt.initConfig({
     karma: {
       default: {
-        configFile: 'config/test/karma.conf.js',
+        configFile: 'config/webpack/karma.conf.js',
         singleRun:  true,
         autoWatch:  false,
         reporters:  ['mocha'],
       },
       watch: {
-        configFile: 'config/test/karma.conf.js',
+        configFile: 'config/webpack/karma.conf.js',
         singleRun:  false,
         autoWatch:  true,
         reporters:  ['dots'],
