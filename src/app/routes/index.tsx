@@ -6,8 +6,8 @@ import { Experiments       } from './Experiments'
 import { Styleguide        } from './Styleguide'
 
 const config: IRouteConfig[] = [
-  { path: '/',     title: 'Experiments', component: Experiments },
-  { path: 'style', title: 'Styleguide',  component: Styleguide  },
+  { path: 'experiment', title: 'Experiments', component: Experiments },
+  { path: 'style',      title: 'Styleguide',  component: Styleguide  },
 ]
 
 const buildRoute = (route: IRouteConfig, i: number) => (
