@@ -2,10 +2,12 @@ import * as React            from 'react'
 import { IndexRoute, Route } from 'react-router'
 import { IRouteConfig      } from '~/models/route-config'
 import { App               } from '~/components/App'
+import { Home              } from './Home'
 import { Experiments       } from './Experiments'
 import { Styleguide        } from './Styleguide'
 
 const config: IRouteConfig[] = [
+  { path: '/',          title: 'Home',        component: Home        },
   { path: 'experiment', title: 'Experiments', component: Experiments },
   { path: 'style',      title: 'Styleguide',  component: Styleguide  },
 ]
