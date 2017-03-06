@@ -3,6 +3,7 @@
     {
       "path": ".",
       "folder_exclude_patterns": [
+        ".awcache",
         "coverage",
         "node_modules",
         "build"
