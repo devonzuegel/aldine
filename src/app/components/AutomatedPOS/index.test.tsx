@@ -8,22 +8,19 @@ import { AutomatedPOS } from './index'
 const s = require('./style.css')
 
 const txt = 'This is a sentence.'
+const component = mount(<AutomatedPOS text={txt} />)
 
 describe('<AutomatedPOS />', () => {
-  beforeEach(() => {
-    this.component = mount(<AutomatedPOS text={txt} />)
-  })
-
   it('renders the expected text', () => {
-    expect(this.component.text()).to.eql(txt)
+    expect(component.text()).to.eql(txt)
   })
 
   it('has the expected number of separators', () => {
-    expect(this.component.find(klass(s.separator)).length).to.eql(4)
+    expect(component.find(klass(s.separator)).length).to.eql(4)
   })
 
   it('has the expected words', () => {
-    const words = this.component.find(klass(s.word))
+    const words = component.find(klass(s.word))
     const wordsTxt = words.map(w => w.text())
     expect(wordsTxt).to.eql([ 'This', 'is', 'a', 'sentence', '.' ])
   })
@@ -35,7 +32,7 @@ describe('<AutomatedPOS />', () => {
       NN:  [ 'sentence' ],
     }
     R.keys(posMap).map((className: string) => {
-      const words = this.component.find(klass(s[className]))
+      const words = component.find(klass(s[className]))
       const wordsTxt = words.map(w => w.text())
       expect(wordsTxt).to.eql(posMap[className])
     })

@@ -24,24 +24,22 @@ const props = {
   ],
 }
 
-describe('<ThemeChanger />', () => {
-  beforeEach(() => {
-    this.update = chai.spy(() => null)
-    this.component = mount(
-      <ThemeChanger
-        themeChanger={state.themeChanger}
-        update={this.update}
-        themes={props.themes}
-      />
-    )
-  })
+const update    = chai.spy(() => null)
+const component = mount(
+  <ThemeChanger
+    themeChanger={state.themeChanger}
+    update      ={update}
+    themes      ={props.themes}
+  />
+)
 
+describe('<ThemeChanger />', () => {
   it('renders with correct style', () => {
-    expect(this.component.find(styles.themeChanger)).to.exist
+    expect(component.find(styles.themeChanger)).to.exist
   })
 
   it('renders theme selectors', () => {
-    const themeElems = this.component.find(selectorClass)
+    const themeElems = component.find(selectorClass)
     const themeNames = props.themes.map(R.prop('title'))
 
     expect(themeElems).to.have.length(5)
@@ -49,7 +47,7 @@ describe('<ThemeChanger />', () => {
   })
 
   it('updates the active selector when that selector is clicked', () => {
-    const themeElems = this.component.find(selectorClass)
+    const themeElems = component.find(selectorClass)
     const [ first, last ] = [ themeElems.first(), themeElems.last() ]
     const active = `${styles.themeSelector} ${styles.active}`
 
@@ -58,6 +56,6 @@ describe('<ThemeChanger />', () => {
 
     last.simulate('click')
     const themeClassNames = props.themes.map(R.prop('className'))
-    expect(this.update).to.have.been.called.with(R.last(themeClassNames))
+    expect(update).to.have.been.called.with(R.last(themeClassNames))
   })
 })
