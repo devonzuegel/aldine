@@ -17,4 +17,10 @@ module.exports = {
       'fonts': projectRoot('fonts'),
     },
   },
+
+  resolveLoader: {
+    alias: {
+      'essay-loader': path.resolve('./config/webpack/loaders/essay-loader')
+    },
+  }
 }

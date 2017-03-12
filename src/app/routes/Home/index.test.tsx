@@ -1,13 +1,12 @@
-// import * as React from 'react'
+import * as React from 'react'
+import { mount } from 'enzyme'
 
-// import { Home } from './index'
+import { Home } from './index'
 
-// describe('<Home />', () => {
+describe('<Home />', () => {
 
-//   beforeEach(() => {
-//   })
+  it('TODO', () => {
+    mount(<Home />)
+  })
 
-//   it('TODO', () => {
-//   })
-
-// })
+})
