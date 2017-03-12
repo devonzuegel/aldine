@@ -1,18 +1,13 @@
-import * as React       from 'react'
-import { ThemeChanger } from '~/modules/ThemeChanger'
-import { AutomatedPOS } from '~/modules/AutomatedPOS'
-import { Layout       } from '~/components/Layout'
-import { GardenPaths  } from '~/components/GardenPaths'
-import { TaggedProse  } from '~/modules/TaggedProse'
-import { SideNav      } from '~/components/SideNav'
-import { H1, H2, HR   } from '~/components/Typography'
+import * as React              from 'react'
+import { ThemeChanger        } from '~/modules/ThemeChanger'
+import { AutomatedPOS        } from '~/modules/AutomatedPOS'
+import { Layout, ClickToView } from '~/components/Layout'
+import { GardenPaths         } from '~/components/GardenPaths'
+import { TaggedProse         } from '~/modules/TaggedProse'
+import { SideNav             } from '~/components/SideNav'
+import { H1, H2, HR          } from '~/components/Typography'
 
 type Type = React.StatelessComponent<any>
-
-const ClickToView = (name: string) => ({
-  name,
-  onClick: () => document.getElementById(name).scrollIntoView(),
-})
 
 const experiments = [
   {

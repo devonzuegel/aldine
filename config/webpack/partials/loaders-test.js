@@ -17,9 +17,6 @@ module.exports = {
           publicPath: projectRoot('fonts'),
         },
       }, {
-        test:   /\?raw$/,
-        loader: 'raw-loader',
-      }, {
       // // TODO: put me back
       //   enforce: 'pre',
       //   test: /\.tsx?$/,
@@ -37,12 +34,6 @@ module.exports = {
           'css-loader?modules&importLoaders=2&localIdentName=[local]___[hash:base64:5]',
           'postcss-loader',
         ],
-      }, {
-        test:   /\.(jpe?g|png|gif)$/i,
-        loader: 'url-loader?limit=1000&name=images/[hash].[ext]'
-      }, {
-        test:   /\.json$/,
-        loader: 'json-loader'
       }
     ],
   },

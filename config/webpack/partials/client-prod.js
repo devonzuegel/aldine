@@ -1,19 +1,6 @@
 const path    = require('path')
 const webpack = require('webpack')
 
-const vendor = [
-  './src/vendor/main.ts',
-  'react',
-  'react-dom',
-  'react-router',
-  'react-helmet',
-  'react-redux',
-  'react-router-redux',
-  'redux',
-  'redux-connect',
-  'redux-thunk'
-]
-
 module.exports = require('webpack-merge')(
   require('./aliases'),
   require('./client-loaders'),
@@ -22,14 +9,10 @@ module.exports = require('webpack-merge')(
 
     entry: {
       app: './src/client.tsx',
-      vendor,
+      vendor: require('./vendor-entry'),
     },
 
-    output: {
-      path:       path.resolve('./build/public'),
-      publicPath: '/public/',
-      filename:   'js/[name].[chunkhash].js'
-    },
+    output: require('./output')({ pathinfo: false }),
 
     plugins: [
       new webpack.optimize.OccurrenceOrderPlugin(),

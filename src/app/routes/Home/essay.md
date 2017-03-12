@@ -12,7 +12,7 @@ These experiences made me wonder what changes we could make to text to improve t
 
 Highlighting all parts of speech with different styles was a total mess. The rainbow of colors made my eyes hurt, and they added very little meaning to the structure of the sentence. I now have some sympathy for how Rob Pike must feel when he reads syntax highlighted code.
 
-[ WIDGET ]
+{allPartsOfSpeech}
 
 Though this experiment was a failure, it made me think about why it had such a different effect from colorfully syntax-highlighted code. I have a few hypotheses:
 
@@ -21,16 +21,15 @@ Though this experiment was a failure, it made me think about why it had such a d
 * Code is more symmetrical and structured
     * Less symmetrical / code with more complex visual structure might be read more like English
 
-
-[ COLORFUL CODE EXAMPLE VS. PLAINTEXT ]
-[ WIDGET ]
+{colorfulCode}
+{plaintext}
 
 ### Verbs
 
 * Worked very well for some garden paths, not so helpful for others
 * Not nearly as distracting as highlighting all parts of speech
 
-[ WIDGET ]
+{highlightedVerbs}
 
 ### Faded articles
 
@@ -39,29 +38,25 @@ Though this experiment was a failure, it made me think about why it had such a d
 
 ### Faded gerund endings
 
-[ WIDGET ]
+{fadedGerundEndings}
 
 ### Garden paths
 
-[ WIDGET ]
+{gardenPaths}
 
 ### No punctuation
 
-[ WIDGET ]
+{noPunctuation}
 
 ## Automated tools
 
-[ WIDGET ]
+{automatedTools}
 
 ### Automated part-of-speech tagging
 
 This didn't work so well, unfortunately. The first chunk of text I tried to process using theAutomatedPOS tagged was this passage about reading, which immediately uncovered the weaknesses of this approach:
 
-(Reading example)
-
-[[EXAMPLE]]
-
-[ WIDGET ]
+{automatedPOSReading}
 
 As you can see, the tagger was extremely confused, because “reading” the subject of this passage.Probabilistically, “reading” is usually a verb.
 

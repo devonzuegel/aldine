@@ -39,12 +39,12 @@
 }
 
 .h1 {
-  font-size: var(--xlarge);
+  font-size: var(--large);
   margin: var(--base) 0 var(--large) 0;
 }
 
 .h2 {
-  font-size: var(--large);
+  font-size: var(--base);
   margin-top: var(--xlarge);
 }
 
