@@ -16,32 +16,27 @@ const categories: ITokenCategories = {
   category2: 'category2',
   category3: 'category3',
 }
+const select = chai.spy(() => null)
+const component = mount(<CategorySelector {...{ categories, selected, select: select }} />)
 
 describe('<CategorySelector />', () => {
-  beforeEach(() => {
-    this.select = chai.spy(() => null)
-    this.component = mount(
-      <CategorySelector {...{ categories, selected, select: this.select }} />
-    )
-  })
-
   it('lists each category', () => {
-    const categoryElems = this.component.find(`.${s.category}`)
+    const categoryElems = component.find(`.${s.category}`)
     expect(categoryElems.length).to.eql(R.keys(categories).length)
   })
 
   it('has the correct selected category', () => {
-    const selectedElem = this.component.find(`.${s['category--selected']}`)
+    const selectedElem = component.find(`.${s['category--selected']}`)
     expect(selectedElem.length).to.eql(1)
     expect(selectedElem.first().text()).to.eql(selected)
   })
 
   it('selects selected category when a category is clicked', () => {
-    const categoryElems = this.component.find(`.${s.category}`)
+    const categoryElems = component.find(`.${s.category}`)
     categoryElems.forEach((token) => {
       token.simulate('click')
-      expect(this.select).to.have.been.called.with(token.text())
+      expect(select).to.have.been.called.with(token.text())
     })
-    expect(this.select).to.not.have.been.called.with(categoryElems.length)
+    expect(select).to.not.have.been.called.with(categoryElems.length)
   })
 })
