@@ -1,5 +1,6 @@
-import * as React from 'react'
-import * as classnames from 'classnames'
+import * as React             from 'react'
+import * as R                 from 'ramda'
+import * as classnames        from 'classnames'
 import { Link as RouterLink } from 'react-router'
 
 const s = require('./style.css')
@@ -65,6 +66,22 @@ export const Markdown = (props: IProps) => (
     {props.children}
   </div>
 )
+
+export const Code = (props) => {
+  const classes = classnames({
+    [s.code]: true,
+  })
+
+  if (R.not(props.children)) {
+    throw Error('Code must have children')
+  }
+
+  return (
+    <code className={classes}>
+      {props.children}
+    </code>
+  )
+}
 
 export const HR = () => <hr className={s.hr} />
 
