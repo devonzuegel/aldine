@@ -1,11 +1,13 @@
-import * as React              from 'react'
-import { ThemeChanger        } from '~/modules/ThemeChanger'
-import { AutomatedPOS        } from '~/modules/AutomatedPOS'
-import { Layout, ClickToView } from '~/components/Layout'
-import { GardenPaths         } from '~/components/GardenPaths'
-import { TaggedProse         } from '~/modules/TaggedProse'
-import { SideNav             } from '~/components/SideNav'
-import { H1, H2, HR          } from '~/components/Typography'
+import * as React from 'react'
+
+import { ThemeChanger } from '~/modules/ThemeChanger'
+import { AutomatedPOS } from '~/modules/AutomatedPOS'
+import { Layout       } from '~/components/Layout'
+import { GardenPaths  } from '~/components/GardenPaths'
+import { TaggedProse  } from '~/modules/TaggedProse'
+import { SideNav      } from '~/components/SideNav'
+import { H1, H2, HR   } from '~/components/Typography'
+import * as ScrollTo    from '~/components/ScrollTo'
 
 type Type = React.StatelessComponent<any>
 
@@ -26,13 +28,13 @@ const experiments = [
 ]
 
 const Guide = (props) => (
-  <div id={props.title}>
+  <ScrollTo.Area name={props.title}>
     <HR />
     <H2>{props.title}</H2>
     {props.children}
-  </div>
+  </ScrollTo.Area>
 )
-const toc = experiments.map(({ title }) => ClickToView(title))
+const toc = experiments.map(({ title }) => ScrollTo.Button(title))
 
 export const Experiments: Type = (props) => (
   <Layout leftSide={<SideNav {...{ toc }} />}>

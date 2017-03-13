@@ -1,37 +1,36 @@
-import * as React    from 'react'
-import * as R        from 'ramda'
+import * as React from 'react'
+
 import { Layout    } from '~/components/Layout'
 import { Codeblock } from '~/components/Codeblock'
 import { Section   } from '~/components/Section'
 import { SideNav   } from '~/components/SideNav'
 import { examples  } from '~/components/utils'
 import * as T        from '~/components/Typography'
+import * as ScrollTo from '~/components/ScrollTo'
 
 const Guide = (props) => (
-  <div id={props.title}>
+  <ScrollTo.Area name={props.title}>
     <T.HR />
     <T.H2>{props.title}</T.H2>
     {props.children}
-  </div>
+  </ScrollTo.Area>
 )
-
-const ClickToView = (name: string) => ({
-  name,
-  onClick: () => document.getElementById(name).scrollIntoView(),
-})
-
-const toc = [
-  ClickToView('Section'),
-  R.merge(ClickToView('Typography'), {
-    children: [ 'H1', 'H2', 'H3', 'H4', 'H5', 'Paragraph', 'Codeblock' ].map(ClickToView)
-  }),
-]
 
 const Label = (props) => (
   <T.Label faded>
     {props.children} ↘
   </T.Label>
 )
+
+const headers = [ 'H1', 'H2', 'H3', 'H4', 'H5' ]
+
+const toc = [
+  ScrollTo.Button('Section'),
+  {
+    ...ScrollTo.Button('Typography'),
+    children: [ ...headers, 'Paragraph', 'Codeblock' ].map(ScrollTo.Button)
+  },
+]
 
 const Guides = [
   {
@@ -53,20 +52,20 @@ const Guides = [
     title: 'Typography',
     body: (
       <Section emphasis='secondary'>
-        {[ 'H1', 'H2', 'H3', 'H4', 'H5' ].map((name: string, i: number) =>{
+        {headers.map((name: string, i: number) =>{
           const C = T[name]
           return (
-            <div key={i} id={name}>
+            <ScrollTo.Area key={i} name={name}>
               <Label>{name} header</Label>
               <C>This is a main header (T.{name})</C>
-            </div>
+            </ScrollTo.Area>
           )
         })}
 
-        <div id='Paragraph'>
+        <ScrollTo.Area name='Paragraph'>
           <Label>Paragraph</Label>
           <T.P>
-            This is a short paragraph with a <T.A href='#'>link</T.A>.
+            This is a short paragraph with a <T.A href='#'>link</T.A> that does nothing.
           </T.P>
           <T.P>
             This is a longer paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -75,19 +74,19 @@ const Guides = [
             forti viro, nisi a sapiente non potest. Duo Reges: constructio interrete. Nescio
             quo modo praetervolavit oratio.
           </T.P>
-        </div>
+        </ScrollTo.Area>
 
-        <div id='HR'>
+        <ScrollTo.Area name='HR'>
           <Label>HR</Label>
           <T.HR />
-        </div>
+        </ScrollTo.Area>
 
-        <div id='Codeblock'>
+        <ScrollTo.Area name='Codeblock'>
           <Label>Codeblock</Label>
           <Codeblock>
             This is some pre-formatted text.
           </Codeblock>
-        </div>
+        </ScrollTo.Area>
       </Section>
     )
   },

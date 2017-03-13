@@ -45,8 +45,3 @@ Layout.propTypes = {
 Layout.defaultProps = {
   width: 'wide',
 }
-
-export const ClickToView = (name: string) => ({
-  name,
-  onClick: () => document.getElementById(name).scrollIntoView(),
-})
