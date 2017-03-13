@@ -1,15 +1,15 @@
 @import 'styles/base.css';
 
 :root {
-  --color-1:  #000000;
-  --color-2:  #1c1c1c;
-  --color-3:  #960050;
-  --color-4:  #f92672;
-  --color-5:  #008877;
-  --color-6:  #a6e22e;
-  --color-7:  #fd971f;
-  --color-8:  #e6db74;
-  --color-9:  #7711dd;
+  --color-1: #000000;
+  --color-2: #1c1c1c;
+  --color-3: #960050;
+  --color-4: #f92672;
+  --color-5: #008877;
+  --color-6: #a6e22e;
+  --color-7: #fd971f;
+  --color-8: #e6db74;
+  --color-9: #7711dd;
   --color-10: #8432ff;
   --color-11: #890089;
   --color-12: #75507b;
@@ -69,47 +69,185 @@
   font-weight: bold;
   font-size: var(--small);
 
-  & .CC   { color: var(--color-11); }
-  & .CD   { color: var(--color-2); }
-  & .DT   { color: var(--color-3); }
-  & .EX   { color: var(--color-4); }
-  & .FW   { color: var(--color-5); }
-  & .IN   { color: var(--color-6); }
-  & .JJ   { color: var(--color-10); }
-  & .JJR  { color: var(--color-8); }
-  & .JJS  { color: var(--color-9); }
-  & .LS   { color: var(--color-12); }
-  & .MD   { color: var(--color-11); }
-  & .NN   { color: var(--color-13); font-weight: bold; }
-  & .NNP  { color: var(--color-13); font-weight: bold; }
-  & .NNPS { color: var(--color-13); font-weight: bold; }
-  & .NNS  { color: var(--color-13); font-weight: bold; }
-  & .POS  { color: var(--color-16); }
-  & .PDT  { color: var(--color-11); }
-  & .PP\$ { color: var(--color-11); }
-  & .PRP  { color: var(--color-2); }
-  & .RB   { color: var(--color-3); }
-  & .RBR  { color: var(--color-4); }
-  & .RBS  { color: var(--color-5); }
-  & .RP   { color: var(--color-6); }
-  & .SYM  { color: var(--color-7); }
-  & .TO   { color: var(--color-8); }
-  & .UH   { color: var(--color-9); }
-  & .VB   { color: var(--color-7); font-weight: bold; }
-  & .VBD  { color: var(--color-7); font-weight: bold; }
-  & .VBG  { color: var(--color-7); font-weight: bold; }
-  & .VBN  { color: var(--color-7); font-weight: bold; }
-  & .VBP  { color: var(--color-7); font-weight: bold; }
-  & .VBZ  { color: var(--color-7); font-weight: bold; }
-  & .WDT  { color: var(--color-16); }
-  & .WP   { color: var(--color-11); }
-  & .WP\$ { color: var(--color-11); }
-  & .WRB  { color: var(--color-2); }
-  & .\.   { color: red; }
-  & .\.   { color: red; }
-  & .\:   { color: red; }
-  & .\$   { color: red; }
-  & .\#   { color: red; }
-  & .\(   { color: red; }
-  & .\)   { color: red; }
+  & .CC {
+    color: var(--color-11);
+  }
+
+  & .CD {
+    color: var(--color-2);
+  }
+
+  & .DT {
+    color: var(--color-3);
+  }
+
+  & .EX {
+    color: var(--color-4);
+  }
+
+  & .FW {
+    color: var(--color-5);
+  }
+
+  & .IN {
+    color: var(--color-6);
+  }
+
+  & .JJ {
+    color: var(--color-10);
+  }
+
+  & .JJR {
+    color: var(--color-8);
+  }
+
+  & .JJS {
+    color: var(--color-9);
+  }
+
+  & .LS {
+    color: var(--color-12);
+  }
+
+  & .MD {
+    color: var(--color-11);
+  }
+
+  & .NN {
+    color: var(--color-13);
+    font-weight: bold;
+  }
+
+  & .NNP {
+    color: var(--color-13);
+    font-weight: bold;
+  }
+
+  & .NNPS {
+    color: var(--color-13);
+    font-weight: bold;
+  }
+
+  & .NNS {
+    color: var(--color-13);
+    font-weight: bold;
+  }
+
+  & .POS {
+    color: var(--color-16);
+  }
+
+  & .PDT {
+    color: var(--color-11);
+  }
+
+  & .PP\$ {
+    color: var(--color-11);
+  }
+
+  & .PRP {
+    color: var(--color-2);
+  }
+
+  & .RB {
+    color: var(--color-3);
+  }
+
+  & .RBR {
+    color: var(--color-4);
+  }
+
+  & .RBS {
+    color: var(--color-5);
+  }
+
+  & .RP {
+    color: var(--color-6);
+  }
+
+  & .SYM {
+    color: var(--color-7);
+  }
+
+  & .TO {
+    color: var(--color-8);
+  }
+
+  & .UH {
+    color: var(--color-9);
+  }
+
+  & .VB {
+    color: var(--color-7);
+    font-weight: bold;
+  }
+
+  & .VBD {
+    color: var(--color-7);
+    font-weight: bold;
+  }
+
+  & .VBG {
+    color: var(--color-7);
+    font-weight: bold;
+  }
+
+  & .VBN {
+    color: var(--color-7);
+    font-weight: bold;
+  }
+
+  & .VBP {
+    color: var(--color-7);
+    font-weight: bold;
+  }
+
+  & .VBZ {
+    color: var(--color-7);
+    font-weight: bold;
+  }
+
+  & .WDT {
+    color: var(--color-16);
+  }
+
+  & .WP {
+    color: var(--color-11);
+  }
+
+  & .WP\$ {
+    color: var(--color-11);
+  }
+
+  & .WRB {
+    color: var(--color-2);
+  }
+
+  & .\. {
+    color: red;
+  }
+
+  & .\. {
+    color: red;
+  }
+
+  & .\: {
+    color: red;
+  }
+
+  & .\$ {
+    color: red;
+  }
+
+  & .\# {
+    color: red;
+  }
+
+  & .\( {
+    color: red;
+  }
+
+  & .\) {
+    color: red;
+  }
 }

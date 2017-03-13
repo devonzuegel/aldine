@@ -2,6 +2,7 @@
   "rules": {
     "block-no-empty": null,
     "color-no-invalid-hex": true,
+    "comment-empty-line-before": [ "always" ],
     "declaration-colon-space-after": "always",
     "indentation": [2, {
       "except": ["value"]
