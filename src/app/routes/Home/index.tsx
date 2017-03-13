@@ -1,13 +1,13 @@
 import * as React      from 'react'
 import { Layout      } from '~/components/Layout'
 import { SideNav     } from '~/components/SideNav'
-import { ClickToView } from '~/components/Layout'
+import * as ScrollTo   from '~/components/ScrollTo'
 
 const Essay = require('babel-loader!essay-loader!./essay.md')
 
 type Type = React.StatelessComponent<null>
 
-const toc = [].map(ClickToView)
+const toc = [].map(ScrollTo.Button)
 
 export const Home: Type = () => (
   <Layout leftSide={<SideNav {...{ toc }} />}>
