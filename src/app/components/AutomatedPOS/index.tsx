@@ -2,9 +2,10 @@ import * as React from 'react'
 import * as R     from 'ramda'
 import * as classnames from 'classnames'
 
-const s = require('./style.css')
-
 import { IWord } from '~/models/part-of-speech'
+
+const s = require('./style.css')
+const POS = require('pos')
 
 const Word = (props: IWord) => {
   const { word, pos } = props
@@ -19,13 +20,11 @@ const Word = (props: IWord) => {
   )
 }
 
-const POS = require('pos')
-
-const toIWord = ([word, pos]) => ({ word, pos })
-
 const tagPOS = (text: string) => {
-  const tagger = new POS.Tagger()
-  const words = new POS.Lexer().lex(text)
+  const tagger  = new POS.Tagger()
+  const words   = new POS.Lexer().lex(text)
+  const toIWord = ([ word, pos ]) => ({ word, pos })
+
   return tagger.tag(words).map(toIWord)
 }
 
@@ -38,8 +37,20 @@ const Separator = ({ nextPOS }) => {
   )
 }
 
-export const AutomatedPOS = ({ text }: { text: string }) => (
-  <div>
+export const enum Theme {
+  default,
+  allPartsOfSpeech,
+}
+
+interface IProps {
+  text: string,
+  theme?: Theme,
+}
+
+type Type = React.StatelessComponent<IProps>
+
+export const AutomatedPOS: Type = ({ text, theme }: IProps) => (
+  <div className={s[`theme--${theme}`]}>
     {tagPOS(text).map((wordProps: IWord, i: number) =>
       <span key={i}>
         {i > 0 && <Separator nextPOS={wordProps.pos} />}
