@@ -49,10 +49,10 @@ describe('<ThemeChanger />', () => {
   it('updates the active selector when that selector is clicked', () => {
     const themeElems = component.find(selectorClass)
     const [ first, last ] = [ themeElems.first(), themeElems.last() ]
-    const active = `${styles.themeSelector} ${styles.active}`
 
-    expect(first.props().className).to.eql(active)
-    expect(last.props().className).to.eql(styles.themeSelector)
+    expect(first.props().className).to.contain(styles.themeSelector)
+    expect(first.props().className).to.contain(styles.active)
+    expect(last.props().className).to.contain(styles.themeSelector)
 
     last.simulate('click')
     const themeClassNames = props.themes.map(R.prop('className'))

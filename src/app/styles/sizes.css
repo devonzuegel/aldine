@@ -2,10 +2,9 @@
   --font-base-size: 14px;
   --xxsmall: 0.25rem;
   --xsmall: 0.5rem;
-  --small: 1rem;
-  --base: 1.5rem;
+  --small: 0.75rem;
+  --base: 1rem;
   --large: 2.25rem;
   --xlarge: 3rem;
-  --xxlarge: 4rem;
-  --line-height: 1.53em;
+  --line-height: 1.53rem;
 }
