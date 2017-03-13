@@ -50,7 +50,7 @@ interface IProps {
 type Type = React.StatelessComponent<IProps>
 
 export const AutomatedPOS: Type = ({ text, theme }: IProps) => (
-  <div className={s[`theme--${theme}`]}>
+  <div className={s[`theme--${theme || Theme.default}`]}>
     {tagPOS(text).map((wordProps: IWord, i: number) =>
       <span key={i}>
         {i > 0 && <Separator nextPOS={wordProps.pos} />}

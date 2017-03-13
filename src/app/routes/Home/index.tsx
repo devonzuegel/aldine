@@ -1,11 +1,13 @@
 import * as React from 'react'
 import * as R     from 'ramda'
 
-import { Layout      } from '~/components/Layout'
-import { SideNav     } from '~/components/SideNav'
-import * as ScrollTo   from '~/components/ScrollTo'
+import { Layout    } from '~/components/Layout'
+import { SideNav   } from '~/components/SideNav'
+import * as AutoPOS  from '~/components/AutomatedPOS'
+import * as ScrollTo from '~/components/ScrollTo'
 
 const Essay = require('babel-loader!essay-loader!./essay.md')
+const sample = require('raw-loader!./sample.txt')
 
 type Type = React.StatelessComponent<null>
 
@@ -26,11 +28,22 @@ const essayTOC = R.reduce(
   {}
 )(headings)
 
+const allPartsOfSpeech = (
+  <div>
+    <AutoPOS.AutomatedPOS
+      text={sample}
+      theme={AutoPOS.Theme.allPartsOfSpeech}
+    />,
+    <br />,
+    <AutoPOS.AutomatedPOS text={sample} />
+  </div>
+)
+
 export const Home: Type = () => (
   <Layout leftSide={<SideNav {...{ toc: headings.map(ScrollTo.Button) }} />}>
     <Essay
       toc                ={essayTOC}
-      allPartsOfSpeech   ={<code>allPartsOfSpeech Widget</code>}
+      allPartsOfSpeech   ={allPartsOfSpeech}
       colorfulCode       ={<code>colorfulCode Widget</code>}
       plaintext          ={<code>plaintext Widget</code>}
       highlightedVerbs   ={<code>highlightedVerbs Widget</code>}

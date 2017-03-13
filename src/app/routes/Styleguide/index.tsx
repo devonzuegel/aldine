@@ -99,8 +99,8 @@ export const Styleguide = () => (
       Styleguide
     </T.H1>
 
-    {Guides.map(({ title, body }) =>
-      <Guide {...{ title }}>
+    {Guides.map(({ title, body }, i) =>
+      <Guide {...{ title }} key={i}>
         {body}
       </Guide>
     )}
