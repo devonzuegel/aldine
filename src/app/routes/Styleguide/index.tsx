@@ -90,6 +90,13 @@ const Guides = [
           </Codeblock>
         </ScrollTo.Area>
 
+        <ScrollTo.Area name='Code'>
+          <Label>Code</Label>
+          <T.P>
+            This paragraph contains inline <T.Code>code</T.Code>.
+          </T.P>
+        </ScrollTo.Area>
+
         <ScrollTo.Area name='Markdown'>
           <Label>Markdown Container</Label>
           <T.P>
