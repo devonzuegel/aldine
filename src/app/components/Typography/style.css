@@ -1,7 +1,7 @@
 @import 'styles/base.css';
 
 .typography {
-  line-height: 1em;
+  line-height: var(--base);
 }
 
 .debug {
@@ -16,7 +16,9 @@
   text-transform: uppercase;
 }
 
-.a {
+.a,
+.markdown a {
+  text-decoration: none;
   color: var(--brand-base);
   cursor: pointer;
 
@@ -33,26 +35,31 @@
   }
 }
 
-.hr {
+.hr,
+.markdown hr {
   border: 1px solid var(--neutral-xlight);
   margin: var(--large) 0;
 }
 
-.h1 {
+.h1,
+.markdown h1 {
   font-size: var(--large);
   margin: var(--base) 0 var(--large) 0;
 }
 
-.h2 {
+.h2,
+.markdown h2 {
   font-size: var(--base);
   margin-top: var(--xlarge);
 }
 
-.label {
+.label,
+.markdown label {
   font-size: var(--small);
   text-transform: uppercase;
 }
 
-.p {
+.p,
+.markdown p {
   line-height: var(--line-height);
 }

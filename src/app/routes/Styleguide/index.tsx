@@ -8,6 +8,8 @@ import { examples  } from '~/components/utils'
 import * as T        from '~/components/Typography'
 import * as ScrollTo from '~/components/ScrollTo'
 
+const MarkdownSample = require('babel-loader!essay-loader!./sample.md')
+
 const Guide = (props) => (
   <ScrollTo.Area name={props.title}>
     <T.HR />
@@ -28,7 +30,7 @@ const toc = [
   ScrollTo.Button('Section'),
   {
     ...ScrollTo.Button('Typography'),
-    children: [ ...headers, 'Paragraph', 'Codeblock' ].map(ScrollTo.Button)
+    children: [ ...headers, 'Paragraph', 'Codeblock', 'Markdown' ].map(ScrollTo.Button)
   },
 ]
 
@@ -86,6 +88,19 @@ const Guides = [
           <Codeblock>
             This is some pre-formatted text.
           </Codeblock>
+        </ScrollTo.Area>
+
+        <ScrollTo.Area name='Markdown'>
+          <Label>Markdown Container</Label>
+          <T.P>
+            Normalizes typography styles for parsed Markdown to the
+            styles of Typography components.
+          </T.P>
+          <Section>
+            <T.Markdown>
+              <MarkdownSample />
+            </T.Markdown>
+          </Section>
         </ScrollTo.Area>
       </Section>
     )
