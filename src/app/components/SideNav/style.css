@@ -19,6 +19,7 @@
   padding-left: var(--xlarge);
   list-style-type: none;
   cursor: pointer;
+
   &:hover {
     color: var(--prose-color-dark);
   }

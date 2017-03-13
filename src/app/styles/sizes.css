@@ -1,6 +1,5 @@
 :root {
   --font-base-size: 14px;
-
   --xxsmall: 0.25rem;
   --xsmall: 0.5rem;
   --small: 1rem;
@@ -8,6 +7,5 @@
   --large: 2.25rem;
   --xlarge: 3rem;
   --xxlarge: 4rem;
-
   --line-height: 1.53em;
 }

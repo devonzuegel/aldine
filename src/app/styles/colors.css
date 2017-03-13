@@ -17,7 +17,6 @@
   --medium-grey: #9999bb;
   --lightish-grey: #ccccdd;
   --light-grey: #e5e5e5;
-  /** --lighter-grey: #efeff1; */
   --lighter-grey: #f5f5f5;
 
   /** Pink */
@@ -33,13 +32,11 @@
   --neutral-xlight: var(--lighter-grey);
   --neutral-dark: var(--medium-grey);
   --neutral-xdark: var(--dark-grey);
-
   --positive-base: var(--bright-blue);
   --positive-light: var(--pale-bright-blue);
   --positive-xlight: var(--paler-bright-blue);
   --positive-dark: var(--dark-blue);
   --positive-xdark: var(--black);
-
   --negative-base: var(--lighter-pink);
   --negative-light: var(--lighter-pink);
   --negative-xlight: var(--light-pink);
@@ -58,5 +55,4 @@
 
   --prose-color-base: var(--dark-grey);
   --prose-color-dark: var(--black);
-
 }
