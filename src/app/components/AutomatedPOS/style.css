@@ -11,28 +11,63 @@
   color: #999;
 }
 
-.TO,
-.VB,
-.VBD,
-.VBG,
-.VBN,
-.VBP,
-.VBZ {
-  border-bottom: 2px solid #ddd;
-  color: black;
-  padding-bottom: 1px;
+.theme--0 { /* default */
+  & .TO,
+  & .VB,
+  & .VBD,
+  & .VBG,
+  & .VBN,
+  & .VBP,
+  & .VBZ {
+    border-bottom: 2px solid #ddd;
+    color: black;
+    padding-bottom: 1px;
+  }
+
+  & .NN,
+  & .NNP,
+  & .NNPS,
+  & .NNS {
+    color: black;
+  }
+
+  & .DT,
+  & .RB,
+  & .RBR,
+  & .5 {
+    opacity: 0.5;
+  }
 }
 
-.NN,
-.NNP,
-.NNPS,
-.NNS {
-  color: black;
+.theme--1 { /* allPartsOfSpeech */
+  border: 1px solid skyblue;
+  padding: 12px;
 }
 
-.DT,
-.RB,
-.RBR,
-.5 {
-  opacity: 0.5;
+.theme--1 { /* allPartsOfSpeech */
+  & .TO,
+  & .VB,
+  & .VBD,
+  & .VBG,
+  & .VBN,
+  & .VBP,
+  & .VBZ {
+    border-bottom: 2px solid #ddd;
+    color: black;
+    padding-bottom: 1px;
+  }
+
+  & .NN,
+  & .NNP,
+  & .NNPS,
+  & .NNS {
+    color: black;
+  }
+
+  & .DT,
+  & .RB,
+  & .RBR,
+  & .5 {
+    opacity: 0.5;
+  }
 }
