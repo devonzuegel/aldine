@@ -60,4 +60,11 @@ export const A = (props: IAProps) => (
   </a>
 )
 
+export const Markdown = (props: IProps) => (
+  <div className={s.markdown}>
+    {props.children}
+  </div>
+)
+
 export const HR = () => <hr className={s.hr} />
+
