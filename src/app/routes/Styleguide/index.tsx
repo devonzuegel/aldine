@@ -30,7 +30,13 @@ const toc = [
   ScrollTo.Button('Section'),
   {
     ...ScrollTo.Button('Typography'),
-    children: [ ...headers, 'Paragraph', 'Codeblock', 'Markdown' ].map(ScrollTo.Button)
+    children: [
+      ...headers,
+      'Paragraph',
+      'Codeblock',
+      'Code',
+      'Markdown',
+    ].map(ScrollTo.Button)
   },
 ]
 

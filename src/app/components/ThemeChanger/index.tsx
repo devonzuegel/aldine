@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as classnames from 'classnames'
+import { Codeblock } from '~/components/Codeblock'
 import { IThemeChanger } from '~/models/theme-changer'
 
 const s = require('./style.css')
@@ -23,9 +24,9 @@ const ThemeOption = ({ update, title, className, themeChanger }) => {
     })
 
   return (
-    <div onClick={() => update(className)} className={classNames}>
+    <Codeblock onClick={() => update(className)} className={classNames}>
       {title}
-    </div>
+    </Codeblock>
   )
 }
 export const ThemeChanger = (props: IProps) => {

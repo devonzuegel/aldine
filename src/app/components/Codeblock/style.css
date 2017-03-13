@@ -3,8 +3,8 @@
 .codeblock {
   background-color: var(--neutral-xlight);
   border: 2px solid var(--neutral-xlight);
-  margin: var(--small) calc(-1 * var(--small));
+  margin: var(--small) calc(-0.5 * var(--small));
   padding: 0.75rem var(--small);
   font-family: var(--monospace);
-  font-size: 0.8rem;
+  font-size: var(--small);
 }
