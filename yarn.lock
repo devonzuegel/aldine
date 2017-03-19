@@ -51,6 +51,10 @@
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.5.tgz#96a0f0a618b7b606f1ec547403c00650210bfbb7"
 
+"@types/ramda@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.0.4.tgz#4921b5f72c28dc5ddad4b1d2e27f9ce1e42949f6"
+
 "@types/react-addons-test-utils@^0.14.16":
   version "0.14.17"
   resolved "https://registry.yarnpkg.com/@types/react-addons-test-utils/-/react-addons-test-utils-0.14.17.tgz#79adf8a0246a7fe1bb9a6651e2545a7b43d7f0b8"

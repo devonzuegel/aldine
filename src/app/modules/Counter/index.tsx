@@ -13,8 +13,8 @@ interface IProps {
 }
 
 @connect(
-  state => ({ counter: state.counter }),
-  dispatch => ({
+  (state: { counter: ICounter }) => ({ counter: state.counter }),
+  (dispatch: Function) => ({
     decrement: () => dispatch(decrement()),
     increment: () => dispatch(increment()),
   })

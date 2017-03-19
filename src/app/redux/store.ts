@@ -6,7 +6,7 @@ import rootReducer          from './reducers'
 const createLogger = require('redux-logger')
 const appConfig    = require('../../../config/main')
 
-export const configureStore = (history, initialState?: Redux.Store<any>): Redux.Store<any> => {
+export const configureStore = (history: any, initialState?: Redux.Store<any>): Redux.Store<any> => {
 
   const middlewares: Redux.Middleware[] = [
     routerMiddleware(history),

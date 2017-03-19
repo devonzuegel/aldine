@@ -13,7 +13,7 @@ import * as T         from '~/components/Typography'
 
 const MarkdownSample = require('babel-loader!essay-loader!./sample.md')
 
-const Guide = (props) => (
+const Guide = (props: { title: string, children?: any }) => (
   <ScrollTo.Area name={props.title}>
     <T.HR />
     <T.H2>{props.title}</T.H2>
@@ -21,7 +21,7 @@ const Guide = (props) => (
   </ScrollTo.Area>
 )
 
-const Label = (props) => (
+const Label = (props: { children?: any }) => (
   <T.Label faded>
     {props.children} ↘
   </T.Label>
@@ -48,7 +48,7 @@ const Guides = [
   {
     title: 'Section',
     body: (
-      examples(({ attitude, emphasis }) => (
+      examples(({ attitude, emphasis }: { attitude: string, emphasis: string }) => (
         <div>
           <Label>
             {attitude}, {emphasis}
@@ -99,7 +99,8 @@ const Guides = [
     body: (
       <Section emphasis='secondary'>
         {headers.map((name: string, i: number) =>{
-          const C = T[name]
+          const TypedTypography: {[key: string]: any} = T
+          const C: React.StatelessComponent<any> = TypedTypography[name]
           return (
             <ScrollTo.Area key={i} name={name}>
               <Label>{name} header</Label>

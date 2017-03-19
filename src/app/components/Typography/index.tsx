@@ -16,7 +16,7 @@ interface IProps {
 
 type Type = React.StatelessComponent<IProps>
 
-const classes = (name, { emphasis, debug, attitude, faded, uppercase }: IProps) => (
+const classes = (name: string, { emphasis, debug, attitude, faded, uppercase }: IProps) => (
   classnames({
     [s.typography]: true,
     [s[name]]: true,
@@ -28,19 +28,19 @@ const classes = (name, { emphasis, debug, attitude, faded, uppercase }: IProps) 
   })
 )
 
-const Typography = (Name): Type => (props: IProps) => (
+const Typography = (Name: string): Type => (props: IProps) => (
   <Name className={classes(Name, props)}>
     {props.children}
   </Name>
 )
 
-export const H1    = Typography('h1')
-export const H2    = Typography('h2')
-export const H3    = Typography('h3')
-export const H4    = Typography('h4')
-export const H5    = Typography('h5')
-export const Label = Typography('label')
-export const P     = Typography('p')
+export const H1: Type    = Typography('h1')
+export const H2: Type    = Typography('h2')
+export const H3: Type    = Typography('h3')
+export const H4: Type    = Typography('h4')
+export const H5: Type    = Typography('h5')
+export const Label: Type = Typography('label')
+export const P: Type     = Typography('p')
 
 interface IAProps extends IProps {
   href?: string,
@@ -67,7 +67,7 @@ export const Markdown = (props: IProps) => (
   </div>
 )
 
-export const Code = (props) => {
+export const Code = (props: IProps) => {
   const classes = classnames({
     [s.code]: true,
   })
@@ -84,4 +84,3 @@ export const Code = (props) => {
 }
 
 export const HR = () => <hr className={s.hr} />
-

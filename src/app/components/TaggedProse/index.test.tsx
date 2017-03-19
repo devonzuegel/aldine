@@ -14,7 +14,7 @@ const tokens: string[]             = 'These words are all tokens.'.split(' ')
 const categorized: string[]        = tokens.map(() => 'uncategorized')
 const categories: ITokenCategories = {}
 
-const categorize = chai.spy((_: number) => null)
+const categorize = chai.spy((_: number): null => null)
 const cat = (i: number) => () => categorize(i)
 const component = mount(
   <TaggedProse {...{

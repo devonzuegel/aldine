@@ -4,12 +4,15 @@ import * as classnames from 'classnames'
 
 const s = require('./style.css')
 
-export const Codeblock = (props) => {
-  const { children, className, ...otherProps } = props
+interface IProps {
+  children?: any
+  className?: string
+}
 
+export const Codeblock = ({ children, className }: IProps) => {
   const classes = classnames({
     [s.codeblock]: true,
-    [className]: true,
+    [className]:   true,
   })
 
   if (R.not(children)) {
@@ -17,7 +20,7 @@ export const Codeblock = (props) => {
   }
 
   return (
-    <pre {...otherProps} className={classes}>
+    <pre className={classes}>
       {children}
     </pre>
   )

@@ -24,7 +24,7 @@ const classes = (level: number) => (
   })
 )
 
-const TableOfContents = (items: ITocItem[], level: number = 0) => (
+const TableOfContents: React.StatelessComponent<any> = (items: ITocItem[], level: number = 0) => (
   <ul className={s.toc}>
     {items.map(({ name, onClick, children }: ITocItem, i: number) =>
       <div key={i}>

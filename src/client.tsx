@@ -22,9 +22,7 @@ ReactDOM.render(
   <Provider store={store} key="provider">
     <Router
       history={history}
-      render={(props) =>
-        <ReduxAsyncConnect {...props} />
-      }
+      render={(props: any) => <ReduxAsyncConnect {...props} />}
     >
       {routes}
     </Router>
