@@ -5,8 +5,9 @@ import { Codeblock } from '~/components/Codeblock'
 import { Section   } from '~/components/Section'
 import { SideNav   } from '~/components/SideNav'
 import { examples  } from '~/components/utils'
-import * as T        from '~/components/Typography'
+import * as Box      from '~/components/Box'
 import * as ScrollTo from '~/components/ScrollTo'
+import * as T        from '~/components/Typography'
 
 const MarkdownSample = require('babel-loader!essay-loader!./sample.md')
 
@@ -55,6 +56,37 @@ const Guides = [
           </Section>
         </div>
       ))
+    )
+  }, {
+    title: 'Box',
+    body: (
+      <div>
+        <Codeblock>
+          Spacing:   ['small', 'medium', 'large', 'xlarge', 'xxlarge'] // Margins & padding
+          <br />
+          Width:     ['small', 'medium', 'large', 'full']
+          <br />
+          Alignment: ['left', 'center', 'right'] // Box & text
+          <br />
+          inline:    [true, false]
+        </Codeblock>
+
+        {['small', 'full'].map((width: Box.Width, i: number) =>
+          ['left', 'center', 'right'].map((align: Box.Alignment, j: number) => {
+            return (
+              <div key={`${i}-${j}`}>
+                <Label>
+                Width: {width}, Text Alignment: {align}
+                </Label>
+
+                <Box.Box textAlign={align} width={width} debug>
+                  This is some text inside of a box.
+                </Box.Box>
+              </div>
+            )
+          })
+        )}
+      </div>
     )
   }, {
     title: 'Typography',

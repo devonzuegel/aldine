@@ -1,12 +1,12 @@
 @import 'styles/base.css';
 
 .wide {
-  max-width: 900px;
+  max-width: var(--container-medium);
   margin: 0 var(--xlarge);
 }
 
 .narrow {
-  max-width: 600px;
+  max-width: var(--container-small);
   margin: auto;
 }
 

@@ -1,0 +1,333 @@
+@import 'styles/base.css';
+
+/**********************************************************************************/
+/*** Margins **********************************************************************/
+/**********************************************************************************/
+
+/* Bottom margin */
+
+.margin-bottom-small {
+  margin-bottom: var(--small);
+}
+
+.margin-bottom-medium {
+  margin-bottom: var(--base);
+}
+
+.margin-bottom-large {
+  margin-bottom: var(--large);
+}
+
+.margin-bottom-xlarge {
+  margin-bottom: var(--xlarge);
+}
+
+.margin-bottom-xxlarge {
+  margin-bottom: var(--xxlarge);
+}
+
+/* Top margin */
+
+.margin-top-small {
+  margin-top: var(--small);
+}
+
+.margin-top-medium {
+  margin-top: var(--base);
+}
+
+.margin-top-large {
+  margin-top: var(--large);
+}
+
+.margin-top-xlarge {
+  margin-top: var(--xlarge);
+}
+
+.margin-top-xxlarge {
+  margin-top: var(--xxlarge);
+}
+
+/* Left margin */
+
+.margin-left-small {
+  margin-left: var(--small);
+}
+
+.margin-left-medium {
+  margin-left: var(--base);
+}
+
+.margin-left-large {
+  margin-left: var(--large);
+}
+
+.margin-left-xlarge {
+  margin-left: var(--xlarge);
+}
+
+.margin-left-xxlarge {
+  margin-left: var(--xxlarge);
+}
+
+/* Right margin */
+
+.margin-right-small {
+  margin-right: var(--small);
+}
+
+.margin-right-medium {
+  margin-right: var(--base);
+}
+
+.margin-right-large {
+  margin-right: var(--large);
+}
+
+.margin-right-xlarge {
+  margin-right: var(--xlarge);
+}
+
+.margin-right-xxlarge {
+  margin-right: var(--xxlarge);
+}
+
+/**********************************************************************************/
+/*** Padding **********************************************************************/
+/**********************************************************************************/
+
+/* Bottom padding */
+
+.padding-bottom-small {
+  padding-bottom: var(--small);
+}
+
+.padding-bottom-medium {
+  padding-bottom: var(--base);
+}
+
+.padding-bottom-large {
+  padding-bottom: var(--large);
+}
+
+.padding-bottom-xlarge {
+  padding-bottom: var(--xlarge);
+}
+
+.padding-bottom-xxlarge {
+  padding-bottom: var(--xxlarge);
+}
+
+/* Top padding */
+
+.padding-top-small {
+  padding-top: var(--small);
+}
+
+.padding-top-medium {
+  padding-top: var(--base);
+}
+
+.padding-top-large {
+  padding-top: var(--large);
+}
+
+.padding-top-xlarge {
+  padding-top: var(--xlarge);
+}
+
+.padding-top-xxlarge {
+  padding-top: var(--xxlarge);
+}
+
+/* Left padding */
+
+.padding-left-small {
+  padding-left: var(--small);
+}
+
+.padding-left-medium {
+  padding-left: var(--base);
+}
+
+.padding-left-large {
+  padding-left: var(--large);
+}
+
+.padding-left-xlarge {
+  padding-left: var(--xlarge);
+}
+
+.padding-left-xxlarge {
+  padding-left: var(--xxlarge);
+}
+
+/* Right padding */
+
+.padding-right-small {
+  padding-right: var(--small);
+}
+
+.padding-right-medium {
+  padding-right: var(--base);
+}
+
+.padding-right-large {
+  padding-right: var(--large);
+}
+
+.padding-right-xlarge {
+  padding-right: var(--xlarge);
+}
+
+.padding-right-xxlarge {
+  padding-right: var(--xxlarge);
+}
+
+/**********************************************************************************/
+/*** Text alignment ***************************************************************/
+/**********************************************************************************/
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/**********************************************************************************/
+/*** Box- alignment ****************************************************************/
+/**********************************************************************************/
+
+.box-align-center {
+  margin: auto;
+
+  &.margin-bottom-small {
+    margin-bottom: var(--small);
+  }
+
+  &.margin-bottom-medium {
+    margin-bottom: var(--base);
+  }
+
+  &.margin-bottom-large {
+    margin-bottom: var(--large);
+  }
+
+  &.margin-bottom-xlarge {
+    margin-bottom: var(--xlarge);
+  }
+
+  &.margin-bottom-xxlarge {
+    margin-bottom: var(--xxlarge);
+  }
+
+  /* Top margin */
+
+  &.margin-top-small {
+    margin-top: var(--small);
+  }
+
+  &.margin-top-medium {
+    margin-top: var(--base);
+  }
+
+  &.margin-top-large {
+    margin-top: var(--large);
+  }
+
+  &.margin-top-xlarge {
+    margin-top: var(--xlarge);
+  }
+
+  &.margin-top-xxlarge {
+    margin-top: var(--xxlarge);
+  }
+
+  /* Left margin */
+
+  &.margin-left-small {
+    margin-left: var(--small);
+  }
+
+  &.margin-left-medium {
+    margin-left: var(--base);
+  }
+
+  &.margin-left-large {
+    margin-left: var(--large);
+  }
+
+  &.margin-left-xlarge {
+    margin-left: var(--xlarge);
+  }
+
+  &.margin-left-xxlarge {
+    margin-left: var(--xxlarge);
+  }
+
+  /* Right margin */
+
+  &.margin-right-small {
+    margin-right: var(--small);
+  }
+
+  &.margin-right-medium {
+    margin-right: var(--base);
+  }
+
+  &.margin-right-large {
+    margin-right: var(--large);
+  }
+
+  &.margin-right-xlarge {
+    margin-right: var(--xlarge);
+  }
+
+  &.margin-right-xxlarge {
+    margin-right: var(--xxlarge);
+  }
+
+}
+
+/**********************************************************************************/
+/*** Box- size *********************************************************************/
+/**********************************************************************************/
+
+.width-small {
+  max-width: var(--container-small);
+}
+
+.width-medium {
+  max-width: var(--container-medium);
+}
+
+.width-large {
+  max-width: var(--container-large);
+}
+
+.width-full {
+  max-width: 100%;
+}
+
+/**********************************************************************************/
+/*** Debug ************************************************************************/
+/**********************************************************************************/
+
+.debug {
+  border: 2px solid orange;
+}
+
+/**********************************************************************************/
+/*** Inline ***********************************************************************/
+/**********************************************************************************/
+
+.inline {
+  width: auto;
+  display: inline-flex;
+}
