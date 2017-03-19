@@ -93,6 +93,11 @@ I've only touched on the tip of the iceberg here – new technology will shape f
 
 I'd love to hear what your experiences were with each of the experiments above! I've read each passage so many times and overthought the pros and cons of the various themes that it's hard for me to put myself in the shoes of someone reading a given syntax-highlighted text for the first time.
 
+* We should experiment with a broader range of tools and methods of reading rather than simply take from history the strategies we've been given.
+    * Reading twice, highlighting the important parts the second time through
+
+Language is taught as a static set of rules to obey. Instead, we should view it as a collection of tools that we can select, improve upon, and even build for ourselves. Syntax highlighting for prose might be a useful addition to that toolbox, but I'm even more excited other tools people come up with.
+
 * * *
 
 When I see a gray line, I immediately know it's a comment. When I see green, it's a string.
