@@ -20,3 +20,16 @@ export const defaultProps = (props = {}) => R.merge(props, {
   emphasis: 'primary',
   attitude: 'neutral',
 })
+
+export const capitalize   = (s: string): string => s[0].toUpperCase() + s.slice(1)
+export const uncapitalize = (s: string): string => s[0].toLowerCase() + s.slice(1)
+
+export const camelToDash = (s: string): string =>
+  s.replace(/\W+/g, '-').replace(/([a-z\d])([A-Z])/g, '$1-$2')
+
+export const dashToCamel = (s: string): string =>
+  capitalize(s.replace(/\W+(.)/g, (_, chr) => capitalize(chr)))
+
+export const spaceToCamel = (s: string): string =>
+  uncapitalize(s.replace(/\W+(.)/g, (_, chr) => capitalize(chr)))
+
