@@ -61,7 +61,7 @@
   }
 }
 
-.theme--1 { /* allPartsOfSpeech */
+.theme--1 { /* Theme.all */
   border: 1px solid var(--neutral-light);
   background: var(--color-1);
   padding: var(--base);
