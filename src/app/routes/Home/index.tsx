@@ -1,12 +1,13 @@
 import * as React from 'react'
 import * as R     from 'ramda'
 
-import * as AutoPOS  from '~/components/AutomatedPOS'
-import * as ScrollTo from '~/components/ScrollTo'
-import * as U        from '~/components/utils'
-import { Layout    } from '~/components/Layout'
-import { Markdown  } from '~/components/Typography'
-import { SideNav   } from '~/components/SideNav'
+import * as AutoPOS      from '~/components/AutomatedPOS'
+import * as ScrollTo     from '~/components/ScrollTo'
+import * as U            from '~/components/utils'
+import * as T            from '~/components/Typography'
+import { Example as Ex } from '~/components/Example'
+import { Layout        } from '~/components/Layout'
+import { SideNav       } from '~/components/SideNav'
 
 const Essay = require('babel-loader!essay-loader!./essay.md')
 const txt = require('raw-loader!./sample.txt')
@@ -33,11 +34,19 @@ const essayTOC = R.reduce((soFar, name) => ({ ...soFar, ...tocEntry(name) }), {}
 
 export const Home: Type = () => (
   <Layout leftSide={<SideNav {...{ toc: headings.map(ScrollTo.Button) }} />}>
-    <Markdown>
+    <T.Markdown>
       <Essay
         toc                ={essayTOC}
-        allPartsOfSpeech   ={<AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.all}/>}
-        somePartsOfSpeech  ={<AutoPOS.AutomatedPOS text={txt} />}
+        allPartsOfSpeech   ={
+          <Ex label='Experiment 1: All parts of speech'>
+            <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.all}/>
+          </Ex>
+        }
+        somePartsOfSpeech  ={
+          <Ex label='Experiment 2: Some parts of speech'>
+            <AutoPOS.AutomatedPOS text={txt} />
+          </Ex>
+        }
         colorfulCode       ={<code>colorfulCode Widget</code>}
         plaintext          ={<code>plaintext Widget</code>}
         highlightedVerbs   ={<code>highlightedVerbs Widget</code>}
@@ -47,6 +56,6 @@ export const Home: Type = () => (
         automatedTools     ={<code>automatedTools Widget</code>}
         automatedPOSReading={<code>automatedPOSReading Widget</code>}
       />
-    </Markdown>
+    </T.Markdown>
   </Layout>
 )
