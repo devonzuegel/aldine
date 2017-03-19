@@ -63,35 +63,36 @@ const Guides = [
   }, {
     title: 'Box',
     body: (
-      <Section emphasis='secondary'>
-        <ScrollTo.Area name='Box'>
-          <Codeblock>
-            Spacing:   ['small', 'medium', 'large', 'xlarge', 'xxlarge'] // Margins & padding
-            <br />
-            Width:     ['small', 'medium', 'large', 'full']
-            <br />
-            Alignment: ['left', 'center', 'right'] // Box & text
-            <br />
-            inline:    [true, false]
-          </Codeblock>
+      <ScrollTo.Area name='Box'>
+        <Label>
+          Options
+        </Label>
+        <Codeblock>
+          <b>Alignment:</b>  left   center  right                   // Box &amp; text
+          <br />
+          <b>Spacing:</b>    small  medium  large  xlarge  xxlarge  // Margins &amp; padding
+          <br />
+          <b>Width:</b>      small  medium  large  full             // Box width
+          <br />
+          <b>inline:</b>     true   false
+        </Codeblock>
 
-          {['small', 'full'].map((width: Width.Type, i: number) =>
-            ['left', 'center', 'right'].map((align: Alignment.Type, j: number) => {
-              return (
-                <div key={`${i}-${j}`}>
-                  <Label>
-                  Width: {width}, Text Alignment: {align}
-                  </Label>
+        {['small', 'full'].map((width: Width.Type, i: number) =>
+          ['left', 'center', 'right'].map((align: Alignment.Type, j: number) => {
+            return (
+              <div key={`${i}-${j}`}>
+                <Label>
+                Width: {width}, Text Alignment: {align}
+                </Label>
 
-                  <Box.Box textAlign={align} width={width} debug>
-                    This is some text inside of a box.
-                  </Box.Box>
-                </div>
-              )
-            })
-          )}
-        </ScrollTo.Area>
-      </Section>
+                <Box.Box textAlign={align} width={width} debug>
+                  This is some text inside of a box.
+                </Box.Box>
+              </div>
+            )
+          })
+        )}
+      </ScrollTo.Area>
     )
   }, {
     title: 'Typography',
