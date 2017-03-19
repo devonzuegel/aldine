@@ -8,12 +8,12 @@ import { Markdown  } from '~/components/Typography'
 import { SideNav   } from '~/components/SideNav'
 
 const Essay = require('babel-loader!essay-loader!./essay.md')
-const sample = require('raw-loader!./sample.txt')
+const txt = require('raw-loader!./sample.txt')
 
 type Type = React.StatelessComponent<null>
 
 const headings = [
-  'allPartsOfSpeech',
+  'All parts of speech',
   'highlightedVerbs',
   'fadedArticles',
   'fadedGerundEndings',
@@ -29,23 +29,13 @@ const essayTOC = R.reduce(
   {}
 )(headings)
 
-const allPartsOfSpeech = (
-  <div>
-    <AutoPOS.AutomatedPOS
-      text={sample}
-      theme={AutoPOS.Theme.allPartsOfSpeech}
-    />,
-    <br />,
-    <AutoPOS.AutomatedPOS text={sample} />
-  </div>
-)
-
 export const Home: Type = () => (
   <Layout leftSide={<SideNav {...{ toc: headings.map(ScrollTo.Button) }} />}>
     <Markdown>
       <Essay
         toc                ={essayTOC}
-        allPartsOfSpeech   ={allPartsOfSpeech}
+        allPartsOfSpeech   ={<AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.all}/>}
+        somePartsOfSpeech  ={<AutoPOS.AutomatedPOS text={txt} />}
         colorfulCode       ={<code>colorfulCode Widget</code>}
         plaintext          ={<code>plaintext Widget</code>}
         highlightedVerbs   ={<code>highlightedVerbs Widget</code>}
