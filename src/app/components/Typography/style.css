@@ -43,13 +43,19 @@
 
 .h1,
 .markdown h1 {
-  font-size: var(--large);
+  font-size: var(--xxlarge);
   margin: var(--base) 0 var(--large) 0;
 }
 
 .h2,
 .markdown h2 {
-  font-size: var(--base);
+  font-size: var(--xlarge);
+  margin-top: var(--xlarge);
+}
+
+.h3,
+.markdown h3 {
+  font-size: var(--large);
   margin-top: var(--xlarge);
 }
 
