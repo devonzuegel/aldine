@@ -7,7 +7,7 @@ import rootReducer     from '~/redux/reducers'
 const fetchMock = require('fetch-mock')
 const mockStore = require('redux-mock-store')
 
-const renderComponent = (Component, state?, props?) =>
+const renderComponent = (Component: any, state?: Object, props?: Object) =>
   mount(
     <Provider store={createStore(rootReducer, state)}>
       <Component {...props} />

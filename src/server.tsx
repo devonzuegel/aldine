@@ -22,7 +22,7 @@ const appConfig = require('../config/main')
 const manifest  = require('../build/manifest.json')
 
 
-const renderPage = (renderProps, store, res) => {
+const renderPage = (renderProps: any, store: any, res: any) => {
   const asyncRenderData = Object.assign({}, renderProps, { store })
 
   ReduxConnect.loadOnServer(asyncRenderData).then(() => {
@@ -56,7 +56,7 @@ const devSetup = () => {
   app.use(require('webpack-hot-middleware')(webpackCompiler))
 }
 
-const router = (req, res) => {
+const router = (req: any, res: any) => {
   const location      = req.url
   const memoryHistory = createMemoryHistory(req.originalUrl)
   const store         = configureStore(memoryHistory)
@@ -89,7 +89,7 @@ app.use(require('compression')())
 app.use(require('serve-favicon')(path.join(__dirname, '../src/assets/favicon.ico')))
 app.use('/public', express.static(path.join(__dirname, '../build/public')))
 app.get('*', router)
-app.listen(appConfig.port, appConfig.host, error => {
+app.listen(appConfig.port, appConfig.host, (error: string) => {
   if (error) {
     console.error(Chalk.bgRed(error))
     return

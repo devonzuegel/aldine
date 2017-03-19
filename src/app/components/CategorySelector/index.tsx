@@ -5,15 +5,15 @@ import { ITokenCategories } from '~/models/token-categories'
 const s = require('./style.css')
 
 interface IProps {
-  select: Function,
-  categories: ITokenCategories,
-  selected: string,
+  categories: ITokenCategories
+  select:     Function
+  selected:   string
 }
 
-const Category = (select, selected, categories) => (c, i) => {
+const Category = ({ select, categories, selected }: IProps) => (c: string, i: number) => {
   const classes = classnames({
-    [s.category]: true,
-    [categories[c]]: true,
+    [s.category]:              true,
+    [categories[c]]:           true,
     [s['category--selected']]: selected === c,
   })
   return (
@@ -23,13 +23,10 @@ const Category = (select, selected, categories) => (c, i) => {
   )
 }
 
-const CategorySelector = (props: IProps) => {
-  const { select, categories, selected } = props
-  return (
-    <ul>
-      {R.keys(categories).map(Category(select, selected, categories))}
-    </ul>
-  )
-}
+const CategorySelector = (props: IProps) => (
+  <ul>
+    {R.keys(props.categories).map(Category(props))}
+  </ul>
+)
 
 export default CategorySelector

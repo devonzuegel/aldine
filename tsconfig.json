@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "alwaysStrict": true,
+    "noImplicitAny": true,
     "baseUrl": ".",
     "paths": {
       "~/*": [

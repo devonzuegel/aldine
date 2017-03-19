@@ -1,10 +1,12 @@
 import { expect } from 'chai'
+
 import { renderComponent } from '~/components/TestHelper'
-import { App } from './index'
+import { App             } from './index'
+import { IRouteConfig    } from '~/models/route-config'
 
 describe('<App />', () => {
 
-  const routes = []
+  const routes: IRouteConfig[] = []
   const props = { location: { pathname: 'foo-bar' }}
   const component = renderComponent(App(routes), {}, props)
 

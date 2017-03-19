@@ -33,11 +33,11 @@ const experiments = [
   }
 ]
 
-const Guide = (props) => (
-  <ScrollTo.Area name={props.title}>
+const Guide = ({ title, children }: { title: string, children?: any }) => (
+  <ScrollTo.Area name={title}>
     <HR />
-    <H2>{props.title}</H2>
-    {props.children}
+    <H2>{title}</H2>
+    {children}
   </ScrollTo.Area>
 )
 const toc = experiments.map(({ title }) => ScrollTo.Button(title))

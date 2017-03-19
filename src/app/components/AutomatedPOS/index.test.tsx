@@ -27,14 +27,14 @@ describe('<AutomatedPOS />', () => {
   })
 
   it('has the expected parts of speech', () => {
-    const posMap = {
+    const posMap: {[key:string]: string[]} = {
       VBZ: [ 'is' ],
       DT:  [ 'This', 'a' ],
       NN:  [ 'sentence' ],
     }
     R.keys(posMap).map((className: string) => {
       const words = component.find(klass(s[className]))
-      const wordsTxt = words.map(w => w.text())
+      const wordsTxt: string[] = words.map(w => w.text())
       expect(wordsTxt).to.eql(posMap[className])
     })
   })

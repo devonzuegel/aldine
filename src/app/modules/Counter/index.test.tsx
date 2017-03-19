@@ -1,6 +1,8 @@
-import { expect } from 'chai'
+import { expect       } from 'chai'
+import { ReactWrapper } from 'enzyme'
+
 import { renderComponent } from '~/components/TestHelper'
-import { Counter } from './index'
+import { Counter         } from './index'
 
 /** Mock App. State */
 const state: Object = {
@@ -9,7 +11,7 @@ const state: Object = {
 
 describe('<Counter />', () => {
 
-  let component
+  let component: ReactWrapper<any, {}>
 
   beforeEach(() => {
     component = renderComponent(Counter, state)

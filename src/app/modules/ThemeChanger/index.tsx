@@ -53,8 +53,8 @@ interface IProps {
 }
 
 @connect(
-  state => ({ themeChanger: state.themeChanger }),
-  dispatch => ({
+  (state: IProps) => ({ themeChanger: state.themeChanger }),
+  (dispatch: Function) => ({
     update: (className: string) => dispatch(actions.update(className)),
   })
 )

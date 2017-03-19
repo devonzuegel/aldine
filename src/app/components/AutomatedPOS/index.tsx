@@ -1,14 +1,14 @@
-import * as React from 'react'
-import * as R     from 'ramda'
+import * as React      from 'react'
+import * as R          from 'ramda'
 import * as classnames from 'classnames'
 
-import { IWord } from '~/models/part-of-speech'
+import { IWord, EPartOfSpeech } from '~/models/part-of-speech'
 
 const s = require('./style.css')
 const POS = require('pos')
 
 const Word = (props: IWord) => {
-  const { word, pos } = props
+  const { word, pos }: IWord = props
   const classes = classnames({
     [s.word]: true,
     [s[pos]]: true,
@@ -23,12 +23,12 @@ const Word = (props: IWord) => {
 const tagPOS = (text: string) => {
   const tagger  = new POS.Tagger()
   const words   = new POS.Lexer().lex(text)
-  const toIWord = ([ word, pos ]) => ({ word, pos })
+  const toIWord = ([ word, pos ]: [string, EPartOfSpeech]): IWord => ({ word, pos })
 
   return tagger.tag(words).map(toIWord)
 }
 
-const Separator = ({ nextPOS }) => {
+const Separator = ({ nextPOS }: { nextPOS: number | EPartOfSpeech | string }) => {
   const notPunctuation = R.not(R.contains(nextPOS, ['.', ',', ':']))
   return (
     <span className={s.separator}>

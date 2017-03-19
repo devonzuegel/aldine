@@ -3,7 +3,7 @@ import * as React from 'react'
 
 export const attitudes = [ 'neutral', 'positive', 'negative' ]
 export const emphases  = [ 'primary', 'secondary' ]
-export const examples  = (Component) => (
+export const examples  = (Component: React.StatelessComponent<any>) => (
   emphases.map((emphasis: string, j: number) =>
     attitudes.map((attitude: string, i: number) =>
       <Component key={`${i}-${j}`} {...{ attitude, emphasis }} />
@@ -11,7 +11,7 @@ export const examples  = (Component) => (
   )
 )
 
-export const propTypes = (props) => R.merge(props, {
+export const propTypes = (props: Object) => R.merge(props, {
   attitude: React.PropTypes.oneOf(attitudes),
   emphasis: React.PropTypes.oneOf(emphases),
 })

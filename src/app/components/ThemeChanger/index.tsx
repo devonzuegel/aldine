@@ -10,25 +10,34 @@ interface ITheme {
   className: string,
 }
 
-export interface IProps {
-  themeChanger: IThemeChanger,
-  update: Redux.ActionCreator<any>,
-  themes: ITheme[],
+interface IThemeOptionProps {
+  update: Redux.ActionCreator<any>
+  title: string
+  className: string
+  themeChanger: IThemeChanger
 }
 
-const ThemeOption = ({ update, title, className, themeChanger }) => {
-  const classNames =
-    classnames({
-      [s.themeSelector]: true,
-      [s.active]:        themeChanger.className === className,
-    })
+const ThemeOption = ({ update, title, className, themeChanger }: IThemeOptionProps) => {
+  const classNames = classnames({
+    [s.themeSelector]: true,
+    [s.active]:        themeChanger.className === className,
+  })
 
   return (
-    <Codeblock onClick={() => update(className)} className={classNames}>
-      {title}
-    </Codeblock>
+    <div onClick={() => update(className)}>
+      <Codeblock className={classNames}>
+        {title}
+      </Codeblock>
+    </div>
   )
 }
+
+export interface IProps {
+  themeChanger: IThemeChanger
+  update: Redux.ActionCreator<any>
+  themes: ITheme[]
+}
+
 export const ThemeChanger = (props: IProps) => {
   const { update, themes, themeChanger } = props
 
