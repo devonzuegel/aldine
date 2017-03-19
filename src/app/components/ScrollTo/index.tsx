@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as U     from '~/components/utils'
 
 interface IButton {
   name: string,
@@ -7,7 +8,7 @@ interface IButton {
 
 export const Button = (name: string): IButton => ({
   name,
-  onClick: () => document.getElementById(name).scrollIntoView(),
+  onClick: () => document.getElementById(U.spaceToCamel(name)).scrollIntoView(),
 })
 
 
@@ -19,7 +20,7 @@ interface IAreaProps {
 type TArea = React.StatelessComponent<IAreaProps>
 
 export const Area: TArea = ({ name, children }: IAreaProps) => (
-  <div id={name}>
+  <div id={U.spaceToCamel(name)}>
     {children}
   </div>
 )
