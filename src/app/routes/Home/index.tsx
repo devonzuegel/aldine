@@ -3,6 +3,7 @@ import * as R     from 'ramda'
 
 import * as AutoPOS  from '~/components/AutomatedPOS'
 import * as ScrollTo from '~/components/ScrollTo'
+import * as U        from '~/components/utils'
 import { Layout    } from '~/components/Layout'
 import { Markdown  } from '~/components/Typography'
 import { SideNav   } from '~/components/SideNav'
@@ -14,20 +15,21 @@ type Type = React.StatelessComponent<null>
 
 const headings = [
   'All parts of speech',
-  'highlightedVerbs',
-  'fadedArticles',
-  'fadedGerundEndings',
-  'gardenPaths',
-  'noPunctuation',
-  'automatedTools',
-  'automatedPOSReading',
-  'historicalPerspective',
+  'Highlighted verbs',
+  'Faded articles',
+  'Faded gerund endings',
+  'Garden paths',
+  'No punctuation',
+  'Automated tools',
+  'Automated POS tagging',
+  'Historical perspective',
 ]
 
-const essayTOC = R.reduce(
-  (soFar, name) => R.merge(soFar, { [name]: ScrollTo.Area({ name }) }),
-  {}
-)(headings)
+const tocEntry = (name: string) => ({
+  [U.spaceToCamel(name)]: ScrollTo.Area({ name })
+})
+
+const essayTOC = R.reduce((soFar, name) => ({ ...soFar, ...tocEntry(name) }), {}, headings)
 
 export const Home: Type = () => (
   <Layout leftSide={<SideNav {...{ toc: headings.map(ScrollTo.Button) }} />}>
