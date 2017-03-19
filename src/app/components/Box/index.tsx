@@ -1,11 +1,11 @@
 import * as React      from 'react'
 import * as classnames from 'classnames'
 
-const s = require('./style.css')
+import * as Spacing   from './types/Spacing'
+import * as Width     from './types/Width'
+import * as Alignment from './types/Alignment'
 
-export type Spacing   = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge'
-export type Width     = 'small' | 'medium' | 'large' | 'full'
-export type Alignment = 'left' | 'center' | 'right'
+const s = require('./style.css')
 
 interface IProps {
   children?: any
@@ -13,19 +13,19 @@ interface IProps {
   debug?:  boolean
   inline?: boolean
 
-  width?:     Width
-  textAlign?: Alignment
-  boxAlign?:  Alignment
+  width?:     Width.Type
+  textAlign?: Alignment.Type
+  boxAlign?:  Alignment.Type
 
-  marginBottom?: Spacing
-  marginTop?:    Spacing
-  marginLeft?:   Spacing
-  marginRight?:  Spacing
+  marginBottom?: Spacing.Type
+  marginTop?:    Spacing.Type
+  marginLeft?:   Spacing.Type
+  marginRight?:  Spacing.Type
 
-  paddingBottom?: Spacing
-  paddingTop?:    Spacing
-  paddingLeft?:   Spacing
-  paddingRight?:  Spacing
+  paddingBottom?: Spacing.Type
+  paddingTop?:    Spacing.Type
+  paddingLeft?:   Spacing.Type
+  paddingRight?:  Spacing.Type
 
 }
 

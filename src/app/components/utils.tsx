@@ -33,3 +33,7 @@ export const dashToCamel = (s: string): string =>
 export const spaceToCamel = (s: string): string =>
   uncapitalize(s.replace(/\W+(.)/g, (_, chr) => capitalize(chr)))
 
+/** Utility function to create a K:V from a list of strings */
+export function strEnum<T extends string>(obj: Array<T>): {[K in T]: K} {
+  return obj.reduce((soFar, key) => ({ ...soFar, key }), Object.create(null))
+}

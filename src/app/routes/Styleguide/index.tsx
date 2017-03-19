@@ -1,13 +1,15 @@
 import * as React from 'react'
 
-import { Layout    } from '~/components/Layout'
-import { Codeblock } from '~/components/Codeblock'
-import { Section   } from '~/components/Section'
-import { SideNav   } from '~/components/SideNav'
-import { examples  } from '~/components/utils'
-import * as Box      from '~/components/Box'
-import * as ScrollTo from '~/components/ScrollTo'
-import * as T        from '~/components/Typography'
+import { Layout     } from '~/components/Layout'
+import { Codeblock  } from '~/components/Codeblock'
+import { Section    } from '~/components/Section'
+import { SideNav    } from '~/components/SideNav'
+import { examples   } from '~/components/utils'
+import * as Box       from '~/components/Box'
+import * as Alignment from '~/components/Box/types/Alignment'
+import * as Width     from '~/components/Box/types/Width'
+import * as ScrollTo  from '~/components/ScrollTo'
+import * as T         from '~/components/Typography'
 
 const MarkdownSample = require('babel-loader!essay-loader!./sample.md')
 
@@ -29,6 +31,7 @@ const headers = [ 'H1', 'H2', 'H3', 'H4', 'H5' ]
 
 const toc = [
   ScrollTo.Button('Section'),
+  ScrollTo.Button('Box'),
   {
     ...ScrollTo.Button('Typography'),
     children: [
@@ -60,33 +63,35 @@ const Guides = [
   }, {
     title: 'Box',
     body: (
-      <div>
-        <Codeblock>
-          Spacing:   ['small', 'medium', 'large', 'xlarge', 'xxlarge'] // Margins & padding
-          <br />
-          Width:     ['small', 'medium', 'large', 'full']
-          <br />
-          Alignment: ['left', 'center', 'right'] // Box & text
-          <br />
-          inline:    [true, false]
-        </Codeblock>
+      <Section emphasis='secondary'>
+        <ScrollTo.Area name='Box'>
+          <Codeblock>
+            Spacing:   ['small', 'medium', 'large', 'xlarge', 'xxlarge'] // Margins & padding
+            <br />
+            Width:     ['small', 'medium', 'large', 'full']
+            <br />
+            Alignment: ['left', 'center', 'right'] // Box & text
+            <br />
+            inline:    [true, false]
+          </Codeblock>
 
-        {['small', 'full'].map((width: Box.Width, i: number) =>
-          ['left', 'center', 'right'].map((align: Box.Alignment, j: number) => {
-            return (
-              <div key={`${i}-${j}`}>
-                <Label>
-                Width: {width}, Text Alignment: {align}
-                </Label>
+          {['small', 'full'].map((width: Width.Type, i: number) =>
+            ['left', 'center', 'right'].map((align: Alignment.Type, j: number) => {
+              return (
+                <div key={`${i}-${j}`}>
+                  <Label>
+                  Width: {width}, Text Alignment: {align}
+                  </Label>
 
-                <Box.Box textAlign={align} width={width} debug>
-                  This is some text inside of a box.
-                </Box.Box>
-              </div>
-            )
-          })
-        )}
-      </div>
+                  <Box.Box textAlign={align} width={width} debug>
+                    This is some text inside of a box.
+                  </Box.Box>
+                </div>
+              )
+            })
+          )}
+        </ScrollTo.Area>
+      </Section>
     )
   }, {
     title: 'Typography',
