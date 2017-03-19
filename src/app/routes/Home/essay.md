@@ -6,7 +6,6 @@ Years ago, I developed a method of reading where I focus on verbs to “anchor�
 
 These experiences made me wonder what changes we could make to text to improve the experience of reading. I tried a few different syntax highlighting schemes, with some interesting results:
 
-{toc.allPartsOfSpeech}
 ### All parts of speech
 
 Highlighting all parts of speech with different styles was a total mess. The rainbow of colors made my eyes hurt, and they added very little meaning to the structure of the sentence. I now have some sympathy for how Rob Pike must feel when he reads syntax highlighted code.
@@ -30,41 +29,32 @@ A few questions I'm still thinking about:
 
 {plaintext}
 
-{toc.highlightedVerbs}
-### Verbs
+### Garden paths
 
 * Worked very well for some garden paths, not so helpful for others
 * Not nearly as distracting as highlighting all parts of speech
 
 {highlightedVerbs}
 
-{toc.fadedArticles}
+{spacedGardenPaths}
+
 ### Faded articles
 
 * Worked less well than I imagined in my head. In the emphasized verb/noun strategies, most words were faded and just the keywords were darkened. By contrast, only articles and stop words were faded in this case, which was significantly more distracting somehow.
 * Striking how different this is from code – in code, greying out certain characters is extremely helpful because their value is in structuring the code rather than having important meaning / content in their own right. Intuitively I would think stop words are analogous, but fading them is far more distracting. My guess is that usage of stop words is far more open-ended, and so they don't have as defined a “shape” as tokens like quotes, string interpolation, etc. And as a result the actual “content” of then english tokens is more important.
 
-{toc.fadedGerundEndings}
 ### Faded gerund endings
 
 {fadedGerundEndings}
 
-{toc.gardenPaths}
-### Garden paths
-
-{gardenPaths}
-
-{toc.noPunctuation}
 ### No punctuation
 
 {noPunctuation}
 
-{toc.automatedTools}
 ## Automated tools
 
 {automatedTools}
 
-{toc.automatedPOSReading}
 ### Automated part-of-speech tagging
 
 This didn't work so well, unfortunately. The first chunk of text I tried to process using theAutomatedPOS tagged was this passage about reading, which immediately uncovered the weaknesses of this approach:
@@ -73,7 +63,6 @@ This didn't work so well, unfortunately. The first chunk of text I tried to proc
 
 As you can see, the tagger was extremely confused, because “reading” the subject of this passage.Probabilistically, “reading” is usually a verb.
 
-{toc.historicalPerspective}
 ## Historical perspective
 
 I've also been reading about the history and evolution of writing, and something that's striking is how much the written word has changed over time. It seems like something so static to us day to day, but new patterns and tools and styles have evolved throughout writing's entire history. For example, [spaces were only introduced](https://www.evernote.com/l/ANb3bLif9QhHCIRaqrvCaZE6iQ5uzHaBAy4) into most Western writing in the 13th century, and [a standard system of punctuation](https://www.evernote.com/l/ANavzaoLHiNBdrV9NSu76NvX-0i8qNZq07s) was only introduced into English in the 1450s with the introduction of moveable type. Of course there have been more recent changes in the way we write as well – emoji being a seemingly trivial but actually important example – but I find it particularly interesting to look back on these parts of writing that we find so "obvious" and take for granted now, because it's a great reminder that the way things work are not the way they always worked or necessarily have to moving forward.
