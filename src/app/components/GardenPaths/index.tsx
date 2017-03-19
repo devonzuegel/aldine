@@ -1,7 +1,6 @@
-import * as React  from 'react'
-import * as R      from 'ramda'
-import tag         from '~/parsers/tagged-prose'
-import { Section } from '~/components/Section'
+import * as React from 'react'
+import * as R     from 'ramda'
+import tag        from '~/parsers/tagged-prose'
 
 const s = require('./style.css')
 
@@ -60,28 +59,22 @@ const samples = {
   ],
 }
 
-const GardenPaths = () => (
-  <div>
-    <Section>
-      <ul className={s.gardenPaths}>
-        {samples.tagged.map((sample, i) =>
-          <li className={s.gardenPath} key={i}>
-            {parse(sample)}
-          </li>
-        )}
-      </ul>
-    </Section>
-
-    <Section>
-      <ul className={s.gardenPaths}>
-        {samples.chunked.map((sample, i) =>
-          <li className={s.gardenPath} key={i}>
-            {space(sample)}
-          </li>
-        )}
-      </ul>
-    </Section>
-  </div>
+export const verbs = (
+  <ul className={s.gardenPaths}>
+    {samples.tagged.map((sample, i) =>
+      <li className={s.gardenPath} key={i}>
+        {parse(sample)}
+      </li>
+    )}
+  </ul>
 )
 
-export { GardenPaths }
+export const spaced = (
+  <ul className={s.gardenPaths}>
+    {samples.chunked.map((sample, i) =>
+      <li className={s.gardenPath} key={i}>
+        {space(sample)}
+      </li>
+    )}
+  </ul>
+)

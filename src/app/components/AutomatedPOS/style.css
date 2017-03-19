@@ -20,8 +20,6 @@
 }
 
 .theme--0 { /* default */
-  border: 1px solid var(--neutral-light);
-  padding: var(--base);
 
   & .pos {
     opacity: 0.4;

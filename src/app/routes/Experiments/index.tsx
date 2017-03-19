@@ -3,7 +3,7 @@ import * as React from 'react'
 import { ThemeChanger } from '~/modules/ThemeChanger'
 import { AutomatedPOS } from '~/modules/AutomatedPOS'
 import { Layout       } from '~/components/Layout'
-import { GardenPaths  } from '~/components/GardenPaths'
+import * as GardenPaths from '~/components/GardenPaths'
 import { TaggedProse  } from '~/modules/TaggedProse'
 import { SideNav      } from '~/components/SideNav'
 import { H1, H2, HR   } from '~/components/Typography'
@@ -23,7 +23,13 @@ const experiments = [
     Elem: TaggedProse,
   }, {
     title: 'Garden Paths',
-    Elem: GardenPaths,
+    Elem: () => (
+      <div>
+        {GardenPaths.verbs}
+        <HR />
+        {GardenPaths.spaced}
+      </div>
+    ),
   }
 ]
 
