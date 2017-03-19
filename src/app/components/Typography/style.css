@@ -44,7 +44,7 @@
 .h1,
 .markdown h1 {
   font-size: var(--xxlarge);
-  margin: var(--base) 0 var(--large) 0;
+  margin: var(--xlarge) 0 var(--large) 0;
 }
 
 .h2,
