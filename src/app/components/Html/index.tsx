@@ -10,7 +10,7 @@ interface IHtmlProps {
 class Html extends React.Component<IHtmlProps, {}> {
   private resolve(files: any[]) {
     return files.map((src) => {
-      if (!this.props.manifest[src]) { return }
+      if (!this.props.manifest[src]) { return null }
       return '/public/' + this.props.manifest[src]
     }).filter((file) => file !== undefined)
   }
