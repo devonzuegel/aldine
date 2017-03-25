@@ -40,6 +40,7 @@ const Separator = ({ nextPOS }: { nextPOS: number | EPartOfSpeech | string }) =>
 export const enum Theme {
   default,
   all,
+  fadedArticle
 }
 
 interface IProps {

@@ -9,8 +9,6 @@ import { SideNav      } from '~/components/SideNav'
 import { H1, H2, HR   } from '~/components/Typography'
 import * as ScrollTo    from '~/components/ScrollTo'
 
-type Type = React.StatelessComponent<any>
-
 const experiments = [
   {
     title: 'Theme Changer',
@@ -42,7 +40,7 @@ const Guide = ({ title, children }: { title: string, children?: any }) => (
 )
 const toc = experiments.map(({ title }) => ScrollTo.Button(title))
 
-export const Experiments: Type = (props) => (
+export const Experiments: React.StatelessComponent<any> = (props) => (
   <Layout leftSide={<SideNav {...{ toc }} />}>
     <H1>Experiments</H1>
     {experiments.map(({ title, Elem }, i: number) =>

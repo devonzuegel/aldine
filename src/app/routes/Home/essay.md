@@ -14,11 +14,11 @@ Highlighting all parts of speech with different styles was a total mess. The rai
 
 Though this experiment was a failure, it made me wonder why it had such a different effect from similarly colorful code. Maybe I'm just used to syntax highlighting in code; maybe Rob Pike is right that a rainbow painted text editor would drive me just as crazy if I was used to programming in monochrome.
 
-I don't think that's quite right though, because my when I removed some of the variation and applied a simpler theme, it had a different effect. I found myself skipping along the sentences without any loss of comprehension, and it didn't given me a headache like the the first example.
+I don't think that's quite right though, because my when I removed some of the variation and applied a simpler theme, it had a different effect. I found myself skipping along the sentences without any loss of comprehension, and it didn't given me a headache like the first example.
 
 {somePartsOfSpeech}
 
-One hypothesis is that prose is interpretive, not mechanical. Code has more visual structure, because underlying the syntax is more literal structure – its meaning is deterministic and machine-readable. By contrast, natural languages are "fuzzy", with slightly different interpretations with each reading. The grammatical rules in English are nowhere near as strict as a compiler or an interpreter, and even within those rules the variations are endless. The number of words in English vastly outnumbers the keywords in even the most complex programming languages. Add in synonyms, cultural connotations, and punctuation and you lose a lot of the symmetry and patterns that might make make brightly colored syntax highlighting easier to digest. In short, there are many more degrees of freedom in natural languages than machine-readable ones, which might make syntax-highlighting them less useful (or at least more headache-inducing).
+One hypothesis is that prose is interpretive, not mechanical. Code has more visual structure, because underlying the syntax is more literal structure. Its meaning is deterministic and machine-readable. By contrast, natural languages are "fuzzy", with slightly different interpretations with each reading. The grammatical rules in English are nowhere near as strict as a compiler or an interpreter, and even within those rules the variations are endless. The number of words in English vastly outnumbers the keywords in even the most complex programming languages. Add synonyms, cultural connotations, and punctuation and you lose a lot of the symmetry and patterns that might make make brightly colored syntax highlighting easier to digest. In short, there are many more degrees of freedom in natural languages than machine-readable ones, which might be why colorful syntax-highlighting prose is less useful (or at least more headache-inducing).
 
 A few questions I'm still thinking about:
 
@@ -34,9 +34,9 @@ A few questions I'm still thinking about:
 * Worked very well for some garden paths, not so helpful for others
 * Not nearly as distracting as highlighting all parts of speech
 
-{highlightedVerbs}
+{gardenPathVerbs}
 
-{spacedGardenPaths}
+{gardenPathSpaced}
 
 ### Faded articles
 

@@ -249,3 +249,16 @@
     color: red;
   }
 }
+
+
+.theme--2 { /* Theme.fadedArticles */
+
+  & .CC {
+    color: var(--lightish-grey);
+  }
+
+  & .DT {
+    color: var(--lightish-grey);
+  }
+
+}

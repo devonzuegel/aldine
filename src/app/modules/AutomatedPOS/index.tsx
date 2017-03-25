@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { AutomatedPOS as Component } from '~/components/AutomatedPOS'
+
+import { AutomatedPOS as Component, Theme } from '~/components/AutomatedPOS'
 
 const txt1 = (
   'The book theorized that sufficiently intense competition for suburban houses in ' +
@@ -16,13 +17,26 @@ const txt2 = (
   'introduction of word separation—led to the development of silent reading during the period ' +
   'from late antiquity to the fifteenth century.'
 )
+
 export const AutomatedPOS = () => (
   <div>
     <br />
     <Component text='This is a sentence' />
     <br />
+    <Component text='This is a sentence' theme={Theme.all} />
+    <br />
+    <Component text='This is a sentence' theme={Theme.fadedArticle} />
+    <br />
     <Component text={txt1} />
     <br />
+    <Component text={txt1} theme={Theme.all} />
+    <br />
+    <Component text={txt1} theme={Theme.fadedArticle} />
+    <br />
     <Component text={txt2} />
+    <br />
+    <Component text={txt2} theme={Theme.all} />
+    <br />
+    <Component text={txt2} theme={Theme.fadedArticle} />
   </div>
 )
