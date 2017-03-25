@@ -11,7 +11,7 @@ interface IProps {
 
 type Type = React.StatelessComponent<IProps>
 
-const classes = ({ debug, width = '' }: IProps) => (
+const classes = ({ debug, width = 'base' }: IProps) => (
   classnames({
     [s.debug]: debug,
     [s[width]]: true,
@@ -38,10 +38,10 @@ export const Layout: Type = (props: IProps) => {
 }
 
 Layout.propTypes = {
-  width: React.PropTypes.oneOf([ 'wide', 'narrow', 'full' ]),
+  width: React.PropTypes.oneOf([ 'wide', 'base', 'narrow', 'full' ]),
   leftSide: React.PropTypes.element,
 }
 
 Layout.defaultProps = {
-  width: 'wide',
+  width: 'base',
 }

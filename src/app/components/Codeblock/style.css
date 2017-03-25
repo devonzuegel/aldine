@@ -8,3 +8,9 @@
   font-family: var(--monospace);
   font-size: var(--small);
 }
+
+.dark {
+  background-color: var(--neutral-xdark);
+  color: white;
+  font-weight: 900;
+}

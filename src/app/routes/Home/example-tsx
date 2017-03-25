@@ -1,0 +1,16 @@
+const styles = require('./style.css')
+
+/* It's nice that the curly braces that surround embedded expressions,
+ * the comments, and the curly braces for string interpolation are grey,
+ * because they aren't the focus of my attention. They are there to
+ * support me in understanding and reading the core logic of the code,
+ * not to distract me from it. */
+
+const smiley   = ':)'
+const myString = `This is a string! ${smiley}`
+
+export const Component: React.StatelessComponent<null> = () => (
+  <div className={style.myClass}>
+    {myString}
+  </div>
+)

@@ -3,16 +3,21 @@ import * as R     from 'ramda'
 import * as classnames from 'classnames'
 
 const s = require('./style.css')
+const hljsStyles = require('raw-loader!./hljs-typescript.txt')
 
 interface IProps {
   children?: any
   className?: string
+  dark?: boolean,
+  highlight?: boolean,
 }
 
-export const Codeblock = ({ children, className = '' }: IProps) => {
+type TCodeblock  = React.StatelessComponent<IProps>
+export const Codeblock: TCodeblock = ({ children, className, dark, highlight }) => {
   const classes = classnames({
-    [s.codeblock]: true,
-    [className]:   true,
+    [s.codeblock]:     true,
+    [s.dark]:          dark,
+    [className || '']: true,
   })
 
   if (R.not(children)) {
@@ -21,6 +26,7 @@ export const Codeblock = ({ children, className = '' }: IProps) => {
 
   return (
     <pre className={classes}>
+      {highlight && <style>{hljsStyles}</style>}
       {children}
     </pre>
   )

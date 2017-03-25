@@ -1,7 +1,12 @@
 @import 'styles/base.css';
 
-.wide {
+.base {
   max-width: var(--container-medium);
+  margin: 0 var(--xlarge);
+}
+
+.wide {
+  max-width: var(--container-large);
   margin: 0 var(--xlarge);
 }
 
@@ -11,7 +16,6 @@
 }
 
 .full {
-  background-color: #eff;
 }
 
 .debug {

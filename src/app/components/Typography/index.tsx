@@ -6,41 +6,39 @@ import { Link as RouterLink } from 'react-router'
 const s = require('./style.css')
 
 interface IProps {
-  children?: any,
-  debug?: boolean,
-  emphasis?: string,
-  attitude?: string,
-  faded?: boolean,
+  children?:  any,
+  debug?:     boolean,
+  emphasis?:  string,
+  attitude?:  string,
+  faded?:     boolean,
   uppercase?: boolean,
 }
 
-type Type = React.StatelessComponent<IProps>
-
 const classes = (name: string, { emphasis, debug, attitude, faded, uppercase }: IProps) => (
   classnames({
-    [s.typography]: true,
-    [s[name]]: true,
-    [s.debug]: debug,
-    [s.faded]: faded,
-    [s.uppercase]: uppercase,
+    [s.typography]:              true,
+    [s[name]]:                   true,
+    [s.debug]:                   debug,
+    [s.faded]:                   faded,
+    [s.uppercase]:               uppercase,
     [s[`${name}--${emphasis}`]]: true,
     [s[`${name}--${attitude}`]]: true,
   })
 )
 
-const Typography = (Name: string): Type => (props: IProps) => (
+const Typography = (Name: string): React.StatelessComponent<IProps> => (props: IProps) => (
   <Name className={classes(Name, props)}>
     {props.children}
   </Name>
 )
 
-export const H1: Type    = Typography('h1')
-export const H2: Type    = Typography('h2')
-export const H3: Type    = Typography('h3')
-export const H4: Type    = Typography('h4')
-export const H5: Type    = Typography('h5')
-export const Label: Type = Typography('label')
-export const P: Type     = Typography('p')
+export const H1: React.StatelessComponent<IProps>    = Typography('h1')
+export const H2: React.StatelessComponent<IProps>    = Typography('h2')
+export const H3: React.StatelessComponent<IProps>    = Typography('h3')
+export const H4: React.StatelessComponent<IProps>    = Typography('h4')
+export const H5: React.StatelessComponent<IProps>    = Typography('h5')
+export const P:  React.StatelessComponent<IProps>    = Typography('p')
+export const Label: React.StatelessComponent<IProps> = Typography('label')
 
 interface IAProps extends IProps {
   href?: string,
@@ -69,7 +67,7 @@ export const Markdown = (props: IProps) => (
 
 export const Code = (props: IProps) => {
   const classes = classnames({
-    [s.code]: true,
+    [s.code]:                    true,
   })
 
   if (R.not(props.children)) {
