@@ -10,7 +10,7 @@ const initialState: ICounter = {
 }
 
 /** Reducer: CounterReducer */
-export function counterReducer(state = initialState, action?: ICounterAction) {
+export function counterReducer(state = initialState, action: ICounterAction) {
   switch (action.type) {
     case INCREMENT:
       return {

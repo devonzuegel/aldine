@@ -21,12 +21,12 @@ const initialState: ITaggedProse = {
 }
 
 /** Reducer: TaggedProseReducer */
-export function taggedProseReducer(state = initialState, action?: ITaggedProseAction) {
+export function taggedProseReducer(state = initialState, action: ITaggedProseAction) {
   switch (action.type) {
     case CATEGORIZE:
-      const i = action.index
-      const category = state.selectedCategory
-      let updated: string[] = state.categorized
+      const i: number = action.index
+      const category: string = state.selectedCategory
+      let updated: (string | null)[] = state.categorized
       updated[i] = state.categorized[i] === category ? null : category
       return R.merge(state, { categorized: updated })
 
@@ -48,4 +48,5 @@ export const categorize = (index: number): ITaggedProseAction => ({
 export const select = (category: string): ITaggedProseAction => ({
   type: SELECT,
   category,
+  index: 0, // ITaggedProseAction requires index to be defined
 })

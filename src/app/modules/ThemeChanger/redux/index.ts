@@ -5,11 +5,11 @@ export const UPDATE: string = 'theme-changer/UPDATE'
 
 /** ThemeChanger: Initial State */
 const initialState: IThemeChanger = {
-  className: null,
+  className: '',
 }
 
 /** Reducer: ThemeChangerReducer */
-export function themeChangerReducer(state = initialState, action?: IThemeChangerAction) {
+export function themeChangerReducer(state = initialState, action: IThemeChangerAction) {
   switch (action.type) {
     case UPDATE:
       return {

@@ -9,7 +9,7 @@ interface IProps {
   className?: string
 }
 
-export const Codeblock = ({ children, className }: IProps) => {
+export const Codeblock = ({ children, className = '' }: IProps) => {
   const classes = classnames({
     [s.codeblock]: true,
     [className]:   true,
