@@ -13,6 +13,7 @@
 
   /** Grey */
 
+  --darker-grey: #222233;
   --dark-grey: #444455;
   --medium-grey: #9999bb;
   --lightish-grey: #ccccdd;
@@ -32,6 +33,7 @@
   --neutral-xlight: var(--lighter-grey);
   --neutral-dark: var(--medium-grey);
   --neutral-xdark: var(--dark-grey);
+  --neutral-xdark: var(--darker-grey);
   --positive-base: var(--bright-blue);
   --positive-light: var(--pale-bright-blue);
   --positive-xlight: var(--paler-bright-blue);

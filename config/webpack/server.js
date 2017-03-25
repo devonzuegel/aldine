@@ -23,6 +23,8 @@ module.exports = require('webpack-merge')(
     module: {
       loaders: [
         require('./partials/woff-loader'),
+        require('./partials/img-loader'),
+        require('./partials/mp4-loader'),
         require('./partials/ts-serverside-loader'),
         require('./partials/css-serverside-loader'),
       ],

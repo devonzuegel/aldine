@@ -5,9 +5,11 @@ import { App               } from '~/components/App'
 import { Home              } from './Home'
 import { Experiments       } from './Experiments'
 import { Styleguide        } from './Styleguide'
+import { Aldine            } from './Aldine'
 
 const config: IRouteConfig[] = [
   { path: '/',          title: 'Home',        component: Home        },
+  { path: 'aldine',     title: 'Aldine',      component: Aldine      },
   { path: 'experiment', title: 'Experiments', component: Experiments },
   { path: 'style',      title: 'Styleguide',  component: Styleguide  },
 ]

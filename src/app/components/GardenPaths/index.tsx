@@ -78,3 +78,34 @@ export const spaced = (
     )}
   </ul>
 )
+
+/*
+  MORE GARDEN PATHS:
+
+  The courageous guard freedom tenaciously.
+  The old man the boat
+  The Inuit can fish in their new factory in town.
+  Southern European people like Italians like dishes like pasta.
+  An old buddy just dropped by his girlfriend was happy to see her.
+  The complex houses married or single students.
+  The fat people eat accumulates.
+  Is that gold mine producing?
+  We painted the wall with cracks.
+  The government plans to raise taxes were defeated.
+  Beverly Hills 90210, Denver 3.
+  The cotton clothing is usually made of grows in the southern U. S.
+  The man who hunts ducks out on weekends.
+  When Mike eats food gets wasted.
+  I gave the kid the dog bit a band-aid.
+  The British left waffles on the Falkland Islands.
+  I've convinced her children are noisy.
+  Helen is expecting tomorrow to be a great day.
+  The horse raced past the barn fell.
+  She told me a little white lie would haunt me someday.
+  The man who whistles tunes pianos.
+  A sharp jab to the boxer's abs will wind him up.
+  Have the patients who didn't pass take the supplement.
+  The raft floated down the river sank.
+  Time flies like an arrow; fruit flies like a banana.
+  While I dressed the baby stayed in the playpen.
+*/

@@ -5,15 +5,26 @@ import * as AutoPOS      from '~/components/AutomatedPOS'
 import * as ScrollTo     from '~/components/ScrollTo'
 import * as U            from '~/components/utils'
 import * as T            from '~/components/Typography'
+import { Codeblock     } from '~/components/Codeblock'
 import { Example as Ex } from '~/components/Example'
 import { Layout        } from '~/components/Layout'
-// import { SideNav       } from '~/components/SideNav'
 import * as GardenPaths  from '~/components/GardenPaths'
+// import { SideNav       } from '~/components/SideNav'
 
+// Text
 const Essay = require('babel-loader!essay-loader!./essay.md')
-const txt = require('raw-loader!./sample.txt')
+const txt   = require('raw-loader!./sample.txt')
 
-type Type = React.StatelessComponent<null>
+// Syntax highlighted
+const tsxExample   = require('babel-loader!highlight-loader?raw=true&lang=js!./example-tsx')
+const rubyExample  = require('babel-loader!highlight-loader?raw=true&lang=rb!./example.rb')
+const confusingCPP = require('babel-loader!highlight-loader?raw=true&lang=c!./example-confusing.c')
+
+// Plaintext
+const tsxPlainExample  = require('babel-loader!raw-loader!./example-tsx')
+const rubyPlainExample = require('babel-loader!raw-loader!./example.rb')
+
+const stringLiteralMp4: string = require('assets/string-literal-bug.mp4')
 
 const headings = [
   'All parts of speech',
@@ -31,10 +42,18 @@ const tocEntry = (name: string) => ({
   [U.spaceToCamel(name)]: ScrollTo.Area({ name })
 })
 
+const greyifyBraces = R.pipe(
+  R.replace(/React.StatelessComponent/g, `<span class="hljs-params">React.StatelessComponent</span>`),
+  R.replace(/\$/g, `<span class="greyBraces">$</span>`),
+  R.replace(/\{/g, `<span class="greyBraces">{</span>`),
+  R.replace(/\}/g, `<span class="greyBraces">}</span>`),
+)
+
 const examples: {[key: string]: any} = {
+  stringLiteralGif: <video width='100%' src={stringLiteralMp4} autoPlay preload='none' loop />,
   allPartsOfSpeech: (
     <Ex label='All parts of speech'>
-      <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.all}/>
+      <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.all} />
     </Ex>
   ),
   somePartsOfSpeech: (
@@ -42,20 +61,58 @@ const examples: {[key: string]: any} = {
       <AutoPOS.AutomatedPOS text={txt} />
     </Ex>
   ),
-  colorfulCode:       <code>colorfulCode widget</code>,
-  plaintext:          <code>plaintext code widget</code>,
-  highlightedVerbs:   <code>highlightedVerbs widget</code>,
-  fadedGerundEndings: <code>fadedGerundEndings widget</code>,
-  gardenPathVerbs: ( // TODO: change N to number
+  plaintextTsx: (
+    <Ex label='It is hard to know what to focus on when reading plaintext Typescript'>
+      <Codeblock dark highlight>
+        {tsxPlainExample}
+      </Codeblock>
+    </Ex>
+  ),
+  greyedOutTsx: (
+    <Ex label='Faded curly braces'>
+      <Codeblock dark highlight>
+        <div dangerouslySetInnerHTML={{__html: greyifyBraces(tsxExample)}} />
+      </Codeblock>
+    </Ex>
+  ),
+  plaintextCode: (
+    <Ex label='Plaintext Ruby'>
+      <Codeblock dark highlight>
+        {rubyPlainExample}
+      </Codeblock>
+    </Ex>
+  ),
+  colorfulCode: (
+    <Ex label='Syntax highlighted ruby'>
+      <Codeblock dark highlight>
+        <div dangerouslySetInnerHTML={{__html: rubyExample}} />
+      </Codeblock>
+    </Ex>
+  ),
+  confusingCPP: (
+    <Ex label='Do you have any idea what this C code does?'>
+      <Codeblock dark highlight>
+        <div dangerouslySetInnerHTML={{__html: confusingCPP}} />
+      </Codeblock>
+    </Ex>
+  ),
+  gardenPathVerbs: (
     <Ex label='Garden paths with highlighted verbs'>
       {GardenPaths.verbs}
     </Ex>
   ),
-  gardenPathSpaced: ( // TODO: change N to number
+  gardenPathSpaced: (
     <Ex label='Spaced garden paths'>
       {GardenPaths.spaced}
     </Ex>
   ),
+  fadedArticles: (
+    <Ex label='All parts of speech'>
+      <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.fadedArticle} />
+    </Ex>
+  ),
+  highlightedVerbs:    <code>highlightedVerbs widget</code>,
+  fadedGerundEndings:  <code>fadedGerundEndings widget</code>,
   noPunctuation:       <code>noPunctuation widget</code>,
   automatedTools:      <code>automatedTools widget</code>,
   automatedPOSReading: <code>automatedPOSReading widget</code>,
@@ -63,11 +120,11 @@ const examples: {[key: string]: any} = {
 
 const essayTOC = R.reduce((soFar, name) => ({ ...soFar, ...tocEntry(name) }), {}, headings)
 
-export const Home: Type = () => (
+export const Home: React.StatelessComponent<null> = () => (
   // <Layout leftSide={<SideNav {...{ toc: headings.map(ScrollTo.Button) }} />}>
-  <Layout>
+  <Layout width='wide'>
     <T.Markdown>
-      <Essay toc={essayTOC} {...examples}/>
+      <Essay toc={essayTOC} {...examples} />
     </T.Markdown>
   </Layout>
 )

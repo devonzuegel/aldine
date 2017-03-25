@@ -12,7 +12,7 @@ module.exports = (content) => {
    R.filter(R.complement(R.test(/^\/\//))),
    R.join('\n'),
    // Inject props. for every variable name.
-   R.replace(/\{ ?([\w\.]+) ?\}/g, '{props.$1}'),
+   R.replace(/\{\{ ?([\w\.]+) ?\}\}/g, '{props.$1}'),
    // Convert into markdown.
    marked,
    // Marked parses --- and *** as an unclosed <hr>
