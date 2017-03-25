@@ -11,7 +11,7 @@ interface IProps {
 
 type Type = React.StatelessComponent<IProps>
 
-const classes = ({ debug, width }: IProps) => (
+const classes = ({ debug, width = '' }: IProps) => (
   classnames({
     [s.debug]: debug,
     [s[width]]: true,

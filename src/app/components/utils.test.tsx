@@ -23,5 +23,10 @@ describe('Utils', () => {
       variable = 'left'
       // variable = 'not-a-direction' // This is not allowed
     })
+
+    it('ASFLDKJASDLFKJ', () => {
+      const x = ''
+      expect(Boolean(x)).to.eql(false)
+    })
   })
 })

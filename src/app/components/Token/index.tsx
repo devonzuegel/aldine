@@ -4,12 +4,11 @@ const s = require('./style.css')
 
 interface IProps {
   categorize: Function,
-  children?: any,
+  children?:  any,
   className?: string,
 }
 
-const Token = (props: IProps) => {
-  const { categorize, className, children } = props
+const Token = ({ categorize, className = '', children }: IProps) => {
   const classes = classnames({
     [s.token]: true,
     [className]: Boolean(className),

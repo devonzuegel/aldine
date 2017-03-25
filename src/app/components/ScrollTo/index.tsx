@@ -1,6 +1,14 @@
 import * as React from 'react'
 import * as U     from '~/components/utils'
 
+const scrollIntoView = (id: string) => {
+  const elem = document.getElementById(id)
+  if (!elem) {
+    throw Error(`Element with id ${id} is not defined`)
+  }
+  elem.scrollIntoView()
+}
+
 interface IButton {
   name: string,
   onClick: Function,
@@ -8,7 +16,7 @@ interface IButton {
 
 export const Button = (name: string): IButton => ({
   name,
-  onClick: () => document.getElementById(U.spaceToCamel(name)).scrollIntoView(),
+  onClick: () => scrollIntoView(U.spaceToCamel(name)),
 })
 
 

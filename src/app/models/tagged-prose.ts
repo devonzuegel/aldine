@@ -8,6 +8,6 @@ export interface ITaggedProse {
 
 export interface ITaggedProseAction {
   type: string,
-  index?: number,
-  category?: string,
+  index: number,
+  category?: string | null,
 }

@@ -2,9 +2,9 @@ import * as React from 'react'
 import * as Helmet from 'react-helmet'
 
 interface IHtmlProps {
-  manifest?: { [key: string]: any }
-  markup?: string
-  store?: Redux.Store<any>
+  manifest: { [key: string]: any }
+  markup: string
+  store: Redux.Store<any>
 }
 
 class Html extends React.Component<IHtmlProps, {}> {
@@ -24,7 +24,7 @@ class Html extends React.Component<IHtmlProps, {}> {
       <link key={i} rel="stylesheet" type="text/css" href={src} />
     )
 
-    const scripts: string[] = this.resolve(['vendor.js', 'app.js'])
+    const scripts: (string | null)[] = this.resolve(['vendor.js', 'app.js'])
     const renderScripts = scripts.map((src: string, i: number) =>
       <script src={src} key={i}></script>
     )
