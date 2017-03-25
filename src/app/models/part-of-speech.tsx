@@ -16,7 +16,7 @@ export const enum EPartOfSpeech {
   NNS,   // Noun, plural           dogs
   POS,   // Possessive ending      Õs
   PDT,   // Predeterminer          all, both
-  'PP$', //  Possessive pronoun    my,oneÕs
+  'PP$', // Possessive pronoun     my,oneÕs
   PRP,   // Personal pronoun       I,you,she
   RB,    // Adverb                 quickly
   RBR,   // Adverb, comparative    faster
@@ -33,7 +33,7 @@ export const enum EPartOfSpeech {
   VBZ,   // Verb, present          eats
   WDT,   // Wh-determiner          which,that
   WP,    // Wh pronoun             who,what
-  'WP$', // Possessive-Wh         whose
+  'WP$', // Possessive-Wh          whose
   WRB,   // Wh-adverb              how,where
   ',',   // Comma                  ,
   '.',   // Sent-final punct       . ! ?

@@ -14,7 +14,7 @@ export const Example: Type = ({ children, label }) => (
   <Section emphasis='secondary'>
     {children}
     <Label faded>
-      {label}
+      Experiment: {label}
     </Label>
   </Section>
 )
