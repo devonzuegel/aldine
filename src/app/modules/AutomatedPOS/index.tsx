@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-import { AutomatedPOS as Component, Theme } from '~/components/AutomatedPOS'
+import { AutomatedPOS as C } from '~/components/AutomatedPOS'
+import * as Theme            from '~/components/AutomatedPOS/types/Theme'
 
 const txt1 = (
   'The book theorized that sufficiently intense competition for suburban houses in ' +
@@ -21,22 +22,22 @@ const txt2 = (
 export const AutomatedPOS = () => (
   <div>
     <br />
-    <Component text='This is a sentence' />
+    <C text='This is a sentence' />
     <br />
-    <Component text='This is a sentence' theme={Theme.all} />
+    <C text='This is a sentence' theme={Theme.Enum.all} />
     <br />
-    <Component text='This is a sentence' theme={Theme.fadedArticle} />
+    <C text='This is a sentence' theme={Theme.Enum.fadedArticle} />
     <br />
-    <Component text={txt1} />
+    <C text={txt1} />
     <br />
-    <Component text={txt1} theme={Theme.all} />
+    <C text={txt1} theme={Theme.Enum.all} />
     <br />
-    <Component text={txt1} theme={Theme.fadedArticle} />
+    <C text={txt1} theme={Theme.Enum.fadedArticle} />
     <br />
-    <Component text={txt2} />
+    <C text={txt2} />
     <br />
-    <Component text={txt2} theme={Theme.all} />
+    <C text={txt2} theme={Theme.Enum.all} />
     <br />
-    <Component text={txt2} theme={Theme.fadedArticle} />
+    <C text={txt2} theme={Theme.Enum.fadedArticle} />
   </div>
 )

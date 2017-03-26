@@ -3,9 +3,10 @@ import * as R          from 'ramda'
 import * as classnames from 'classnames'
 
 import { IWord, EPartOfSpeech } from '~/models/part-of-speech'
+import * as Theme               from './types/Theme'
 
-const s = require('./style.css')
 const POS = require('pos')
+const s   = require('./style.css')
 
 const Word = (props: IWord) => {
   const { word, pos }: IWord = props
@@ -37,21 +38,15 @@ const Separator = ({ nextPOS }: { nextPOS: number | EPartOfSpeech | string }) =>
   )
 }
 
-export const enum Theme {
-  default,
-  all,
-  fadedArticle
-}
-
 interface IProps {
   text: string,
-  theme?: Theme,
+  theme?: Theme.Type,
 }
 
 type Type = React.StatelessComponent<IProps>
 
-export const AutomatedPOS: Type = ({ text, theme }: IProps) => (
-  <div className={s[`theme--${theme || Theme.default}`]}>
+export const AutomatedPOS: Type = ({ text, theme }) => (
+  <div className={s[`theme--${theme || Theme.Enum.default}`]}>
     {tagPOS(text).map((wordProps: IWord, i: number) =>
       <span key={i}>
         {i > 0 && <Separator nextPOS={wordProps.pos} />}

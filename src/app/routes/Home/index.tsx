@@ -1,7 +1,8 @@
 import * as React from 'react'
 import * as R     from 'ramda'
 
-import * as AutoPOS      from '~/components/AutomatedPOS'
+import { AutomatedPOS  } from '~/components/AutomatedPOS'
+import * as Theme        from '~/components/AutomatedPOS/types/Theme'
 import * as ScrollTo     from '~/components/ScrollTo'
 import * as U            from '~/components/utils'
 import * as T            from '~/components/Typography'
@@ -53,12 +54,12 @@ const examples: {[key: string]: any} = {
   stringLiteralGif: <video width='100%' src={stringLiteralMp4} autoPlay preload='none' loop />,
   allPartsOfSpeech: (
     <Ex label='All parts of speech'>
-      <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.all} />
+      <AutomatedPOS text={txt} theme={Theme.Enum.all} />
     </Ex>
   ),
   somePartsOfSpeech: (
     <Ex label='Some parts of speech'>
-      <AutoPOS.AutomatedPOS text={txt} />
+      <AutomatedPOS text={txt} />
     </Ex>
   ),
   plaintextTsx: (
@@ -108,7 +109,7 @@ const examples: {[key: string]: any} = {
   ),
   fadedStopWords: (
     <Ex label='Faded stop words'>
-      <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.fadedArticle} />
+      <AutomatedPOS text={txt} theme={Theme.Enum.fadedArticle} />
     </Ex>
   ),
   highlightedVerbs:    <code>highlightedVerbs widget</code>,
