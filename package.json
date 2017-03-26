@@ -13,7 +13,8 @@
     "stats": "npm run build --profile --json > stats.json",
     "start": "node build/server.js",
     "start:prod": "cross-env NODE_ENV=production npm start",
-    "test": "grunt test"
+    "test": "grunt test",
+    "watch": "grunt watch"
   },
   "devDependencies": {
     "@types/base16": "^1.0.1",
