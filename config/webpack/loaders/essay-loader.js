@@ -17,6 +17,8 @@ module.exports = (content) => {
    marked,
    // Marked parses --- and *** as an unclosed <hr>
    R.replace(/<hr>/g, '<HR />'),
+   R.replace(/<p>\{/g, '{'),
+   R.replace(/\}<\/p>/g, '}'),
    // Remove extraneous quotes in generated links.
    R.replace(/href="\{props\. ?([\w\.]+) ?\}"/g, 'href={props.$1}')
  )(content)
