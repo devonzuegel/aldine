@@ -1,9 +1,9 @@
 import * as React      from 'react'
 import * as classnames from 'classnames'
 
-import * as Spacing   from './types/Spacing'
-import * as Width     from './types/Width'
-import * as Alignment from './types/Alignment'
+import * as Spacing   from '~/models/Spacing'
+import * as Width     from '~/models/Width'
+import * as Alignment from '~/models/Alignment'
 
 const s = require('./style.css')
 

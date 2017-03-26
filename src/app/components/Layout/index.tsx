@@ -1,7 +1,7 @@
 import * as React      from 'react'
 import * as classnames from 'classnames'
 
-import * as Width from '~/components/Box/types/Width.ts'
+import * as Width from '~/models/Width.ts'
 
 const s = require('./style.css')
 

@@ -1,15 +1,15 @@
 import * as React from 'react'
 import * as R     from 'ramda'
 
-import { AutomatedPOS  } from '~/components/AutomatedPOS'
-import * as Theme        from '~/components/AutomatedPOS/types/Theme'
+import * as Theme        from '~/models/Theme'
+import * as GardenPaths  from '~/components/GardenPaths'
 import * as ScrollTo     from '~/components/ScrollTo'
-import * as U            from '~/components/utils'
 import * as T            from '~/components/Typography'
+import * as U            from '~/components/utils'
+import { AutomatedPOS  } from '~/components/AutomatedPOS'
 import { Codeblock     } from '~/components/Codeblock'
 import { Example as Ex } from '~/components/Example'
 import { Layout        } from '~/components/Layout'
-import * as GardenPaths  from '~/components/GardenPaths'
 // import { SideNav       } from '~/components/SideNav'
 
 // Text

@@ -3,7 +3,7 @@ import * as R          from 'ramda'
 import * as classnames from 'classnames'
 
 import { IWord, EPartOfSpeech } from '~/models/part-of-speech'
-import * as Theme               from './types/Theme'
+import * as Theme               from '~/models/Theme'
 
 const POS = require('pos')
 const s   = require('./style.css')
