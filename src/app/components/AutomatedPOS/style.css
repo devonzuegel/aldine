@@ -271,7 +271,7 @@
 }
 
 
-.theme--2 { /* Theme.fadedArticles */
+.theme--2 { /* Theme.fadedStopWords */
 
   & .CC {
     color: var(--lightish-grey);

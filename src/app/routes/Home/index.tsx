@@ -106,8 +106,8 @@ const examples: {[key: string]: any} = {
       {GardenPaths.spaced}
     </Ex>
   ),
-  fadedArticles: (
-    <Ex label='All parts of speech'>
+  fadedStopWords: (
+    <Ex label='Faded stop words'>
       <AutoPOS.AutomatedPOS text={txt} theme={AutoPOS.Theme.fadedArticle} />
     </Ex>
   ),
