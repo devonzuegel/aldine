@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { AutomatedPOS as C } from '~/components/AutomatedPOS'
-import * as Theme            from '~/components/AutomatedPOS/types/Theme'
+import * as Theme            from '~/models/Theme'
 
 const txt1 = (
   'The book theorized that sufficiently intense competition for suburban houses in ' +
