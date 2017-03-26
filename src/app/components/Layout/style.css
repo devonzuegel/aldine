@@ -1,18 +1,18 @@
 @import 'styles/base.css';
 
-.base {
+.small {
+  max-width: var(--container-small);
+  margin: auto;
+}
+
+.medium {
   max-width: var(--container-medium);
   margin: 0 var(--xlarge);
 }
 
-.wide {
+.large {
   max-width: var(--container-large);
   margin: 0 var(--xlarge);
-}
-
-.narrow {
-  max-width: var(--container-small);
-  margin: auto;
 }
 
 .full {

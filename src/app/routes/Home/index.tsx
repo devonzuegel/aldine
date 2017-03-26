@@ -123,7 +123,7 @@ const essayTOC = R.reduce((soFar, name) => ({ ...soFar, ...tocEntry(name) }), {}
 
 export const Home: React.StatelessComponent<null> = () => (
   // <Layout leftSide={<SideNav {...{ toc: headings.map(ScrollTo.Button) }} />}>
-  <Layout width='wide'>
+  <Layout width='large'>
     <T.Markdown>
       <Essay toc={essayTOC} {...examples} />
     </T.Markdown>
