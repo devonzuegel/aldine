@@ -56,7 +56,7 @@ Next thing I tried was a scheme that greys out just stop words (i.e. articles li
 
 However, this approach did not work well. The infrequent faded words were distracting, and it felt like there were holes in my paragraphs. The de-emphasis of the articles and conditionals didn't save me any headspace – it just interrupted the flow of sentences.
 
-{{fadedArticles}}
+{{fadedStopWords}}
 
 It was interesting how different an effect downplaying certain words had from earlier experiments, in which we took words that were mostly faded and then emphasized some categories in various ways. Faded stop words felt disorganized, while emphasizing just a few key elements gave the prose better visual hierarchy. Perhaps this shouldn't have been so surprising. Hierarchy is a well-understood design principle. You have to reserve emphasis for the most importat elements on the page, and I was violating that rule by effectively emphasizing everything but the stop words.
 
