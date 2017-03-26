@@ -1,47 +1,40 @@
 import * as React      from 'react'
 import * as classnames from 'classnames'
 
+import * as Width from '~/components/Box/types/Width.ts'
+
 const s = require('./style.css')
+
 interface IProps {
   children?: any,
-  debug?: boolean,
-  leftSide?: any,
-  width?: string,
+  debug?:    boolean,
+  leftSide?: JSX.Element,
+  width?:    Width.Type,
 }
 
-type Type = React.StatelessComponent<IProps>
+type TLayout = React.StatelessComponent<IProps>
 
-const classes = ({ debug, width = 'base' }: IProps) => (
-  classnames({
+export const Layout: TLayout = ({ width = Width.Enum.medium, debug, children, leftSide }) => {
+  const classes = classnames({
     [s.debug]: debug,
     [s[width]]: true,
     [s['flex-1']]: true,
   })
-)
-export const Layout: Type = (props: IProps) => {
+
   const Main = (
-    <div className={classes(props)}>
-      {props.children}
+    <div className={classes}>
+      {children}
     </div>
   )
 
-  if (!props.leftSide) {
+  if (!leftSide) {
     return Main
   }
 
   return (
     <div className={s['horizontal-box']}>
-      {props.leftSide}
+      {leftSide}
       {Main}
     </div>
   )
-}
-
-Layout.propTypes = {
-  width: React.PropTypes.oneOf([ 'wide', 'base', 'narrow', 'full' ]),
-  leftSide: React.PropTypes.element,
-}
-
-Layout.defaultProps = {
-  width: 'base',
 }
