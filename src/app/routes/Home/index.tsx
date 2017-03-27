@@ -10,6 +10,7 @@ import { AutomatedPOS  } from '~/components/AutomatedPOS'
 import { Codeblock     } from '~/components/Codeblock'
 import { Example as Ex } from '~/components/Example'
 import { Layout        } from '~/components/Layout'
+import { Section }       from '~/components/Section'
 // import { SideNav       } from '~/components/SideNav'
 
 // Text
@@ -22,8 +23,9 @@ const rubyExample  = require('babel-loader!highlight-loader?raw=true&lang=rb!./e
 const confusingCPP = require('babel-loader!highlight-loader?raw=true&lang=c!./example-confusing.c')
 
 // Plaintext
-const tsxPlainExample  = require('babel-loader!raw-loader!./example-tsx')
-const rubyPlainExample = require('babel-loader!raw-loader!./example.rb')
+const tsxPlainExample    = require('babel-loader!raw-loader!./example-tsx')
+const rubyPlainExample   = require('babel-loader!raw-loader!./example.rb')
+const parenthesesExample = require('babel-loader!raw-loader!./example-parentheses.txt')
 
 const stringLiteralMp4: string = require('assets/string-literal-bug.mp4')
 
@@ -102,9 +104,16 @@ const examples: {[key: string]: any} = {
       {GardenPaths.verbs}
     </Ex>
   ),
+  parenthesesExample: (
+    <Ex label='Faded parentheticals'>
+      <Section>
+      {parenthesesExample}
+      </Section>
+    </Ex>
+  ),
   gardenPathSpaced: (
     <Ex label='Spaced garden paths'>
-      {GardenPaths.spaced}
+        {GardenPaths.spaced}
     </Ex>
   ),
   fadedStopWords: (

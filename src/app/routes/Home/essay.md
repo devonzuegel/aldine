@@ -72,6 +72,8 @@ It was interesting how different an effect downplaying certain words had from ea
 
 ### Faded parentheses ###
 
+{{parenthesesExample}}
+
 When I see a grey line, I immediately know it's a comment. When I see green, it's a string.
 
 ### No punctuation ###
