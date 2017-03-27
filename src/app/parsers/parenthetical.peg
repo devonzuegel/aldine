@@ -1,0 +1,12 @@
+{
+  function Parenthetical (content) {
+    return ({ content: content, type: 'Parenthetical' })
+  }
+  function Text (content) {
+    return ({ content: content, type: 'Text' })
+  }
+}
+
+Content       = (Parenthetical / Text)*
+Parenthetical = "(" content:Content ")" { return Parenthetical(content) }
+Text          = chars:[^()]+            { return Text(chars.join("")) }
