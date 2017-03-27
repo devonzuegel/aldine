@@ -21,6 +21,7 @@ describe('Utils', () => {
 
       variable = Enum.left
       variable = 'left'
+
       // variable = 'not-a-direction' // This is not allowed
     })
 
