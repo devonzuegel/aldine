@@ -26,24 +26,34 @@
   --lighter-pink: var(--dark-pink);
   --light-pink: var(--dark-pink);
 
+  /** Primary colors */
+
+  --marigold: #F7CE3E;
+  --dodgers-blue: #44A4FF;
+  --prussian-blue: #0B3C5D;
+  --steel: #0A1612;
+
+  /** Utility colors */
+  --red: #FF4A22;
+  --green: #00DD61;
+
   /** ATTITUDES *****************************************/
 
+  --neutral-dark: var(--medium-grey);
   --neutral-base: var(--lightish-grey);
   --neutral-light: var(--light-grey);
   --neutral-xlight: var(--lighter-grey);
   --neutral-dark: var(--medium-grey);
   --neutral-xdark: var(--dark-grey);
   --neutral-xdark: var(--darker-grey);
-  --positive-base: var(--bright-blue);
-  --positive-light: var(--pale-bright-blue);
-  --positive-xlight: var(--paler-bright-blue);
-  --positive-dark: var(--dark-blue);
-  --positive-xdark: var(--black);
-  --negative-base: var(--lighter-pink);
-  --negative-light: var(--lighter-pink);
-  --negative-xlight: var(--light-pink);
-  --negative-dark: var(--dark-pink);
-  --negative-xdark: var(--light-pink);
+
+  --positive-dark: var(--dodgers-blue);
+  --positive-base: color(var(--dodgers-blue) a(60%));
+  --positive-light: color(var(--dodgers-blue) a(10%));
+
+  --negative-dark: var(--red);
+  --negative-base: color(var(--red) a(70%));
+  --negative-light: color(var(--red) a(10%));
 
   /** SEMANTIC ******************************************/
 
