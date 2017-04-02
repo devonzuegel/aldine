@@ -38,6 +38,7 @@ export const H3: React.StatelessComponent<IProps>    = Typography('h3')
 export const H4: React.StatelessComponent<IProps>    = Typography('h4')
 export const H5: React.StatelessComponent<IProps>    = Typography('h5')
 export const P:  React.StatelessComponent<IProps>    = Typography('p')
+export const Span:  React.StatelessComponent<IProps> = Typography('span')
 export const Label: React.StatelessComponent<IProps> = Typography('label')
 
 interface IAProps extends IProps {
