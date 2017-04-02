@@ -1,5 +1,5 @@
 {
-  "name": "clarity",
+  "name": "aldine",
   "version": "0.1.0",
   "description": "Syntax highlighting playground for natural language.",
   "main": "build/server.js",
