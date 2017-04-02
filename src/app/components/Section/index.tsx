@@ -8,16 +8,15 @@ interface IProps {
   children?: any,
   debug?: boolean,
   emphasis?: string,
-  attitude?: string,
 }
 
 type Type = React.StatelessComponent<IProps>
 
-const classes = ({ emphasis, debug, attitude }: IProps): string => (
+const classes = ({ emphasis, debug }: IProps): string => (
   classnames({
     [s['debug']]: debug,
     [s['section']]: true,
-    [s[`section--${emphasis}--${attitude}`]]: true,
+    [s[`section--${emphasis}`]]: true,
   })
 )
 
