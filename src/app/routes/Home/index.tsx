@@ -6,11 +6,11 @@ import * as GardenPaths  from '~/components/GardenPaths'
 import * as ScrollTo     from '~/components/ScrollTo'
 import * as T            from '~/components/Typography'
 import * as U            from '~/components/utils'
+import { Parenthetical } from '~/components/Parenthetical'
 import { AutomatedPOS  } from '~/components/AutomatedPOS'
 import { Codeblock     } from '~/components/Codeblock'
 import { Example as Ex } from '~/components/Example'
 import { Layout        } from '~/components/Layout'
-import { Section }       from '~/components/Section'
 // import { SideNav       } from '~/components/SideNav'
 
 // Text
@@ -106,9 +106,7 @@ const examples: {[key: string]: any} = {
   ),
   parenthesesExample: (
     <Ex label='Faded parentheticals'>
-      <Section>
-      {parenthesesExample}
-      </Section>
+      <Parenthetical text={parenthesesExample} />
     </Ex>
   ),
   gardenPathSpaced: (
