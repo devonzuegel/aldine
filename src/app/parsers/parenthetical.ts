@@ -7,7 +7,7 @@ const grammar = require('raw-loader!./parenthetical.peg')
 export const Enum = strEnum([ 'Parenthetical', 'Text' ])
 export type Type = keyof typeof Enum
 
-interface INode {
+export interface INode {
   type: Type
   content: string | INode[]
 }
