@@ -6,6 +6,10 @@
 
 /* Bottom margin */
 
+.margin-bottom-xsmall {
+  margin-bottom: var(--xsmall);
+}
+
 .margin-bottom-small {
   margin-bottom: var(--small);
 }
@@ -27,6 +31,10 @@
 }
 
 /* Top margin */
+
+.margin-top-xsmall {
+  margin-top: var(--xsmall);
+}
 
 .margin-top-small {
   margin-top: var(--small);
@@ -50,6 +58,10 @@
 
 /* Left margin */
 
+.margin-left-xsmall {
+  margin-left: var(--xsmall);
+}
+
 .margin-left-small {
   margin-left: var(--small);
 }
@@ -71,6 +83,10 @@
 }
 
 /* Right margin */
+
+.margin-right-xsmall {
+  margin-right: var(--xsmall);
+}
 
 .margin-right-small {
   margin-right: var(--small);
@@ -98,6 +114,10 @@
 
 /* Bottom padding */
 
+.padding-bottom-xsmall {
+  padding-bottom: var(--xsmall);
+}
+
 .padding-bottom-small {
   padding-bottom: var(--small);
 }
@@ -119,6 +139,10 @@
 }
 
 /* Top padding */
+
+.padding-top-xsmall {
+  padding-top: var(--xsmall);
+}
 
 .padding-top-small {
   padding-top: var(--small);
@@ -142,6 +166,10 @@
 
 /* Left padding */
 
+.padding-left-xsmall {
+  padding-left: var(--xsmall);
+}
+
 .padding-left-small {
   padding-left: var(--small);
 }
@@ -163,6 +191,10 @@
 }
 
 /* Right padding */
+
+.padding-right-xsmall {
+  padding-right: var(--xsmall);
+}
 
 .padding-right-small {
   padding-right: var(--small);
@@ -207,6 +239,10 @@
 .box-align-center {
   margin: auto;
 
+  &.margin-bottom-xsmall {
+    margin-bottom: var(--xsmall);
+  }
+
   &.margin-bottom-small {
     margin-bottom: var(--small);
   }
@@ -228,6 +264,10 @@
   }
 
   /* Top margin */
+
+  &.margin-top-xsmall {
+    margin-top: var(--xsmall);
+  }
 
   &.margin-top-small {
     margin-top: var(--small);
@@ -251,6 +291,10 @@
 
   /* Left margin */
 
+  &.margin-left-xsmall {
+    margin-left: var(--xsmall);
+  }
+
   &.margin-left-small {
     margin-left: var(--small);
   }
@@ -272,6 +316,10 @@
   }
 
   /* Right margin */
+
+  &.margin-right-xsmall {
+    margin-right: var(--xsmall);
+  }
 
   &.margin-right-small {
     margin-right: var(--small);
@@ -297,6 +345,10 @@
 /**********************************************************************************/
 /*** Box- size *********************************************************************/
 /**********************************************************************************/
+
+.width-small x{
+  max-width: var(--container-xsmall);
+}
 
 .width-small {
   max-width: var(--container-small);

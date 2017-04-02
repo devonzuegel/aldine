@@ -17,11 +17,13 @@ interface IProps {
   textAlign?: Alignment.Type
   boxAlign?:  Alignment.Type
 
+  margin?:       Spacing.Type
   marginBottom?: Spacing.Type
   marginTop?:    Spacing.Type
   marginLeft?:   Spacing.Type
   marginRight?:  Spacing.Type
 
+  padding?:       Spacing.Type
   paddingBottom?: Spacing.Type
   paddingTop?:    Spacing.Type
   paddingLeft?:   Spacing.Type
@@ -32,14 +34,14 @@ interface IProps {
 type Type = React.StatelessComponent<IProps>
 
 export const Box: Type = (props: IProps) => {
-  const marginBottom  = props.marginBottom  || 'medium'
-  const marginTop     = props.marginTop     || 'medium'
-  const marginLeft    = props.marginLeft    || 'medium'
-  const marginRight   = props.marginRight   || 'medium'
-  const paddingBottom = props.paddingBottom || 'medium'
-  const paddingTop    = props.paddingTop    || 'medium'
-  const paddingLeft   = props.paddingLeft   || 'medium'
-  const paddingRight  = props.paddingRight  || 'medium'
+  const marginBottom  = props.marginBottom  || props.margin  || 'medium'
+  const marginTop     = props.marginTop     || props.margin  || 'medium'
+  const marginLeft    = props.marginLeft    || props.margin  || 'medium'
+  const marginRight   = props.marginRight   || props.margin  || 'medium'
+  const paddingBottom = props.paddingBottom || props.padding || 'medium'
+  const paddingTop    = props.paddingTop    || props.padding || 'medium'
+  const paddingLeft   = props.paddingLeft   || props.padding || 'medium'
+  const paddingRight  = props.paddingRight  || props.padding || 'medium'
 
   const className = classnames({
     [s['box']]:    true,
