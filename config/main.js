@@ -10,8 +10,8 @@ const config = {
   // This part goes to React-Helmet for Head of our HTML
   app: {
     head: {
-      title:         'clarity',
-      titleTemplate: 'clarity: %s',
+      title:         'aldine',
+      titleTemplate: 'aldine: %s',
       meta: [
         { charset: 'utf-8' },
         { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },

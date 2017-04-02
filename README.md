@@ -1,10 +1,10 @@
-# Clarity #
+# Aldine #
 
 ## Installation ##
 
 ```bash
-$ git clone https://github.com/devonzuegel/clarity
-$ cd clarity
+$ git clone https://github.com/devonzuegel/aldine
+$ cd aldine
 $ yarn install
 ```
 
@@ -39,10 +39,10 @@ $ grunt watch # Continuously runs tests every time a file is saved
 ### CSS ###
 - `stylelint **/*.css` lists all violations of formatting rules
 - `stylefmt -r **/*.css -c .stylelintrc` fixes some violations
-- `.stylelintrc` defines Clarity's CSS formatting rules
+- `.stylelintrc` defines Aldine's CSS formatting rules
 
 ### Typescript ###
 
 - `tslint --fix src/**/*.ts?` fixes Typescript errors
-- `tslint.json` defines Clarity's Typescript formatting rules
+- `tslint.json` defines Aldine's Typescript formatting rules
 - Configuration for the Typescript compiler and ATL (Awesome Typescript Loader) is defined in `tsconfig.json`. These are enforced any time the project is compiled (e.g. `npm start`, `npm test`),
