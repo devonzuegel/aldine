@@ -3,13 +3,14 @@ import * as React from 'react'
 import { Layout     } from '~/components/Layout'
 import { Codeblock  } from '~/components/Codeblock'
 import { Section    } from '~/components/Section'
+import { Alert      } from '~/components/Alert'
 import { SideNav    } from '~/components/SideNav'
-import { examples   } from '~/components/utils'
 import * as Box       from '~/components/Box'
 import * as Alignment from '~/models/Alignment'
 import * as Width     from '~/models/Width'
 import * as ScrollTo  from '~/components/ScrollTo'
 import * as T         from '~/components/Typography'
+import icons          from './icons'
 
 const MarkdownSample = require('babel-loader!essay-loader!./sample.md')
 
@@ -31,6 +32,8 @@ const headers = [ 'H1', 'H2', 'H3', 'H4', 'H5' ]
 
 const toc = [
   ScrollTo.Button('Section'),
+  ScrollTo.Button('Alert'),
+  ScrollTo.Button('Icons'),
   ScrollTo.Button('Box'),
   {
     ...ScrollTo.Button('Typography'),
@@ -48,10 +51,10 @@ const colorExample = ({ name, hex }: { name?: string, hex: string }, i: number) 
   <div key={i} style={{ display: 'inline-block' }}>
     <div
       style={{
-        width:              name ? '200px' : '80px',
-        height:             '90px',
-        'background-color': hex,
-        'margin-right':     name ? '20px' : '',
+        width:           name ? '200px' : '80px',
+        height:          '90px',
+        backgroundColor: hex,
+        marginRight:     name ? '20px' : '',
       }}
     />
     {name && <T.H4>{name} <T.Span uppercase faded>{hex}</T.Span></T.H4>}
@@ -94,19 +97,50 @@ const Guides = [
       </Box.Box>
     )
   }, {
-    title: 'Section',
+    title: 'Alert',
     body: (
-      examples(({ attitude, emphasis }: { attitude: string, emphasis: string }) => (
+      ['positive', 'neutral', 'negative'].map((attitude: string) => (
         <div>
           <Label>
-            {attitude}, {emphasis}
+            {attitude}
           </Label>
 
-          <Section {...{ attitude, emphasis }}>
+          <Alert {...{ attitude }}>
+            This is some text inside of an alert.
+          </Alert>
+        </div>
+      ))
+    )
+  }, {
+    title: 'Section',
+    body: (
+      ['primary', 'secondary'].map((emphasis: string) => (
+        <div>
+          <Label>
+            {emphasis}
+          </Label>
+
+          <Section {...{ emphasis }}>
             This is some text inside of a section.
           </Section>
         </div>
       ))
+    )
+   }, {
+    title: 'Icons',
+    body: (
+      <div>
+        {icons.map(([name, icon]: string[], i: number) => (
+          <Box.Box inline margin='xsmall' padding='xsmall'>
+            <img
+              key={i}
+              src={icon}
+              alt={name}
+              style={{width: '15px', height: '15px'}}
+            />
+          </Box.Box>
+        ))}
+      </div>
     )
   }, {
     title: 'Box',
