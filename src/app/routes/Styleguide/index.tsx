@@ -44,8 +44,49 @@ const toc = [
   },
 ]
 
+const colorExample = ({ name, hex }: { name?: string, hex: string }, i: number) => (
+  <div key={i} style={{ display: 'inline-block' }}>
+    <div
+      style={{
+        width:              name ? '200px' : '80px',
+        height:             '90px',
+        'background-color': hex,
+        'margin-right':     name ? '20px' : '',
+      }}
+    />
+    {name && <T.H4>{name} <T.Span uppercase faded>{hex}</T.Span></T.H4>}
+  </div>
+)
+
 const Guides = [
   {
+    title: 'Colors (experimental)',
+    body: (
+      <Box.Box width='full'>
+        <T.H3>Primary</T.H3>
+        {[
+          { hex: '#BFD8D2', name: 'Powder'       },
+          { hex: '#4484CE', name: 'Cerulean'     },
+          { hex: '#44A4FF', name: 'Dodgers blue' },
+          { hex: '#0B3C5D', name: 'Prussian Blue'},
+          { hex: '#1A2930', name: 'Denim'        },
+          { hex: '#0A1612', name: 'Steel'        },
+          { hex: '#FFCE00', name: 'Sunflowers'   },
+          { hex: '#EAC67A', name: 'Warm Yellow'  },
+          { hex: '#F7CE3E', name: 'Marigold'     },
+          { hex: '#E9B000', name: 'Mustard'      },
+        ].map(colorExample)}
+        <T.H3>Greys</T.H3>
+        {[
+          { hex: '#777777' },
+          { hex: '#999999' },
+          { hex: '#CCCCCC' },
+          { hex: '#DDDDDD' },
+          { hex: '#F8F8F8' },
+        ].map(colorExample)}
+      </Box.Box>
+    )
+  }, {
     title: 'Section',
     body: (
       examples(({ attitude, emphasis }: { attitude: string, emphasis: string }) => (
