@@ -60,22 +60,23 @@ const colorExample = ({ name, hex }: { name?: string, hex: string }, i: number) 
 
 const Guides = [
   {
-    title: 'Colors (experimental)',
+    title: 'Colors',
     body: (
       <Box.Box width='full'>
         <T.H3>Primary</T.H3>
         {[
-          { hex: '#BFD8D2', name: 'Powder'       },
-          { hex: '#4484CE', name: 'Cerulean'     },
+          { hex: '#F7CE3E', name: 'Marigold'     },
           { hex: '#44A4FF', name: 'Dodgers blue' },
           { hex: '#0B3C5D', name: 'Prussian Blue'},
-          { hex: '#1A2930', name: 'Denim'        },
           { hex: '#0A1612', name: 'Steel'        },
-          { hex: '#FFCE00', name: 'Sunflowers'   },
-          { hex: '#EAC67A', name: 'Warm Yellow'  },
-          { hex: '#F7CE3E', name: 'Marigold'     },
-          { hex: '#E9B000', name: 'Mustard'      },
+          // { hex: '#BFD8D2', name: 'Powder'       },
+          // { hex: '#4484CE', name: 'Cerulean'     },
+          // { hex: '#1A2930', name: 'Denim'        },
+          // { hex: '#FFCE00', name: 'Sunflowers'   },
+          // { hex: '#EAC67A', name: 'Warm Yellow'  },
+          // { hex: '#E9B000', name: 'Mustard'      },
         ].map(colorExample)}
+
         <T.H3>Greys</T.H3>
         {[
           { hex: '#777777' },
@@ -83,6 +84,12 @@ const Guides = [
           { hex: '#CCCCCC' },
           { hex: '#DDDDDD' },
           { hex: '#F8F8F8' },
+        ].map(colorExample)}
+
+        <T.H3>Utility colors</T.H3>
+        {[
+          { hex: '#FF4A22', name: 'Tomato' },
+          { hex: '#00DD61', name: 'Success green' },
         ].map(colorExample)}
       </Box.Box>
     )
