@@ -8,14 +8,14 @@ interface IProps {
 
 type Type = React.StatelessComponent<IProps>
 
-const formatted = (node: INode): any => {
+const formatted = (node: INode, i: number): any => {
   /* Typescript requires string typecheck, despite the fact that if it's a TextNode then
    * content will definitely be a string. The compiler just can't figure that out. :( */
   if (node.type === 'Text' || typeof node.content === 'string') {
-    return node.content
+    return <span key={i}>{node.content}</span>
   }
   return (
-    <span style={{ opacity: 0.5 }}>
+    <span style={{ opacity: 0.5 }} key={i}>
       ({node.content.map(formatted)})
     </span>
   )

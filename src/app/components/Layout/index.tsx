@@ -14,7 +14,7 @@ interface IProps {
 
 type TLayout = React.StatelessComponent<IProps>
 
-export const Layout: TLayout = ({ width = Width.Enum.medium, debug, children, leftSide }) => {
+export const Layout: TLayout = ({ width = 'medium', debug, children, leftSide }) => {
   const classes = classnames({
     [s.debug]: debug,
     [s[width]]: true,
