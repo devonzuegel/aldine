@@ -1,0 +1,21 @@
+@import 'styles/base.css';
+
+.alert {
+  margin: var(--small) 0;
+  padding: var(--base);
+}
+
+.alert--neutral {
+  background-color: color(var(--dodgers-blue) a(10%));
+  color: var(--prussian-blue);
+}
+
+.alert--positive {
+  background-color: color(var(--green) a(10%));
+  color: color(var(--green) blackness(30%));
+}
+
+.alert--negative {
+  background-color: var(--negative-light);
+  color: var(--negative-dark);
+}
