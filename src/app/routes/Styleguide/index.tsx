@@ -99,8 +99,8 @@ const Guides = [
   }, {
     title: 'Alert',
     body: (
-      ['positive', 'neutral', 'negative'].map((attitude: string) => (
-        <div>
+      ['positive', 'neutral', 'negative'].map((attitude: string, i: number) => (
+        <div key={i}>
           <Label>
             {attitude}
           </Label>
@@ -114,8 +114,8 @@ const Guides = [
   }, {
     title: 'Section',
     body: (
-      ['primary', 'secondary'].map((emphasis: string) => (
-        <div>
+      ['primary', 'secondary'].map((emphasis: string, i: number) => (
+        <div key={i}>
           <Label>
             {emphasis}
           </Label>
@@ -131,7 +131,7 @@ const Guides = [
     body: (
       <div>
         {icons.map(([name, icon]: string[], i: number) => (
-          <Box.Box inline margin='xsmall' padding='xsmall'>
+          <Box.Box inline margin='xsmall' padding='xsmall' key={i}>
             <img
               key={i}
               src={icon}
