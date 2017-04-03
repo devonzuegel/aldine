@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production npm start
+web: node build/server.js NODE_ENV=production

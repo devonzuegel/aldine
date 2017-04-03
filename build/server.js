@@ -4050,7 +4050,6 @@ const path = __webpack_require__(20)
 
 const config = {
   env:  process.env.NODE_ENV || 'development',
-  host: process.env.HOST || 'localhost',
   port: process.env.PORT || 8889,
   karmaPort: 9876,
 
@@ -10071,7 +10070,7 @@ module.exports = {
 	"align-left.svg": "606e9b32bb91962a7ff9d6f7927a327f.svg",
 	"align-right.svg": "30777c363d04c743ff2be3eaba99908a.svg",
 	"aperture.svg": "22326398386585f3c8429c0343c7ccf0.svg",
-	"app.js": "js/app.334cf212e04ba56b541e.js",
+	"app.js": "js/app.js",
 	"arrow-bottom.svg": "17e3ecc312eef0683e272aba5292fa63.svg",
 	"arrow-circle-bottom.svg": "e853a5fa9da5dd6e52bd816e034a597c.svg",
 	"arrow-circle-left.svg": "6c5b9ae053f44058620d313e4446e231.svg",
