@@ -12,7 +12,7 @@
     "prestart": "npm run build",
     "stats": "npm run build --profile --json > stats.json",
     "start": "node build/server.js",
-    "start:prod": "cross-env NODE_ENV=production npm start:prod",
+    "start:prod": "cross-env NODE_ENV=production npm start",
     "test": "grunt test",
     "watch": "grunt watch"
   },
