@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"marto",
+				"marginTop"
+			],
+			[
+				"instut",
+				"institution\t(index.test.js)"
+			],
+			[
+				"removb",
+				"remove-instrument-btn\t(instrument.js)"
+			],
+			[
+				"const",
+				"constructor\t(index.js)"
+			],
+			[
+				"ifn",
+				"infoModal"
+			],
+			[
+				"isnt",
+				"institution"
+			],
+			[
+				"acdis",
+				"account_description\t(settings.js)"
+			],
+			[
+				"spaclar",
+				"spacing-x-large"
+			],
+			[
+				"swti",
+				"switch\t(user.coffee)"
+			],
+			[
+				"succesf",
+				"successful\t(affirm_server.coffee)"
+			],
+			[
+				"render",
+				"render()\tReactDOM"
+			],
+			[
+				"find_element_by_c",
+				"find_element_by_class_name"
+			],
+			[
+				"rend",
+				"render()\tReactDOM"
+			],
+			[
+				"dispaled",
+				"displayed-stores\t(main.js)"
+			],
+			[
+				"paddingri",
+				"padding-right"
+			],
+			[
+				"userst",
+				"user_status\t(async.js)"
+			],
+			[
+				"modul",
+				"module.exports\t(repayment.coffee)"
+			],
+			[
+				"crecard",
+				"creditCard"
+			],
+			[
+				"consoe",
+				"console.log"
+			],
+			[
+				"PropTypeson",
+				"PropTypes.oneOfType"
+			],
+			[
+				"Reac",
+				"React.PropTypes.string"
+			],
+			[
+				"afrimwi",
+				"affirm__radio--with-subtext"
+			],
+			[
+				"clasna",
+				"classnames"
+			],
+			[
 				"remeel",
 				"remainingElves"
 			],
@@ -422,149 +514,29 @@
 			[
 				"GOge",
 				"GoogleCalendar\t(google_calendar.rb)"
-			],
-			[
-				"strig",
-				"stringify"
-			],
-			[
-				"tra",
-				"trait\t(users.rb)"
-			],
-			[
-				"ApiC",
-				"Api::V1::TasksController\t(tasks_controller.rb)"
-			],
-			[
-				"exp",
-				"expto\texpect { expression }.to something"
-			],
-			[
-				"fitr",
-				"filter"
-			],
-			[
-				"ots",
-				"opts"
-			],
-			[
-				"opts",
-				"options"
-			],
-			[
-				"filtereds",
-				"filtered_ids"
-			],
-			[
-				"Elast",
-				"ElasticSearchSupport\t(elastic_search_support.rb)"
-			],
-			[
-				"curlie",
-				"current_line_contents"
-			],
-			[
-				"current",
-				"current_line"
-			],
-			[
-				"def",
-				"def\tFunction"
-			],
-			[
-				"de",
-				"description\t(method-definition.sublime-snippet)"
-			],
-			[
-				"tom",
-				"tom\ttomdoc"
-			],
-			[
-				"acuo",
-				"account"
-			],
-			[
-				"cla",
-				"cla\tclass .. < ParentClass .. initialize .. end"
-			],
-			[
-				"respsoe",
-				"response"
-			],
-			[
-				"Sess",
-				"SessionsController\t(sessions_controller.rb)"
-			],
-			[
-				"tileabv",
-				"tile_above"
-			],
-			[
-				"colc",
-				"col_count"
-			],
-			[
-				"notest",
-				"note_store\t(advanced_controller.rb)"
-			],
-			[
-				"users",
-				"user_store"
-			],
-			[
-				"notestroe",
-				"note_store"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "aldine.sublime-project",
+			"settings":
+			{
+				"buffer_size": 268,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
 	[
-		[
-			[
-				[
-					"Packages/Python/Python.sublime-build",
-					""
-				],
-				[
-					"Packages/Python/Python.sublime-build",
-					"Syntax Check"
-				],
-				[
-					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
-					""
-				]
-			],
-			[
-				"Packages/Python/Python.sublime-build",
-				""
-			]
-		],
-		[
-			[
-				[
-					"Packages/Ruby/Ruby.sublime-build",
-					""
-				],
-				[
-					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
-					""
-				]
-			],
-			[
-				"Packages/Ruby/Ruby.sublime-build",
-				""
-			]
-		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 341.0,
-		"last_filter": "",
+		"height": 378.0,
+		"last_filter": "wrap",
 		"selected_items":
 		[
 			[
@@ -572,12 +544,168 @@
 				"Word Wrap: Toggle"
 			],
 			[
+				"wra",
+				"PackageDev: New Raw Snippet"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"forjosn",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"upercase",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ufnoa",
+				"Code Folding: Unfold All"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
 				"uper",
 				"Convert Case: Upper Case"
 			],
 			[
-				"format",
-				"Pretty JSON: Format and Sort JSON"
+				"upercse",
+				"Convert Case: Upper Case"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown"
+			],
+			[
+				"UPERCASE",
+				"Convert Case: Upper Case"
+			],
+			[
+				"LOWER",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lowercase",
+				"Convert Case: Lower Case"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"loawe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"unfoal",
+				"Code Folding: Unfold All"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"uperase",
+				"Convert Case: Upper Case"
+			],
+			[
+				"lowercaes",
+				"Convert Case: Lower Case"
+			],
+			[
+				"themefavo",
+				"Themr: Next favorite theme"
+			],
+			[
+				"listfavo",
+				"Themr: List favorite themes"
+			],
+			[
+				"theme",
+				"Themr: Next theme"
+			],
+			[
+				"themefavorite",
+				"Schemr: Add current scheme to favorites"
+			],
+			[
+				"favorite",
+				"Themr: Add current theme to favorites"
+			],
+			[
+				"listtheme",
+				"Themr: List themes"
+			],
+			[
+				"schmee",
+				"Schemr: List all schemes"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"ftheme",
+				"Themr: List favorite themes"
+			],
+			[
+				"theme ",
+				"Themr: List themes"
+			],
+			[
+				"favori",
+				"Themr: List favorite themes"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"listpac",
+				"Package Control: List Packages"
+			],
+			[
+				"unfoa",
+				"Code Folding: Unfold All"
+			],
+			[
+				"lowerca",
+				"Convert Case: Lower Case"
+			],
+			[
+				"smarkdw",
+				"Set Syntax: Markdown"
+			],
+			[
+				"smarkdow",
+				"Set Syntax: Markdown"
+			],
+			[
+				"warp",
+				"Emmet: Wrap With Abbreviation"
 			],
 			[
 				"listpackages",
@@ -596,10 +724,6 @@
 				"Word Wrap: Toggle"
 			],
 			[
-				"wra",
-				"PackageDev: New Raw Snippet"
-			],
-			[
 				"sql",
 				"Set Syntax: SQL"
 			],
@@ -608,24 +732,12 @@
 				"Set Syntax: JSON"
 			],
 			[
-				"upercase",
-				"Convert Case: Upper Case"
-			],
-			[
-				"sort",
-				"Sort Lines"
+				"format",
+				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
 				"sortli",
 				"Sort Lines"
-			],
-			[
-				"lower",
-				"Convert Case: Lower Case"
-			],
-			[
-				"markdown",
-				"Markdown Preview: Preview in Browser"
 			],
 			[
 				"typescriptreac",
@@ -634,10 +746,6 @@
 			[
 				"jsx",
 				"Set Syntax: JSX"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"syntmd",
@@ -756,10 +864,6 @@
 				"Set Syntax: HTML"
 			],
 			[
-				"lowercase",
-				"Convert Case: Lower Case"
-			],
-			[
 				"lwerca",
 				"Convert Case: Lower Case"
 			],
@@ -782,10 +886,6 @@
 			[
 				"syntcoffee",
 				"Set Syntax: CoffeeScript"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"fodlcom",
@@ -916,10 +1016,6 @@
 				"Convert Case: Upper Case"
 			],
 			[
-				"lowerca",
-				"Convert Case: Lower Case"
-			],
-			[
 				"synpy",
 				"Set Syntax: Python"
 			],
@@ -954,130 +1050,6 @@
 			[
 				"slim",
 				"HTML2Slim: Convert file"
-			],
-			[
-				"sass",
-				"Set Syntax: Sass"
-			],
-			[
-				"syntcofe",
-				"Set Syntax: CoffeeScript"
-			],
-			[
-				"cofee",
-				"SublimeREPL: CoffeeScript"
-			],
-			[
-				"sli",
-				"Set Syntax: Ruby Slim"
-			],
-			[
-				"packaview",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"sas",
-				"Set Syntax: Sass"
-			],
-			[
-				"packagviewr",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"fold",
-				"Fold Comments"
-			],
-			[
-				"ufn",
-				"Unfold Comments"
-			],
-			[
-				"multima",
-				"Set Syntax: MultiMarkdown"
-			],
-			[
-				"FOCOME",
-				"Fold Comments"
-			],
-			[
-				"UPER",
-				"Convert Case: Upper Case"
-			],
-			[
-				"unfoal",
-				"Code Folding: Unfold All"
-			],
-			[
-				"destpanbel",
-				"Origami: Destroy Pane Below"
-			],
-			[
-				"pacress",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"packaresviewr",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"packaresoruvie",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"viewpac",
-				"PackageResourceViewer: Extract Package"
-			],
-			[
-				"upgrad",
-				"Package Control: Upgrade Package"
-			],
-			[
-				"openrec",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
-				"panebelw",
-				"Origami: Destroy Pane Below"
-			],
-			[
-				"rubocop",
-				"RuboCop: Auto correct current file"
-			],
-			[
-				"focome",
-				"Fold Comments"
-			],
-			[
-				"rub2",
-				"Set Syntax: Ruby2"
-			],
-			[
-				"destpa",
-				"Origami: Destroy Pane on the Left"
-			],
-			[
-				"html",
-				"Whitespace: Remove Trailing Whitespace"
-			],
-			[
-				"depabe",
-				"Origami: Destroy Pane Below"
-			],
-			[
-				"form",
-				"Pretty JSON: Format (Pretty Print) JSON"
-			],
-			[
-				"destaplef",
-				"Origami: Destroy Pane on the Left"
-			],
-			[
-				"destcur",
-				"Origami: Destroy Current Pane"
-			],
-			[
-				"scheme",
-				"Schemr: List all schemes"
 			]
 		],
 		"width": 601.0
@@ -1116,274 +1088,278 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/devonzuegel/dev/aldine"
+	],
 	"file_history":
 	[
-		"/Users/devonzuegel/dev/advent-of-code/20__new_day.ts",
-		"/Users/devonzuegel/dev/advent-of-code/Guardfile",
-		"/Users/devonzuegel/dev/advent-of-code/lib/guard/typescript.rb",
-		"/Users/devonzuegel/dev/clarity/tslint.json",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/index.test.tsx",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/tagged-prose-loader.js",
-		"/Users/devonzuegel/.oh-my-zsh/custom/aliases.zsh",
-		"/Users/devonzuegel/bin/git-push-each",
-		"/Users/devonzuegel/dev/clarity/src/app/loaders/example.md",
-		"/Users/devonzuegel/dev/clarity/src/app/loaders/tagged-prose-loader.test.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/redux/store.ts",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/test.md",
-		"/Users/devonzuegel/dev/clarity/config/test/karma.conf.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/test.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/partials/tagged-prose.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/tagged-prose-loader.test.ts",
-		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-shared.js",
-		"/Users/devonzuegel/dev/clarity/package.json",
-		"/Users/devonzuegel/dev/clarity/src/app/helpers/TestHelper.tsx",
-		"/Users/devonzuegel/dev/clarity/config/webpack/server.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-server.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/prod.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-dev.js",
-		"/Users/devonzuegel/.zshrc",
-		"/Users/devonzuegel/dev/clarity/config/webpack/dev.js",
-		"/Users/devonzuegel/dev/clarity/circle.yml",
-		"/Users/devonzuegel/dev/clarity/config/webpack/partials/loaders-prod.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/shared.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/prod.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/dev.js",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/App/index.test.tsx",
-		"/Users/devonzuegel/dev/clarity/typings.json",
-		"/Users/devonzuegel/dev/clarity/.gitignore",
-		"/Users/devonzuegel/dev/clarity/LICENSE",
-		"/Users/devonzuegel/dev/clarity/Dockerfile",
-		"/Users/devonzuegel/dev/clarity/build/server.js",
-		"/Users/devonzuegel/dev/clarity/README.md",
-		"/Users/devonzuegel/dev/clarity/config/main.js",
-		"/Users/devonzuegel/dev/clarity/node_modules/tagged-prose-loader/index.js",
-		"/Users/devonzuegel/dev/clarity/clarity.sublime-project",
-		"/Users/devonzuegel/dev/clarity/tsconfig.json",
-		"/Users/devonzuegel/dev/clarity/node_modules/json-loader/index.js",
-		"/Users/devonzuegel/dev/clarity/node_modules/postcss-discard-overridden/.babelrc",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/test.json",
-		"/Users/devonzuegel/dev/clarity/node_modules/react-faqs-loader/index.js",
-		"/Users/devonzuegel/dev/clarity/build/public/js/app.js",
-		"/Users/devonzuegel/dev/clarity/node_modules/isomorphic-style-loader/src/withStyles.js",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/react-faqs-loader.js",
-		"/Users/devonzuegel/dev/clarity/src/server.tsx",
-		"/Users/devonzuegel/dev/clarity/node_modules_custom/react-faqs-loader/index.js",
-		"/Users/devonzuegel/dev/clarity/node_modules/json-loader/package.json",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders/test.md",
-		"/Users/devonzuegel/dev/clarity/src/app/copy/test.md",
-		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/counter/index.test.ts",
-		"/Users/devonzuegel/dev/clarity/config/webpack/loaders.js",
-		"/Users/devonzuegel/dev/clarity/node_modules/.bin/webpack",
-		"/Users/devonzuegel/dev/clarity/src/app/routes/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/components/Header/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/redux/reducers.ts",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Stars/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Stars/index.test.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/components/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/About/index.test.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/About/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/App/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Counter/index.test.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Counter/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Home/barbar.png",
-		"/Users/devonzuegel/dev/clarity/src/app/containers/Html/index.tsx",
-		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/counter/index.ts",
-		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/stars/index.test.ts",
-		"/Users/devonzuegel/dev/clarity/src/app/redux/modules/stars/index.ts",
-		"/Users/devonzuegel/dev/clarity/src/favicon.ico",
-		"/Users/devonzuegel/dev/cosmocat/src/app/routes/index.tsx",
-		"/Users/devonzuegel/dev/cosmocat/README.md",
-		"/Users/devonzuegel/dev/cosmocat/src/app/components/Header/index.tsx",
-		"/Users/devonzuegel/dev/cosmocat/config/main.js",
-		"/Users/devonzuegel/dev/cosmocat/config/secrets/fitbit.js",
-		"/Users/devonzuegel/dev/cosmocat/src/app/containers/App/index.tsx",
-		"/Users/devonzuegel/dev/cosmocat/.gitignore",
-		"/Users/devonzuegel/dev/cosmocat/src/app/containers/Stars/index.tsx",
-		"/Users/devonzuegel/dev/cosmocat/config/fitbit.js",
-		"/Users/devonzuegel/dev/cosmocat/config/main.ts",
-		"/Users/devonzuegel/dev/cosmocat/build/manifest.json",
-		"/Users/devonzuegel/dev/cosmocat/package.json",
-		"/Users/devonzuegel/dev/cosmocat/node_modules/dotenv/lib/main.js",
-		"/Users/devonzuegel/dev/cosmocat/config/webpack/server.js",
-		"/Users/devonzuegel/dev/cosmocat/build/server.js",
-		"/Users/devonzuegel/dev/cosmocat/node_modules/@types/mocha/index.d.ts",
-		"/Users/devonzuegel/dev/cosmocat/.env",
-		"/Users/devonzuegel/dev/cosmocat/node_modules/npm/test/fixtures/gitignore.tgz",
-		"/Users/devonzuegel/dev/advent-of-code/5__game_of_chess.ts",
-		"/Users/devonzuegel/dev/advent-of-code/utils.js",
-		"/Users/devonzuegel/dev/advent-of-code/4-2__security_thru_obscurity.ts",
-		"/Users/devonzuegel/dev/web-ux/storybook/modules/layout/component.js",
-		"/Users/devonzuegel/dev/web-ux/storybook/node_modules/ramda/src/reduceRight.js",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/weak-payment.js",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/weak-payment.coffee",
-		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/server/services/affirm_server.coffee",
-		"/Users/devonzuegel/dev/web-ux/email-verification/src/landing-directive.coffee",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/providers/user_auth.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/main.coffee",
-		"/Users/devonzuegel/dev/web-ux/storybook/src/pages/weak-payment.js",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/help-button.coffee",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/main.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock.js",
-		"/Users/devonzuegel/dev/web-ux/login/src/views/login.html",
-		"/Users/devonzuegel/dev/web-ux/user-portal/user-portal/serverMock.js",
-		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/views/login.html",
-		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/scripts/services/user.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/affirm-ng/src/scripts/server/services/affirm_server.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/email-verification/src/landing-directive.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/scripts/config/routes.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/login/src/scripts/controllers/login.coffee",
-		"/Users/devonzuegel/dev/web-ux/affirm/form/index.js",
-		"/Users/devonzuegel/dev/web-ux/login/src/scripts/directives/new-email-entry.js",
+		"/Users/devonzuegel/dev/aldine/aldine.sublime-project",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/bank-icon/index.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/directives/settings.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/mutable-text/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/instrument.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock/unity.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/bank-icon/styles.css",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/styles.css",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/mutable-text/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/styles/partials/variables.css",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/connected-accounts/index.test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/connected-accounts/account.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/button/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/button/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/connected-accounts/styles.css",
+		"/Users/devonzuegel/dev/web-ux/storybook/src/pages/settings.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-assets/src/images/icons/print.svg",
+		"/Users/devonzuegel/dev/web-ux/affirm-assets/src/images/icons/refresh.svg",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/badge/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/box/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/badge/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/connected-accounts/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/index.test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/personal-info/styles.css",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/config/routes.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/card/style.css",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/connected-accounts/remove-account-modal.js",
 		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/components/mutable_personal_info.js",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/views/stores/main.html",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/config/routes.coffee",
-		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/module.coffee",
-		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/controllers/stores.coffee",
-		"/Users/devonzuegel/dev/web-ux/affirm/mutable-text/index.js",
-		"/Users/devonzuegel/dev/web-ux/affirm/text-input/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/settings-card/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/card/index.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/main.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/styles/main.scss",
+		"/Users/devonzuegel/dev/web-ux/user-portal/test/spec/controllers/settings.coffee",
+		"/Users/devonzuegel/dev/web-ux/checkout/src/styles/main.scss",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/directives/mutable_personal_info.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/styles/pages/settings.scss",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/controllers/settings.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/views/settings.html",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/index.js",
+		"/Users/devonzuegel/dev/web-ux/styleguide/modules/card/component.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/personal-info/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/settings-card/index.test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/personal-info.js",
 		"/Users/devonzuegel/dev/web-ux/aws.json",
-		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/strip_quotes.coffee",
-		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/filters/ampersand_to_and.coffee"
+		"/Users/devonzuegel/dev/web-ux/functional_tests/.tox/consumer/lib/python2.7/site-packages/parse_type/parse_util.py",
+		"/Users/devonzuegel/dev/web-ux/styleguide/modules/typography/component.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/helpers/loans/loan.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/utils/directives/user_messages.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/settings-card/styles.css",
+		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock/users/index.js",
+		"/Users/devonzuegel/dev/web-ux/crm/server/mocks/user.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/card/style.css",
+		"/Users/devonzuegel/dev/web-ux/login/src/scripts/services/user.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/styles.css",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/remove-instrument-modal.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/featured-stores/featured-store.test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/settings-card.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/settings-card.test.js",
+		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/api/instrument.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/typography/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/styles/partials/typography.css",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/mutable-email/index.js",
+		"/Users/devonzuegel/.oh-my-zsh/custom/aliases.zsh",
+		"/Users/devonzuegel/dev/web-ux/storybook/3001k",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/index.test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/card-overview/component.test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/user-messages/index.test.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/directives/existing_card_modal.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/.babelrc",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/config.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/connected-accounts/account.spec.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/package.json",
+		"/Users/devonzuegel/dev/web-ux/grunt-build-system/karma.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/mutable-email/index.spec.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/yarn.lock",
+		"/Users/devonzuegel/dev/web-ux/api/test.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/mutable-email/index.test.jsx",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/mutable-email/index.test.js",
+		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/api/base.coffee",
+		"/Users/devonzuegel/dev/web-ux/unity-ng/src/scripts/factories/container.coffee",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/mutable-email/styles.css",
+		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock/institutions/institutions_list.js",
+		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock/institutions/index.js",
+		"/Users/devonzuegel/dev/web-ux/unity-ng/src/scripts/factories/institution.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/serverMock/instruments.js",
+		"/Users/devonzuegel/dev/web-ux/unity-ng/test/factories/institution.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/scripts/directives/featured-stores.js",
+		"/Users/devonzuegel/dev/web-ux/shared/src/utils/index.js",
+		"/Users/devonzuegel/dev/web-ux/merchantportal/src/views/settings.html",
+		"/Users/devonzuegel/dev/web-ux/styleguide/modules/lists/component.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/table/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/immutable-text/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/table/style.css",
+		"/Users/devonzuegel/dev/web-ux/styleguide/modules/buttons/component.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-assets/src/images/icons/filled-bolt.svg",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/images/icons/filled-bolt.svg",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/icon/style.css",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/images/icons/help-filled.svg",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/images/icons/bolt-filled.svg",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/icon/index.js",
+		"/Users/devonzuegel/dev/web-ux/shared/test/utils/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/bank-icon.js",
+		"/Users/devonzuegel/dev/web-ux/checkout/serverMock.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/styles/_util.scss",
+		"/Users/devonzuegel/dev/web-ux/affirm-assets/src/images/icons/discover-logo.svg",
+		"/Users/devonzuegel/dev/web-ux/web-ux.sublime-project",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/delete-instrument-modal.js",
+		"/Users/devonzuegel/dev/web-ux/crm/src/components/modal/remove-instrument.js",
+		"/Users/devonzuegel/dev/web-ux/shared/src/components/Icon.js",
+		"/Users/devonzuegel/dev/web-ux/functional_tests/.tox/consumer/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods/styles.scss",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-methods.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/instrument.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/delete-instrument-modal.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/box/style.css",
+		"/Users/devonzuegel/dev/web-ux/shared/src/scripts/api/disclosure.coffee",
+		"/Users/devonzuegel/dev/web-ux/user-portal/src/views/loans/detail.html",
+		"/Users/devonzuegel/dev/web-ux/styleguide/modules/tables/component.js",
+		"/Users/devonzuegel/dev/web-ux/affirmv1/typography/style.css",
+		"/Users/devonzuegel/dev/web-ux/shared/src/components/ButtonGroup/index.scss",
+		"/Users/devonzuegel/dev/web-ux/styleguide/modules/tables/container.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/featured-stores/index.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/delete-method-modal.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/featured-stores/featured-store-modal.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings/payment-method-modal.js",
+		"/Users/devonzuegel/dev/web-ux/affirm-ng/src/scripts/api/module.coffee",
+		"/Users/devonzuegel/dev/web-ux/shared/src/utils/validations/payment-instruments.js"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
 		"height": 135.0,
 		"where_history":
 		[
-			"/Users/devonzuegel/dev/advent-of-code,-**node_modules/**,-**dist/**,-**build/**,-**coverage/**",
-			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**,-**build/**,-**coverage/**",
-			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**,-**build/**",
-			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/config,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/node_modules/,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/node_modules/,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/clarity/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/prose-highlighter,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/cosmocat,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/cosmocat/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/cosmocat/,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/cosmocat/src,-**node_modules/**,-**dist/**",
-			"-**node_modules/**,-**dist/**",
-			"",
-			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/**/src/*,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/*/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/**/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/login,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal/,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**,*.coffee,*.js",
-			"/Users/devonzuegel/dev/web-ux,-**node_modules/**,-**dist/**,*.coffee,*.js",
-			"/Users/devonzuegel/dev/web-ux/,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/login/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**,-**dist/**",
-			"/Users/devonzuegel/dev/web-ux/user-portal,-**node_modules/**",
-			"",
-			"/Users/devonzuegel/dev/web-ux,-**node_modules/**",
-			"/Users/devonzuegel/dev/web-ux/storybook,-**node_modules/**",
-			"/Users/devonzuegel/dev/web-ux/skeleton,-**node_modules/**",
-			"/Users/devonzuegel/dev/web-ux/storybook,-**node_modules/**",
-			"/Users/devonzuegel/dev/web-ux/storybook",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src",
+			"/Users/devonzuegel/dev/web-ux/user-portal/serverMock",
 			"/Users/devonzuegel/dev/web-ux/user-portal",
-			"",
-			"/Users/devonzuegel/dev/web-ux",
-			"/Users/devonzuegel/dev/web-ux/affirm",
-			"/Users/devonzuegel/dev/web-ux/styleguide",
-			"/Users/devonzuegel/dev/web-ux/stylegiude",
-			"/Users/devonzuegel/dev/web-ux/checkout",
-			"",
-			"/Users/devonzuegel/dev/web-ux/affirm",
-			"/Users/devonzuegel/dev/web-ux/storybook/modules/",
-			"/Users/devonzuegel/dev/web-ux/storybook/modules/weak-payment/formItems.js",
-			"modules/",
-			"",
-			"*.tsx",
-			"*.ts",
-			"",
-			"./src",
-			"src",
-			"",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *spec*.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *_spec.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api, *.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api,*spec*.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api,*test*.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api,*.rb",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api/spec",
-			"*.rb",
-			".rb",
-			"api/*.rb",
-			"*.rb",
-			"",
-			"*_spec.rb",
-			"*.rb",
-			"",
-			"/Users/devonzuegel/Github/myfitnesspal/mfp-api/spec/lib",
-			"<open folders>,*_spec.rb",
-			"<open folders>",
-			"<open folders>,*.rb",
-			"<open folders>",
-			"<open folders>,*.rb",
-			"<open folders>",
-			"<open folders>,*.rb",
-			"/Users/devonzuegel/Downloads/cognito-bulk-client",
-			"<open folders>,*.rb",
-			"<open folders>",
-			"<open files>",
-			"<open folders>",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.scss,*.sass",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.slim",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.scss,*.sass",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.slim",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.rb",
-			"rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.scss, *.sass",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.scss, *.sass",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2,*.rb",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, *.so",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2, .so",
-			"/Users/devonzuegel/Github/tagfinder/isostamp-web-v2",
-			"/Users/devonzuegel/Github/nosko/, *.rb",
-			"/Users/devonzuegel/Github/nosko/",
-			"/Users/devonzuegel/Github/nosko/app/",
-			"/Users/devonzuegel/Github/nosko/app/assets",
-			"/Users/devonzuegel/Github/nosko/app/assets/javascripts",
-			"/Users/devonzuegel/Github/nosko/app/assets",
-			"/Users/devonzuegel/Github/nosko"
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src",
+			"/Users/devonzuegel/dev/web-ux/user-portal",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src/settings",
+			"/Users/devonzuegel/dev/web-ux/build-system,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/build-system/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/serverMock,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/serverMcok,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/unity-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/checkout/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirmv1,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirmv1/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/affirmv1/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/affirmv1/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirmv1,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirmv1/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirmv1/src,-**/node_modules/*,*.css",
+			"/Users/devonzuegel/dev/web-ux/affirmv1/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/storybook/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/storybook/src,-**/node_modules/*,*.css",
+			"/Users/devonzuegel/dev/web-ux/storybook/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/crm/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/crm/src,-**/node_modules/*,*.css,*.scss",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.css,*.scss",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/,-**/node_modules/*,*.scss",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.scss",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/checkout/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/afirm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/afirrm-ng,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/afirrm-ng/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/functional_tests,-**/.tox/*",
+			"/Users/devonzuegel/dev/web-ux/functional_tests/affirm/functional_tests/behave/steps",
+			"/Users/devonzuegel/dev/web-ux/functional_tests,-**/.tox/*",
+			"/Users/devonzuegel/dev/web-ux/functional_tests",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/build-system/webpack",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/storybook/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/checkout/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js,*.coffeejpg",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js,*.coffee",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*.js",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*,*js",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/build-system",
+			"/Users/devonzuegel/dev/web-ux/build-system/webpack",
+			"/Users/devonzuegel/dev/web-ux/checkout/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/build-system/,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/build-system/webpack,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/checkout/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/build-system/,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/build-system/",
+			"/Users/devonzuegel/dev/web-ux/build-system/webpack",
+			"/Users/devonzuegel/dev/web-ux/checkout/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/checkou/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-assets",
+			"/Users/devonzuegel/dev/web-ux/build-system/webpack",
+			"/Users/devonzuegel/dev/web-ux/build-system/tasks",
+			"/Users/devonzuegel/dev/web-ux/build-system",
+			"/Users/devonzuegel/dev/web-ux/build-system/tasks",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/*.*,-**/node_modules/*",
+			"/Users/devonzuegel/dev/clarity,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/affirm-stories,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/login/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/user-portal/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/shared/src,-**/node_modules/*",
+			"/Users/devonzuegel/dev/web-ux/,-**/node_modules/*,*.scss"
 		]
 	},
 	"find_state":
@@ -1391,134 +1367,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"}:",
-			" :",
-			"tsc",
-			"chalk",
-			"Chalk",
-			"ts",
-			"src",
-			"ramda",
-			"module",
-			"tsc config/webpack/loaders/**/*.ts",
-			"tsc config/webpack/loaders/**/*.ts ",
-			"tsc config/webpack/loaders/**/*.ts",
-			"prestart",
-			"tagged-prose-loader",
-			"\"",
-			"gp",
-			"-f",
-			"gp",
-			"'",
-			"\"",
-			" \"",
-			"’",
-			"```",
-			"’",
-			",",
-			".d",
-			"’",
-			"\"",
-			"answerText",
-			"questionText",
-			"it('",
-			"lint",
-			"type",
-			"types",
-			"loader",
-			";",
-			"merge",
-			"prod",
-			"tsx",
-			"iso",
-			"require('./partials/tagged-prose')(config)",
-			"config",
-			"require('./shared')",
-			"var ",
-			"var",
-			"dev",
-			"merge",
-			"config",
-			"path",
-			"'use strict'\n\n",
-			"'use strict'",
-			"use strict",
-			"'use strict'",
-			"test",
-			"types",
-			"npm",
-			"ramda",
-			"Has a p element that says Hello",
-			"barbar",
-			"clarity",
-			"clarity",
-			"vortig",
-			"clarity",
-			"barbar-clarity",
-			"clarity",
-			"redux-mo",
-			"configureStore",
-			"webpackConfig",
-			"gp",
-			"<<<",
-			"md.default",
-			"root",
-			"config",
-			"require('./partials/tagged-prose')",
-			"root",
-			"271",
-			"merge",
-			"rge(\n  config,",
-			"client",
-			"prose",
-			"      },\n      {",
-			"css",
-			"babel",
-			"tagged",
-			"json",
-			"ts",
-			"h3",
-			"replace",
-			"ts",
+			"div",
+			"styles",
+			"Box",
+			"events.",
+			".settings_page",
+			"events.",
+			"events.settings_page",
+			"InstitutionIcon",
+			"Icon",
+			"bank-icon",
+			"ent-methods/styles.css",
+			"BankIcon",
+			"RefreshIcon",
+			"MultiplyIcon",
+			"H3",
+			"<P",
+			"small",
+			"Small",
+			"H5",
+			"`",
+			"institution",
+			"reconnect",
+			"reconn",
+			"reconnect",
+			"edit",
+			"Box",
+			"connect-",
+			"--text",
 			"!",
-			"h3",
-			"h2",
-			"h3",
-			"es2016",
-			"toReact",
-			"ark",
-			"babel",
-			"preset",
-			"babel-pre",
-			"babel-",
-			"marked",
-			"tagged",
-			"react-faqs",
-			"tagged-prose",
-			"react-faqs",
+			"RefreshIcon",
+			"TextButton",
+			"icon",
+			"negative",
+			"Box",
+			"from",
+			"} from",
+			"       }",
+			"} from",
+			"inline",
+			"H5",
+			"Span",
+			", ",
+			"H5",
+			"H3",
+			"from",
+			"reconnect_institution",
+			"Unity",
 			"\"",
-			" ",
-			"md",
-			"sdfa",
-			"withStyles",
-			"export",
-			"loader",
-			"export default",
-			"path",
-			"path.join",
-			"react-faqs",
-			"marked",
-			"module:",
-			"tagged-prose",
-			"p",
-			"tagged-prose",
-			"json",
-			"p",
-			"b",
-			"a",
-			"resolve",
-			"txt",
-			"root"
+			"events",
+			"reconnect",
+			"map",
+			"acconts",
+			"from",
+			"accounts(",
+			"reconnectSpy",
+			"= sin",
+			"= sino",
+			"Spy     = sinon.spy",
+			"PaymentMethods",
+			"credit",
+			"reconnect",
+			"s {...{",
+			"unt(<Connected",
+			", accounts",
+			"counts {...{tr",
+			"reconnect",
+			"reconnect_institution",
+			"default",
+			"containers",
+			"delete_instrument",
+			"events",
+			"delete",
+			"delete_instrument",
+			"remove",
+			"=",
+			"Modal",
+			"remove-instrument",
+			"remove-inst",
+			"remove-",
+			"h4",
+			"instruments",
+			"PaymentMethods",
+			"styles",
+			"from",
+			"settings",
+			"Settings",
+			"settings",
+			"Settings",
+			"SettingsCtrl",
+			"settings",
+			"setting",
+			"/index",
+			"settings-card",
+			"styles",
+			"personal-info",
+			"account_last4",
+			"-4",
+			"Box",
+			"change_email",
+			"scope.user",
+			"scope.",
+			"email:",
+			"Guide",
+			"phone",
+			"phone_n",
+			" =",
+			"VerifiedBadge",
+			"User",
+			"user",
+			"notice",
+			"user-mess",
+			" [ ]",
+			"tal/src/scripts/helpers/loans/lo",
+			"user",
+			"phone_number",
+			"instruments",
+			"styles",
+			"from",
+			"etting",
+			"Settings",
+			"settings-c",
+			"PaymentMethods",
+			"st com",
+			"closeModa",
+			"cancel",
+			"events",
+			"track",
+			"Promise"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1526,12 +1502,16 @@
 		"regex": false,
 		"replace_history":
 		[
-			"require('./partials/tagged-prose')",
-			"require('./loaders-shared')",
-			"",
-			"clarity",
-			"es2015",
-			"tagged-prose",
+			"/",
+			"remove-btn",
+			"remove-button",
+			"RemoveBtn",
+			"remove",
+			"affirmv1/",
+			"owner_mismatch",
+			"checkUserStatus",
+			"creditCard",
+			"cardNumber",
 			" ",
 			"affirm__radio--hide-errors",
 			"affirm__radio__subtext",
@@ -1575,14 +1555,150 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "aldine.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 9,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										163,
+										164
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										75,
+										76
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_enabled": true,
+							"rulers":
+							[
+								100,
+								22.9,
+								23.2
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -1611,35 +1727,19 @@
 		]
 	},
 	"menu_visible": true,
-	"output.coffeecompile_output":
-	{
-		"height": 158.0
-	},
 	"output.doc":
 	{
 		"height": 0.0
-	},
-	"output.exec":
-	{
-		"height": 394.0
 	},
 	"output.find_results":
 	{
 		"height": 110.0
 	},
-	"output.markdown":
-	{
-		"height": 110.0
-	},
-	"output.mde":
-	{
-		"height": 116.0
-	},
 	"pinned_build_system": "",
-	"project": "clarity.sublime-project",
+	"project": "aldine.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1649,516 +1749,516 @@
 		"selected_items":
 		[
 			[
-				"typescr",
-				"lib/guard/typescript.rb"
+				"paymthds",
+				"affirm-stories/src/settings/payment-methods/styles.css"
 			],
 			[
-				"guard",
-				"Guardfile"
+				"variab",
+				"affirmv1/styles/partials/variables.css"
 			],
 			[
-				"server",
-				"config/webpack/server.js"
+				"gs/bank-icon/styles.css",
+				"affirm-stories/src/settings/bank-icon/styles.css"
 			],
 			[
-				"pac",
-				"package.json"
+				"diresetings",
+				"user-portal/src/scripts/directives/settings.js"
 			],
 			[
-				"testmd",
-				"src/app/containers/Home/test.md"
+				"sermockunity",
+				"user-portal/serverMock/unity.js"
 			],
 			[
-				"homeind",
-				"src/app/containers/Home/index.tsx"
+				"var",
+				"affirmv1/styles/partials/variables.css"
 			],
 			[
-				"examp",
-				"src/app/loaders/example.md"
+				"mutatextcss",
+				"affirmv1/mutable-text/style.css"
 			],
 			[
-				"testconf",
-				"config/test/karma.conf.js"
+				"storyboksetings",
+				"storybook/src/pages/settings.js"
 			],
 			[
-				"test",
-				"config/webpack/test.js"
+				"button",
+				"affirmv1/button/index.js"
 			],
 			[
-				"tlint",
-				"tslint.json"
+				"v1badge",
+				"affirmv1/badge/index.js"
 			],
 			[
-				"loaderde",
-				"config/webpack/partials/loaders-dev.js"
+				"v1box",
+				"affirmv1/box/index.js"
 			],
 			[
-				"share",
-				"config/webpack/partials/loaders-shared.js"
+				"direcsetings",
+				"user-portal/src/scripts/directives/settings.js"
 			],
 			[
-				"packa",
-				"package.json"
+				"instrument",
+				"affirm-stories/src/settings/payment-methods/instrument.js"
 			],
 			[
-				"helpers/testhelper",
-				"src/app/helpers/TestHelper.tsx"
+				"storyboksetngs",
+				"storybook/src/pages/settings.js"
 			],
 			[
-				"helpt",
-				"src/app/helpers/TestHelper.tsx"
+				"servmockuity",
+				"user-portal/serverMock/unity.js"
 			],
 			[
-				"homtest",
-				"src/app/containers/Home/index.test.tsx"
-			],
-			[
-				"tagprose",
-				"config/webpack/loaders/tagged-prose-loader.js"
-			],
-			[
-				"loaddev",
-				"config/webpack/partials/loaders-dev.js"
-			],
-			[
-				"webpord",
-				"config/webpack/prod.js"
-			],
-			[
-				"loaderprod",
-				"config/webpack/loaders/prod.js"
-			],
-			[
-				"dev",
-				"config/webpack/dev.js"
-			],
-			[
-				"shared",
-				"config/webpack/loaders/shared.js"
-			],
-			[
-				"karma",
-				"config/test/karma.conf.js"
-			],
-			[
-				"packag",
-				"package.json"
-			],
-			[
-				"circl",
-				"circle.yml"
-			],
-			[
-				"package",
-				"package.json"
-			],
-			[
-				".git",
-				".gitignore"
-			],
-			[
-				".test.",
-				"src/app/containers/App/index.test.tsx"
-			],
-			[
-				"packaj",
-				"package.json"
-			],
-			[
-				"tsc",
-				"tsconfig.json"
-			],
-			[
-				"loadtagpro",
-				"config/webpack/loaders/tagged-prose-loader.js"
-			],
-			[
-				"prod",
-				"config/webpack/prod.js"
-			],
-			[
-				"jsonloader",
-				"node_modules/json-loader/index.js"
-			],
-			[
-				"webpacprod",
-				"config/webpack/prod.js"
-			],
-			[
-				"webpcdev",
-				"config/webpack/loaders/dev.js"
-			],
-			[
-				"hared",
-				"config/webpack/loaders/shared.js"
-			],
-			[
-				"babelrc",
-				"node_modules/postcss-discard-overridden/.babelrc"
-			],
-			[
-				"tagged-prose",
-				"node_modules/tagged-prose-loader/index.js"
-			],
-			[
-				"",
-				"config/webpack/partials/faqs.js"
-			],
-			[
-				"jsonloaderin",
-				"node_modules/json-loader/index.js"
-			],
-			[
-				"faqsloa",
-				"config/webpack/loaders/react-faqs-loader.js"
-			],
-			[
-				"faqload",
-				"node_modules/react-faqs-loader/index.js"
-			],
-			[
-				"loadreact",
-				"config/webpack/loaders/react-faqs-loader.js"
-			],
-			[
-				"loadshared",
-				"config/webpack/loaders/shared.js"
-			],
-			[
-				"tagged",
-				"config/webpack/loaders/tagged-prose-loader.js"
-			],
-			[
-				"readme",
-				"README.md"
-			],
-			[
-				"sublimpoj",
-				"clarity.sublime-project"
-			],
-			[
-				"webpack",
-				"node_modules/.bin/webpack"
-			],
-			[
-				"routesindext",
-				"src/app/routes/index.tsx"
-			],
-			[
-				"tslint",
-				"tslint.json"
-			],
-			[
-				"compoheader",
-				"src/app/components/Header/index.tsx"
-			],
-			[
-				"componentheader",
-				"src/app/components/Header/index.tsx"
-			],
-			[
-				"approutes",
-				"src/app/routes/index.tsx"
-			],
-			[
-				"src/app/containers/stars/index.tsx",
-				"src/app/containers/Stars/index.tsx"
-			],
-			[
-				".env",
-				".env"
-			],
-			[
-				"dotenvlib",
-				"node_modules/dotenv/lib/main.js"
-			],
-			[
-				"main",
-				"config/main.js"
-			],
-			[
-				".gi",
-				".gitignore"
-			],
-			[
-				"gitig",
-				"node_modules/npm/test/fixtures/gitignore.tgz"
-			],
-			[
-				"utilsts",
-				"utils.ts"
-			],
-			[
-				"utils",
-				"utils.js"
-			],
-			[
-				"layoutcont",
-				"modules/layout/component.js"
-			],
-			[
-				"weakpaymet",
-				"src/pages/weak-payment.js"
-			],
-			[
-				"modules/weak-payment/container",
-				"modules/weak-payment/container.js"
-			],
-			[
-				"weakpaycomp",
-				"modules/weak-payment/component.js"
-			],
-			[
-				"weakpayment",
-				"src/pages/weak-payment.js"
-			],
-			[
-				"src/reducer",
-				"node_modules/ramda/src/reduceRight.js"
-			],
-			[
-				"modulesweapaymentcompon",
-				"storybook/modules/weak-payment/component.js"
-			],
-			[
-				"storybook/modules/weak-payment",
-				"storybook/modules/weak-payment/component.js"
-			],
-			[
-				"ogin/src/scripts/services/user.coffee",
-				"login/src/scripts/services/user.coffee"
-			],
-			[
-				"servemock",
-				"user-portal/serverMock.js"
-			],
-			[
-				"storybookweak",
-				"storybook/src/pages/weak-payment.js"
-			],
-			[
-				"loginmain",
-				"login/src/scripts/main.coffee"
-			],
-			[
-				"usermaincof",
-				"user-portal/src/scripts/main.coffee"
-			],
-			[
-				"loginmaincofe",
-				"login/src/scripts/main.coffee"
-			],
-			[
-				"userportalroutes",
-				"user-portal/src/scripts/config/routes.coffee"
-			],
-			[
-				"mutapersonal",
+				"mutaperson",
 				"user-portal/src/scripts/components/mutable_personal_info.js"
 			],
 			[
-				"affirm/form",
-				"affirm/form/index.js"
+				"cardstylecs",
+				"affirmv1/card/style.css"
 			],
 			[
-				"newemail",
-				"login/src/scripts/directives/new-email-entry.js"
+				"storyboksettings",
+				"storybook/src/pages/settings.js"
 			],
 			[
-				"userportmock",
-				"user-portal/serverMock.js"
+				"userportalsettings",
+				"user-portal/test/spec/controllers/settings.coffee"
 			],
 			[
-				"textinput",
-				"affirm/text-input/index.js"
+				"useles/main.",
+				"user-portal/src/styles/main.scss"
 			],
 			[
-				"mutatext",
-				"affirm/mutable-text/index.js"
-			],
-			[
-				"mutalpersonal",
-				"user-portal/src/scripts/components/mutable_personal_info.js"
-			],
-			[
-				"user-portal/src/scripts/main.coffee",
-				"user-portal/src/scripts/main.coffee"
-			],
-			[
-				"contrstores",
-				"user-portal/src/scripts/controllers/stores.coffee"
-			],
-			[
-				"storesmain",
-				"user-portal/src/views/stores/main.html"
-			],
-			[
-				"affirm-ng/src/scripts/utils/filters/strip_quotes",
-				"affirm-ng/src/scripts/utils/filters/strip_quotes.coffee"
-			],
-			[
-				"ser-portal/src/scripts/components/mutable_personal_info",
-				"user-portal/src/scripts/components/mutable_personal_info.js"
-			],
-			[
-				"mutale",
-				"user-portal/src/scripts/components/mutable_personal_info.js"
-			],
-			[
-				"mutable",
-				"user-portal/src/styles/components/mutable_email.css"
-			],
-			[
-				"userportalpackage",
-				"user-portal/package.json"
-			],
-			[
-				"userportaluser",
-				"user-portal/src/scripts/config/user.coffee"
-			],
-			[
-				"directnewemail",
-				"login/src/scripts/directives/new-email-entry.js"
-			],
-			[
-				"servermock",
-				"user-portal/serverMock.js"
-			],
-			[
-				"controlerror",
-				"checkout/src/scripts/controllers/error.coffee"
-			],
-			[
-				"controlerstores",
-				"user-portal/src/scripts/controllers/stores.coffee"
-			],
-			[
-				"storybokrouter",
-				"storybook/src/router.js"
-			],
-			[
-				"storybooksrcsetup",
-				"storybook/src/setup.js"
-			],
-			[
-				"directunif",
-				"shared/src/scripts/directives/unified_help.js"
-			],
-			[
-				"storybook/src/setup",
-				"storybook/src/setup.js"
-			],
-			[
-				"userportalroute",
-				"user-portal/src/scripts/config/routes.coffee"
-			],
-			[
-				"scripts/services/server",
-				"checkout/src/scripts/services/server.coffee"
-			],
-			[
-				"loginconstants",
-				"login/src/scripts/config/constants.coffee"
-			],
-			[
-				"scripts/config/constants",
-				"checkout/src/scripts/config/constants.coffee"
-			],
-			[
-				"/scripts/components/mutable_personal_info",
-				"user-portal/src/scripts/components/mutable_personal_info.js"
-			],
-			[
-				"userportalserve",
-				"user-portal/serverMock.js"
-			],
-			[
-				"functional_tests/affirm/functional_tests/behave/pages/pages.py",
-				"functional_tests/affirm/functional_tests/behave/pages/pages.py"
-			],
-			[
-				"checkout/src/styles/main.scss",
+				"les/main.",
 				"checkout/src/styles/main.scss"
 			],
 			[
-				"shared/src/scripts/analytics/defs.js",
-				"shared/src/scripts/analytics/defs.js"
+				"settingcss",
+				"user-portal/src/styles/pages/settings.scss"
 			],
 			[
-				"weakpacomp",
-				"storybook/modules/weak-payment/component.js"
+				"userportroutes",
+				"user-portal/src/scripts/config/routes.js"
 			],
 			[
-				"affirm/section",
-				"affirm/section/index.js"
+				"userportamain",
+				"user-portal/src/scripts/main.js"
 			],
 			[
-				"styleguidetypograph",
-				"styleguide/src/typography/index.js"
+				"consetings",
+				"user-portal/src/scripts/controllers/settings.coffee"
 			],
 			[
-				"buttonsindexj",
-				"styleguide/src/buttons/index.js"
+				"settingshtml",
+				"user-portal/src/views/settings.html"
 			],
 			[
-				"payment/component.js",
-				"storybook/modules/weak-payment/component.js"
+				"awsj",
+				"aws.json"
 			],
 			[
-				"weakpaycomponet",
-				"storybook/modules/weak-payment/component.js"
+				"storysetings",
+				"storybook/src/pages/settings.js"
 			],
 			[
-				"weakpay",
-				"storybook/modules/weak-payment/component.js"
+				"contrsetings",
+				"user-portal/src/scripts/controllers/settings.coffee"
 			],
 			[
-				"foritem",
-				"storybook/modules/weak-payment/formItems.js"
+				"userportalsetingsjs",
+				"user-portal/src/scripts/directives/settings.js"
 			],
 			[
-				"formite",
-				"storybook/modules/weak-payment/formItems.js"
+				"contorlsetings",
+				"user-portal/src/scripts/controllers/settings.coffee"
 			],
 			[
-				"radio",
-				"affirm/radio/style.css"
+				"direcpersonai",
+				"user-portal/src/scripts/directives/mutable_personal_info.js"
 			],
 			[
-				"typogrcss",
-				"affirm/typography/style.css"
+				"mutep",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
 			],
 			[
-				"typograindex",
-				"affirm/typography/index.js"
+				"sersvmockuser",
+				"user-portal/serverMock/users/index.js"
 			],
 			[
-				"affirmcontrolindex",
-				"affirm/control/index.js"
+				"servmockuser",
+				"crm/server/mocks/user.js"
 			],
 			[
-				"affirm/radio/index.js",
-				"affirm/radio/index.js"
+				"bankiconcss",
+				"affirm-stories/src/settings/bank-icon/styles.css"
 			],
 			[
-				"storybookreadme",
-				"storybook/README.md"
+				"setcardcss",
+				"affirm-stories/src/settings/card/style.css"
 			],
 			[
-				"storybokreadme",
-				"storybook/README.md"
+				"coneacountsind",
+				"affirm-stories/src/settings/connected-accounts/index.js"
 			],
 			[
-				"controllers/stores",
-				"user-portal/src/scripts/controllers/stores.coffee"
+				"direuserme",
+				"affirm-ng/src/scripts/utils/directives/user_messages.coffee"
 			],
 			[
-				"guidecss",
-				"styleguide/src/guide/style.css"
+				"direuesrmes",
+				"affirm-ng/src/scripts/utils/directives/user_messages.coffee"
 			],
 			[
-				"styleguide/src/typography/index.js",
-				"styleguide/src/typography/index.js"
+				"mutaperso",
+				"user-portal/src/scripts/directives/mutable_personal_info.js"
+			],
+			[
+				"serviceseur",
+				"login/src/scripts/services/user.coffee"
+			],
+			[
+				"directmutb",
+				"user-portal/src/scripts/directives/mutable_personal_info.js"
+			],
+			[
+				"helpers/loans/loan",
+				"user-portal/src/scripts/helpers/loans/loan.coffee"
+			],
+			[
+				"route",
+				"user-portal/src/scripts/config/routes.js"
+			],
+			[
+				"directstens",
+				"user-portal/src/scripts/directives/settings.js"
+			],
+			[
+				".testjs",
+				"affirm-stories/src/featured-stores/featured-store.test.js"
+			],
+			[
+				"afv1typind",
+				"affirmv1/typography/index.js"
+			],
+			[
+				"afv1typog",
+				"affirmv1/styles/partials/typography.css"
+			],
+			[
+				"setcard",
+				"affirm-stories/src/settings/settings-card.js"
+			],
+			[
+				"-accounts/index.test.js",
+				"affirm-stories/src/settings/connected-accounts/index.test.js"
+			],
+			[
+				".test.js",
+				"affirm-stories/src/card-overview/component.test.js"
+			],
+			[
+				"usermeagtest",
+				"affirm-stories/src/settings/user-messages/index.test.js"
+			],
+			[
+				"storboksetings",
+				"storybook/src/pages/settings.js"
+			],
+			[
+				"/src/scripts/main.js",
+				"user-portal/src/scripts/main.js"
+			],
+			[
+				"routes",
+				"user-portal/src/scripts/config/routes.js"
+			],
+			[
+				"diresettings",
+				"user-portal/src/scripts/directives/settings.js"
+			],
+			[
+				"diresetsin",
+				"user-portal/src/scripts/directives/existing_card_modal.js"
+			],
+			[
+				"controlsettings",
+				"user-portal/src/scripts/controllers/settings.coffee"
+			],
+			[
+				"buildkarma",
+				"grunt-build-system/karma.coffee"
+			],
+			[
+				"afstoriespacakge",
+				"affirm-stories/package.json"
+			],
+			[
+				"test",
+				"api/test.js"
+			],
+			[
+				"factorcontainer",
+				"unity-ng/src/scripts/factories/container.coffee"
+			],
+			[
+				"conecteaccounts",
+				"affirm-stories/src/settings/connected-accounts/index.js"
+			],
+			[
+				"faccontainer",
+				"unity-ng/src/scripts/factories/container.coffee"
+			],
+			[
+				"factocontainer",
+				"unity-ng/src/scripts/factories/container.coffee"
+			],
+			[
+				"settingshmt",
+				"user-portal/src/views/settings.html"
+			],
+			[
+				"institutions_list",
+				"user-portal/serverMock/institutions/institutions_list.js"
+			],
+			[
+				"servrmockinsitu",
+				"user-portal/serverMock/institutions/index.js"
+			],
+			[
+				"factoinsti",
+				"unity-ng/src/scripts/factories/institution.coffee"
+			],
+			[
+				"factorinstu",
+				"unity-ng/test/factories/institution.coffee"
+			],
+			[
+				"accountjs",
+				"affirm-stories/src/settings/connected-accounts/account.js"
+			],
+			[
+				"api/instrum",
+				"shared/src/scripts/api/instrument.coffee"
+			],
+			[
+				"usermockinstrum",
+				"user-portal/serverMock/instruments.js"
+			],
+			[
+				"storyinstrument",
+				"affirm-stories/src/settings/payment-methods/instrument.js"
+			],
+			[
+				"shared/utils",
+				"shared/src/utils/index.js"
+			],
+			[
+				"storpersonainf",
+				"affirm-stories/src/settings/personal-info.js"
+			],
+			[
+				"settingsindexjs",
+				"affirm-stories/src/settings/index.js"
+			],
+			[
+				"storysetng",
+				"storybook/src/pages/settings.js"
+			],
+			[
+				"mutabpers",
+				"user-portal/src/scripts/directives/mutable_personal_info.js"
+			],
+			[
+				"userpotalsetinghtml",
+				"user-portal/src/views/settings.html"
+			],
+			[
+				"setings",
+				"merchantportal/src/views/settings.html"
+			],
+			[
+				"serviceuser",
+				"login/src/scripts/services/user.coffee"
+			],
+			[
+				"userportalmain",
+				"user-portal/src/scripts/main.js"
+			],
+			[
+				"direfeatores",
+				"user-portal/src/scripts/directives/featured-stores.js"
+			],
+			[
+				"userportalroue",
+				"user-portal/src/scripts/config/routes.js"
+			],
+			[
+				"immutable",
+				"affirmv1/immutable-text/index.js"
+			],
+			[
+				"tableindex",
+				"affirmv1/table/index.js"
+			],
+			[
+				"styleguidlist",
+				"styleguide/modules/lists/component.js"
+			],
+			[
+				"settinghtml",
+				"user-portal/src/views/settings.html"
+			],
+			[
+				"styleguidebuttons",
+				"styleguide/modules/buttons/component.js"
+			],
+			[
+				"settingscard",
+				"affirm-stories/src/settings/settings-card.js"
+			],
+			[
+				"vari",
+				"affirmv1/styles/partials/variables.css"
+			],
+			[
+				"instrumentjs",
+				"affirm-stories/src/settings/payment-methods/instrument.js"
+			],
+			[
+				"badge",
+				"affirmv1/badge/style.css"
+			],
+			[
+				"mutpersonal",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"iconindex",
+				"affirmv1/icon/index.js"
+			],
+			[
+				"av1icon",
+				"affirmv1/icon/index.js"
+			],
+			[
+				"instrumensj",
+				"affirm-stories/src/settings/payment-methods/instrument.js"
+			],
+			[
+				"instrujs",
+				"affirm-stories/src/settings/payment-methods/instrument.js"
+			],
+			[
+				"instrumet",
+				"user-portal/serverMock/instruments.js"
+			],
+			[
+				"shartestutisl",
+				"shared/test/utils/index.js"
+			],
+			[
+				"sharedutils",
+				"shared/src/utils/index.js"
+			],
+			[
+				"paymethodsinde",
+				"affirm-stories/src/settings/payment-methods/index.js"
+			],
+			[
+				"instrue",
+				"affirm-stories/src/settings/payment-methods/instrument.js"
+			],
+			[
+				"checktservmock",
+				"checkout/serverMock.js"
+			],
+			[
+				"institucfee",
+				"unity-ng/src/scripts/factories/institution.coffee"
+			],
+			[
+				"institution.coffee",
+				"unity-ng/test/factories/institution.coffee"
+			],
+			[
+				"ctrlsettin",
+				"user-portal/src/scripts/controllers/settings.coffee"
+			],
+			[
+				"servmock",
+				"user-portal/serverMock/institutions/institutions_list.js"
+			],
+			[
+				"settingshtm",
+				"user-portal/src/views/settings.html"
+			],
+			[
+				"removeinst",
+				"crm/src/components/modal/remove-instrument.js"
+			],
+			[
+				"stoyrsettings",
+				"storybook/src/pages/settings.js"
+			],
+			[
+				"settingindex",
+				"affirm-stories/src/settings/index.js"
+			],
+			[
+				"v1icon",
+				"affirmv1/icon/index.js"
+			],
+			[
+				"icon",
+				"shared/src/components/Icon.js"
+			],
+			[
+				"userporsethtml",
+				"user-portal/src/views/settings.html"
+			],
+			[
+				"settngcard",
+				"affirm-stories/src/settings/settings-card.js"
+			],
+			[
+				"rc/settings/payment-methods.j",
+				"affirm-stories/src/settings/payment-methods/index.js"
+			],
+			[
+				"settings/indexjs",
+				"affirm-stories/src/settings/index.js"
+			],
+			[
+				"settings/index.j",
+				"affirm-stories/src/settings/index.js"
+			],
+			[
+				"settcss",
+				"user-portal/src/styles/pages/settings.scss"
+			],
+			[
+				"mutabletext",
+				"affirmv1/mutable-text/index.js"
+			],
+			[
+				"mutpersona",
+				"user-portal/src/scripts/components/mutable_personal_info.js"
+			],
+			[
+				"boxinde",
+				"affirmv1/box/index.js"
+			],
+			[
+				"boxindex",
+				"affirmv1/box/index.js"
+			],
+			[
+				"imuttext",
+				"affirmv1/immutable-text/index.js"
+			],
+			[
+				"tablcss",
+				"affirmv1/table/style.css"
 			]
 		],
 		"width": 0.0
@@ -2189,9 +2289,13 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 221.0,
+	"side_bar_width": 261.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"rulers":
+		[
+			100
+		]
 	}
 }
