@@ -1,7 +1,6 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const path              = require('path')
-const webpack           = require('webpack')
-const ManifestPlugin    = require('webpack-manifest-plugin')
+const path           = require('path')
+const webpack        = require('webpack')
+const ManifestPlugin = require('webpack-manifest-plugin')
 
 module.exports = require('webpack-merge')(
   require('./aliases'),
@@ -15,15 +14,17 @@ module.exports = require('webpack-merge')(
       ]
     },
 
+    module: {
+      loaders: [
+        require('./css-clientside-loader')({ buildCSS: false }),
+      ],
+    },
+
     output: require('./output')({ pathinfo: true }),
 
     devtool: 'eval',
 
     plugins: [
-      new ExtractTextPlugin({
-        filename: '[name]-[contenthash].css',
-        allChunks: true,
-      }),
       new ManifestPlugin({ fileName: '../manifest.json' }),
       new webpack.DefinePlugin({
         'process.env': {
