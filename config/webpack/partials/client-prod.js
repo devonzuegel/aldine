@@ -1,7 +1,8 @@
-const fs             = require('fs')
-const path           = require('path')
-const webpack        = require('webpack')
-const ManifestPlugin = require('webpack-manifest-plugin')
+const fs                = require('fs')
+const path              = require('path')
+const webpack           = require('webpack')
+const ManifestPlugin    = require('webpack-manifest-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const config = require('webpack-merge')(
   require('./aliases'),
@@ -20,7 +21,17 @@ const config = require('webpack-merge')(
       filename: 'js/[name].[hash].js',
     },
 
+    module: {
+      loaders: [
+        require('./css-clientside-loader')({ buildCSS: true }),
+      ],
+    },
+
     plugins: [
+      new ExtractTextPlugin({
+        filename: '[name]-[contenthash].css',
+        allChunks: true,
+      }),
       new ManifestPlugin({ fileName: '../manifest.json' }),
       new webpack.DefinePlugin({
         'process.env': {
