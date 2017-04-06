@@ -1,8 +1,9 @@
-const fs                = require('fs')
-const path              = require('path')
-const webpack           = require('webpack')
-const ManifestPlugin    = require('webpack-manifest-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const fs                      = require('fs')
+const path                    = require('path')
+const webpack                 = require('webpack')
+const ManifestPlugin          = require('webpack-manifest-plugin')
+const ExtractTextPlugin       = require('extract-text-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const config = require('webpack-merge')(
   require('./aliases'),
@@ -33,6 +34,10 @@ const config = require('webpack-merge')(
         allChunks: true,
       }),
       new ManifestPlugin({ fileName: '../manifest.json' }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.min\.css$/,
+        cssProcessorOptions: { discardComments: { removeAll: true } }
+      }),
       new webpack.DefinePlugin({
         'process.env': {
           BROWSER: JSON.stringify(true),

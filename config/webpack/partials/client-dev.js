@@ -1,6 +1,7 @@
-const path           = require('path')
-const webpack        = require('webpack')
-const ManifestPlugin = require('webpack-manifest-plugin')
+const path                    = require('path')
+const webpack                 = require('webpack')
+const ManifestPlugin          = require('webpack-manifest-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = require('webpack-merge')(
   require('./aliases'),
@@ -26,6 +27,10 @@ module.exports = require('webpack-merge')(
 
     plugins: [
       new ManifestPlugin({ fileName: '../manifest.json' }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.min\.css$/,
+        cssProcessorOptions: { discardComments: { removeAll: true } }
+      }),
       new webpack.DefinePlugin({
         'process.env': {
           BROWSER: JSON.stringify(true),
