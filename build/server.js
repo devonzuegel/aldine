@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/public/";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 594);
+/******/ 	return __webpack_require__(__webpack_require__.s = 595);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -6872,7 +6872,7 @@ var React = __webpack_require__(2);
 var R = __webpack_require__(17);
 var classnames = __webpack_require__(9);
 var Theme = __webpack_require__(51);
-var POS = __webpack_require__(584);
+var POS = __webpack_require__(585);
 var s = __webpack_require__(477);
 var Word = function Word(props) {
     var word = props.word,
@@ -10071,7 +10071,7 @@ module.exports = {
 	"align-right.svg": "30777c363d04c743ff2be3eaba99908a.svg",
 	"aperture.svg": "22326398386585f3c8429c0343c7ccf0.svg",
 	"app.css": "app-d4cd1d9bbb584d23a462760e7d13e657.css",
-	"app.js": "js/app.bde8f7c2b52fb46ea878.js",
+	"app.js": "js/app.d94c33a38de92d47a258.js",
 	"arrow-bottom.svg": "17e3ecc312eef0683e272aba5292fa63.svg",
 	"arrow-circle-bottom.svg": "e853a5fa9da5dd6e52bd816e034a597c.svg",
 	"arrow-circle-left.svg": "6c5b9ae053f44058620d313e4446e231.svg",
@@ -10294,11 +10294,12 @@ module.exports = {
 /* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const path           = __webpack_require__(20)
-const webpack        = __webpack_require__(82)
-const ManifestPlugin = __webpack_require__(592)
+const path                    = __webpack_require__(20)
+const webpack                 = __webpack_require__(82)
+const ManifestPlugin          = __webpack_require__(593)
+const OptimizeCssAssetsPlugin = __webpack_require__(583)
 
-module.exports = __webpack_require__(593)(
+module.exports = __webpack_require__(594)(
   __webpack_require__(149),
   __webpack_require__(150),
   {
@@ -10322,6 +10323,10 @@ module.exports = __webpack_require__(593)(
 
     plugins: [
       new ManifestPlugin({ fileName: '../manifest.json' }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.min\.css$/,
+        cssProcessorOptions: { discardComments: { removeAll: true } }
+      }),
       new webpack.DefinePlugin({
         'process.env': {
           BROWSER: JSON.stringify(true),
@@ -10410,9 +10415,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_router_redux_1 = __webpack_require__(48);
 var Redux = __webpack_require__(134);
-var redux_thunk_1 = __webpack_require__(589);
+var redux_thunk_1 = __webpack_require__(590);
 var reducers_1 = __webpack_require__(90);
-var createLogger = __webpack_require__(588);
+var createLogger = __webpack_require__(589);
 var appConfig = __webpack_require__(45);
 exports.configureStore = function (history, initialState) {
     var middlewares = [react_router_redux_1.routerMiddleware(history), redux_thunk_1.default];
@@ -10601,10 +10606,10 @@ const plainLoader = {
       loader: 'postcss-loader',
       options: {
         plugins: () => [
-          __webpack_require__(587)({ path: [ projectRoot('app') ] }),
-          __webpack_require__(590)({ files: projectRoot('app/*.css') }),
-          __webpack_require__(586)(),
-          __webpack_require__(585)({ relative: projectRoot('app') })
+          __webpack_require__(588)({ path: [ projectRoot('app') ] }),
+          __webpack_require__(591)({ files: projectRoot('app/*.css') }),
+          __webpack_require__(587)(),
+          __webpack_require__(586)({ relative: projectRoot('app') })
         ],
       },
     },
@@ -10675,7 +10680,7 @@ module.exports = {
 
 module.exports = {
   test:   /\.tsx?$/,
-  loader: __webpack_require__(591)([
+  loader: __webpack_require__(592)([
     'react-hot-loader',
     'awesome-typescript-loader',
   ]),
@@ -11221,7 +11226,7 @@ exports.ThemeChanger = ThemeChanger;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var utils_1 = __webpack_require__(24);
-var pegjs = __webpack_require__(583);
+var pegjs = __webpack_require__(584);
 var grammar = __webpack_require__(496);
 exports.Enum = utils_1.strEnum(['Parenthetical', 'Text']);
 exports.ParentheticalNode = function (content) {
@@ -26793,70 +26798,76 @@ module.exports = require("extract-text-webpack-plugin");
 /* 583 */
 /***/ (function(module, exports) {
 
-module.exports = require("pegjs");
+module.exports = require("optimize-css-assets-webpack-plugin");
 
 /***/ }),
 /* 584 */
 /***/ (function(module, exports) {
 
-module.exports = require("pos");
+module.exports = require("pegjs");
 
 /***/ }),
 /* 585 */
 /***/ (function(module, exports) {
 
-module.exports = require("postcss-assets");
+module.exports = require("pos");
 
 /***/ }),
 /* 586 */
 /***/ (function(module, exports) {
 
-module.exports = require("postcss-cssnext");
+module.exports = require("postcss-assets");
 
 /***/ }),
 /* 587 */
 /***/ (function(module, exports) {
 
-module.exports = require("postcss-import");
+module.exports = require("postcss-cssnext");
 
 /***/ }),
 /* 588 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-logger");
+module.exports = require("postcss-import");
 
 /***/ }),
 /* 589 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-thunk");
+module.exports = require("redux-logger");
 
 /***/ }),
 /* 590 */
 /***/ (function(module, exports) {
 
-module.exports = require("stylelint");
+module.exports = require("redux-thunk");
 
 /***/ }),
 /* 591 */
 /***/ (function(module, exports) {
 
-module.exports = require("webpack-combine-loaders");
+module.exports = require("stylelint");
 
 /***/ }),
 /* 592 */
 /***/ (function(module, exports) {
 
-module.exports = require("webpack-manifest-plugin");
+module.exports = require("webpack-combine-loaders");
 
 /***/ }),
 /* 593 */
 /***/ (function(module, exports) {
 
-module.exports = require("webpack-merge");
+module.exports = require("webpack-manifest-plugin");
 
 /***/ }),
 /* 594 */
+/***/ (function(module, exports) {
+
+module.exports = require("webpack-merge");
+
+/***/ }),
+/* 595 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
