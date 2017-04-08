@@ -1,1 +1,1 @@
-web: node build/server.js NODE_ENV=production
+web: yarn start NODE_ENV=production

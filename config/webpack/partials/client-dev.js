@@ -21,7 +21,12 @@ module.exports = require('webpack-merge')(
       ],
     },
 
-    output: require('./output')({ pathinfo: true }),
+    output: {
+      path:       path.resolve('./build/public'),
+      publicPath: '/public/',
+      filename:   'js/[name].js',
+      pathinfo:   true,
+    },
 
     devtool: 'eval',
 
