@@ -37,3 +37,6 @@ node_modules
 
 # JetBrains
 .idea
+
+# Local dev build
+build

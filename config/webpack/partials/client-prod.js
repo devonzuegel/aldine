@@ -17,9 +17,9 @@ const config = require('webpack-merge')(
     },
 
     output: {
-      path: path.resolve('./build/public'),
+      path:       path.resolve('./build/public'),
       publicPath: '/public/',
-      filename: 'js/[name].[hash].js',
+      filename:   'js/[name].[hash].js',
     },
 
     module: {
@@ -64,9 +64,9 @@ const createIfDoesntExist = dest => {
   }
 }
 
-createIfDoesntExist('./build');
-createIfDoesntExist('./build/public');
-copySync('./src/assets/favicon.ico', './build/public/favicon.ico', true);
+createIfDoesntExist('./release');
+createIfDoesntExist('./release/public');
+copySync('./src/assets/favicon.ico', './release/public/favicon.ico', true);
 
 
 module.exports = config
